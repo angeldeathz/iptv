@@ -1,0 +1,25 @@
+# M3U Lineup Rules
+
+Use these rules whenever you work on `official.m3u` or any other IPTV playlist in this repo.
+
+## Editorial policy
+
+- Treat the playlist like a provider lineup, not a dump of sources.
+- Prioritize Latin American channels over non-priority markets.
+- Keep Brazil and other non-priority regions behind the main LATAM block unless a source is uniquely necessary.
+- Prefer `1080p` versions first.
+- Keep ordering aligned with real IPTV providers: national, kids, movies, series, sports, news, music, documentaries, and then the rest.
+
+## Sorting behavior
+
+- Group all national channels together.
+- Keep channel families together when the same channel appears in multiple qualities or regions.
+- Put the best and most stable source first.
+- Leave lower-quality or backup streams below the primary stream.
+- Do not sort alphabetically unless the user asks for it.
+
+## M3U hygiene
+
+- Preserve `#EXTM3U`, `#EXTINF`, `tvg-id`, `tvg-name`, `tvg-logo`, `group-title`, `user-agent`, and `#EXTVLCOPT`.
+- Do not invent metadata.
+- Keep the file valid for common IPTV players.
