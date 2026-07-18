@@ -182,68 +182,34 @@ http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUN
 #EXTINF:-1 group-title="Cine",CINE | PARAMOUNT CHANEL SD
 http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZlI1K3VkUjkzUkZ2YmJKNkdPSmRnaw
 
-#EXTINF:-1 tvg-id="MTV2.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/MTV2_logo_2013.svg/960px-MTV2_logo_2013.svg.png" group-title="Entertainment",MTV2 (720p)
-http://198.58.104.90:8989/mtv2/index.m3u8
-#EXTINF:-1 tvg-id="MTV2.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/MTV2_logo_2013.svg/960px-MTV2_logo_2013.svg.png" group-title="Entertainment",MTV2 (720p)
-http://206.212.244.63/116/index.m3u8
-#EXTINF:-1 tvg-id="MTV2.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/MTV2_logo_2013.svg/960px-MTV2_logo_2013.svg.png" group-title="Entertainment",MTV2 (1080p)
-http://40.160.24.53/MTV2/index.m3u8
-#EXTINF:-1 tvg-id="MTV.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV (720p)
-http://40.160.24.53/MTV/index.m3u8
-#EXTINF:-1 tvg-id="MTV.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV (720p)
-http://198.58.104.90:8989/mtv/index.m3u8
-#EXTINF:-1 tvg-id="MTV.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV (720p)
-http://206.212.244.63/115/index.m3u8
-#EXTINF:-1 tvg-id="MTVClassic.us@East" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="Music",MTV Classic (576p)
-http://40.160.24.53/MTV_CLASSIC/index.m3u8
-#EXTINF:-1 tvg-id="MTVClassic.us@East" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="Music",MTV Classic (720p)
-http://206.212.244.63/117/index.m3u8
+
 #EXTINF:-1 tvg-id="MTVenEspanol.us@SD" tvg-logo="https://i.imgur.com/vQWWfyW.png" group-title="Entertainment",MTV en español
 https://jmp2.uk/plu-5cf96d351652631e36d4331f.m3u8
+
 #EXTINF:-1 tvg-id="MTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV Latin America (720p)
 http://138.186.23.7:8082/MTV/index.m3u8
+
 #EXTINF:-1 tvg-id="MTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV Latin America (720p)
 http://200.91.32.158:8080/mtvhd/index.m3u8
+
+
 #EXTINF:-1 tvg-id="MTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV Latin America (1080p)
 http://179.60.51.134:8888/MTV/index.m3u8
-#EXTINF:-1 tvg-id="NickJrLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. Latin America (1080p)
-http://138.186.23.7:8082/NICKJR/index.m3u8
+
+
 #EXTINF:-1 tvg-id="NickJrLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. Latin America (1080p)
 http://177.234.249.178:8888/NICK-JR/index.m3u8
-#EXTINF:-1 tvg-id="NickJrLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. Latin America (1080p)
-http://179.60.51.134:8888/NICK-JR/index.m3u8
-#EXTINF:-1 tvg-id="NickJrLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. Latin America (1080p)
-https://edgectc.com/TeeNNICK_HD/index.m3u8
-#EXTINF:-1 tvg-id="NickelodeonClasico.us@LatAm" tvg-logo="https://images.pluto.tv/channels/5ddd7c348520b40009c347e2/colorLogoPNG_1750157294622.png" group-title="Kids",Nickelodeon Clásico (720p)
-https://jmp2.uk/plu-6824cda00101510f9eeaa011.m3u8
-#EXTINF:-1 tvg-id="Nickelodeonenespanol.us@SD" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Kids",Nickelodeon en español
-https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
-#EXTINF:-1 tvg-id="NickelodeonLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Latin America (1080p)
-http://138.186.23.7:8082/NICK/index.m3u8
+
 #EXTINF:-1 tvg-id="NickelodeonLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Latin America (1080p)
 http://177.234.249.178:8888/NICK/index.m3u8
-#EXTINF:-1 tvg-id="NickelodeonLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Latin America (1080p)
-http://179.60.51.134:8888/NICK/index.m3u8
+
 #EXTINF:-1 tvg-id="NickelodeonTeen.us@LatAm" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Kids",Nickelodeon Teen (720p)
 https://jmp2.uk/plu-5fab09a8749b1a00077d35d2.m3u8
-#EXTINF:-1 tvg-id="NickelodeonTeen.us@BR" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Kids",Nickelodeon Teen (720p)
-https://jmp2.uk/plu-60f5fabf0721880007cd50e3.m3u8
-#EXTINF:-1 tvg-id="NickelodeonToons.us@BR" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" group-title="Kids",Nickelodeon Toons (720p)
-https://jmp2.uk/plu-645951c0e94c38000802d2cb.m3u8
+
 #EXTINF:-1 tvg-id="NickelodeonToons.us@LatAm" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" group-title="Kids",Nickelodeon Toons (720p)
 https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@CA" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",NickToons
-https://jmp2.uk/plu-654ca7f92c1d3300086b608c.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@East" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",Nicktoons (720p)
-http://40.160.24.55/NICKTOONS/index.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@East" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",Nicktoons (720p)
-http://41.205.93.154/NICKTOONS/index.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@East" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",Nicktoons (1080p)
-http://206.212.244.63/3151/index.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@West" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",Nicktoons West (720p)
-http://108.181.20.255:27347/livehttpplay?channel_id=23079
-#EXTINF:-1 tvg-id="Nicktoons.us@West" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Kids",Nicktoons West (1080p)
-http://206.212.244.63/3152/index.m3u8
+
+
 #EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Series",Paramount Network (720p)
 http://40.160.24.55/PARAMOUNT_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Series",Paramount Network (720p)
@@ -254,17 +220,36 @@ http://cdn.haititivi.net/PARAMOUNT-CHANNEL/index.m3u8
 http://rezofoot.tv/PARAMOUNT-CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="ParamountNetworkLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Series",Paramount Network Latin America (720p)
 http://138.186.23.7:8082/PARAMOUNT/index.m3u8
+
+
 #EXTINF:-1 tvg-id="MTVClassic.us@BR" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="Music",Pluto TV MTV Classic (720p)
 https://jmp2.uk/plu-66a01dcb8561260008b0a41d.m3u8
-#EXTINF:-1 tvg-id="MTVClassic.us@LatAm" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="Music",Pluto TV MTV Classic (720p)
-https://jmp2.uk/plu-66a11a21a79dea0008aa90ca.m3u8
+
 #EXTINF:-1 tvg-id="MTVClassic.us@CA" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="Music",Pluto TV MTV Classic (720p)
 https://jmp2.uk/plu-654100b4bdf3cf0008aa49c7.m3u8
-#EXTINF:-1 tvg-id="PopTV.us@SD" tvg-logo="https://i.imgur.com/XySNnh0.png" group-title="Entertainment",Pop TV (720p)
-http://40.160.24.55/POP/index.m3u8
-#EXTINF:-1 tvg-id="PopTV.us@SD" tvg-logo="https://i.imgur.com/XySNnh0.png" group-title="Entertainment",Pop TV (720p)
-http://206.212.244.63/139/index.m3u8
-#EXTINF:-1 tvg-id="Showtime.us@East" tvg-logo="https://i.imgur.com/Or0LKsu.png" group-title="Series",Showtime (1080p)
-http://23.237.104.106:8080/USA_SHOWTIME/index.m3u8
-#EXTINF:-1 tvg-id="Showtime.us@East" tvg-logo="https://i.imgur.com/Or0LKsu.png" group-title="Series",Showtime (1080p)
-http://41.205.93.154/SHOWTIMES/index.m3u8
+
+
+#EXTINF:-1 group-title="Series",CINE | STAR CHANNEL  HD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5Y09VTm03T2pFZmsxRnRVMXZXZmc3TQ
+#EXTINF:-1 group-title="Series",CINE | STAR CHANNEL  SD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZVhuZVBNNTR3akdJMVppVTBSdXRpMg
+#EXTINF:-1 group-title="Series",WARNER CHANNEL
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZjdndHpPWlZEeTdBbFozbUNOcDBoaw
+#EXTINF:-1 group-title="Series",WARNER CHANNEL
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZGUwdHM4Yko4Q0NwdEc2TVdwMUp4bA
+#EXTINF:-1 group-title="Series",CINE | FX  HD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5Y0ZMQ01lZW54aWRlUll4WW1KRVIvNQ
+#EXTINF:-1 group-title="Series",CINE | FX  SD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZXRvLzhORGFtMWNuNGhKNmtTbmZGUA
+#EXTINF:-1 group-title="Series",CINE | UNIVERSAL CHANEL  HD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5Y3E0c2NTeVIya2VtSStVVTRWaDNNTw
+#EXTINF:-1 group-title="Series",UNIVERSAL TV
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OVNjZ0duT29hL1prd1Foa2ZUNTQ5ZUw1QUY2MGhhcXV4d0NiZm5mSlJPMw
+#EXTINF:-1 group-title="Series",CINE | UNIVERSAL PREMIER HD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1OG8wUDhMMENzODJwY0ovUmFrM0dueWFiblhncUIxWW5DSUk0b2ZBOStnZg
+#EXTINF:-1 group-title="Series",US: UNIVERSAL KIDS
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1ejJDY1R6WmtkSTRCTUlhcHZGUmsxMDl4cDRTclg0NGVidnk3YkZMalZ6Lw
+#EXTINF:-1 group-title="Series",Star Channel HD
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1MEY4ck9hQnd1dVBzWEVObm0wM05oR3ZCRGt0UEZLYXRMWXZOb0JvcEoyeQ
+#EXTINF:-1 group-title="Series",STAR Channel
+http://libertadtv.lat:8080/L1JHKzZNY3FoblUxTTVkQXpGaUd1MEY4ck9hQnd1dVBzWEVObm0wM05oRmx0U3gwclc3TzBMbzF1WlN0bFliaw
