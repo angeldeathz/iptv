@@ -75,62 +75,62 @@ def classify_channel(clean_name, original_group, tvg_id):
     original_group_lower = (original_group or "").lower()
     tvg_id_lower = (tvg_id or "").lower()
     
-    # 1. NACIONALES
+    # 1. Nacionales
     if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina"]):
-        return "NACIONALES"
+        return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales"]:
-        return "NACIONALES"
+        return "Nacionales"
         
-    # 2. REGIONALES
+    # 2. Regionales
     if "chilote" in clean_name_lower or original_group_lower in ["regionales", "regional"]:
-        return "REGIONALES"
+        return "Regionales"
         
-    # 3. INFANTILES
+    # 3. Infantiles
     if any(w in clean_name_lower for w in ["cartoon", "disney", "dreamworks", "nick", "etc tv", "kids"]) or original_group_lower in ["animation", "kids", "infantiles"]:
-        return "INFANTILES"
+        return "Infantiles"
         
-    # 4. PELICULAS
+    # 4. Peliculas
     if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema"]):
-        return "PELICULAS"
+        return "Peliculas"
     if original_group_lower in ["movies", "cine", "peliculas"]:
-        return "PELICULAS"
+        return "Peliculas"
         
-    # 5. SERIES
+    # 5. Series
     if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series"]):
-        return "SERIES"
+        return "Series"
     if original_group_lower in ["series", "entertainment"]:
-        return "SERIES"
+        return "Series"
         
-    # 6. DEPORTES
+    # 6. Deportes
     if any(w in clean_name_lower for w in ["sports", "espn", "fox sports", "directv sports", "stadium"]) or "deportes" in original_group_lower:
-        return "DEPORTES"
+        return "Deportes"
         
-    # 7. NOTICIAS
+    # 7. Noticias
     if any(w in clean_name_lower for w in ["cnn", "noticias", "news"]):
-        return "NOTICIAS"
+        return "Noticias"
         
-    # 8. MUSICA
+    # 8. Musica
     if any(w in clean_name_lower for w in ["mtv", "festival", "music", "musica"]):
-        return "MUSICA"
+        return "Musica"
         
-    # 9. DOCUMENTALES
+    # 9. Documentales
     if any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary"]) or "documentary" in original_group_lower or "documentales" in original_group_lower:
-        return "DOCUMENTALES"
+        return "Documentales"
         
-    return "VARIEDADES"
+    return "Variedades"
 
 GROUP_ORDER = [
-    "NACIONALES",
-    "REGIONALES",
-    "INFANTILES",
-    "PELICULAS",
-    "SERIES",
-    "DEPORTES",
-    "NOTICIAS",
-    "MUSICA",
-    "DOCUMENTALES",
-    "VARIEDADES",
-    "INTERNACIONALES"
+    "Nacionales",
+    "Regionales",
+    "Infantiles",
+    "Peliculas",
+    "Series",
+    "Deportes",
+    "Noticias",
+    "Musica",
+    "Documentales",
+    "Variedades",
+    "Internacionales"
 ]
 
 def get_group_priority(group_name):
@@ -210,8 +210,8 @@ def clean_m3u(file_path):
         # Determine taxonomy category
         category = classify_channel(clean_name, attrs.get('group-title'), attrs.get('tvg-id'))
         
-        # Overwrite/set tvg-name to clean base name
-        attrs['tvg-name'] = clean_name
+        # Remove tvg-id (not needed for IPTV TV apps)
+        attrs.pop('tvg-id', None)
         # Set category as group-title
         attrs['group-title'] = category
         
@@ -248,6 +248,7 @@ def clean_m3u(file_path):
         
         entry['global_id'] = global_id
         entry['rep_index'] = rep_index
+        entry['attrs']['tvg-name'] = f"{global_id} {c_name} {rep_index}"
 
     # Step 6: Write output
     with open(file_path, "w", encoding="utf-8") as f:
