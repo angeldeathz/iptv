@@ -39,7 +39,8 @@ def clean_channel_name(display_name):
         display_name = match.group(1)
 
     # Step 1: Strip country prefixes (e.g. CL:, MX:, BR:, USA:, US:, ES:, CINE |) at the beginning
-    name = re.sub(r'^(?:CL|MX|BR|USA|US|ES|LATIN\s*\d*|CINE)\s*[:|]\s*', '', display_name, flags=re.IGNORECASE)
+    name = re.sub(r'^:\s*', '', display_name)
+    name = re.sub(r'^(?:CL|MX|BR|USA|US|ES|LATIN\s*\d*|CINE)\s*[:|]\s*', '', name, flags=re.IGNORECASE)
     name = re.sub(r'^CINE\s*\|\s*', '', name, flags=re.IGNORECASE)
     
     # Step 2: Remove brackets/parentheses and their content (e.g., "(1080p)", "[Geo-blocked]", "(Event Only)")
@@ -76,7 +77,7 @@ def classify_channel(clean_name, original_group, tvg_id):
     tvg_id_lower = (tvg_id or "").lower()
     
     # 1. Nacionales
-    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina"]):
+    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina", "ucv"]):
         return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales"]:
         return "Nacionales"
@@ -86,11 +87,11 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob"]) or original_group_lower in ["animation", "kids", "infantiles"]:
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob"]) or original_group_lower in ["animation", "kids", "infantiles"]:
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula"]):
+    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax"]):
         return "Peliculas"
     if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
         return "Peliculas"
@@ -102,7 +103,7 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Series"
         
     # 6. Deportes
-    if any(w in clean_name_lower for w in ["sports", "espn", "fox sports", "directv sports", "stadium", "goltv", "gol tv"]):
+    if any(w in clean_name_lower for w in ["sports", "espn", "fox sport", "fox sports", "directv sports", "stadium", "goltv", "gol tv"]):
         return "Deportes"
     if any(g in original_group_lower for g in ["deportes", "sports"]):
         return "Deportes"
