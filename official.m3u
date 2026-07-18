@@ -1,11 +1,8 @@
 #EXTM3U
 
+# ===== NACIONALES =====
 #EXTINF:-1 tvg-id="" tvg-name="CL: Chilevision FHD" tvg-logo="http://xplatinmedia.com:8080/images/0f10e01839fdf6f4324ca67c9b88a325.png" group-title="LATIN 3",CL: Chilevision FHD
 http://bigenterprise.live:8080/07366617/45969898/1044387
-#EXTINF:-1 tvg-id="" tvg-name="CL: Chilevision HD" tvg-logo="http://xplatinmedia.com:8080/images/0f10e01839fdf6f4324ca67c9b88a325.png" group-title="LATIN 3",CL: Chilevision HD
-http://bigenterprise.live:8080/07366617/45969898/1044388
-#EXTINF:-1 tvg-id="" tvg-name="CL: Chilevision SD" tvg-logo="http://xplatinmedia.com:8080/images/0f10e01839fdf6f4324ca67c9b88a325.png" group-title="LATIN 3",CL: Chilevision SD
-http://bigenterprise.live:8080/07366617/45969898/1044389
 
 #EXTINF:-1 tvg-id="" tvg-name="CL: TVN FHD" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="LATIN 3",CL: TVN FHD
 http://bigenterprise.live:8080/07366617/45969898/1044457
@@ -13,6 +10,10 @@ http://bigenterprise.live:8080/07366617/45969898/1044457
 
 #EXTINF:-1 tvg-id="" tvg-name="CL: Canal 13c SD" tvg-logo="http://xplatinmedia.com:8080/images/98eedba6dec74b979911f16225cd7144.png" group-title="LATIN 3",CL: Canal 13c SD
 http://bigenterprise.live:8080/07366617/45969898/1044369
+
+# ===== NACIONALES =====
+
+
 
 #EXTINF:-1 tvg-id="13Festival.cl@SD" tvg-logo="https://i.imgur.com/Ymk6j5o.png" group-title="Music",13 Festival (1080p)
 https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
