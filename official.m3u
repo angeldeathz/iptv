@@ -181,3 +181,12 @@ http://45.162.64.114/TNT_NOVELAS/index.m3u8
 http://167.250.126.140:7777/TBS-HD/index.m3u8
 #EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" group-title="Series",TNT Novelas Brazil (720p)
 http://177.52.24.163/TNT-NOVELAS-HD/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CAR: TCM" tvg-logo="" group-title="CARIBBEAN",CAR: TCM
+http://bigenterprise.live:8080/07366617/45969898/1048978
+
+#EXTINF:-1 tvg-id="" tvg-name="CAR: Space" tvg-logo="" group-title="CARIBBEAN",CAR: Space
+http://bigenterprise.live:8080/07366617/45969898/1048971
+
+#EXTINF:-1 tvg-id="" tvg-name="CAR: Sony Entertainment TV" tvg-logo="" group-title="CARIBBEAN",CAR: Sony Entertainment TV
+http://bigenterprise.live:8080/07366617/45969898/1048970
