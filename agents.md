@@ -34,6 +34,8 @@ Este repositorio contiene una lista de canales de televisión curada en el archi
 
 8. **Priorización de Calidad**: Al agrupar variantes duplicadas del mismo canal, se deben ordenar con la mejor resolución disponible primero (priorizando HEVC > FHD/1080p > HD/720p > SD/576p/480p).
 
+9. **URLs Únicas**: No puede haber dos canales con la misma URL de stream. Si se agregan entradas duplicadas, el script de limpieza elimina automáticamente las copias y conserva solo una (priorizando mejor calidad en el nombre y, en empate, la primera aparición en el archivo). Tras la deduplicación, se recalculan los IDs correlativos.
+
 ---
 
 ## Ejecución del Script de Limpieza
@@ -45,4 +47,4 @@ python3 scripts/clean_m3u.py
 ```
 
 > [!IMPORTANT]
-> **Es obligatorio ejecutar este script cada vez que modifiques o agregues canales en `official.m3u`.** Esto evita inconsistencias en la grilla y asegura que los IDs y el orden sean actualizados de forma totalmente correcta e idempotente.
+> **Es obligatorio ejecutar este script cada vez que modifiques o agregues canales en `official.m3u`.** Esto evita inconsistencias en la grilla, elimina URLs duplicadas y asegura que los IDs y el orden sean actualizados de forma totalmente correcta e idempotente.

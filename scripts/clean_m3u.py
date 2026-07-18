@@ -139,6 +139,27 @@ def get_group_priority(group_name):
     except ValueError:
         return len(GROUP_ORDER)
 
+def normalize_url(url):
+    return url.strip()
+
+def deduplicate_by_url(entries):
+    """Keep one entry per unique URL, preferring higher quality then earliest appearance."""
+    best_by_url = {}
+    for entry in entries:
+        url = normalize_url(entry['url'])
+        if url not in best_by_url:
+            best_by_url[url] = entry
+            continue
+        current = best_by_url[url]
+        candidate = entry
+        if (candidate['quality_score'], -candidate['original_index']) > (
+            current['quality_score'], -current['original_index']
+        ):
+            best_by_url[url] = candidate
+
+    deduped = sorted(best_by_url.values(), key=lambda e: e['original_index'])
+    return deduped, len(entries) - len(deduped)
+
 def clean_m3u(file_path):
     if not os.path.exists(file_path):
         print(f"Error: {file_path} does not exist.")
@@ -221,6 +242,8 @@ def clean_m3u(file_path):
         entry['quality_score'] = get_quality_score(display_name)
         entry['category'] = category
 
+    entries, removed_duplicates = deduplicate_by_url(entries)
+
     # Step 3: Identify the first occurrence index of each clean name to preserve lineup order
     first_occurrence = {}
     for idx, entry in enumerate(entries):
@@ -279,7 +302,10 @@ def clean_m3u(file_path):
             # Write URL
             f.write(f"{entry['url']}\n\n")
 
-    print(f"Successfully cleaned and sorted {len(sorted_entries)} channels in {file_path}.")
+    print(
+        f"Successfully cleaned and sorted {len(sorted_entries)} channels in {file_path}"
+        + (f" (removed {removed_duplicates} duplicate URL(s))." if removed_duplicates else ".")
+    )
 
 if __name__ == "__main__":
     target = "/home/angeldeathz/iptv/official.m3u"

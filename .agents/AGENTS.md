@@ -18,3 +18,4 @@ Whenever modifications are made to `official.m3u` (such as adding, removing, or 
 6. **Line-up order**: Order groups according to operator lineup priority:
    `Nacionales` > `Regionales` > `Infantiles` > `Peliculas` > `Series` > `Deportes` > `Noticias` > `Musica` > `Documentales` > `Variedades` > `Internacionales`.
 7. **Quality Sort**: Quality variations of the same channel must be grouped together and sorted by quality/resolution descending (best quality first).
+8. **Unique URLs**: No two channels may share the same stream URL. The cleanup script automatically removes duplicate URLs, keeping the best-quality entry (or the earliest one on tie), then recalculates correlative IDs.
