@@ -86,35 +86,43 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "disney", "dreamworks", "nick", "etc tv", "kids"]) or original_group_lower in ["animation", "kids", "infantiles"]:
+    if any(w in clean_name_lower for w in ["cartoon", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob"]) or original_group_lower in ["animation", "kids", "infantiles"]:
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema"]):
+    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix"]):
         return "Peliculas"
-    if original_group_lower in ["movies", "cine", "peliculas"]:
+    if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
         return "Peliculas"
         
     # 5. Series
-    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series"]):
+    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin"]):
         return "Series"
-    if original_group_lower in ["series", "entertainment"]:
+    if any(g in original_group_lower for g in ["series", "entertainment", "comedy"]):
         return "Series"
         
     # 6. Deportes
-    if any(w in clean_name_lower for w in ["sports", "espn", "fox sports", "directv sports", "stadium"]) or "deportes" in original_group_lower:
+    if any(w in clean_name_lower for w in ["sports", "espn", "fox sports", "directv sports", "stadium", "goltv", "gol tv"]):
+        return "Deportes"
+    if any(g in original_group_lower for g in ["deportes", "sports"]):
         return "Deportes"
         
     # 7. Noticias
-    if any(w in clean_name_lower for w in ["cnn", "noticias", "news"]):
+    if any(w in clean_name_lower for w in ["cnn", "noticias", "news", "estrella news", "abc news"]):
+        return "Noticias"
+    if "news" in original_group_lower:
         return "Noticias"
         
     # 8. Musica
-    if any(w in clean_name_lower for w in ["mtv", "festival", "music", "musica"]):
+    if any(w in clean_name_lower for w in ["mtv", "festival", "music", "musica", "pluto tv mtv"]):
+        return "Musica"
+    if "music" in original_group_lower:
         return "Musica"
         
     # 9. Documentales
-    if any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary"]) or "documentary" in original_group_lower or "documentales" in original_group_lower:
+    if any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses"]):
+        return "Documentales"
+    if any(g in original_group_lower for g in ["documentary", "documentales"]):
         return "Documentales"
         
     return "Variedades"
