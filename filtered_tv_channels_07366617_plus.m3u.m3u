@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="CL: Canal 13 FHD" tvg-logo="http://xplatinmedia.com:8080/images/98eedba6dec74b979911f16225cd7144.png" group-title="LATIN 3",CL: Canal 13 FHD
+http://bigenterprise.live:8080/07366617/45969898/1044366
+#EXTINF:-1 tvg-id="" tvg-name="CL: TVN FHD" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="LATIN 3",CL: TVN FHD
+http://bigenterprise.live:8080/07366617/45969898/1044457
