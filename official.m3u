@@ -117,76 +117,150 @@ http://bigenterprise.live:8080/07366617/45969898/1044449
 https://cdn-5.nxplay.com.br/DREAMWORKS/index.m3u8
 #EXTINF:-1 tvg-id="DreamWorksChannelLatinAmerica.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/5/55/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png/330px-1024px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png" group-title="Animation",DreamWorks Channel Latin America (1080p)
 http://138.121.15.230:9002/DREAMWORKS/index.m3u8
-#EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America (1080p)
-http://45.162.193.35/STUDIO-UNIVERSAL/index.m3u8
+
+
 #EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America (1080p)
 http://138.121.15.230:9002/STUDIO-UNIVERSAL/index.m3u8
+
 #EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America (1080p)
 http://138.186.23.7:8082/UNIVERSAL/index.m3u8
-#EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America Brazil (720p)
-http://45.190.156.152/STUDIO_UNIVERSAL/index.m3u8
-#EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America Brazil (720p)
-http://167.250.126.140:7777/STUDIOUNIVERSAL-HD/index.m3u8
-#EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="",Studio Universal Latin America Brazil (720p)
-http://177.52.24.163/STUDIO-UNIVERSAL-HD/index.m3u8
-#EXTINF:-1 tvg-id="UniversalCinema.us@SD" tvg-logo="https://i.imgur.com/XxfET68.png" group-title="Movies",Universal Cinema (1080p)
-https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/universalcinema/playlist.m3u8
-#EXTINF:-1 tvg-id="UniversalComedy.us@SD" tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Comedy;Movies;Series" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Universal Comedy (1080p)
+
+
+
+
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcomedy/playlist.m3u8
-#EXTINF:-1 tvg-id="UniversalCrime.us@East" tvg-logo="https://i.imgur.com/OwSlGMu.png" group-title="Series",Universal Crime (720p)
-https://jmp2.uk/plu-6549341853fc9700083901ac.m3u8
+
 #EXTINF:-1 tvg-id="UniversalCrime.us@East" tvg-logo="https://i.imgur.com/OwSlGMu.png" group-title="Series" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Universal Crime (1080p)
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcrime/playlist.m3u8
+
 #EXTINF:-1 tvg-id="UniversalCrime.us@East" tvg-logo="https://i.imgur.com/OwSlGMu.png" group-title="Series",Universal Crime (1080p)
 https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8
+
 #EXTINF:-1 tvg-id="UniversalTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png" group-title="",Universal TV Latin America (1080p)
 http://138.121.15.230:9002/UNIVERSAL-CHANNEL/index.m3u8
-#EXTINF:-1 tvg-id="UniversalTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png" group-title="",Universal TV Latin America (1080p)
-http://138.186.23.7:8082/STUDIOUNIVERSAL/index.m3u8
-#EXTINF:-1 tvg-id="UniversalTVLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png" group-title="",Universal TV Latin America (1080p)
-http://177.234.249.178:8888/UNIVERSAL/index.m3u8
-#EXTINF:-1 tvg-id="UniversalTVLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png" group-title="",Universal TV Latin America Brazil (720p)
-http://45.190.156.152/UNIVERSAL_TV/index.m3u8
-#EXTINF:-1 tvg-id="UniversalTVLatinAmerica.us@Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png" group-title="",Universal TV Latin America Mexico (1080p)
-http://177.245.131.133:8080/UNIVERSAL/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America (720p)
-http://200.91.32.158:8080/usanetwork/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America (1080p)
-http://138.121.15.230:9002/USA/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America (1080p)
-http://138.186.23.7:8082/SYFY/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America (1080p)
-http://177.234.249.178:8888/SYFY/index.m3u8
+
 #EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",USA Network Latin America (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/SYFY.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America Brazil (720p)
-http://167.250.126.140:7777/SYFY-HD/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America Brazil (720p)
-http://177.52.24.163/USA-HD/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America Brazil (720p)
-http://200.91.32.158:8080/syfy/index.m3u8
-#EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png" group-title="",USA Network Latin America Brazil (1080p)
-http://45.190.156.152/USA/index.m3u8
+
+
 #EXTINF:-1 tvg-id="VisionLatinaNetwork.us@SD" tvg-logo="https://i.imgur.com/VgYCskX.png" group-title="General",Vision Latina Network (1080p)
 https://cdn-cloudfront.us-east-1.prod.ingest.aws-infra.dacast.com/live/c1804a4c-ccbf-46e5-87c3-0f8d4a94d9e3/master.m3u8
 
-#EXTINF:-1 tvg-id="TNTNovelas.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" group-title="Series",TNT Novelas (1080p)
-http://138.186.23.7:8082/TNTNOVELAS/index.m3u8
-#EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" group-title="Series",TNT Novelas Brazil (720p)
-http://45.162.64.114/TNT_NOVELAS/index.m3u8
-#EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" group-title="Series",TNT Novelas Brazil (720p)
-http://167.250.126.140:7777/TBS-HD/index.m3u8
-#EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" group-title="Series",TNT Novelas Brazil (720p)
-http://177.52.24.163/TNT-NOVELAS-HD/index.m3u8
+#EXTINF:-1 tvg-id="TNTNovelas.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" 
 
-#EXTINF:-1 tvg-id="" tvg-name="CAR: TCM" tvg-logo="" group-title="CARIBBEAN",CAR: TCM
-http://bigenterprise.live:8080/07366617/45969898/1048978
-
-#EXTINF:-1 tvg-id="" tvg-name="CAR: Space" tvg-logo="" group-title="CARIBBEAN",CAR: Space
-http://bigenterprise.live:8080/07366617/45969898/1048971
-
-#EXTINF:-1 tvg-id="" tvg-name="CAR: Sony Entertainment TV" tvg-logo="" group-title="CARIBBEAN",CAR: Sony Entertainment TV
+#EXTINF:-1 tvg-id="" tvg-name="Sony Entertainment TV" tvg-logo="" group-title="Series",Sony Entertainment TV
 http://bigenterprise.live:8080/07366617/45969898/1048970
+
+
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original info ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original info ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791557
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 1 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 1 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791558
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 2 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 2 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791559
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 3 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 3 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791560
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 4 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 4 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791561
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 5 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 5 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791562
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 6 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 6 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791563
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 7 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 7 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791564
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 8 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 8 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791565
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 9 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 9 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791566
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 10 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 10 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791567
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 11 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 11 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791568
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 12 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 12 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791569
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 13 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 13 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791570
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 14 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 14 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791571
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 15 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 15 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791572
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 16 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 16 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791573
+#EXTINF:-1 tvg-id="" tvg-name="HBOMax Original 17 ᴴᴰ" tvg-logo="https://iili.io/6GDGuR.md.png" group-title="HBO MAX",HBOMax Original 17 ᴴᴰ
+http://bigenterprise.live:8080/07366617/45969898/791574
+
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO 2 FHD" tvg-logo="http://xplatinmedia.com:8080/images/f2973347dfd89ca735e8ee43bbfbb48b.png" group-title="LATIN 2",BR: HBO 2 FHD
+http://bigenterprise.live:8080/07366617/45969898/1044076
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO 2 HD" tvg-logo="http://xplatinmedia.com:8080/images/f2973347dfd89ca735e8ee43bbfbb48b.png" group-title="LATIN 2",BR: HBO 2 HD
+http://bigenterprise.live:8080/07366617/45969898/1044077
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO 2 SD" tvg-logo="http://xplatinmedia.com:8080/images/f2973347dfd89ca735e8ee43bbfbb48b.png" group-title="LATIN 2",BR: HBO 2 SD
+http://bigenterprise.live:8080/07366617/45969898/1044078
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Family FHD" tvg-logo="http://xplatinmedia.com:8080/images/bd92803d5defb80f6e80c2243301375e.png" group-title="LATIN 2",BR: HBO Family FHD
+http://bigenterprise.live:8080/07366617/45969898/1044079
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Family HD" tvg-logo="http://xplatinmedia.com:8080/images/bd92803d5defb80f6e80c2243301375e.png" group-title="LATIN 2",BR: HBO Family HD
+http://bigenterprise.live:8080/07366617/45969898/1044080
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Family HEVC" tvg-logo="http://xplatinmedia.com:8080/images/bd92803d5defb80f6e80c2243301375e.png" group-title="LATIN 2",BR: HBO Family HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044081
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Family SD" tvg-logo="http://xplatinmedia.com:8080/images/bd92803d5defb80f6e80c2243301375e.png" group-title="LATIN 2",BR: HBO Family SD
+http://bigenterprise.live:8080/07366617/45969898/1044082
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO FHD" tvg-logo="http://xplatinmedia.com:8080/images/91f0581c21b08992162709c90ad3cea8.png" group-title="LATIN 2",BR: HBO FHD
+http://bigenterprise.live:8080/07366617/45969898/1044083
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO FHD Dual Audio" tvg-logo="http://xplatinmedia.com:8080/images/91f0581c21b08992162709c90ad3cea8.png" group-title="LATIN 2",BR: HBO FHD Dual Audio
+http://bigenterprise.live:8080/07366617/45969898/1044084
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO HD" tvg-logo="http://xplatinmedia.com:8080/images/91f0581c21b08992162709c90ad3cea8.png" group-title="LATIN 2",BR: HBO HD
+http://bigenterprise.live:8080/07366617/45969898/1044085
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO HEVC" tvg-logo="http://xplatinmedia.com:8080/images/91f0581c21b08992162709c90ad3cea8.png" group-title="LATIN 2",BR: HBO HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044086
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Max Champions League 1 HD (Event Only)" tvg-logo="http://xplatinmedia.com:8080/images/60c47acc40b89c989a7bc38c8583bcff.png" group-title="LATIN 2",BR: HBO Max Champions League 1 HD (Event Only)
+http://bigenterprise.live:8080/07366617/45969898/1044087
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Max Champions League 2 HD (Event Only)" tvg-logo="http://xplatinmedia.com:8080/images/60c47acc40b89c989a7bc38c8583bcff.png" group-title="LATIN 2",BR: HBO Max Champions League 2 HD (Event Only)
+http://bigenterprise.live:8080/07366617/45969898/1044088
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Max Champions League 3 HD (Event Only)" tvg-logo="http://xplatinmedia.com:8080/images/60c47acc40b89c989a7bc38c8583bcff.png" group-title="LATIN 2",BR: HBO Max Champions League 3 HD (Event Only)
+http://bigenterprise.live:8080/07366617/45969898/1044089
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Max Champions League 4 HD (Event Only)" tvg-logo="http://xplatinmedia.com:8080/images/60c47acc40b89c989a7bc38c8583bcff.png" group-title="LATIN 2",BR: HBO Max Champions League 4 HD (Event Only)
+http://bigenterprise.live:8080/07366617/45969898/1044090
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Max Champions League 5 HD (Event Only)" tvg-logo="http://xplatinmedia.com:8080/images/60c47acc40b89c989a7bc38c8583bcff.png" group-title="LATIN 2",BR: HBO Max Champions League 5 HD (Event Only)
+http://bigenterprise.live:8080/07366617/45969898/1044091
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Mundi FHD" tvg-logo="http://xplatinmedia.com:8080/images/e4991df53d68d8995e52ba9e5c37284f.png" group-title="LATIN 2",BR: HBO Mundi FHD
+http://bigenterprise.live:8080/07366617/45969898/1044092
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Mundi HD" tvg-logo="http://xplatinmedia.com:8080/images/e4991df53d68d8995e52ba9e5c37284f.png" group-title="LATIN 2",BR: HBO Mundi HD
+http://bigenterprise.live:8080/07366617/45969898/1044093
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Mundi HEVC" tvg-logo="http://xplatinmedia.com:8080/images/e4991df53d68d8995e52ba9e5c37284f.png" group-title="LATIN 2",BR: HBO Mundi HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044094
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Mundi SD" tvg-logo="http://xplatinmedia.com:8080/images/e4991df53d68d8995e52ba9e5c37284f.png" group-title="LATIN 2",BR: HBO Mundi SD
+http://bigenterprise.live:8080/07366617/45969898/1044095
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Pop FHD" tvg-logo="http://xplatinmedia.com:8080/images/a2716bfb54cf2bf28a66f98d2076b9a0.png" group-title="LATIN 2",BR: HBO Pop FHD
+http://bigenterprise.live:8080/07366617/45969898/1044096
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Pop HD" tvg-logo="http://xplatinmedia.com:8080/images/a2716bfb54cf2bf28a66f98d2076b9a0.png" group-title="LATIN 2",BR: HBO Pop HD
+http://bigenterprise.live:8080/07366617/45969898/1044097
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Pop SD" tvg-logo="http://xplatinmedia.com:8080/images/a2716bfb54cf2bf28a66f98d2076b9a0.png" group-title="LATIN 2",BR: HBO Pop SD
+http://bigenterprise.live:8080/07366617/45969898/1044098
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO SD" tvg-logo="http://xplatinmedia.com:8080/images/91f0581c21b08992162709c90ad3cea8.png" group-title="LATIN 2",BR: HBO SD
+http://bigenterprise.live:8080/07366617/45969898/1044099
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Signature FHD" tvg-logo="http://xplatinmedia.com:8080/images/d3ec501f325429f6f8174ec6a9e11bd3.png" group-title="LATIN 2",BR: HBO Signature FHD
+http://bigenterprise.live:8080/07366617/45969898/1044100
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Signature HD" tvg-logo="http://xplatinmedia.com:8080/images/d3ec501f325429f6f8174ec6a9e11bd3.png" group-title="LATIN 2",BR: HBO Signature HD
+http://bigenterprise.live:8080/07366617/45969898/1044101
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Signature HEVC" tvg-logo="http://xplatinmedia.com:8080/images/d3ec501f325429f6f8174ec6a9e11bd3.png" group-title="LATIN 2",BR: HBO Signature HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044102
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Signature SD" tvg-logo="http://xplatinmedia.com:8080/images/d3ec501f325429f6f8174ec6a9e11bd3.png" group-title="LATIN 2",BR: HBO Signature SD
+http://bigenterprise.live:8080/07366617/45969898/1044103
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Xtreme FHD" tvg-logo="http://xplatinmedia.com:8080/images/db8ce8fdd5ac9286197f6d5f14d1fb78.png" group-title="LATIN 2",BR: HBO Xtreme FHD
+http://bigenterprise.live:8080/07366617/45969898/1044104
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Xtreme HD" tvg-logo="http://xplatinmedia.com:8080/images/db8ce8fdd5ac9286197f6d5f14d1fb78.png" group-title="LATIN 2",BR: HBO Xtreme HD
+http://bigenterprise.live:8080/07366617/45969898/1044105
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Xtreme HEVC" tvg-logo="http://xplatinmedia.com:8080/images/db8ce8fdd5ac9286197f6d5f14d1fb78.png" group-title="LATIN 2",BR: HBO Xtreme HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044106
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO Xtreme SD" tvg-logo="http://xplatinmedia.com:8080/images/db8ce8fdd5ac9286197f6d5f14d1fb78.png" group-title="LATIN 2",BR: HBO Xtreme SD
+http://bigenterprise.live:8080/07366617/45969898/1044107
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO+ FHD" tvg-logo="http://xplatinmedia.com:8080/images/8dab71cd68e2a8b333112b2e3634d5e0.png" group-title="LATIN 2",BR: HBO+ FHD
+http://bigenterprise.live:8080/07366617/45969898/1044108
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO+ HD" tvg-logo="http://xplatinmedia.com:8080/images/8dab71cd68e2a8b333112b2e3634d5e0.png" group-title="LATIN 2",BR: HBO+ HD
+http://bigenterprise.live:8080/07366617/45969898/1044109
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO+ HEVC" tvg-logo="http://xplatinmedia.com:8080/images/8dab71cd68e2a8b333112b2e3634d5e0.png" group-title="LATIN 2",BR: HBO+ HEVC
+http://bigenterprise.live:8080/07366617/45969898/1044110
+#EXTINF:-1 tvg-id="" tvg-name="BR: HBO+ SD" tvg-logo="http://xplatinmedia.com:8080/images/8dab71cd68e2a8b333112b2e3634d5e0.png" group-title="LATIN 2",BR: HBO+ SD
+http://bigenterprise.live:8080/07366617/45969898/1044111
