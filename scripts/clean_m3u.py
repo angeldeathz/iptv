@@ -90,7 +90,7 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix"]):
+    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula"]):
         return "Peliculas"
     if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
         return "Peliculas"
@@ -120,7 +120,7 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Musica"
         
     # 9. Documentales
-    if any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses"]):
+    if clean_name_lower == "id" or any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses", "animal planet"]):
         return "Documentales"
     if any(g in original_group_lower for g in ["documentary", "documentales"]):
         return "Documentales"
