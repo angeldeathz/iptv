@@ -46,7 +46,7 @@ def clean_channel_name(display_name):
     name = re.sub(r'\s*[\(\[][^\)\]]*[\)\]]\s*', ' ', name)
     
     # Step 3: Remove country suffixes at the end of the name (e.g. " MX", " Brazil", " BR", " USA", " US", " CL", " Mexico")
-    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico)\b\s*$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico|AR)\b\s*$', '', name, flags=re.IGNORECASE)
     
     # Step 4: Remove resolution/quality keywords at the end of the name (e.g. FHD, HD, SD, HEVC, 1080p? etc.)
     name = re.sub(r'\b(?:FHD|HD|SD|HEVC|1080p?|720p?|576p?|480p?)\b\s*$', '', name, flags=re.IGNORECASE)
