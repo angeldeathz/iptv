@@ -87,11 +87,11 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob"]) or original_group_lower in ["animation", "kids", "infantiles"]:
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob", "disney jr"]) or original_group_lower in ["animation", "kids", "infantiles"]:
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax"]):
+    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax", "fmh movies", "film&arts"]):
         return "Peliculas"
     if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
         return "Peliculas"
@@ -238,7 +238,11 @@ def clean_m3u(file_path):
         clean_name = casing_map[raw_clean_name.lower()]
         
         # Determine taxonomy category
-        category = classify_channel(clean_name, attrs.get('group-title'), attrs.get('tvg-id'))
+        forced_group = attrs.pop('editorial-group', None)
+        if forced_group in GROUP_ORDER:
+            category = forced_group
+        else:
+            category = classify_channel(clean_name, attrs.get('group-title'), attrs.get('tvg-id'))
         
         # Remove tvg-id (not needed for IPTV TV apps)
         attrs.pop('tvg-id', None)
