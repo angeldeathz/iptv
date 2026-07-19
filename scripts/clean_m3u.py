@@ -46,13 +46,25 @@ def clean_channel_name(display_name):
     # Step 2: Remove brackets/parentheses and their content (e.g., "(1080p)", "[Geo-blocked]", "(Event Only)")
     name = re.sub(r'\s*[\(\[][^\)\]]*[\)\]]\s*', ' ', name)
     
-    # Step 3: Remove country suffixes at the end of the name (e.g. " MX", " Brazil", " BR", " USA", " US", " CL", " Mexico")
-    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico|AR)\b\s*$', '', name, flags=re.IGNORECASE)
+    # Step 3: Remove lineup number prefixes (e.g. "89 - DW Español")
+    name = re.sub(r'^\d+\s*-\s*', '', name)
+
+    # Step 4: Remove pipe-delimited metadata (e.g. "| HD | Santiago", "| HD | Alt.")
+    name = re.sub(
+        r'\s*\|\s*(?:HD|SD|FHD|HEVC|1080p?|720p?|576p?|480p?|Santiago|Alt\.?)\s*',
+        ' ',
+        name,
+        flags=re.IGNORECASE,
+    )
+    name = re.sub(r'\s*\|+\s*', ' ', name)
+
+    # Step 5: Remove country suffixes at the end of the name (e.g. " MX", " PE", " CO")
+    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico|AR|PE|CO)\b\s*$', '', name, flags=re.IGNORECASE)
     
-    # Step 4: Remove resolution/quality keywords at the end of the name (e.g. FHD, HD, SD, HEVC, 1080p? etc.)
+    # Step 6: Remove resolution/quality keywords at the end of the name (e.g. FHD, HD, SD, HEVC, 1080p? etc.)
     name = re.sub(r'\b(?:FHD|HD|SD|HEVC|1080p?|720p?|576p?|480p?)\b\s*$', '', name, flags=re.IGNORECASE)
     
-    # Step 5: Normalize spaces
+    # Step 7: Normalize spaces
     name = re.sub(r'\s+', ' ', name).strip()
     
     return name
@@ -77,7 +89,7 @@ def classify_channel(clean_name, original_group, tvg_id):
     tvg_id_lower = (tvg_id or "").lower()
     
     # 1. Nacionales
-    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina", "ucv"]):
+    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina", "ucv", "24 horas", "chv", "ntv"]) or clean_name_lower in ("13c",):
         return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales"]:
         return "Nacionales"
@@ -87,17 +99,17 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob", "disney jr"]) or original_group_lower in ["animation", "kids", "infantiles"]:
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "etc tv", "kids", "esponja", "spongebob", "disney jr", "tooncast"]) or original_group_lower in ["animation", "kids", "infantiles"]:
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax", "fmh movies", "film&arts"]):
+    if any(w in clean_name_lower for w in ["hbo", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa"]):
         return "Peliculas"
     if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
         return "Peliculas"
         
     # 5. Series
-    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin"]):
+    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1"]):
         return "Series"
     if any(g in original_group_lower for g in ["series", "entertainment", "comedy"]):
         return "Series"
@@ -125,6 +137,10 @@ def classify_channel(clean_name, original_group, tvg_id):
         return "Documentales"
     if any(g in original_group_lower for g in ["documentary", "documentales"]):
         return "Documentales"
+
+    # 11. Internacionales
+    if any(w in clean_name_lower for w in ["dw español", "dw espanol"]):
+        return "Internacionales"
         
     return "Variedades"
 
