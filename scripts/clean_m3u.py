@@ -216,6 +216,17 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Internacionales"
     if "atres series" in clean_name_lower:
         return "Internacionales"
+    if "max anime" in clean_name_lower:
+        return "Infantiles"
+    internacionales_channels = [
+        "global", "gagsnetwork", "awe", "axs tv", "syfy", "tv land", "tv one",
+        "vh1", "vice tv", "we tv", "hallmark mystery", "scares by shudder",
+        "sun channel", "kanald", "concert channel", "caracol", "tve",
+    ]
+    if any(w in clean_name_lower for w in internacionales_channels):
+        return "Internacionales"
+    if original_group_lower == "internacionales":
+        return "Internacionales"
     if "omusica" in clean_name_lower:
         return "Musica"
     if "mtv" in clean_name_lower:
@@ -338,6 +349,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         "01. tv abierta": "Nacionales",
         "general": "Nacionales",
         "latin 3": "Nacionales",
+        "internacionales": "Internacionales",
     }
     if original_group_lower in group_fallback:
         return group_fallback[original_group_lower]
