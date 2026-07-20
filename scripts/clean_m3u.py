@@ -59,7 +59,13 @@ def clean_channel_name(display_name):
     name = re.sub(r'\s*\|+\s*', ' ', name)
 
     # Step 5: Remove country suffixes at the end of the name (e.g. " MX", " PE", " CO")
-    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico|AR|PE|CO)\b\s*$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\b(?:MX|Brazil|BR|USA|US|CL|Mexico|AR|PE|CO|SUR|Oeste)\b\s*$', '', name, flags=re.IGNORECASE)
+
+    # Step 5b: Remove regional / market descriptors from channel names
+    name = re.sub(r'\bLatin\s+America\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\bLatinoamerica(?:no|na)?\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\bInternational\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'^Pluto\s+TV\s+', '', name, flags=re.IGNORECASE)
     
     # Step 6: Remove resolution/quality keywords at the end of the name (e.g. FHD, HD, SD, HEVC, 1080p? etc.)
     name = re.sub(r'\b(?:FHD|HD|SD|HEVC|1080p?|720p?|576p?|480p?)\b\s*$', '', name, flags=re.IGNORECASE)
@@ -82,6 +88,27 @@ def clean_channel_name(display_name):
         "bbc series": "BBC Series",
         "tnt sports premium": "TNT Sports Premium",
         "dw español": "DW Español",
+        "omusica tv": "OMusica TV",
+        "warner channel": "Warner Channel",
+        "star channel": "Star Channel",
+        "cinemax": "Cinemax",
+        "hbo mundi": "HBO Mundi",
+        "hbo pop": "HBO Pop",
+        "hbo xtreme": "HBO Xtreme",
+        "hbo signature": "HBO Signature",
+        "hbo family": "HBO Family",
+        "hbo+": "HBO+",
+        "hbo 2": "HBO 2",
+        "hbo oeste": "HBO Oeste",
+        "espn premium": "ESPN Premium",
+        "documentary+": "Documentary+",
+        "nickelodeon en español": "Nickelodeon",
+        "nickelodeon teen": "Nickelodeon Teen",
+        "nickelodeon toons": "Nickelodeon Toons",
+        "comedy central en español": "Comedy Central",
+        "mtv en español": "MTV",
+        "cine terror": "Cine Terror",
+        "bob esponja pantalones cuadrados": "Bob Esponja",
     }
     name = overrides.get(name.lower(), name)
     
@@ -133,20 +160,6 @@ def get_13_suborder(name_lower):
     return 7
 
 
-def is_pluto_tv(clean_name, url="", logo=""):
-    """Detect Pluto TV channels by name, logo host, or stream URL."""
-    name_lower = clean_name.lower()
-    url_lower = (url or "").lower()
-    logo_lower = (logo or "").lower()
-    if "pluto tv" in name_lower or name_lower.startswith("pluto "):
-        return True
-    if "pluto.tv" in logo_lower:
-        return True
-    if "jmp2.uk/plu-" in url_lower:
-        return True
-    return False
-
-
 def get_nacional_lineup_key(clean_name):
     """Operator-style order for Chilean open-TV nationals."""
     n = clean_name.lower()
@@ -159,6 +172,8 @@ def get_nacional_lineup_key(clean_name):
     if n == "chv" or "chilevision" in n:
         return (1, 0, clean_name.lower())
 
+    if n == "ntv":
+        return (2, 2, clean_name.lower())
     if re.search(r"\btvn\b", n) or n.startswith("tvn"):
         if "nostalgia" in n:
             return (90, 0, clean_name.lower())
@@ -170,6 +185,8 @@ def get_nacional_lineup_key(clean_name):
 
     if "ucv" in n:
         return (4, 0, clean_name.lower())
+    if "la red" in n:
+        return (4, 1, clean_name.lower())
 
     if "zona latina" in n:
         return (5, 0, clean_name.lower())
@@ -179,7 +196,7 @@ def get_nacional_lineup_key(clean_name):
     if n in ("tv+", "tv plus"):
         return (6, 0, clean_name.lower())
 
-    if any(w in n for w in ["bio bio tv", "la red", "vision latina", "24 horas", "ntv", "etc tv"]):
+    if any(w in n for w in ["bio bio tv", "24 horas"]):
         return (7, 0, clean_name.lower())
 
     return (8, 0, clean_name.lower())
@@ -190,9 +207,29 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     original_group_lower = (original_group or "").lower()
     tvg_id_lower = (tvg_id or "").lower()
 
-    # Pluto TV -> dedicated group (before content-based categories)
-    if is_pluto_tv(clean_name, url, logo):
-        return "Pluto Tv"
+    # Editorial overrides (explicit category assignments)
+    if "etc tv" in clean_name_lower or clean_name_lower == "etc":
+        return "Infantiles"
+    if "vision latina" in clean_name_lower:
+        return "Internacionales"
+    if "rcn novelas" in clean_name_lower:
+        return "Internacionales"
+    if "atres series" in clean_name_lower:
+        return "Internacionales"
+    if "omusica" in clean_name_lower:
+        return "Musica"
+    if "mtv" in clean_name_lower:
+        return "Musica"
+    if "ent family" in clean_name_lower:
+        return "Peliculas"
+    if "adult swim" in clean_name_lower:
+        return "Infantiles"
+    if "documentary+" in clean_name_lower or clean_name_lower == "documentary+":
+        return "Documentales"
+    if "star channel" in clean_name_lower:
+        return "Series"
+    if "warner channel" in clean_name_lower:
+        return "Series"
 
     # EnerGeek -> Infantiles
     if "energeek" in clean_name_lower:
@@ -215,7 +252,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Noticias"
 
     # 1. Nacionales
-    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "vision latina", "ucv", "24 horas", "chv", "ntv"]):
+    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "ucv", "24 horas", "chv", "ntv"]):
         return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales", "01. tv abierta"]:
         return "Nacionales"
@@ -225,17 +262,19 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "ent family"]):
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel"]):
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "cine", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa", "multipremier"]):
+    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa", "multipremier", "sony"]):
         return "Peliculas"
-    if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "classic"]):
+    if re.search(r"\bcine\b", clean_name_lower) and "documentary" not in clean_name_lower:
+        return "Peliculas"
+    if any(g in original_group_lower for g in ["movies", "cine", "peliculas", "películas", "classic", "pack hbo"]):
         return "Peliculas"
         
     # 5. Series
-    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "adult swim", "atres series", "distrito comedia", "bbc series", "las estrellas"]):
+    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "distrito comedia", "bbc series", "las estrellas"]):
         return "Series"
     if any(g in original_group_lower for g in ["series", "entertainment", "comedy", "entretenimiento premium", "03. entretenimiento"]):
         return "Series"
@@ -243,7 +282,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     # 6. Deportes
     if any(w in clean_name_lower for w in ["sports", "espn", "fox sport", "fox sports", "directv sports", "stadium", "goltv", "gol tv", "tnt sports"]):
         return "Deportes"
-    if any(g in original_group_lower for g in ["deportes", "sports", "⚽ deportes 🏆"]):
+    if any(g in original_group_lower for g in ["deportes", "sports", "espn", "⚽ deportes 🏆"]):
         return "Deportes"
         
     # 7. Noticias
@@ -267,7 +306,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Documentales"
 
     # 11. Internacionales
-    if "tve" in clean_name_lower:
+    if any(w in clean_name_lower for w in ["tve", "rcn novelas", "atres series", "vision latina"]):
         return "Internacionales"
 
     # Fallback to original group hints from source playlists
@@ -315,7 +354,6 @@ GROUP_ORDER = [
     "Noticias",
     "Musica",
     "Documentales",
-    "Pluto Tv",
     "Variedades",
     "Internacionales"
 ]
