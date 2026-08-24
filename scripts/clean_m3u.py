@@ -208,6 +208,8 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     tvg_id_lower = (tvg_id or "").lower()
 
     # Editorial overrides (explicit category assignments)
+    if clean_name_lower == "global":
+        return "Peliculas"
     if "etc tv" in clean_name_lower or clean_name_lower == "etc":
         return "Infantiles"
     if "vision latina" in clean_name_lower:
@@ -219,7 +221,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     if "max anime" in clean_name_lower:
         return "Infantiles"
     internacionales_channels = [
-        "global", "gagsnetwork", "awe", "axs tv", "syfy", "tv land", "tv one",
+        "gagsnetwork", "awe", "axs tv", "syfy", "tv land", "tv one",
         "vh1", "vice tv", "we tv", "hallmark mystery", "scares by shudder",
         "sun channel", "kanald", "concert channel", "caracol", "tve",
     ]
