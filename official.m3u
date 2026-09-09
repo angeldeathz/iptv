@@ -480,5 +480,11 @@ https://stream.making.cl/memfs/ee909361-73e9-4e74-8391-5f1b0b8006c2.m3u8
 #EXTINF:-1 group-title="-",Cooperativa
 https://unlimited1-cl-isp.dps.live/coopetv/coopetv.smil/playlist.m3u8?PlaylistM3UCL&PlaylistM3UCL
 
-#EXTINF:-1 tvg-id="790" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="01. TV Abierta",4 | La Red
-https://alba-cl-lared-lared.stream.mediatiquestream.com/index.m3u8
+#EXTINF:-1 tvg-id="1153" tvg-logo="https://cdn.m3u.cl/logo/1153_CHV_Noticias.png" group-title="01. TV Abierta",12 | CHV Noticias
+https://mdstrm.com/live-stream-playlist/6491ced935a5833c47dd7f41.m3u8
+
+#EXTINF:-1 tvg-id="1732" tvg-logo="https://cdn.m3u.cl/logo/1732_CNN_Chile.png" group-title="02. Noticias",21 | CNN Chile
+https://redirector.rudo.video/hls-video/lvcl5/cnn/cnn.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="415" tvg-logo="https://cdn.m3u.cl/logo/415_Puranoticia.png" group-title="02. Noticias",22 | Puranoticia
+https://pnt.janusmedia.tv/hls/pnt.m3u8
