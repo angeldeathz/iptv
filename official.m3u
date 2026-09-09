@@ -523,11 +523,12 @@ http://190.108.83.69:8000/play/a0c9/index.m3u8
 #EXTINF:-1 tvg-logo="https://tse1.mm.bing.net/th/id/OIP.cz3dWFe5nyXVR46GXjNdegHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" group-title="CINE Y SERIES", Grjngo
 https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="DBZ" tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/c9295bf92a8c87f865116be60daa6a31509823c8c11da3fcbc5a6dc589ff9da2.jpg" group-title="24/7", DRAGON BALL Z
-http://lamtv.site:8080/27116808/zs2Bbc7Zu5/160081.ts
-
-#EXTINF:-1 tvg-id="" tvg-name="ELCHAVO" tvg-logo="https://m.media-amazon.com/images/M/MV5BNmRkZmIxMmYtMjY5Ny00MzA3LWI1MmYtZDg3MjBhZDFlZTY5XkEyXkFqcGc@._V1_.jpg" group-title="24/7", EL CHAVO
-http://miotv.cc:8080/RESTREAMCRUEL/T7464747/400767
 
 #EXTINF:-1 tvg-id="" tvg-name="CAPITAN TSUBASA" tvg-logo="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/f18cc7982a918da38a3b8e47c4ab6295.jpg" group-title="24/7", CAPITAN TSUBASA
 https://jmp2.uk/plu-64666345f3f5b1000882bfb4.m3u8
+
+#EXTINF:-1 tvg-id="HISTORY" tvg-name="HISTORY" tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="CULTURA Y ENTRETENIMIENTO", HISTORY
+http://181.78.20.119:58002/play/a03d/index.m3u8
+
+#EXTINF:-1 tvg-id="HISTORY 2" tvg-name="HISTORY 2" tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="CULTURA Y ENTRETENIMIENTO", HISTORY 2
+http://181.78.8.199:8000/play/a0ag/index.m3u8
