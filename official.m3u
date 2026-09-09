@@ -433,16 +433,80 @@ http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 
 
 # ===== NUEVOS =====
-#EXTINF:-1 tvg-id="318699" tvg-name="Chilevisión" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/94/Emblema_de_Chilevisi%C3%B3n.png" group-title="Chile", Chilevisión
-http://181.188.216.5:18000/play/a0ii/index.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-id="321487" tvg-name="Cinecanal • Chile" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e6/CinecanalLA.png" group-title="Chile", Cinecanal • Chile
-http://181.188.216.5:18000/play/a0co/index.m3u8?PlaylistM3UCL
+#EXTINF:-1 group-title="-",Disney Channel
+http://38.44.109.41:8003/play/a00e/index.m3u8
+#EXTINF:-1 group-title="-",Eurochannel
+http://38.44.109.41:8003/play/a02j/index.m3u8
+#EXTINF:-1 group-title="-",FX
+http://38.44.109.41:8003/play/a01g/index.m3u8
+#EXTINF:-1 group-title="-",Food Network
+http://38.44.109.41:8003/play/a03f/index.m3u8
+#EXTINF:-1 group-title="-",Gamavision
+http://38.44.109.41:8003/play/a02n/index.m3u8
 
-#EXTINF:-1 tvg-id="318351" tvg-name="FX • Chile" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/FX_International_logo.svg" group-title="Chile", FX • Chile
-http://181.188.216.5:18000/play/a0gm/index.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-id="320743" tvg-name="Funbox" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/FunBox_TV_logo.svg/800px-FunBox_TV_logo.svg.png" group-title="Chile", Funbox
-http://38.7.204.232:8010/play/a2bx/index.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-id="318520" tvg-name="HBO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20201126030141" group-title="Chile", HBO
-http://181.188.216.5:18000/play/a0hm/index.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-id="309980" tvg-name="La Red" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Chile", La Red
-https://alba-cl-lared-lared.stream.mediatiquestream.com/original.m3u8?PlaylistM3UCL
+
+#EXTINF:-1 tvg-id="UCVTV.cl" tvg-logo="https://i.imgur.com/2VL4Pts.png" group-title="Chile",UCV Televisión
+https://unlimited1-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVN.cl" tvg-logo="https://i.imgur.com/WoN1dai.png" group-title="Chile",TVN
+https://sktv-forwarders.7m.pl/get.php?x=TVN
+
+#EXTINF:-1 tvg-id="24Horas.cl" tvg-logo="https://i.imgur.com/0rF6Kub.png" group-title="Noticias",24 horas
+https://mdstrm.com/live-stream-playlist/57d1a22064f5d85712b20dab.m3u8
+
+#EXTINF:-1 tvg-id="NTV.cl" tvg-logo="https://i.imgur.com/pt2Kj1A.png" group-title="Infantil",NTV
+https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
+
+#EXTINF:-1 tvg-id="TVChile.cl" tvg-logo="https://i.imgur.com/yCL888l.png" group-title="Chile",TV Chile
+https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
+
+#EXTINF:-1 tvg-id="Canal13.cl" tvg-logo="https://i.imgur.com/JIo1HBs.png" group-title="Chile",Canal 13
+https://sktv-forwarders.7m.pl/get.php?x=Canal13
+
+#EXTINF:-1 tvg-id="TVPlus.cl" tvg-logo="https://i.imgur.com/NtuZIEJ.png" group-title="Chile",TV+
+https://mdstrm.com/live-stream-playlist/5c0e8b19e4c87f3f2d3e6a59.m3u8
+
+#EXTINF:-1 tvg-id="ChileVision.cl" tvg-logo="https://i.imgur.com/2Pu8yXf.png" group-title="Chile",Chilevisión
+https://sktv-forwarders.7m.pl/get.php?x=Chilevision
+
+#EXTINF:-1 tvg-id="UChileTV.cl" tvg-logo="https://i.imgur.com/mF2W8Uh.png" group-title="Chile",UChile TV
+https://unlimited1-us.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="T13.cl" tvg-logo="https://i.imgur.com/3CEijac.png" group-title="Noticias",T13 en vivo
+https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="13E.cl" tvg-logo="https://i.imgur.com/1vTno0m.png" group-title="Entretenimiento",13 Entretención
+https://origin.dpsgo.com/ssai/event/BBp0VeP6QtOOlH8nu3bWTg/master.m3u8
+
+#EXTINF:-1 tvg-id="13C.cl" tvg-logo="https://i.imgur.com/49QkKWv.png" group-title="Cultura",13 Cultura
+https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
+
+#EXTINF:-1 tvg-id="13P.cl" tvg-logo="https://i.imgur.com/YwDFNxs.png" group-title="Entretenimiento",13 Prime
+https://origin.dpsgo.com/ssai/event/p4mmBxEzSmKAxY1GusOHrw/master.m3u8
+
+#EXTINF:-1 tvg-id="13Kids.cl" tvg-logo="https://i.imgur.com/m6y9AMe.png" group-title="Infantil",13 Kids
+https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8
+
+#EXTINF:-1 tvg-id="13Realities.cl" tvg-logo="https://i.imgur.com/p1Qpljw.png" group-title="Entretenimiento",13 Realities
+https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
+
+#EXTINF:-1 tvg-id="13T.cl" tvg-logo="https://i.imgur.com/aJMBnse.png" group-title="Entretenimiento",13 Teleseries
+https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+
+#EXTINF:-1 tvg-id="ElPinguinoTV.cl" tvg-logo="https://i.imgur.com/ohXs2NV.png" group-title="Regional",El Pingüino TV
+https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/pinguinotv/pinguinotv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="UCL.uy" tvg-logo="https://i.imgur.com/JxqVHPX.png" group-title="Internacional",UCL
+https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/ucl/ucl.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="D13.cl" tvg-logo="https://i.imgur.com/GRpxoPf.png" group-title="Deportes",Deportes13
+https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/13d/13d.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TVN3.cl" tvg-logo="https://i.imgur.com/84lWqRi.png" group-title="Nostalgia",TVN 3
+https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
+
+#EXTINF:-1 tvg-id="CHVNoticias.cl" tvg-logo="https://i.imgur.com/Qh6d0A9.png" group-title="Noticias",Chilevisión Noticias
+https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/chvn/chvn.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SoloTV.cl" tvg-logo="https://i.imgur.com/Ad2ueID.png" group-title="Chile",SoloTV
+https://stream.making.cl/memfs/ee909361-73e9-4e74-8391-5f1b0b8006c2.m3u8
