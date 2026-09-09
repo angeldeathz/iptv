@@ -109,6 +109,31 @@ def clean_channel_name(display_name):
         "mtv en español": "MTV",
         "cine terror": "Cine Terror",
         "bob esponja pantalones cuadrados": "Bob Esponja",
+        "ucv televisión": "UCV TV",
+        "tv chile": "TV Chile",
+        "uchile tv": "UChile TV",
+        "13 kids": "13 Kids",
+        "13 realities": "13 Realities",
+        "el pingüino tv": "El Pinguino TV",
+        "solotv": "Solo TV",
+        "cooperativa": "Cooperativa",
+        "cnn chile": "CNN Chile",
+        "fmh movies": "FMH Movies",
+        "sony channel": "Sony Channel",
+        "sony accion": "Sony Accion",
+        "sony cine": "Sony Cine",
+        "capitan tsubasa": "Capitan Tsubasa",
+        "one piece 24/7": "One Piece 24/7",
+        "mega 2": "Mega 2",
+        "simpsons latino 24/7": "Simpsons Latino 24/7",
+        "eurochannel": "Eurochannel",
+        "grjngo": "Grjngo",
+        "rewind": "Rewind",
+        "west": "West",
+        "paramount": "Paramount",
+        "multipremier": "Multipremier",
+        "history": "History",
+        "history 2": "History 2",
     }
     name = overrides.get(name.lower(), name)
     
@@ -134,7 +159,7 @@ def is_13_channel(name_lower):
         return True
     if re.search(r"\bcanal\s*13\b", name_lower):
         return True
-    if re.search(r"\b13\s+(internacional|cultura|teleseries|pop|festival)\b", name_lower):
+    if re.search(r"\b13\s+(internacional|cultura|teleseries|pop|festival|realities)\b", name_lower):
         return True
     if re.search(r"^13\s", name_lower):
         return True
@@ -157,28 +182,37 @@ def get_13_suborder(name_lower):
         return 5
     if "13 pop" in name_lower:
         return 6
-    return 7
+    if "13 realities" in name_lower:
+        return 7
+    return 8
 
 
 def get_nacional_lineup_key(clean_name):
     """Operator-style order for Chilean open-TV nationals."""
     n = clean_name.lower()
 
-    if re.search(r"\bmega\b", n) and not re.search(r"señal|senal", n):
+    if n == "mega 2":
+        return (0, 1, clean_name.lower())
+    if re.search(r"\bmega\b", n) and not re.search(r"señal|senal|mega 2", n):
         return (0, 0, clean_name.lower())
     if re.search(r"\bmega\b", n):
-        return (0, 1, clean_name.lower())
+        return (0, 2, clean_name.lower())
 
     if n == "chv" or "chilevision" in n:
         return (1, 0, clean_name.lower())
 
+    if "tv chile" in n:
+        return (2, 1, clean_name.lower())
     if n == "ntv":
-        return (2, 2, clean_name.lower())
+        return (2, 4, clean_name.lower())
     if re.search(r"\btvn\b", n) or n.startswith("tvn"):
         if "nostalgia" in n:
             return (90, 0, clean_name.lower())
-        sub = 0 if n == "tvn" else 1
-        return (2, sub, clean_name.lower())
+        if n == "tvn":
+            return (2, 0, clean_name.lower())
+        return (2, 3, clean_name.lower())
+    if "uchile" in n:
+        return (2, 5, clean_name.lower())
 
     if is_13_channel(n):
         return (3, get_13_suborder(n), clean_name.lower())
@@ -208,7 +242,13 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     tvg_id_lower = (tvg_id or "").lower()
 
     # Editorial overrides (explicit category assignments)
-    if clean_name_lower == "global":
+    if "13 kids" in clean_name_lower:
+        return "Infantiles"
+    if clean_name_lower in ("cooperativa", "cnn chile"):
+        return "Noticias"
+    if clean_name_lower in ("solotv", "solo tv", "el pinguino tv"):
+        return "Regionales"
+    if clean_name_lower in ("global", "fx"):
         return "Peliculas"
     if "etc tv" in clean_name_lower or clean_name_lower == "etc":
         return "Infantiles"
@@ -265,7 +305,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Noticias"
 
     # 1. Nacionales
-    if any(w in clean_name_lower for w in ["chilevision", "tvn", "bio bio tv", "la red", "mega", "ucv", "24 horas", "chv", "ntv"]):
+    if any(w in clean_name_lower for w in ["chilevision", "tvn", "tv chile", "uchile", "bio bio tv", "la red", "mega", "ucv", "24 horas", "chv", "ntv"]):
         return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales", "01. tv abierta"]:
         return "Nacionales"
@@ -275,11 +315,11 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel"]):
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "capitan tsubasa", "one piece", "simpsons"]):
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa", "multipremier", "sony"]):
+    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa", "multipremier", "sony", "eurochannel", "grjngo", "rewind", "west"]):
         return "Peliculas"
     if re.search(r"\bcine\b", clean_name_lower) and "documentary" not in clean_name_lower:
         return "Peliculas"
