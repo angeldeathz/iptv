@@ -437,3 +437,12 @@ http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 http://181.188.216.5:18000/play/a0ii/index.m3u8?PlaylistM3UCL
 #EXTINF:-1 tvg-id="321487" tvg-name="Cinecanal • Chile" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e6/CinecanalLA.png" group-title="Chile", Cinecanal • Chile
 http://181.188.216.5:18000/play/a0co/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1 tvg-id="318351" tvg-name="FX • Chile" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/FX_International_logo.svg" group-title="Chile", FX • Chile
+http://181.188.216.5:18000/play/a0gm/index.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-id="320743" tvg-name="Funbox" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/FunBox_TV_logo.svg/800px-FunBox_TV_logo.svg.png" group-title="Chile", Funbox
+http://38.7.204.232:8010/play/a2bx/index.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-id="318520" tvg-name="HBO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20201126030141" group-title="Chile", HBO
+http://181.188.216.5:18000/play/a0hm/index.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-id="309980" tvg-name="La Red" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Chile", La Red
+https://alba-cl-lared-lared.stream.mediatiquestream.com/original.m3u8?PlaylistM3UCL
