@@ -240,3 +240,35 @@ Tras editar `official.m3u`, ejecuta el script de limpieza para reordenar categor
 ```bash
 python3 scripts/clean_m3u.py
 ```
+
+### Verificar canales caidos (NO FIABLE AÚN)
+
+Para revisar qué fuentes de la lista no responden, usa `scripts/check_channels.py`. El script consulta cada URL de la playlist y muestra solo los canales que fallan, con su **ID** y **nombre** (`tvg-name`).
+
+Desde la raíz del repositorio:
+
+```bash
+python3 scripts/check_channels.py
+```
+
+Opciones utiles:
+
+| Opcion | Descripcion |
+|--------|-------------|
+| `python3 scripts/check_channels.py ruta/a/lista.m3u` | Revisar otra playlist |
+| `--timeout 15` | Aumentar el tiempo de espera por canal (segundos) |
+| `--workers 20` | Mas revisiones en paralelo |
+| `--all` | Mostrar todos los canales, incluidos los que funcionan |
+| `--json` | Salida en JSON (util para automatizaciones) |
+| `--limit 10` | Probar solo los primeros N canales |
+
+Ejemplo de salida cuando hay canales caidos:
+
+```text
+Canales caidos (2 de 199):
+
+  ID  42  42 Discovery Kids 1  — HTTP 403
+  ID  55  55 Capitan Tsubasa 1  — Timeout
+```
+
+El comando termina con codigo `0` si todos los canales responden, o `1` si hay al menos uno caido.

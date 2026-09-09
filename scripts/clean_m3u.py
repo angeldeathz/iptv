@@ -262,11 +262,84 @@ def get_hbo_suborder(name_lower):
     return 99
 
 
+def get_peliculas_known_suborder(name_lower):
+    """Operator-style block for well-known movie channels after HBO."""
+    if name_lower == "cinecanal":
+        return (1, 0)
+    if name_lower == "space":
+        return (2, 0)
+    if name_lower == "cinemax":
+        return (3, 0)
+    if name_lower == "paramount":
+        return (4, 0)
+    if name_lower == "star channel":
+        return (5, 0)
+    if name_lower == "fx" or name_lower.startswith("fx "):
+        return (6, 0)
+    if name_lower == "dhe" or name_lower.startswith("dhe "):
+        return (7, 0)
+    if name_lower == "amc" or name_lower.startswith("amc "):
+        return (8, 0)
+    if name_lower == "amc series" or name_lower.startswith("amc series "):
+        return (8, 1)
+    if name_lower == "cine sony" or name_lower.startswith("cine sony "):
+        return (9, 0)
+    if name_lower == "sony channel" or name_lower.startswith("sony channel "):
+        return (9, 2)
+    if name_lower == "sony accion" or name_lower.startswith("sony accion "):
+        return (9, 3)
+    if name_lower == "sony cine" or name_lower.startswith("sony cine "):
+        return (9, 4)
+    if name_lower == "sony" or name_lower.startswith("sony "):
+        return (9, 1)
+    if name_lower == "studio universal" or name_lower.startswith("studio universal "):
+        return (10, 0)
+    if name_lower == "tcm" or name_lower.startswith("tcm "):
+        return (11, 0)
+    if name_lower == "europa" or name_lower.startswith("europa "):
+        return (12, 0)
+    if name_lower == "film&arts" or name_lower.startswith("film&arts "):
+        return (13, 0)
+    if name_lower == "golden edge" or name_lower.startswith("golden edge "):
+        return (14, 0)
+    if name_lower == "golden" or name_lower.startswith("golden "):
+        return (14, 1)
+    if name_lower == "multipremier" or name_lower.startswith("multipremier "):
+        return (15, 0)
+    if name_lower == "mc" or name_lower.startswith("mc "):
+        return (16, 0)
+    return (99, 0)
+
+
 def get_peliculas_lineup_key(clean_name, first_occurrence_idx, hbo_anchor_idx):
     n = clean_name.lower()
     if "hbo" in n:
         return (hbo_anchor_idx, get_hbo_suborder(n), n)
-    return (first_occurrence_idx, 0, n)
+    known = get_peliculas_known_suborder(n)
+    if known[0] != 99:
+        return (hbo_anchor_idx + 1, known[0], known[1], n)
+    return (hbo_anchor_idx + 2, first_occurrence_idx, 0, n)
+
+
+def get_noticias_lineup_key(clean_name):
+    n = clean_name.lower()
+    if n == "cnn en español" or n == "cnn en espanol":
+        return (0, 0, n)
+    if n == "cnn chile":
+        return (0, 1, n)
+    if "cnn" in n:
+        return (0, 2, n)
+    if "estrella news" in n:
+        return (1, 0, n)
+    if "puranoticia" in n:
+        return (2, 0, n)
+    if n == "cooperativa":
+        return (3, 0, n)
+    if "dw español" in n or "dw espanol" in n:
+        return (4, 0, n)
+    if n == "ucl":
+        return (5, 0, n)
+    return (9, 0, n)
 
 
 def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
@@ -277,10 +350,12 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     # Editorial overrides (explicit category assignments)
     if "13 kids" in clean_name_lower:
         return "Infantiles"
-    if clean_name_lower in ("cooperativa", "cnn chile"):
+    if clean_name_lower in ("cooperativa", "cnn chile", "ucl"):
         return "Noticias"
-    if clean_name_lower == "ucl":
-        return "Internacionales"
+    if clean_name_lower in ("dw español", "dw espanol"):
+        return "Noticias"
+    if clean_name_lower == "amc series" or clean_name_lower.startswith("amc series "):
+        return "Peliculas"
     if clean_name_lower in ("solotv", "solo tv", "el pinguino tv"):
         return "Regionales"
     if clean_name_lower in ("global", "fx", "star channel"):
@@ -386,7 +461,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Musica"
         
     # 9. Documentales
-    if clean_name_lower == "id" or any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses", "animal planet", "dw español", "dw espanol"]):
+    if clean_name_lower == "id" or any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses", "animal planet"]):
         return "Documentales"
     if any(g in original_group_lower for g in ["documentary", "documentales", "documentales y cultura"]):
         return "Documentales"
@@ -591,6 +666,8 @@ def clean_m3u(file_path):
             lineup_key = get_peliculas_lineup_key(
                 e['clean_name'], first_occurrence[e['clean_name']], hbo_anchor_idx
             )
+        elif e['category'] == 'Noticias':
+            lineup_key = get_noticias_lineup_key(e['clean_name'])
         else:
             lineup_key = (first_occurrence[e['clean_name']], 0, e['clean_name'].lower())
         q_score = e['quality_score']
