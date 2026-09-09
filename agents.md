@@ -7,11 +7,11 @@ Este repositorio contiene una lista de canales de televisión curada en el archi
 1. **Orden del Lineup (Categorías)**: Los canales deben ordenarse según grupos temáticos estandarizados (de mayor a menor prioridad):
    1. `Nacionales`
    2. `Regionales`
-   3. `Infantiles`
-   4. `Peliculas`
-   5. `Series`
-   6. `Deportes`
-   7. `Noticias`
+   3. `Noticias`
+   4. `Infantiles`
+   5. `Peliculas`
+   6. `Series`
+   7. `Deportes`
    8. `Musica`
    9. `Documentales`
    10. `Variedades`
