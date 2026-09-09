@@ -517,3 +517,22 @@ http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 #EXTINF:-1 group-title="Internacionales" tvg-name="161 TVE 1",161 TVE 1
 http://181.143.237.211:85/tsfile/live/1088_1.m3u8?key=txiptv&playlive=1&authid=0
 
+
+
+#EXTINF:-1 tvg-ID="" tvg-name="HBO XTREME"  group-title="CINEMA PREMIUM",HBO XTREME
+http://198.245.53.172:8970/live/QFFB6QJ9D6CX/QPG9XA4T294F/97.ts
+
+#EXTINF:-1 tvg-id="60" tvg-name="HBO XTREME" tvg-logo="https://i.imgur.com/hbo-xtreme-logo.png" group-title="💎 PREMIUM",HBO XTREME
+http://181.189.244.253:8000/play/a01c/index.m3u8
+
+#EXTINF:-1 tvg-id="30" tvg-name="National Geographic" tvg-logo="https://i.imgur.com/natgeo-logo.png" group-title=" DOCUMENTALES",National Geographic
+http://179.51.136.19:8000/play/a1bd/index.m3u8
+
+#EXTINF:-1 tvg-id="47" tvg-name="TNT" tvg-logo="https://i.imgur.com/tnt-logo.png" group-title="🎬 CANALES PELÍCULAS",TNT
+http://179.51.136.19:8000/play/a1af/index.m3u8
+
+#EXTINF:-1 tvg-id="37" tvg-name="Cine Canal" tvg-logo="https://i.imgur.com/cinecanal-logo.png" group-title=" CANALES PELÍCULAS",Cine Canal
+http://181.119.86.68:8000/play/b036/index.m3u8
+
+#EXTINF:-1 tvg-id="38" tvg-name="Cine Max" tvg-logo="https://i.imgur.com/cinemax-logo.png" group-title=" CANALES PELÍCULAS",Cine Max
+http://181.78.201.70:8000/play/a0hi/index.m3u8
