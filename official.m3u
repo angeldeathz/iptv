@@ -477,22 +477,8 @@ https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
 #EXTINF:-1 tvg-id="SoloTV.cl" tvg-logo="https://i.imgur.com/Ad2ueID.png" group-title="Chile",SoloTV
 https://stream.making.cl/memfs/ee909361-73e9-4e74-8391-5f1b0b8006c2.m3u8
 
-
-#EXTINF:-1 group-title="-",City TV
-http://181.188.216.5:18000/play/a0o1/index.m3u8
-#EXTINF:-1 group-title="-",Clover
-http://181.188.216.5:18000/play/a0eu/index.m3u8
-#EXTINF:-1 group-title="-",CNN Chile
-http://38.7.204.232:8010/play/a2gn/index.m3u8
-
 #EXTINF:-1 group-title="-",Cooperativa
 https://unlimited1-cl-isp.dps.live/coopetv/coopetv.smil/playlist.m3u8?PlaylistM3UCL&PlaylistM3UCL
-#EXTINF:-1 group-title="-",DHE HD
-http://181.188.216.5:18000/play/a0d1/index.m3u8
 
-#EXTINF:-1 group-title="-",Disney Channel
-http://181.188.216.5:18000/play/a0pd/index.m3u8
-#EXTINF:-1 group-title="-",Disney HD
-http://181.188.216.5:18000/play/a0ot/index.m3u8
-#EXTINF:-1 group-title="-",Disney HD
-http://181.188.216.5:18000/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="790" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="01. TV Abierta",4 | La Red
+https://alba-cl-lared-lared.stream.mediatiquestream.com/index.m3u8
