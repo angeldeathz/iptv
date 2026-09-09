@@ -6,7 +6,10 @@ from typing import Optional
 
 from clean_m3u import parse_extinf
 
-TARGET = "/home/angeldeathz/iptv/official.m3u"
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+TARGET = os.path.join(script_dir, "..", "official.m3u")
 
 DELETE_IDS = {
     5, 13, 14, 15, 21,

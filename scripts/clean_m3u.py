@@ -560,7 +560,9 @@ def clean_m3u(file_path):
     )
 
 if __name__ == "__main__":
-    target = "/home/angeldeathz/iptv/official.m3u"
+    # Default to official.m3u in the parent directory of this script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    target = os.path.join(script_dir, "..", "official.m3u")
     if len(sys.argv) > 1:
         target = sys.argv[1]
     clean_m3u(target)

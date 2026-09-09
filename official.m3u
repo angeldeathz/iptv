@@ -3,41 +3,41 @@
 
 # ===== Nacionales =====
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="1 Mega 1",1 Mega 1
-https://iptv.bitred.cl/mega/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="2 CHV 1",2 CHV 1
-http://38.44.109.41:8003/play/a0h0/index.m3u8
-
-#EXTINF:-1 tvg-name="3 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales",3 TVN 1
-http://bigenterprise.live:8080/07366617/45969898/1044457
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9LEiQPJ.png" group-title="Nacionales" tvg-name="4 TVN3 1",4 TVN3 1
-https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales" tvg-name="5 NTV 1",5 NTV 1
-https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="6 Canal 13 1",6 Canal 13 1
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="1 Canal 13 1",1 Canal 13 1
 http://45.162.193.35/CANAL13_HD/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1054_T13.png" group-title="Nacionales" tvg-name="7 T13 1",7 T13 1
-https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Ymk6j5o.png" group-title="Nacionales" tvg-name="8 13 Festival 1",8 13 Festival 1
-https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Zfe2f5j.png" group-title="Nacionales" tvg-name="9 13 Cultura 1",9 13 Cultura 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Zfe2f5j.png" group-title="Nacionales" tvg-name="2 13 Cultura 1",2 13 Cultura 1
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1032_13_Teleseries.png" group-title="Nacionales" tvg-name="10 13 Teleseries 1",10 13 Teleseries 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="3 CHV 1",3 CHV 1
+http://38.44.109.41:8003/play/a0h0/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="4 Mega 1",4 Mega 1
+https://iptv.bitred.cl/mega/index.m3u8
+
+#EXTINF:-1 tvg-name="5 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales",5 TVN 1
+http://bigenterprise.live:8080/07366617/45969898/1044457
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales" tvg-name="6 NTV 1",6 NTV 1
+https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9LEiQPJ.png" group-title="Nacionales" tvg-name="7 TVN3 1",7 TVN3 1
+https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales" tvg-name="8 UCV TV 1",8 UCV TV 1
+https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1054_T13.png" group-title="Nacionales" tvg-name="9 T13 1",9 T13 1
+https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Ymk6j5o.png" group-title="Nacionales" tvg-name="10 13 Festival 1",10 13 Festival 1
+https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1032_13_Teleseries.png" group-title="Nacionales" tvg-name="11 13 Teleseries 1",11 13 Teleseries 1
 https://redirector.dps.live/hls/13t/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1033_13_Pop.png" group-title="Nacionales" tvg-name="11 13 Pop 1",11 13 Pop 1
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1033_13_Pop.png" group-title="Nacionales" tvg-name="12 13 Pop 1",12 13 Pop 1
 https://redirector.dps.live/hls/13pop/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales" tvg-name="12 UCV TV 1",12 UCV TV 1
-https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/458_TV_.png" group-title="Nacionales" tvg-name="13 TV+ 1",13 TV+ 1
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/tvmas/tvmas.smil/playlist.m3u8
@@ -430,3 +430,23 @@ https://cdn-cloudfront.us-east-1.prod.ingest.aws-infra.dacast.com/live/c1804a4c-
 #EXTINF:-1 group-title="Internacionales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" tvg-name="133 ATRES Series 1",133 ATRES Series 1
 http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 
+
+
+# ===== NUEVOS =====
+#EXTINF:-1 tvg-id="ChileVision.cl" tvg-name="CHV ᴴᴰ" tvg-logo="https://raw.githubusercontent.com/serviciovodflex/nxt-guide/main/img/chile/chv-hd.png" group-title="CHILE",CHV ᴴᴰ
+http://nxt.plus:8080/pepespain/rytryrtytrytry/752
+
+#EXTINF:-1 tvg-id="Canal.Claro.(CCLARO).do" tvg-name="CANAL CLARO" tvg-logo="https://www.lyngsat.com/logo/tv/cc/claro_tv_cl.png" group-title="CENTROAMÉRICA",CANAL CLARO
+http://nxt.plus:8080/pepespain/rytryrtytrytry/201927
+
+#EXTINF:-1 tvg-id="DisneyChannelCenter.us" tvg-name="DISNEY CHANNEL" tvg-logo="https://raw.githubusercontent.com/serviciovodflex/nxt-guide/main/img/infantil/disney-channel.png" group-title="INFANTIL",DISNEY CHANNEL
+http://nxt.plus:8080/pepespain/rytryrtytrytry/187886
+
+#EXTINF:-1 tvg-id="DisneyChannelCenter.us" tvg-name="DISNEY CHANNEL ᴴᴰ" tvg-logo="https://raw.githubusercontent.com/serviciovodflex/nxt-guide/main/img/infantil/disney-channel-hd.png" group-title="INFANTIL",DISNEY CHANNEL ᴴᴰ
+http://nxt.plus:8080/pepespain/rytryrtytrytry/16908
+
+#EXTINF:-1 tvg-id="DISNEY CHANNEL" tvg-name="DISNEY CHANNEL" tvg-logo="https://i.ibb.co/Lk9TH8f/disney-channel.png" group-title="INFANTILES",DISNEY CHANNEL HD
+http://live1.cl.cdn.lla.vtrplay.com/disneyhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
+
+#EXTINF:-1 tvg-id="DISNEY CHANNEL" tvg-name="DISNEY CHANNEL" tvg-logo="https://i.ibb.co/Lk9TH8f/disney-channel.png" group-title="INFANTILES",DISNEY CHANNEL HD (2)
+http://38.41.8.1:8000/play/a00q
