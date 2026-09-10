@@ -354,6 +354,54 @@ def get_peliculas_lineup_key(clean_name, first_occurrence_idx, hbo_anchor_idx):
     return (hbo_anchor_idx + 2, first_occurrence_idx, 0, n)
 
 
+def get_documentales_lineup_key(clean_name):
+    """Operator-style order for documentary channels (Discovery block, then History, lifestyle)."""
+    n = clean_name.lower()
+
+    if n == "discovery channel":
+        return (0, 0, n)
+    if n == "discovery theater":
+        return (0, 1, n)
+    if n == "discovery turbo":
+        return (0, 2, n)
+    if n == "discovery world":
+        return (0, 3, n)
+
+    if n == "discovery science":
+        return (1, 0, n)
+    if n == "discovery sci":
+        return (1, 1, n)
+    if n == "animal planet":
+        return (1, 2, n)
+    if n == "natgeo":
+        return (1, 3, n)
+
+    if n == "id":
+        return (2, 0, n)
+    if n == "discovery id":
+        return (2, 1, n)
+
+    if n == "history":
+        return (3, 0, n)
+    if n == "history 2":
+        return (3, 1, n)
+    if n == "history channel":
+        return (3, 2, n)
+
+    if n == "discovery home and health":
+        return (4, 0, n)
+    if n == "home and health":
+        return (4, 1, n)
+    if n == "hgtv discovery hgtv":
+        return (4, 2, n)
+    if n == "hgtv":
+        return (4, 3, n)
+    if n == "tlc":
+        return (4, 4, n)
+
+    return (9, 0, n)
+
+
 def get_noticias_lineup_key(clean_name):
     n = clean_name.lower()
     if n == "cnn en español" or n == "cnn en espanol":
@@ -855,6 +903,8 @@ def clean_m3u(file_path):
             )
         elif e['category'] == 'Noticias':
             lineup_key = get_noticias_lineup_key(e['clean_name'])
+        elif e['category'] == 'Documentales':
+            lineup_key = get_documentales_lineup_key(e['clean_name'])
         else:
             lineup_key = (first_occurrence[e['clean_name']], 0, e['clean_name'].lower())
         q_score = e['quality_score']
