@@ -42,6 +42,11 @@ def sanitize_display_name(name):
 
 def normalize_url(url):
     url = url.strip()
+    # Repair repeated .m3u8 suffixes from earlier buggy normalize runs
+    url = re.sub(r'(\.m3u8)+(?=\?|$)', '.m3u8', url, flags=re.IGNORECASE)
+    path = url.split('?', 1)[0]
+    if path.lower().endswith('.m3u8'):
+        return url
     # Xtream-style /play/<id> URLs without extension break many IPTV TV apps
     if re.search(r'/play/[^/?]+$', url):
         url += '.m3u8'
