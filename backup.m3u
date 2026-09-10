@@ -1,0 +1,8 @@
+#EXTM3U
+
+# Respaldo de canales cuando la señal principal en official.m3u deja de funcionar.
+
+# ===== Peliculas =====
+
+#EXTINF:-1 tvg-name="Star Channel 1" group-title="Peliculas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Star_Channel_2021.svg/320px-Star_Channel_2021.svg.png",Star Channel 1
+http://181.224.200.5:2277/play/a00z/index.m3u8

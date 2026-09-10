@@ -233,6 +233,30 @@ Importa `official.m3u` en tu reproductor IPTV (VLC, TiviMate, IPTV Smarters, etc
 | 198 | VICE TV | 1 |
 | 199 | We TV | 1 |
 
+## Listas de origen
+
+Varios de los servidores que alimentan esta playlist corren Astra y publican su catálogo completo en `/playlist.m3u`. Sirven para buscar reemplazos cuando un canal se cae, o para comparar señales del mismo canal (por ejemplo, para encontrar una fuente en 1080p o sin audio en inglés).
+
+| Servidor | Lista M3U | Canales publicados |
+|----------|-----------|--------------------|
+| `38.44.109.41:8003` | http://38.44.109.41:8003/playlist.m3u | 249 |
+| `190.60.40.165:1010` | http://190.60.40.165:1010/playlist.m3u | 193 |
+| `38.226.49.253:8000` | http://38.226.49.253:8000/playlist.m3u | 142 |
+| `190.61.42.218:9000` | http://190.61.42.218:9000/playlist.m3u | 117 |
+| `187.102.211.240:9001` | http://187.102.211.240:9001/playlist.m3u | 117 |
+| `177.74.205.189:8000` | http://177.74.205.189:8000/playlist.m3u | 67 |
+| `181.224.200.5:2277` | http://181.224.200.5:2277/playlist.m3u | 47 |
+
+Conteos verificados en septiembre de 2026. `138.121.15.230:9002` responde pero devuelve el catálogo vacío.
+
+Para buscar un canal concreto en todos ellos:
+
+```bash
+curl -s http://38.44.109.41:8003/playlist.m3u | grep -i -A1 "star channel"
+```
+
+El resto de los servidores que aparecen en `official.m3u` usan el mismo patrón de URL (`<host>/playlist.m3u`), pero no están verificados. Antes de adoptar una fuente nueva conviene comprobar resolución y pistas de audio con `ffprobe`, ya que algunas señales traen audio doble (inglés primero) y varios reproductores de Smart TV no permiten cambiar de pista.
+
 ## Mantenimiento
 
 Tras editar `official.m3u`, ejecuta el script de limpieza para reordenar categorías, recalcular IDs y eliminar URLs duplicadas:
