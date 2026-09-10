@@ -534,7 +534,12 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     if "13 kids" in clean_name_lower:
         return "Infantiles"
     if "via x esports" in clean_name_lower or "via x esport" in clean_name_lower:
-        return "Deportes"
+        return "Infantiles"
+    if clean_name_lower == "hei" or clean_name_lower.startswith("hei "):
+        return "Musica"
+    if clean_name_lower == "tve" or clean_name_lower.startswith("tve "):
+        if "1088_1" in url:
+            return "Musica"
     if clean_name_lower.startswith("e!") or clean_name_lower == "e":
         return "Series"
     if clean_name_lower == "amc" or (
