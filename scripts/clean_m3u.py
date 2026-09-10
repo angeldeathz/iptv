@@ -27,10 +27,26 @@ def parse_extinf(extinf_line):
     for key, val in re.findall(pattern, attrs_part):
         attrs[key] = val
         
-    duration_match = re.match(r'^#EXTINF:\s*(-?\d+)', attrs_part)
-    duration = duration_match.group(1) if duration_match else "-1"
-    
-    return duration, attrs, display_name
+    return attrs, display_name
+
+
+def sanitize_display_name(name):
+    """Replace characters that break XML-based IPTV parsers on smart TVs."""
+    name = name.replace('&', 'and')
+    # Preserve 24/7; normalize other slashes (e.g. "HGTV / Discovery")
+    name = re.sub(r'(?<!\d)/(?!\d)', ' ', name)
+    name = re.sub(r'\b24\s+7\b', '24/7', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def normalize_url(url):
+    url = url.strip()
+    # Xtream-style /play/<id> URLs without extension break many IPTV TV apps
+    if re.search(r'/play/[^/?]+$', url):
+        url += '.m3u8'
+    return url
+
 
 def clean_channel_name(display_name):
     # If the name is already in the formatted structure (e.g. "1 Chilevision 1"), extract the middle part first
@@ -137,9 +153,18 @@ def clean_channel_name(display_name):
         "max2": "MAX2",
         "maxcine comedy": "MAXCINE Comedy",
         "ucl": "UCL",
+        "film&arts": "Film and Arts",
+        "film and arts": "Film and Arts",
+        "a&e": "A and E",
+        "a and e": "A and E",
+        "discovery h&h": "Discovery Home and Health",
+        "discovery home and health": "Discovery Home and Health",
+        "home & health": "Home and Health",
+        "home and health": "Home and Health",
     }
     name = overrides.get(name.lower(), name)
-    
+    name = sanitize_display_name(name)
+
     return name
 
 def get_quality_score(display_name):
@@ -298,7 +323,7 @@ def get_peliculas_known_suborder(name_lower):
         return (11, 0)
     if name_lower == "europa" or name_lower.startswith("europa "):
         return (12, 0)
-    if name_lower == "film&arts" or name_lower.startswith("film&arts "):
+    if name_lower == "film and arts" or name_lower.startswith("film and arts "):
         return (13, 0)
     if name_lower == "golden edge" or name_lower.startswith("golden edge "):
         return (14, 0)
@@ -427,7 +452,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film&arts", "europa", "multipremier", "sony", "eurochannel", "grjngo", "rewind", "west"]):
+    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film and arts", "europa", "multipremier", "sony", "eurochannel", "grjngo", "rewind", "west"]):
         return "Peliculas"
     if re.search(r"\bcine\b", clean_name_lower) and "documentary" not in clean_name_lower:
         return "Peliculas"
@@ -435,7 +460,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Peliculas"
         
     # 5. Series
-    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a&e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "distrito comedia", "bbc series", "las estrellas"]):
+    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a and e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "distrito comedia", "bbc series", "las estrellas"]):
         return "Series"
     if any(g in original_group_lower for g in ["series", "entertainment", "comedy", "entretenimiento premium", "03. entretenimiento"]):
         return "Series"
@@ -526,8 +551,16 @@ def get_group_priority(group_name):
     except ValueError:
         return len(GROUP_ORDER)
 
-def normalize_url(url):
-    return url.strip()
+def apply_channel_options(clean_name, options):
+    """Inject player hints for channels that need non-default behavior."""
+    opts = list(options)
+    if clean_name.lower() != "star channel":
+        return opts
+    audio_line = "#EXTVLCOPT:audio-language=spa,es"
+    if not any("audio-language" in opt.lower() for opt in opts):
+        opts.append(audio_line)
+    return opts
+
 
 def deduplicate_by_url(entries):
     """Keep one entry per unique URL, preferring higher quality then earliest appearance."""
@@ -604,16 +637,17 @@ def clean_m3u(file_path):
     # Gather casing mapping based on first occurrence
     casing_map = {}
     for entry in entries:
-        _, _, display_name = parse_extinf(entry['extinf'])
+        _, display_name = parse_extinf(entry['extinf'])
         clean_name = clean_channel_name(display_name)
         clean_name_lower = clean_name.lower()
         if clean_name_lower not in casing_map:
             casing_map[clean_name_lower] = clean_name
 
     for entry in entries:
-        duration, attrs, display_name = parse_extinf(entry['extinf'])
+        attrs, display_name = parse_extinf(entry['extinf'])
         raw_clean_name = clean_channel_name(display_name)
         clean_name = casing_map[raw_clean_name.lower()]
+        entry['url'] = normalize_url(entry['url'])
         
         # Determine taxonomy category
         forced_group = attrs.pop('editorial-group', None)
@@ -633,11 +667,14 @@ def clean_m3u(file_path):
         # Set category as group-title
         attrs['group-title'] = category
         
-        entry['duration'] = duration
+        entry['duration'] = '-1'
         entry['attrs'] = attrs
         entry['clean_name'] = clean_name
         entry['quality_score'] = get_quality_score(display_name)
         entry['category'] = category
+        if clean_name.lower() == "star channel":
+            entry['attrs']['tvg-language'] = "spa"
+        entry['options'] = apply_channel_options(clean_name, entry['options'])
 
     entries, removed_duplicates = deduplicate_by_url(entries)
 

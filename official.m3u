@@ -228,11 +228,11 @@ http://187.102.211.240:9001/play/a03e/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="71 HBO 1",71 HBO 1
 http://187.102.211.240:9001/play/a01z/index.m3u8?hls
 
-#EXTINF:0 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="72 HBO 2",72 HBO 2
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="72 HBO 2",72 HBO 2
 http://45.5.118.152:8000/play/a0bm/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Peliculas" tvg-name="73 HBO 2 1",73 HBO 2 1
-http://45.167.1.137:8000/play/a00i
+http://45.167.1.137:8000/play/a00i.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwW06hJWmRtoAPThSha_H5O-pqWQyZeOJd5qTTWBngloXimEqZPy4ze8zaUt1VAHHjrJkF003hHOw1g8UV_I8d-o-ZByuW5NIyz_8L9jfqk4WWSthingqiUQbw6EOnkFCpa5BAJyZlNo/s0/HBO-Mundi.png" group-title="Peliculas" tvg-name="74 HBO Mundi 1",74 HBO Mundi 1
 http://187.102.211.240:9001/play/a04r/index.m3u8?hls
@@ -240,7 +240,7 @@ http://187.102.211.240:9001/play/a04r/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" tvg-name="75 HBO Signature 1",75 HBO Signature 1
 http://187.102.211.240:9001/play/a04q/index.m3u8?hls
 
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" tvg-name="76 HBO+ 1",76 HBO+ 1
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" tvg-name="76 HBO+ 1",76 HBO+ 1
 http://45.5.116.228:8000/play/a0l4/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="77 HBO Pop 1",77 HBO Pop 1
@@ -270,10 +270,12 @@ http://187.102.211.240:9001/play/a01b/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="85 Paramount 1",85 Paramount 1
 http://181.224.200.5:2277/play/a0df/index.m3u8
 
-#EXTINF:-1 tvg-name="86 Star Channel 1" group-title="Peliculas",86 Star Channel 1
+#EXTINF:-1 tvg-name="86 Star Channel 1" group-title="Peliculas" tvg-language="spa",86 Star Channel 1
+#EXTVLCOPT:audio-language=spa,es
 http://190.61.42.218:9000/play/a07t/index.m3u8
 
-#EXTINF:-1 group-title="Peliculas" tvg-name="87 Star Channel 2",87 Star Channel 2
+#EXTINF:-1 group-title="Peliculas" tvg-name="87 Star Channel 2" tvg-language="spa",87 Star Channel 2
+#EXTVLCOPT:audio-language=spa,es
 http://187.102.211.240:9001/play/a02j/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" group-title="Peliculas" tvg-name="88 FX 1",88 FX 1
@@ -327,11 +329,11 @@ http://177.74.205.189:8000/play/a01e/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/europa-europa-ar.png" group-title="Peliculas" tvg-name="104 EUROPA 1",104 EUROPA 1
 http://187.102.211.240:9001/play/a045/index.m3u8?hls
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Peliculas" tvg-name="105 Film&Arts 1",105 Film&Arts 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Peliculas" tvg-name="105 Film and Arts 1",105 Film and Arts 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcomedy/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Peliculas" tvg-name="106 Film&Arts 2",106 Film&Arts 2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Peliculas" tvg-name="106 Film and Arts 2",106 Film and Arts 2
 http://187.102.211.240:9001/play/a03o/index.m3u8?hls
 
 #EXTINF:-1 group-title="Peliculas" tvg-name="107 Golden Edge 1",107 Golden Edge 1
@@ -347,7 +349,7 @@ http://187.102.211.240:9001/play/a03c/index.m3u8?hls
 http://190.108.90.142:8000/play/a017/index.m3u8
 
 #EXTINF:-1 tvg-name="111 MC 1" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas",111 MC 1
-http://45.167.1.137:8000/play/a02t
+http://45.167.1.137:8000/play/a02t.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-name="112 ENT Family 1" group-title="Peliculas",112 ENT Family 1
 https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/tracks-v1a1/mono.ts.m3u8
@@ -395,7 +397,7 @@ http://190.217.66.92:8000/play/a0oh/index.m3u8?hls
 http://181.224.255.210:8001/play/a0lp/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="126 AXN 1",126 AXN 1
-http://45.167.1.138:8000/play/a04s
+http://45.167.1.138:8000/play/a04s.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="127 AXN 2",127 AXN 2
 http://187.102.211.240:9001/play/a01u/index.m3u8?hls
@@ -433,10 +435,10 @@ http://205.235.6.29:8000/play/a0z5/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HctHhLL.png" group-title="Series" tvg-name="138 BBC Series 1",138 BBC Series 1
 https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="139 A&E 1",139 A&E 1
+#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="139 A and E 1",139 A and E 1
 http://38.226.49.253:8000/play/a05u/index.m3u8?hls
 
-#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="140 A&E 2",140 A&E 2
+#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="140 A and E 2",140 A and E 2
 http://187.102.211.240:9001/play/a01m/index.m3u8?hls
 
 #EXTINF:-1 group-title="Series" tvg-name="141 Comedy central 1",141 Comedy central 1
@@ -458,7 +460,7 @@ http://190.60.40.165:1010/play/a0nt/index.m3u8
 http://190.60.40.165:1010/play/a0jx/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/espn-ar.png" group-title="Deportes" tvg-name="146 ESPN 4",146 ESPN 4
-http://45.167.1.137:8000/play/a06a
+http://45.167.1.137:8000/play/a06a.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pypul3s.png" group-title="Deportes" tvg-name="147 GolTV 1",147 GolTV 1
 http://177.234.249.178:8888/GOLTV/index.m3u8
@@ -476,7 +478,7 @@ http://190.60.40.165:1010/play/4gph/index.m3u8
 http://190.60.40.165:1010/play/a0jm/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/espn3.png" group-title="Deportes" tvg-name="152 ESPN 3 3",152 ESPN 3 3
-http://45.167.1.137:8000/play/a06c
+http://45.167.1.137:8000/play/a06c.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/250px-ESPN_4_logo.svg.png" group-title="Deportes" tvg-name="153 ESPN 4 1",153 ESPN 4 1
 http://187.102.211.240:9001/play/a01x/index.m3u8?hls
@@ -497,7 +499,7 @@ http://190.60.40.165:1010/play/a0jg/index.m3u8
 http://170.247.204.9:8000/play/a0cc/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="http://mundo2.pro:80/images/4d26ed5201c19cba093c70c98482645c.png" group-title="Deportes" tvg-name="159 ESPN 5 4",159 ESPN 5 4
-http://45.167.1.137:8000/play/a04u
+http://45.167.1.137:8000/play/a04u.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" tvg-name="160 ESPN 5 5",160 ESPN 5 5
 http://187.102.211.240:9001/play/a05w/index.m3u8?hls
@@ -509,7 +511,7 @@ http://190.60.40.165:1010/play/a0ja/index.m3u8
 http://170.247.204.9:8000/play/a0ac/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="http://mundo2.pro:80/images/c8fca111cbfec65dd8a2b89ebb7201d6.png" group-title="Deportes" tvg-name="163 ESPN 6 3",163 ESPN 6 3
-http://45.167.1.137:8000/play/a06d
+http://45.167.1.137:8000/play/a06d.m3u8.m3u8.m3u8.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ESPN_6_logo.svg/1280px-ESPN_6_logo.svg.png" group-title="Deportes" tvg-name="164 ESPN 6 4",164 ESPN 6 4
 http://187.102.211.240:9001/play/a01h/index.m3u8?hls
@@ -565,7 +567,7 @@ http://187.102.211.240:9001/play/a03f/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="179 History 2 3",179 History 2 3
 http://38.225.116.4:22000/play/a00y/index.m3u8
 
-#EXTINF:-1 tvg-name="180 HGTV / Discovery HGTV 1" group-title="Documentales",180 HGTV / Discovery HGTV 1
+#EXTINF:-1 tvg-name="180 HGTV Discovery HGTV 1" group-title="Documentales",180 HGTV Discovery HGTV 1
 http://190.61.42.218:9000/play/a05p/index.m3u8
 
 #EXTINF:-1 tvg-name="181 Discovery Science 1" group-title="Documentales",181 Discovery Science 1
@@ -592,7 +594,7 @@ http://187.102.211.240:9001/play/a01l/index.m3u8?hls
 #EXTINF:-1 group-title="Documentales" tvg-name="188 Discovery ID 1",188 Discovery ID 1
 http://187.102.211.240:9001/play/a01v/index.m3u8?hls
 
-#EXTINF:-1 group-title="Documentales" tvg-name="189 Discovery H&H 1",189 Discovery H&H 1
+#EXTINF:-1 group-title="Documentales" tvg-name="189 Discovery Home and Health 1",189 Discovery Home and Health 1
 http://187.102.211.240:9001/play/a00s/index.m3u8?hls
 
 #EXTINF:-1 group-title="Documentales" tvg-name="190 Discovery world 1",190 Discovery world 1
@@ -613,7 +615,7 @@ http://187.102.211.240:9001/play/a03i/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Variedades" tvg-name="194 E! 3",194 E! 3
 http://38.225.116.4:22000/play/a01a/index.m3u8
 
-#EXTINF:-1 group-title="Variedades" tvg-name="195 Home & Health 1",195 Home & Health 1
+#EXTINF:-1 group-title="Variedades" tvg-name="195 Home and Health 1",195 Home and Health 1
 http://181.224.200.5:2277/play/a00p/index.m3u8
 
 #EXTINF:-1 group-title="Variedades" tvg-name="196 El Gourmet 1",196 El Gourmet 1
