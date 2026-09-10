@@ -258,6 +258,10 @@ http://190.217.66.92:8000/play/a0pz/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png" group-title="Peliculas" tvg-name="80 HBO Xtreme 1",80 HBO Xtreme 1
 http://181.224.255.210:8001/play/a0oo/index.m3u8?hls
 
+#EXTINF:-1 group-title="-",HBO Xtreme HD
+http://38.44.109.41:8003/play/a0hi/index.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="81 HBO Family 1",81 HBO Family 1
 http://181.224.255.210:8001/play/a0nv/index.m3u8?hls
 
