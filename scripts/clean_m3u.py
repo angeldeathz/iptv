@@ -705,8 +705,18 @@ def get_group_priority(group_name):
     except ValueError:
         return len(GROUP_ORDER)
 
+def apply_channel_attrs(clean_name, attrs):
+    """Inject player-specific #EXTINF attributes for channels that need them."""
+    if clean_name.lower() != "star channel":
+        return attrs
+    # SS IPTV: first code in audio-track is the default track (ISO 639-2).
+    attrs["tvg-language"] = "spa"
+    attrs["audio-track"] = "spa,eng"
+    return attrs
+
+
 def apply_channel_options(clean_name, options):
-    """Inject player hints for channels that need non-default behavior."""
+    """Inject VLC hints for channels that need non-default behavior."""
     opts = list(options)
     if clean_name.lower() != "star channel":
         return opts
@@ -826,8 +836,7 @@ def clean_m3u(file_path):
         entry['clean_name'] = clean_name
         entry['quality_score'] = get_quality_score(display_name)
         entry['category'] = category
-        if clean_name.lower() == "star channel":
-            entry['attrs']['tvg-language'] = "spa"
+        entry['attrs'] = apply_channel_attrs(clean_name, entry['attrs'])
         entry['options'] = apply_channel_options(clean_name, entry['options'])
 
     resolve_missing_logos(entries)
