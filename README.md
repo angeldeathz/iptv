@@ -252,8 +252,20 @@ Conteos verificados en septiembre de 2026. `138.121.15.230:9002` responde pero d
 Para buscar un canal concreto en todos ellos:
 
 ```bash
-curl -s http://38.44.109.41:8003/playlist.m3u | grep -i -A1 "star channel"
+python3 scripts/search_sources.py "star channel"
 ```
+
+Opciones utiles:
+
+| Opcion | Descripcion |
+|--------|-------------|
+| `python3 scripts/search_sources.py "espn 2"` | Busqueda insensible a mayusculas en nombre, grupo y URL |
+| `--source 38.44.109.41:8003` | Limitar a una fuente (puede repetirse) |
+| `--regex "mega.*1080"` | Busqueda con expresion regular |
+| `--json` | Salida en JSON (util para automatizaciones) |
+| `--timeout 20` | Aumentar tiempo de espera por fuente |
+
+Marca `(nueva fuente)` o `EN LISTA -> ID …` segun la URL ya este en `official.m3u`. Tras elegir una fuente, edita la playlist y ejecuta `python3 scripts/clean_m3u.py`.
 
 El resto de los servidores que aparecen en `official.m3u` usan el mismo patrón de URL (`<host>/playlist.m3u`), pero no están verificados. Antes de adoptar una fuente nueva conviene comprobar resolución y pistas de audio con `ffprobe`, ya que algunas señales traen audio doble (inglés primero) y varios reproductores de Smart TV no permiten cambiar de pista.
 
