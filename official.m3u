@@ -297,19 +297,19 @@ http://187.102.211.240:9001/play/a03r/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDR02bhnjx7hyphenhyphen9sy4ErJx8PUT-WM5hP9axbkLjVFrxyJ1Qz9qxG0cIzbcBWazT6CxgQSrvMRKAOiNvlCY7kSEeG_tTpGNaBHTkHTzv6CdkOYRkCKrSgx3ULAHwijhlnl9vDK3FBpG6wJsvucp0-tif9g7_bbDYu4XQW3MN-Sxtg68OD5u1pWZVzng4xxg/s159/amc-series.png" group-title="Peliculas" tvg-name="94 AMC Series 3",94 AMC Series 3
 http://38.225.116.4:22000/play/a01b/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/bZWoDTg.png" group-title="Peliculas" tvg-name="95 Cine Sony 1",95 Cine Sony 1
-http://177.234.249.178:8888/SONY-MOVIES/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="96 SONY 1",96 SONY 1
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="95 SONY 1",95 SONY 1
 http://38.226.49.253:8000/play/a060/index.m3u8?hls
 
-#EXTINF:-1 tvg-name="97 Sony Channel 1" tvg-logo="https://assets-global.website-files.com/605a3cacba514a77ca2e6ab5/6065f6e153054c65152bddd6_sony.png" group-title="Peliculas",97 Sony Channel 1
+#EXTINF:-1 tvg-name="96 Sony Channel 1" tvg-logo="https://assets-global.website-files.com/605a3cacba514a77ca2e6ab5/6065f6e153054c65152bddd6_sony.png" group-title="Peliculas",96 Sony Channel 1
 http://45.167.2.101:8000/play/a0qc/index.m3u8
 
-#EXTINF:-1 tvg-name="98 Sony Accion 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVnwxAJAHsn8hbw_ZXGvugo4e4xC7iRcdqw&s" group-title="Peliculas",98 Sony Accion 1
+#EXTINF:-1 tvg-name="97 Sony Accion 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVnwxAJAHsn8hbw_ZXGvugo4e4xC7iRcdqw&s" group-title="Peliculas",97 Sony Accion 1
 https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-name="99 Sony Cine 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fb/Sony_Cine_2021_Logo.png/revision/latest?cb=20210222022500&path-prefix=es" group-title="Peliculas",99 Sony Cine 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bZWoDTg.png" group-title="Peliculas" tvg-name="98 Sony Cine 1",98 Sony Cine 1
+http://177.234.249.178:8888/SONY-MOVIES/index.m3u8
+
+#EXTINF:-1 tvg-name="99 Sony Cine 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fb/Sony_Cine_2021_Logo.png/revision/latest?cb=20210222022500&path-prefix=es" group-title="Peliculas",99 Sony Cine 2
 https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="100 Studio Universal 1",100 Studio Universal 1

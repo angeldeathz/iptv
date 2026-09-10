@@ -144,6 +144,7 @@ def clean_channel_name(display_name):
         "fmh movies": "FMH Movies",
         "sony channel": "Sony Channel",
         "sony accion": "Sony Accion",
+        "cine sony": "Sony Cine",
         "sony cine": "Sony Cine",
         "capitan tsubasa": "Capitan Tsubasa",
         "one piece 24/7": "One Piece 24/7",
@@ -315,8 +316,6 @@ def get_peliculas_known_suborder(name_lower):
         return (8, 0)
     if name_lower == "amc series" or name_lower.startswith("amc series "):
         return (8, 1)
-    if name_lower == "cine sony" or name_lower.startswith("cine sony "):
-        return (9, 0)
     if name_lower == "sony channel" or name_lower.startswith("sony channel "):
         return (9, 2)
     if name_lower == "sony accion" or name_lower.startswith("sony accion "):
