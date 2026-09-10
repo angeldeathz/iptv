@@ -367,6 +367,109 @@ def get_noticias_lineup_key(clean_name):
     return (9, 0, n)
 
 
+LOGO_LIBRARY = {
+    "via x esports": "https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es",
+    "cnn en español": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png",
+    "cnn internacional": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png",
+    "cooperativa": "https://cdn.m3u.cl/logo/1035_Cooperativa.png",
+    "bbc news": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/320px-BBC_News_2019.svg.png",
+    "disney channel": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/320px-2019_Disney_Channel_logo.svg.png",
+    "discovery kids": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2019_Discovery_Kids_logo.svg/320px-2019_Discovery_Kids_logo.svg.png",
+    "cartoonito": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cartoonito_-_Logo_2021.svg/320px-Cartoonito_-_Logo_2021.svg.png",
+    "adult swim": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Adult_Swim_2003_logo.svg/320px-Adult_Swim_2003_logo.svg.png",
+    "disney jr.": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg",
+    "nick jr": "https://i.imgur.com/E84jnP8.png",
+    "star channel": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Star_Channel_2021.svg/320px-Star_Channel_2021.svg.png",
+    "fx": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png",
+    "golden edge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Golden_Edge_logo.svg/320px-Golden_Edge_logo.svg.png",
+    "golden": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Golden_Edge_logo.svg/320px-Golden_Edge_logo.svg.png",
+    "ent family": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png",
+    "global": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Global_TV_%28Argentina%29_logo.svg/320px-Global_TV_%28Argentina%29_logo.svg.png",
+    "eurochannel": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Eurochannel_logo.svg/320px-Eurochannel_logo.svg.png",
+    "lifetime": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lifetime_2020_logo.svg/320px-Lifetime_2020_logo.svg.png",
+    "tnt novelas": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/TNT_Novelas_logo.svg/320px-TNT_Novelas_logo.svg.png",
+    "tnt series": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Series_logo.svg/320px-TNT_Series_logo.svg.png",
+    "las estrellas": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Las_Estrellas_logo.svg/320px-Las_Estrellas_logo.svg.png",
+    "comedy central": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Comedy_Central_2018.svg/320px-Comedy_Central_2018.svg.png",
+    "tnt sports premium": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Sports_logo.svg/320px-TNT_Sports_logo.svg.png",
+    "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",
+    "discovery channel": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/320px-Discovery_Channel_-_Logo_2019.svg.png",
+    "discovery theater": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/320px-Discovery_Channel_-_Logo_2019.svg.png",
+    "animal planet": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",
+    "hgtv discovery hgtv": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",
+    "hgtv": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",
+    "discovery science": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_logo.svg/320px-Discovery_Science_logo.svg.png",
+    "discovery turbo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Discovery_Turbo_logo.svg/320px-Discovery_Turbo_logo.svg.png",
+    "history channel": "https://i.imgur.com/J897iGL.jpg",
+    "discovery id": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",
+    "discovery home and health": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",
+    "home and health": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",
+    "discovery world": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Discovery_Channel_-_Logo_2019.svg/320px-Discovery_Channel_-_Logo_2019.svg.png",
+    "discovery sci": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_logo.svg/320px-Discovery_Science_logo.svg.png",
+    "el gourmet": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",
+    "tlc": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TLC_Logo_2016.svg/320px-TLC_Logo_2016.svg.png",
+    "tv nostalgia": "http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png",
+    "natgeo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Nat_Geo_Logo.svg/320px-Nat_Geo_Logo.svg.png",
+    "warner": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0",
+    "panamericana": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Panamericana_Televisi%C3%B3n_logo.svg/320px-Panamericana_Televisi%C3%B3n_logo.svg.png",
+    "france 24": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/France_24_logo.svg/320px-France_24_logo.svg.png",
+    "hola tv": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hola_TV_logo.svg/320px-Hola_TV_logo.svg.png",
+    "baby tv": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/BabyTV_logo.svg/320px-BabyTV_logo.svg.png",
+    "telemundo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/320px-Telemundo_logo_2018.svg.png",
+    "nuestra tele": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Nuestra_Tele_logo.svg/320px-Nuestra_Tele_logo.svg.png",
+    "daystar": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Daystar_TV_logo.svg/320px-Daystar_TV_logo.svg.png",
+    "cgtn": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/320px-CGTN.svg.png",
+    "tlnovelas": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tlnovelas_logo.svg/320px-Tlnovelas_logo.svg.png",
+    "htv": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HTV_%28Colombia%29_logo.svg/320px-HTV_%28Colombia%29_logo.svg.png",
+    "tnt": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/TNT_%28TV_channel%29_2015_logo.svg/320px-TNT_%28TV_channel%29_2015_logo.svg.png",
+    "universal channel": "https://i.imgur.com/jnjvR5f.png",
+    "hei": "https://cdn.m3u.cl/logo/1036_HEI.png",
+    "gagsnetwork": "https://i.imgur.com/VgYCskX.png",
+    "tve": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVE_logo.svg/320px-TVE_logo.svg.png",
+}
+
+
+def get_channel_base(clean_name):
+    """Strip trailing repetition index (e.g. 'Disney Channel 2' -> 'Disney Channel')."""
+    return re.sub(r"\s+\d+$", "", clean_name).strip()
+
+
+def resolve_missing_logos(entries):
+    """Fill missing tvg-logo from sibling variants or LOGO_LIBRARY."""
+    logos_by_base = {}
+    for entry in entries:
+        logo = entry["attrs"].get("tvg-logo", "")
+        if logo:
+            base = get_channel_base(entry["clean_name"]).lower()
+            logos_by_base.setdefault(base, logo)
+
+    for entry in entries:
+        if entry["attrs"].get("tvg-logo"):
+            continue
+
+        base = get_channel_base(entry["clean_name"]).lower()
+        clean_lower = entry["clean_name"].lower()
+
+        if base in logos_by_base:
+            entry["attrs"]["tvg-logo"] = logos_by_base[base]
+            continue
+
+        for known_base, logo in logos_by_base.items():
+            if known_base.startswith(base) or base.startswith(known_base):
+                entry["attrs"]["tvg-logo"] = logo
+                break
+        else:
+            if clean_lower in LOGO_LIBRARY:
+                entry["attrs"]["tvg-logo"] = LOGO_LIBRARY[clean_lower]
+            elif base in LOGO_LIBRARY:
+                entry["attrs"]["tvg-logo"] = LOGO_LIBRARY[base]
+            else:
+                for key, logo in LOGO_LIBRARY.items():
+                    if key in clean_lower:
+                        entry["attrs"]["tvg-logo"] = logo
+                        break
+
+
 def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     clean_name_lower = clean_name.lower()
     original_group_lower = (original_group or "").lower()
@@ -375,6 +478,57 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     # Editorial overrides (explicit category assignments)
     if "13 kids" in clean_name_lower:
         return "Infantiles"
+    if "via x esports" in clean_name_lower or "via x esport" in clean_name_lower:
+        return "Deportes"
+    if clean_name_lower.startswith("e!") or clean_name_lower == "e":
+        return "Series"
+    if clean_name_lower == "amc" or (
+        clean_name_lower.startswith("amc ") and "series" not in clean_name_lower
+    ):
+        return "Peliculas"
+    if any(w in clean_name_lower for w in ["home and health", "home & health", "hgtv", "tlc"]):
+        return "Documentales"
+    if any(w in clean_name_lower for w in ["natgeo", "nat geo"]):
+        return "Documentales"
+    if "warner" in clean_name_lower:
+        return "Series"
+    if "panamericana" in clean_name_lower:
+        return "Internacionales"
+    if "france 24" in clean_name_lower:
+        return "Noticias"
+    if "baby tv" in clean_name_lower or clean_name_lower == "babytv":
+        return "Infantiles"
+    if "telemundo" in clean_name_lower:
+        return "Series"
+    if "nuestra tele" in clean_name_lower:
+        return "Series"
+    if clean_name_lower.startswith("cgtn"):
+        return "Noticias"
+    if "tlnovelas" in clean_name_lower or "tl novelas" in clean_name_lower:
+        return "Series"
+    if clean_name_lower == "htv" or clean_name_lower.startswith("htv "):
+        return "Musica"
+    if clean_name_lower == "tnt" or (
+        clean_name_lower.startswith("tnt ")
+        and not any(x in clean_name_lower for x in ["sports", "novelas", "series"])
+    ):
+        return "Peliculas"
+    if "universal channel" in clean_name_lower:
+        return "Series"
+    if "bbc news" in clean_name_lower:
+        return "Noticias"
+    if clean_name_lower == "global" or clean_name_lower.startswith("global "):
+        return "Peliculas"
+    if "eurochannel" in clean_name_lower:
+        return "Peliculas"
+    if "golden" in clean_name_lower:
+        return "Peliculas"
+    if "comedy central" in clean_name_lower:
+        return "Series"
+    if "las estrellas" in clean_name_lower:
+        return "Series"
+    if "lifetime" in clean_name_lower:
+        return "Series"
     if clean_name_lower in ("cooperativa", "cnn chile", "ucl"):
         return "Noticias"
     if clean_name_lower in ("dw español", "dw espanol"):
@@ -448,11 +602,11 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "capitan tsubasa", "one piece", "simpsons"]):
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "capitan tsubasa", "one piece", "simpsons", "baby tv", "babytv"]):
         return "Infantiles"
         
     # 4. Peliculas
-    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "fmh movies", "film and arts", "europa", "multipremier", "sony", "eurochannel", "grjngo", "rewind", "west"]):
+    if any(w in clean_name_lower for w in ["hbo", "cinecanal", "dhe", "space", "paramount", "paramount channel", "studio universal", "universal premier", "universal cinema", "showtime", "artflix", "golden", "de pelicula", "tcm", "cinemax", "amc", "fmh movies", "film and arts", "europa", "multipremier", "sony", "eurochannel", "grjngo", "rewind", "west"]):
         return "Peliculas"
     if re.search(r"\bcine\b", clean_name_lower) and "documentary" not in clean_name_lower:
         return "Peliculas"
@@ -460,7 +614,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Peliculas"
         
     # 5. Series
-    if any(w in clean_name_lower for w in ["universal tv", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "paramount network", "series", "comedy central", "a and e", "pop tv", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "distrito comedia", "bbc series", "las estrellas"]):
+    if any(w in clean_name_lower for w in ["universal tv", "universal channel", "universal crime", "universal comedy", "universal reality", "sony entertainment", "axn", "fx", "star channel", "warner channel", "warner", "paramount network", "series", "comedy central", "a and e", "pop tv", "e!", "e! latin", "lifetime", "usa network", "syfy", "vh1", "tnt novelas", "tnt series", "distrito comedia", "bbc series", "las estrellas", "telemundo", "nuestra tele", "tlnovelas", "tl novelas"]):
         return "Series"
     if any(g in original_group_lower for g in ["series", "entertainment", "comedy", "entretenimiento premium", "03. entretenimiento"]):
         return "Series"
@@ -472,13 +626,13 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Deportes"
         
     # 7. Noticias
-    if any(w in clean_name_lower for w in ["cnn", "noticias", "news", "estrella news", "abc news"]):
+    if any(w in clean_name_lower for w in ["cnn", "noticias", "news", "estrella news", "abc news", "france 24", "cgtn", "bbc news"]):
         return "Noticias"
     if "news" in original_group_lower:
         return "Noticias"
         
     # 8. Musica
-    if any(w in clean_name_lower for w in ["mtv", "music", "musica"]) or (
+    if any(w in clean_name_lower for w in ["mtv", "music", "musica", "htv"]) or (
         "festival" in clean_name_lower and not is_13_channel(clean_name_lower)
     ):
         return "Musica"
@@ -486,13 +640,13 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Musica"
         
     # 9. Documentales
-    if clean_name_lower == "id" or any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "national geographic", "documentary", "archivos forenses", "animal planet"]):
+    if clean_name_lower == "id" or any(w in clean_name_lower for w in ["history", "discovery", "nat geo", "natgeo", "national geographic", "documentary", "archivos forenses", "animal planet", "hgtv", "tlc", "home and health"]):
         return "Documentales"
     if any(g in original_group_lower for g in ["documentary", "documentales", "documentales y cultura"]):
         return "Documentales"
 
     # 11. Internacionales
-    if any(w in clean_name_lower for w in ["tve", "rcn novelas", "atres series", "vision latina"]):
+    if any(w in clean_name_lower for w in ["tve", "rcn novelas", "atres series", "vision latina", "panamericana"]):
         return "Internacionales"
 
     # Fallback to original group hints from source playlists
@@ -675,6 +829,8 @@ def clean_m3u(file_path):
         if clean_name.lower() == "star channel":
             entry['attrs']['tvg-language'] = "spa"
         entry['options'] = apply_channel_options(clean_name, entry['options'])
+
+    resolve_missing_logos(entries)
 
     entries, removed_duplicates = deduplicate_by_url(entries)
 
