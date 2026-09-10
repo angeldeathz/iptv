@@ -559,7 +559,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     if "nuestra tele" in clean_name_lower:
         return "Series"
     if clean_name_lower.startswith("cgtn"):
-        return "Noticias"
+        return "Internacionales"
     if "tlnovelas" in clean_name_lower or "tl novelas" in clean_name_lower:
         return "Series"
     if clean_name_lower == "htv" or clean_name_lower.startswith("htv "):
