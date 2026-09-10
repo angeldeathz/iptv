@@ -2,6 +2,16 @@
 
 # Respaldo de canales cuando la señal principal en official.m3u deja de funcionar.
 
+# ===== Nacionales =====
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="1 Mega 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="Mega 1",Mega 1
+https://iptv.bitred.cl/mega/index.m3u8
+
+# ===== Infantiles =====
+
+#EXTINF:-1 tvg-name="40 ETC TV 1" tvg-logo="http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png" group-title="Infantiles" tvg-name="ETC TV 1" tvg-logo="http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png" group-title="Infantiles",ETC TV 1
+http://bigenterprise.live:8080/07366617/45969898/1044400
+
 # ===== Peliculas =====
 
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="109 TCM 2" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="TCM 2",TCM 2

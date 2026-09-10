@@ -32,7 +32,9 @@ def parse_extinf(extinf_line):
 
 def sanitize_display_name(name):
     """Replace characters that break XML-based IPTV parsers on smart TVs."""
+    name = re.sub(r'\bA&E\b', '__AE_BRAND__', name, flags=re.IGNORECASE)
     name = name.replace('&', 'and')
+    name = name.replace('__AE_BRAND__', 'A&E')
     # Preserve 24/7; normalize other slashes (e.g. "HGTV / Discovery")
     name = re.sub(r'(?<!\d)/(?!\d)', ' ', name)
     name = re.sub(r'\b24\s+7\b', '24/7', name)
@@ -160,8 +162,9 @@ def clean_channel_name(display_name):
         "ucl": "UCL",
         "film&arts": "Film and Arts",
         "film and arts": "Film and Arts",
-        "a&e": "A and E",
-        "a and e": "A and E",
+        "a&e": "A&E",
+        "a and e": "A&E",
+        "aande": "A&E",
         "discovery h&h": "Discovery Home and Health",
         "discovery home and health": "Discovery Home and Health",
         "home & health": "Home and Health",
