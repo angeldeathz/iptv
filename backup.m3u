@@ -10,6 +10,9 @@ https://iptv.bitred.cl/mega/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/aJMBnse.png" group-title="Nacionales" tvg-name="15 13 Teleseries 2" tvg-logo="https://i.imgur.com/aJMBnse.png" group-title="Nacionales" tvg-name="13 Teleseries 2",13 Teleseries 2
 https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="10 Canal 13 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="Canal 13 2",Canal 13 2
+http://187.102.211.240:9001/play/a05u/index.m3u8?hls
+
 # ===== Infantiles =====
 
 #EXTINF:-1 tvg-name="40 ETC TV 1" tvg-logo="http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png" group-title="Infantiles" tvg-name="ETC TV 1" tvg-logo="http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png" group-title="Infantiles",ETC TV 1
