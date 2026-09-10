@@ -705,27 +705,6 @@ def get_group_priority(group_name):
     except ValueError:
         return len(GROUP_ORDER)
 
-def apply_channel_attrs(clean_name, attrs):
-    """Inject player-specific #EXTINF attributes for channels that need them."""
-    if clean_name.lower() != "star channel":
-        return attrs
-    # SS IPTV: first code in audio-track is the default track (ISO 639-2).
-    attrs["tvg-language"] = "spa"
-    attrs["audio-track"] = "spa,eng"
-    return attrs
-
-
-def apply_channel_options(clean_name, options):
-    """Inject VLC hints for channels that need non-default behavior."""
-    opts = list(options)
-    if clean_name.lower() != "star channel":
-        return opts
-    audio_line = "#EXTVLCOPT:audio-language=spa,es"
-    if not any("audio-language" in opt.lower() for opt in opts):
-        opts.append(audio_line)
-    return opts
-
-
 def deduplicate_by_url(entries):
     """Keep one entry per unique URL, preferring higher quality then earliest appearance."""
     best_by_url = {}
@@ -836,8 +815,6 @@ def clean_m3u(file_path):
         entry['clean_name'] = clean_name
         entry['quality_score'] = get_quality_score(display_name)
         entry['category'] = category
-        entry['attrs'] = apply_channel_attrs(clean_name, entry['attrs'])
-        entry['options'] = apply_channel_options(clean_name, entry['options'])
 
     resolve_missing_logos(entries)
 
