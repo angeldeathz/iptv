@@ -1,6 +1,12 @@
 ---
 name: m3u-fix-logos
-description: "Fix broken icons (tvg-logo 404/400) in official.m3u by channel global ID. Use when the user reports logos not showing on TV, icons returning 404, or asks to fix the tvg-logo of one or more channels."
+description: >-
+  Repairs broken channel icons only: runs scripts/fix_logos.py to verify and
+  replace bad tvg-logo URLs (404/400/missing) in official.m3u by global channel ID.
+  Use when logos or iconos do not show on TV, tvg-logo is broken, or the user asks
+  to arreglar iconos/logos. Requires explicit global IDs — never infer from name.
+  Do NOT use for stream playback issues, deleting channels, backup moves, or
+  searching new stream sources.
 ---
 
 # Fix channel icons in official.m3u

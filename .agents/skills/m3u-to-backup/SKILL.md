@@ -1,6 +1,12 @@
 ---
 name: m3u-to-backup
-description: "Move channels from official.m3u to backup.m3u by global ID and reorder the official list. Use when the user asks to move channels to backup, move down sources to backup, or remove entries from official while keeping them in backup.m3u."
+description: >-
+  Moves channel entries from official.m3u to backup.m3u via scripts/move_to_backup.py
+  (keeps the source, removes from official, recalculates official IDs). Use when
+  the user says backup, respaldo, mover a backup, pasar a backup, or wants to
+  quitar de official but keep the stream for later. Requires explicit global IDs —
+  never infer from name. If the user wants permanent deletion with no backup, use
+  m3u-remove-channels instead. Do NOT use for fixing logos or searching new URLs.
 ---
 
 # Move channels to backup.m3u

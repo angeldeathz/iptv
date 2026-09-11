@@ -12,19 +12,19 @@ python3 scripts/clean_m3u.py
 
 ## Skills index
 
-Read the full `SKILL.md` before running a workflow. Skills live under `.agents/skills/`.
+Read the full `SKILL.md` before running a workflow. Skills live under `.agents/skills/`. Pick **one** skill per request — use the disambiguation column when intents overlap.
 
-| Skill | Purpose | Use when the user… |
-|-------|---------|-------------------|
-| [`m3u-source-update`](skills/m3u-source-update/SKILL.md) | Search Astra origin servers and add up to 6 best new stream URLs per channel | asks to find sources, add backups, replace a down channel, or pull from origin servers |
-| [`m3u-lineup`](skills/m3u-lineup/SKILL.md) | Editorial curation — LATAM priority, 1080p first, provider-style block order | asks to reorder, curate, or align the grid with Movistar / DIRECTV / Claro style |
-| [`m3u-fix-logos`](skills/m3u-fix-logos/SKILL.md) | Verify and replace broken `tvg-logo` URLs by global channel ID | reports missing icons on TV, 404 logos, or asks to fix logos |
-| [`m3u-remove-channels`](skills/m3u-remove-channels/SKILL.md) | Permanently delete channels from `official.m3u` and recalculate IDs | asks to remove/delete channels or drop sources that failed on TV (**requires user IDs**) |
-| [`m3u-to-backup`](skills/m3u-to-backup/SKILL.md) | Move channels from `official.m3u` to `backup.m3u` and reorder the official list | asks to move sources to backup or keep them off official without deleting (**requires user IDs**) |
+| Skill | Purpose | Triggers | Not this skill if… |
+|-------|---------|----------|-------------------|
+| [`m3u-source-update`](skills/m3u-source-update/SKILL.md) | Find streams on Astra servers; add up to 6 ranked URLs to `official.m3u` | buscar fuentes, agregar canal, nuevas variantes, URL caída, origin servers | user gives IDs to delete/backup, or only wants logos/reorder |
+| [`m3u-lineup`](skills/m3u-lineup/SKILL.md) | Editorial order — LATAM first, 1080p, provider-style blocks | ordenar, curar parrilla/grilla, Movistar/DIRECTV/Claro, categorías | adding streams, delete, backup, or logo fixes |
+| [`m3u-fix-logos`](skills/m3u-fix-logos/SKILL.md) | Repair `tvg-logo` URLs via `fix_logos.py` (**needs IDs**) | iconos, logos, tvg-logo 404, no se ven en TV | stream doesn't play, delete, backup, or search sources |
+| [`m3u-remove-channels`](skills/m3u-remove-channels/SKILL.md) | **Permanent** delete from `official.m3u` (**needs IDs**) | eliminar, borrar, quitar, delete for good | user says backup/respaldo — use `m3u-to-backup` |
+| [`m3u-to-backup`](skills/m3u-to-backup/SKILL.md) | Move `official.m3u` → `backup.m3u`, keep source (**needs IDs**) | backup, respaldo, mover a backup, quitar pero guardar | user wants permanent delete — use `m3u-remove-channels` |
 
-**ID-based skills** (`m3u-remove-channels`, `m3u-to-backup`, `m3u-fix-logos`): never run without explicit global IDs from the user (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`).
+**ID-based skills** (`m3u-fix-logos`, `m3u-remove-channels`, `m3u-to-backup`): never run without explicit global IDs (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`). Ask first; do not grep-and-guess.
 
-**Combining skills**: source updates handle *finding* streams; `m3u-lineup` handles *editorial* ordering. After adding sources, cleanup always runs via `clean_m3u.py` or the skill's final step.
+**Typical flow**: `m3u-source-update` (find streams) → user tests on TV → `m3u-remove-channels` or `m3u-to-backup` (drop failures). `m3u-lineup` is for editorial reorder only. After any `official.m3u` edit, run `clean_m3u.py`.
 
 ---
 

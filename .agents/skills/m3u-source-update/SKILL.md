@@ -1,6 +1,12 @@
 ---
 name: m3u-source-update
-description: "Search for channels in source M3U lists with scripts/search_sources.py and add the best sources (max 6) to official.m3u for the user to test on TV. Use when the user asks to search for sources, add backups, replace a down channel, or update the list from origin servers."
+description: >-
+  Finds new stream URLs on Astra origin servers (scripts/search_sources.py) and
+  appends the best ranked sources (default max 6) to official.m3u for TV testing.
+  Use when the user wants to buscar fuentes, agregar un canal, añadir variantes o
+  respaldos de stream, reemplazar una URL caída, or pull from origin/playlist servers.
+  Do NOT use for deleting channels, moving to backup.m3u, fixing tvg-logo icons,
+  or reordering the editorial lineup — those are separate skills.
 ---
 
 # Update official.m3u from source servers

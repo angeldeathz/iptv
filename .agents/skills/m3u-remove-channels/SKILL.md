@@ -1,6 +1,12 @@
 ---
 name: m3u-remove-channels
-description: "Remove channels from official.m3u by global ID and recalculate correlative IDs. Use when the user asks to remove, delete, or drop channels from the official list, remove sources that don't work, or clean up entries tested on TV."
+description: >-
+  Permanently deletes channel entries from official.m3u via scripts/remove_channels.py
+  and recalculates IDs. Entries are NOT saved to backup.m3u. Use when the user
+  wants to eliminar, borrar, quitar, delete, or drop channels/sources for good
+  after TV testing. Requires explicit global IDs — never infer from name. If the
+  user says backup, respaldo, or mover a backup, use m3u-to-backup instead.
+  Do NOT use for fixing logos or searching new stream URLs.
 ---
 
 # Remove channels from official.m3u

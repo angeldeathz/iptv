@@ -1,6 +1,12 @@
 ---
-name: m3u-lineup-curator
-description: "Use when curating IPTV M3U playlists, especially official.m3u, to prioritize Latin American channels, prefer 1080p sources, and order channels like a provider lineup (Movistar, DIRECTV, Claro)."
+name: m3u-lineup
+description: >-
+  Applies editorial lineup rules to official.m3u: LATAM-first channel priority,
+  1080p preferred, provider-style category blocks (Movistar, DIRECTV, Claro).
+  Use when the user asks to ordenar, curar, reordenar la parrilla/grilla, fix
+  category placement, or align the grid like a TV operator — without adding new
+  stream URLs. Do NOT use for searching origin servers, deleting channels,
+  moving to backup.m3u, or repairing tvg-logo icons.
 ---
 
 # M3U Playlist Curator
