@@ -184,5 +184,89 @@
     "url": "https://docdog.top/logo/countries/chile/etctv.png",
     "source": "docdog_chile",
     "verified_at": "2026-09-11"
+  },
+  "bob esponja": {
+    "channel": "Bob Esponja",
+    "url": "https://images.pluto.tv/channels/6254598f5083f800076d8563/colorLogoPNG_1781042617821.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "nickelodeon teen": {
+    "channel": "Nickelodeon Teen",
+    "url": "https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "nickelodeon toons": {
+    "channel": "Nickelodeon Toons",
+    "url": "https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "max anime": {
+    "channel": "MAX Anime",
+    "url": "https://i.imgur.com/Oj3hEBh.jpg",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "cartoon network": {
+    "channel": "Cartoon Network",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "tooncast": {
+    "channel": "Tooncast",
+    "url": "https://i.imgur.com/3yXRbQy.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "13 kids": {
+    "channel": "13 Kids",
+    "url": "https://i.imgur.com/m6y9AMe.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "capitan tsubasa": {
+    "channel": "Capitan Tsubasa",
+    "url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/f18cc7982a918da38a3b8e47c4ab6295.jpg",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "one piece 24/7": {
+    "channel": "One Piece 24/7",
+    "url": "https://images.pluto.tv/channels/5ff4b9ccf938f8000779eb99/colorLogoPNG.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "simpsons latino 24/7": {
+    "channel": "Simpsons Latino 24/7",
+    "url": "https://i.imgur.com/hSb8lg3.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "energeek fan": {
+    "channel": "EnerGeek FAN",
+    "url": "https://cdn.m3u.cl/logo/1112_EnerGeek_FAN.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "energeek retro": {
+    "channel": "EnerGeek Retro",
+    "url": "https://cdn.m3u.cl/logo/947_EnerGeek_Retro.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "nick jr": {
+    "channel": "Nick Jr",
+    "url": "https://i.imgur.com/E84jnP8.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "hbo pop": {
+    "channel": "HBO Pop",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
   }
 }

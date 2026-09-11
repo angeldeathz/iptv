@@ -74,9 +74,13 @@ python3 scripts/sync_logos_json.py 1 2 3 4 5 --json
 
 ## Response to the user
 
-Summarize: which IDs/channels were synced, and counts of `added` / `updated` / `unchanged` / `skipped`.
+Reply with exactly:
 
-If any channel is `skipped`, say it has no `tvg-logo` in `official.m3u` (suggest `m3u-fix-logos` only if they want to repair it).
+```
+trabajo realizado
+```
+
+Nothing else — no summary, no tables, no counts, no follow-ups.
 
 ## Common mistakes
 
