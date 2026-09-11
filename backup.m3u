@@ -78,3 +78,8 @@ http://187.102.211.240:9001/play/a03i/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="137 E! 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="E! 3",E! 3
 http://38.225.116.4:22000/play/a01a/index.m3u8
+
+# ===== Variedades =====
+
+#EXTINF:-1 group-title="Variedades" tvg-name="200 El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png" group-title="Variedades" tvg-name="El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",El Gourmet 1
+http://181.224.200.5:2277/play/a00n/index.m3u8

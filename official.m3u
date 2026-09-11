@@ -574,87 +574,156 @@ http://190.61.42.218:9000/play/a00h/index.m3u8
 #EXTINF:-1 group-title="Documentales" tvg-name="182 Discovery SCI 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_logo.svg/320px-Discovery_Science_logo.svg.png",182 Discovery SCI 1
 http://187.102.211.240:9001/play/a06n/index.m3u8?hls
 
-#EXTINF:-1 group-title="Documentales" tvg-name="183 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",183 Animal Planet 1
+#EXTINF:-1 group-title="Documentales" tvg-name="183 ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",183 ANIMAL PLANET 1
+http://190.60.40.165:1010/play/7gjf/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="184 ANIMAL PLANET 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",184 ANIMAL PLANET 2
+http://170.247.204.9:8000/play/a01n/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="185 ANIMAL PLANET 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",185 ANIMAL PLANET 3
 http://181.224.200.5:2277/play/a00r/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="184 Animal Planet 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",184 Animal Planet 2
-http://187.102.211.240:9001/play/a00o/index.m3u8?hls
+#EXTINF:-1 group-title="Documentales" tvg-name="186 ANIMAL PLANET 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",186 ANIMAL PLANET 4
+http://181.224.255.210:8001/play/a0lz/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="185 NatGeo 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Nat_Geo_Logo.svg/320px-Nat_Geo_Logo.svg.png",185 NatGeo 1
+#EXTINF:-1 group-title="Documentales" tvg-name="187 ANIMAL PLANET 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",187 ANIMAL PLANET 5
+http://181.78.20.119:58002/play/a00w/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="188 ANIMAL PLANET 6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",188 ANIMAL PLANET 6
+http://190.108.83.69:8000/play/a043/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="189 ANIMAL PLANET 7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",189 ANIMAL PLANET 7
+http://190.61.42.218:9000/play/a07x/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="190 ANIMAL PLANET 8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",190 ANIMAL PLANET 8
+http://190.61.43.117:45000/play/a07y/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="191 ANIMAL PLANET 9" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",191 ANIMAL PLANET 9
+http://209.14.98.47:8000/play/a0xp/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="192 ANIMAL PLANET 10" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",192 ANIMAL PLANET 10
+http://38.226.49.253:8000/play/a05r/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="193 ANIMAL PLANET 11" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",193 ANIMAL PLANET 11
+http://45.186.254.75:8000/play/a06y/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="194 ANIMAL PLANET 12" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",194 ANIMAL PLANET 12
+http://45.5.116.228:8000/play/a0gq/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="195 ANIMAL PLANET 13" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",195 ANIMAL PLANET 13
+http://72.1.184.5:8089/play/a05c/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="196 ANIMAL PLANET 14" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",196 ANIMAL PLANET 14
+http://181.78.8.199:8000/play/a0by/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="197 ANIMAL PLANET 15" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",197 ANIMAL PLANET 15
+http://187.102.211.240:9001/play/a00o/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="198 ANIMAL PLANET 16" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",198 ANIMAL PLANET 16
+http://190.217.66.92:8000/play/a0ov/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="199 ANIMAL PLANET 17" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",199 ANIMAL PLANET 17
+http://190.60.40.165:1010/play/a0h9/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="200 ANIMAL PLANET 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",200 ANIMAL PLANET 18
+http://205.235.6.29:8000/play/a0yp/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="201 ANIMAL PLANET 19" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",201 ANIMAL PLANET 19
+http://38.226.49.253:8000/play/a054/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="202 ANIMAL PLANET 20" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",202 ANIMAL PLANET 20
+http://38.44.109.41:8003/play/a0ho/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="203 ANIMAL PLANET 21" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",203 ANIMAL PLANET 21
+http://45.232.210.1:18000/play/a08p/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="204 ANIMAL PLANET 22" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",204 ANIMAL PLANET 22
+http://72.1.184.5:8089/play/a068/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="205 NatGeo 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Nat_Geo_Logo.svg/320px-Nat_Geo_Logo.svg.png",205 NatGeo 1
 http://187.102.211.240:9001/play/a01p/index.m3u8?hls
 
-#EXTINF:-1 group-title="Documentales" tvg-name="186 ID 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",186 ID 1
+#EXTINF:-1 group-title="Documentales" tvg-name="206 ID 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",206 ID 1
 http://181.224.200.5:2277/play/a00m/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="187 Discovery ID 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",187 Discovery ID 1
+#EXTINF:-1 group-title="Documentales" tvg-name="207 Discovery ID 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png",207 Discovery ID 1
 http://187.102.211.240:9001/play/a01v/index.m3u8?hls
 
-#EXTINF:-1 tvg-name="188 History 1" tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales",188 History 1
+#EXTINF:-1 tvg-name="208 History 1" tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales",208 History 1
 http://181.78.20.119:58002/play/a03d/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="189 History 2",189 History 2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="209 History 2",209 History 2
 http://38.225.116.4:22000/play/a00w/index.m3u8
 
-#EXTINF:-1 tvg-name="190 History 2 1" tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales",190 History 2 1
+#EXTINF:-1 tvg-name="210 History 2 1" tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales",210 History 2 1
 http://181.78.8.199:8000/play/a0ag/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="191 History 2 2",191 History 2 2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="211 History 2 2",211 History 2 2
 http://187.102.211.240:9001/play/a03f/index.m3u8?hls
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="192 History 2 3",192 History 2 3
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="212 History 2 3",212 History 2 3
 http://38.225.116.4:22000/play/a00y/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="193 History Channel 1" tvg-logo="https://i.imgur.com/ypR4tvy.jpg",193 History Channel 1
+#EXTINF:-1 group-title="Documentales" tvg-name="213 History Channel 1" tvg-logo="https://i.imgur.com/ypR4tvy.jpg",213 History Channel 1
 http://187.102.211.240:9001/play/a01l/index.m3u8?hls
 
-#EXTINF:-1 group-title="Documentales" tvg-name="194 Discovery Home and Health 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",194 Discovery Home and Health 1
+#EXTINF:-1 group-title="Documentales" tvg-name="214 Discovery Home and Health 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",214 Discovery Home and Health 1
 http://187.102.211.240:9001/play/a00s/index.m3u8?hls
 
-#EXTINF:-1 group-title="Documentales" tvg-name="195 Home and Health 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",195 Home and Health 1
+#EXTINF:-1 group-title="Documentales" tvg-name="215 Home and Health 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Discovery_Home_%26_Health_logo.svg/320px-Discovery_Home_%26_Health_logo.svg.png",215 Home and Health 1
 http://181.224.200.5:2277/play/a00p/index.m3u8
 
-#EXTINF:-1 tvg-name="196 HGTV Discovery HGTV 1" group-title="Documentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",196 HGTV Discovery HGTV 1
+#EXTINF:-1 tvg-name="216 HGTV Discovery HGTV 1" group-title="Documentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",216 HGTV Discovery HGTV 1
 http://190.61.42.218:9000/play/a05p/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="197 HGTV 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",197 HGTV 1
+#EXTINF:-1 group-title="Documentales" tvg-name="217 HGTV 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/HGTV_2010_logo.svg/320px-HGTV_2010_logo.svg.png",217 HGTV 1
 http://187.102.211.240:9001/play/a03p/index.m3u8?hls
 
-#EXTINF:-1 tvg-name="198 TLC 1" group-title="Documentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TLC_Logo_2016.svg/320px-TLC_Logo_2016.svg.png",198 TLC 1
+#EXTINF:-1 tvg-name="218 TLC 1" group-title="Documentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TLC_Logo_2016.svg/320px-TLC_Logo_2016.svg.png",218 TLC 1
 http://190.61.42.218:9000/play/a01g/index.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="199 TLC 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TLC_Logo_2016.svg/320px-TLC_Logo_2016.svg.png",199 TLC 2
+#EXTINF:-1 group-title="Documentales" tvg-name="219 TLC 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TLC_Logo_2016.svg/320px-TLC_Logo_2016.svg.png",219 TLC 2
 http://187.102.211.240:9001/play/a03g/index.m3u8?hls
+
+#EXTINF:-1 group-title="Documentales" tvg-name="220 41 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",220 41 Animal Planet 1
+http://38.44.109.41:8003/play/a0hq/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="221 ANIMAL PLANET CIPA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",221 ANIMAL PLANET CIPA 1
+http://177.74.205.189:8000/play/a004/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="222 Animal Planet HD AMAZONAS 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",222 Animal Planet HD AMAZONAS 1
+http://181.78.8.199:8000/play/a06w/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="223 CANAL 52 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",223 CANAL 52 Animal Planet 1
+http://45.5.118.152:8000/play/a09l/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="224 DVB-Animal Planet Latin 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",224 DVB-Animal Planet Latin 1
+http://45.167.2.101:8000/play/a0nt/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="225 H ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",225 H ANIMAL PLANET 1
+http://190.108.83.69:8000/play/a09v/index.m3u8
 
 
 # ===== Variedades =====
 
-#EXTINF:-1 group-title="Variedades" tvg-name="200 El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",200 El Gourmet 1
-http://181.224.200.5:2277/play/a00n/index.m3u8
-
-#EXTINF:-1 group-title="Variedades" tvg-name="201 El Gourmet 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",201 El Gourmet 2
+#EXTINF:-1 group-title="Variedades" tvg-name="226 El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",226 El Gourmet 1
 http://187.102.211.240:9001/play/a01g/index.m3u8?hls
 
-#EXTINF:-1 group-title="Variedades" tvg-name="202 Hola Tv 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hola_TV_logo.svg/320px-Hola_TV_logo.svg.png",202 Hola Tv 1
+#EXTINF:-1 group-title="Variedades" tvg-name="227 Hola Tv 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hola_TV_logo.svg/320px-Hola_TV_logo.svg.png",227 Hola Tv 1
 http://187.102.211.240:9001/play/a02c/index.m3u8?hls
-
-#EXTINF:-1 group-title="Variedades" tvg-name="203 Daystar 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Daystar_TV_logo.svg/320px-Daystar_TV_logo.svg.png",203 Daystar 1
-http://187.102.211.240:9001/play/a03l/index.m3u8?hls
 
 
 # ===== Internacionales =====
 
-#EXTINF:-1 group-title="Internacionales" tvg-name="204 TVE 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVE_logo.svg/320px-TVE_logo.svg.png",204 TVE 2
+#EXTINF:-1 group-title="Internacionales" tvg-name="228 TVE 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVE_logo.svg/320px-TVE_logo.svg.png",228 TVE 2
 http://187.102.211.240:9001/play/a04y/index.m3u8?hls
 
-#EXTINF:-1 group-title="Internacionales" tvg-name="205 CGTN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/320px-CGTN.svg.png",205 CGTN 1
+#EXTINF:-1 group-title="Internacionales" tvg-name="229 CGTN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/320px-CGTN.svg.png",229 CGTN 1
 http://187.102.211.240:9001/play/a03m/index.m3u8?hls
 
-#EXTINF:-1 group-title="Internacionales" tvg-name="206 Panamericana 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Panamericana_Televisi%C3%B3n_logo.svg/320px-Panamericana_Televisi%C3%B3n_logo.svg.png",206 Panamericana 1
-http://187.102.211.240:9001/play/a04f/index.m3u8?hls
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/VgYCskX.png" group-title="Internacionales" tvg-name="207 Vision Latina Network 1",207 Vision Latina Network 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VgYCskX.png" group-title="Internacionales" tvg-name="230 Vision Latina Network 1",230 Vision Latina Network 1
 https://cdn-cloudfront.us-east-1.prod.ingest.aws-infra.dacast.com/live/c1804a4c-ccbf-46e5-87c3-0f8d4a94d9e3/master.m3u8
 
-#EXTINF:-1 group-title="Internacionales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" tvg-name="208 ATRES Series 1",208 ATRES Series 1
+#EXTINF:-1 group-title="Internacionales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" tvg-name="231 ATRES Series 1",231 ATRES Series 1
 http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 
