@@ -80,7 +80,7 @@ def parse_m3u(file_path: str) -> list[Channel]:
             if not current_extinf:
                 continue
 
-            _, attrs, display_name = parse_extinf(current_extinf)
+            attrs, display_name = parse_extinf(current_extinf)
             tvg_name = attrs.get("tvg-name", display_name)
             channel_id = extract_channel_id(tvg_name, display_name)
             if channel_id is None:
