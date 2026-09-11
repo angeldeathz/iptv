@@ -10,10 +10,10 @@ http://187.102.211.240:9001/play/a02h/index.m3u8?hls
 http://38.225.116.4:22000/play/a00u/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="3 CHV 1",3 CHV 1
-http://38.44.109.41:8003/play/a0h0/index.m3u8
+http://45.186.254.75:8000/play/a04v/index.m3u8
 
-#EXTINF:-1 tvg-name="4 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales",4 TVN 1
-http://bigenterprise.live:8080/07366617/45969898/1044457
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="4 TVN 1",4 TVN 1
+http://38.226.49.253:8000/play/a06c/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales" tvg-name="5 NTV 1",5 NTV 1
 https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
@@ -439,10 +439,10 @@ http://205.235.6.29:8000/play/a0z5/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HctHhLL.png" group-title="Series" tvg-name="140 BBC Series 1",140 BBC Series 1
 https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="141 https: download.logo.wine logo A%26E_(Australian_TV_channel) A%26E_(Australian_TV_channel)-Logo.wine.png 1",141 https: download.logo.wine logo A%26E_(Australian_TV_channel) A%26E_(Australian_TV_channel)-Logo.wine.png 1
+#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="141 https: download.logo.wine logo A%26E_ A%26E_ -Logo.wine.png 1",141 https: download.logo.wine logo A%26E_ A%26E_ -Logo.wine.png 1
 http://38.226.49.253:8000/play/a05u/index.m3u8?hls
 
-#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="142 https: download.logo.wine logo A%26E_(Australian_TV_channel) A%26E_(Australian_TV_channel)-Logo.wine.png 2",142 https: download.logo.wine logo A%26E_(Australian_TV_channel) A%26E_(Australian_TV_channel)-Logo.wine.png 2
+#EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="142 https: download.logo.wine logo A%26E_ A%26E_ -Logo.wine.png 2",142 https: download.logo.wine logo A%26E_ A%26E_ -Logo.wine.png 2
 http://187.102.211.240:9001/play/a01m/index.m3u8?hls
 
 #EXTINF:-1 group-title="Series" tvg-name="143 Comedy central 1" tvg-logo="https://docdog.top/logo/countries/latino/comedycentral.png",143 Comedy central 1

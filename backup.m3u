@@ -4,6 +4,39 @@
 
 # ===== Nacionales =====
 
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="11 TVN 2" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 2",TVN 2
+http://190.108.83.69:8000/play/a03f/index.m3u8
+
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="12 TVN 3" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 3",TVN 3
+http://209.14.98.47:8000/play/a0x2/index.m3u8
+
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="13 TVN 4" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 4",TVN 4
+http://38.44.109.41:8003/play/a0gz/index.m3u8
+
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="15 TVN 6" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 6",TVN 6
+http://45.232.210.1:18000/play/a085/index.m3u8
+
+#EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="16 TVN 7" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 7",TVN 7
+http://170.247.204.9:8000/play/a0ek/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="3 CHV 1" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 1",CHV 1
+http://187.102.211.240:9001/play/a024/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="4 CHV 2" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 2",CHV 2
+http://38.226.49.253:8000/play/a0c9/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="6 CHV 4" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 4",CHV 4
+http://45.232.210.1:18000/play/a07d/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="7 CHV 5" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 5",CHV 5
+http://190.108.83.69:8000/play/a03g/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="8 CHV 6" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 6",CHV 6
+http://209.14.98.47:8000/play/a0x3/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="9 CHV 7" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 7",CHV 7
+http://38.44.109.41:8003/play/a0h0/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="1 Mega 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="Mega 1",Mega 1
 https://iptv.bitred.cl/mega/index.m3u8
 
@@ -12,6 +45,9 @@ https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="10 Canal 13 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="Canal 13 2",Canal 13 2
 http://187.102.211.240:9001/play/a05u/index.m3u8?hls
+
+#EXTINF:-1 tvg-name="14 TVN 5" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 5" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales",TVN 5
+http://bigenterprise.live:8080/07366617/45969898/1044457
 
 # ===== Infantiles =====
 
