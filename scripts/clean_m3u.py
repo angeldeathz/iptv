@@ -96,6 +96,11 @@ def clean_channel_name(display_name):
     # Step 7: Normalize spaces
     name = re.sub(r'\s+', ' ', name).strip()
 
+    # HBO2 without space (and numbered variants like "069 HBO2") -> HBO 2
+    hbo2_candidate = re.sub(r'^\d+\s+', '', name, flags=re.IGNORECASE)
+    if re.fullmatch(r'hbo\s*2', hbo2_candidate, flags=re.IGNORECASE):
+        name = 'HBO 2'
+
     # Known display-name overrides
     overrides = {
         "zona latina": "Zona Latina",
