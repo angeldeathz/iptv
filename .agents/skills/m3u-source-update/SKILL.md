@@ -24,13 +24,15 @@ Para criterios editoriales (prioridad LATAM, orden de parrilla), combinar con la
 
 ## Paso 1: Buscar coincidencias
 
-Ejecutar desde la raiz del repo:
+Ejecutar desde la raiz del repo con **acceso de red completo** (`required_permissions: ["full_network"]` en el Shell tool). **No usar el sandbox por defecto**: los servidores Astra no estan en la allowlist y devuelven HTTP 403 falso en la primera ejecucion.
 
 ```bash
 python3 scripts/search_sources.py "<consulta>" --json
 ```
 
 Preferir `--json` para no omitir coincidencias al parsear la salida.
+
+Si `total_matches` es 0 y todos los `failed_sources` muestran `HTTP 403`, **no reintentar ni informar caida de servidores** — volver a ejecutar el mismo comando con `full_network` (o `all` si falla el permiso).
 
 Reglas de consulta:
 
@@ -113,7 +115,7 @@ Resumir:
 ## Checklist
 
 ```
-- [ ] Ejecutar search_sources.py --json
+- [ ] Ejecutar search_sources.py --json con full_network (nunca sandbox)
 - [ ] Agregar TODAS las URLs nuevas (sin filtrar por calidad)
 - [ ] Omitir solo URLs ya presentes o fuentes no disponibles
 - [ ] Ejecutar clean_m3u.py
@@ -129,12 +131,13 @@ python3 scripts/search_sources.py "star channel" --json
 # Busqueda legible para revisar rapido
 python3 scripts/search_sources.py "espn 2"
 
-# Verificar canales caidos despues de probar en TV
+# Verificar canales caidos despues de probar en TV (tambien requiere full_network)
 python3 scripts/check_channels.py
 ```
 
 ## Errores comunes
 
+- **Ejecutar en sandbox**: provoca HTTP 403 en todos los servidores; siempre usar `full_network` en el primer intento.
 - **Elegir solo la mejor fuente**: esta skill agrega todas; el usuario prueba en TV.
 - **Editar nombres/IDs a mano**: dejar que `clean_m3u.py` los normalice.
 - **Olvidar el cleanup**: rompe taxonomia, IDs y deduplicacion.
