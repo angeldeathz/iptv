@@ -68,6 +68,15 @@ https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png" group-title="Peliculas" tvg-name="119 Cine Terror 2" tvg-logo="https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png" group-title="Peliculas" tvg-name="Cine Terror 2",Cine Terror 2
 https://jmp2.uk/plu-5dcddf1ed95e740009fef7ab.m3u8
 
+#EXTINF:-1 tvg-name="110 MULTICINEMA 1" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas" tvg-name="MULTICINEMA 1" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas",MULTICINEMA 1
+http://190.108.90.142:8000/play/a00y/index.m3u8
+
+#EXTINF:-1 tvg-name="111 MULTICINEMA 2" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas" tvg-name="MULTICINEMA 2" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas",MULTICINEMA 2
+http://45.5.116.228:8000/play/a04u/index.m3u8
+
+#EXTINF:-1 tvg-name="112 MULTICINEMA 3" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas" tvg-name="MULTICINEMA 3" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas",MULTICINEMA 3
+http://72.1.184.5:8089/play/a055/index.m3u8
+
 #EXTINF:-1 tvg-name="Star Channel 1" group-title="Peliculas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Star_Channel_2021.svg/320px-Star_Channel_2021.svg.png",Star Channel 1
 http://181.224.200.5:2277/play/a00z/index.m3u8
 
