@@ -252,6 +252,7 @@ Varios de los servidores que alimentan esta playlist corren Astra y publican su 
 | `38.226.49.253:8000` | http://38.226.49.253:8000/playlist.m3u | 142 |
 | `181.224.255.210:8001` | http://181.224.255.210:8001/playlist.m3u | 132 |
 | `45.5.116.228:8000` | http://45.5.116.228:8000/playlist.m3u | 132 |
+| `190.61.43.117:45000` | http://190.61.43.117:45000/playlist.m3u | 124 |
 | `190.61.42.218:9000` | http://190.61.42.218:9000/playlist.m3u | 117 |
 | `187.102.211.240:9001` | http://187.102.211.240:9001/playlist.m3u | 117 |
 | `45.167.2.101:8000` | http://45.167.2.101:8000/playlist.m3u | 117 |
