@@ -5,13 +5,27 @@ description: >-
   replace bad tvg-logo URLs (404/400/missing) in official.m3u by global channel ID.
   Use when logos or iconos do not show on TV, tvg-logo is broken, or the user asks
   to arreglar iconos/logos. Requires explicit global IDs — never infer from name.
-  Do NOT use for stream playback issues, deleting channels, backup moves, or
+  Do NOT use to only update assets/logos.json from current playlist URLs — use
+  m3u-sync-logos-json instead. Do NOT use for stream playback, delete, backup, or
   searching new stream sources.
 ---
 
 # Fix channel icons in official.m3u
 
 Automated workflow to verify and replace `tvg-logo` URLs that do not load in IPTV TV apps.
+
+## When to use this skill vs m3u-sync-logos-json
+
+| | **m3u-fix-logos** (this skill) | **m3u-sync-logos-json** |
+|---|--------------------------------|-------------------------|
+| **User intent** | Fix icons that don't show on TV | Save current icon URLs in `logos.json` |
+| **Reads** | `tvg-logo` + probes the web | `tvg-logo` from `official.m3u` only |
+| **Writes** | `official.m3u`, `assets/logos.json`, maybe `clean_m3u.py` | `assets/logos.json` only |
+| **Network** | Required | Not required |
+| **Verifies URL works** | Yes | No |
+| **Searches alternatives** | Yes | No |
+
+If the user only asks to **actualizar / sync logos.json** with the URLs already in the playlist, use **`m3u-sync-logos-json`** — not this skill.
 
 ## Mandatory requirement: user IDs
 
@@ -117,6 +131,7 @@ If any channel returns `failed`, indicate which ones and that no alternative was
 ## Common mistakes
 
 - **Running without IDs**: forbidden; ask for IDs first.
+- **Using this skill to only update logos.json**: use `m3u-sync-logos-json` instead.
 - **Searching by name instead of ID**: forbidden; require the global ID.
 - **Editing official.m3u manually**: always use `fix_logos.py`.
 - **Forgetting network**: the script needs HTTP to verify and discover logos.

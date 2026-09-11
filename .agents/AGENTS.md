@@ -18,11 +18,14 @@ Read the full `SKILL.md` before running a workflow. Skills live under `.agents/s
 |-------|---------|----------|-------------------|
 | [`m3u-source-update`](skills/m3u-source-update/SKILL.md) | Find streams on Astra servers; add up to 6 ranked URLs to `official.m3u` | buscar fuentes, agregar canal, nuevas variantes, URL caída, origin servers | user gives IDs to delete/backup, or only wants logos/reorder |
 | [`m3u-lineup`](skills/m3u-lineup/SKILL.md) | Editorial order — LATAM first, 1080p, provider-style blocks | ordenar, curar parrilla/grilla, Movistar/DIRECTV/Claro, categorías | adding streams, delete, backup, or logo fixes |
-| [`m3u-fix-logos`](skills/m3u-fix-logos/SKILL.md) | Repair `tvg-logo` URLs via `fix_logos.py` (**needs IDs**) | iconos, logos, tvg-logo 404, no se ven en TV | stream doesn't play, delete, backup, or search sources |
+| [`m3u-sync-logos-json`](skills/m3u-sync-logos-json/SKILL.md) | Copy `tvg-logo` from `official.m3u` → `assets/logos.json` (**needs IDs**) | actualizar logos.json, sync logos json, volcar iconos al registro | icon broken on TV, search alternatives, or edit playlist |
+| [`m3u-fix-logos`](skills/m3u-fix-logos/SKILL.md) | Repair broken `tvg-logo` in `official.m3u` via `fix_logos.py` (**needs IDs**) | iconos rotos, tvg-logo 404, no se ven en TV | only update logos.json, delete, backup, or search sources |
 | [`m3u-remove-channels`](skills/m3u-remove-channels/SKILL.md) | **Permanent** delete from `official.m3u` (**needs IDs**) | eliminar, borrar, quitar, delete for good | user says backup/respaldo — use `m3u-to-backup` |
 | [`m3u-to-backup`](skills/m3u-to-backup/SKILL.md) | Move `official.m3u` → `backup.m3u`, keep source (**needs IDs**) | backup, respaldo, mover a backup, quitar pero guardar | user wants permanent delete — use `m3u-remove-channels` |
 
-**ID-based skills** (`m3u-fix-logos`, `m3u-remove-channels`, `m3u-to-backup`): never run without explicit global IDs (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`). Ask first; do not grep-and-guess.
+**ID-based skills** (`m3u-sync-logos-json`, `m3u-fix-logos`, `m3u-remove-channels`, `m3u-to-backup`): never run without explicit global IDs (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`). Ask first; do not grep-and-guess.
+
+**Logo skills**: `m3u-sync-logos-json` only writes `assets/logos.json` (copy URLs as-is). `m3u-fix-logos` verifies URLs, searches replacements, and edits `official.m3u`.
 
 **Typical flow**: `m3u-source-update` (find streams) → user tests on TV → `m3u-remove-channels` or `m3u-to-backup` (drop failures). `m3u-lineup` is for editorial reorder only. After any `official.m3u` edit, run `clean_m3u.py`.
 
@@ -52,7 +55,7 @@ Examples: `1 Chilevision 1`, `4 Canal 13 2`.
 |-----------|------|
 | `tvg-name` | Required on every `#EXTINF`. Must be unique. Format matches display name. |
 | `tvg-id` | **Do not include.** This list is used without EPG. |
-| `tvg-logo` | Include when known. Use `m3u-fix-logos` for broken URLs. |
+| `tvg-logo` | Include when known. Use `m3u-fix-logos` for broken URLs; use `m3u-sync-logos-json` to register current URLs in `assets/logos.json`. |
 | `group-title` | **PascalCase** only (e.g. `Nacionales`, `Peliculas`). Never ALL CAPS or all lowercase. |
 | `#EXTVLCOPT` | Copy from source when required (e.g. `http-user-agent`). |
 
@@ -99,6 +102,7 @@ Full workflow: [`m3u-lineup` skill](skills/m3u-lineup/SKILL.md).
 | `scripts/clean_m3u.py` | Normalize names, IDs, groups, dedup URLs (**run after every edit**) |
 | `scripts/search_sources.py` | Search origin M3U servers (needs `full_network`) |
 | `scripts/check_channels.py` | List channels whose URLs fail (needs `full_network`) |
+| `scripts/sync_logos_json.py` | Copy `tvg-logo` from `official.m3u` into `assets/logos.json` |
 | `scripts/fix_logos.py` | Repair `tvg-logo` by global ID |
 | `scripts/remove_channels.py` | Permanently remove channels by global ID |
 | `scripts/move_to_backup.py` | Move channels to `backup.m3u` by global ID |

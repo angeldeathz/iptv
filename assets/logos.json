@@ -4,5 +4,185 @@
     "url": "https://docdog.top/logo/countries/latino/tlc.png",
     "source": "current",
     "verified_at": "2026-09-11"
+  },
+  "mega": {
+    "channel": "Mega",
+    "url": "https://i.imgur.com/RlZfR84.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "chv": {
+    "channel": "CHV",
+    "url": "https://i.imgur.com/LmU7wOm.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "ntv": {
+    "channel": "NTV",
+    "url": "https://i.imgur.com/J55nHPi.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "tvn3": {
+    "channel": "TVN3",
+    "url": "https://i.imgur.com/9LEiQPJ.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "tv chile": {
+    "channel": "TV Chile",
+    "url": "https://i.imgur.com/yCL888l.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "uchile tv": {
+    "channel": "UChile TV",
+    "url": "https://i.imgur.com/mF2W8Uh.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "canal": {
+    "channel": "Canal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "13 cultura": {
+    "channel": "13 Cultura",
+    "url": "https://i.imgur.com/Zfe2f5j.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "t13": {
+    "channel": "T13",
+    "url": "https://cdn.m3u.cl/logo/1054_T13.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "13 festival": {
+    "channel": "13 Festival",
+    "url": "https://i.imgur.com/Ymk6j5o.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "13 teleseries": {
+    "channel": "13 Teleseries",
+    "url": "https://cdn.m3u.cl/logo/1032_13_Teleseries.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "13 pop": {
+    "channel": "13 Pop",
+    "url": "https://cdn.m3u.cl/logo/1033_13_Pop.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "13 realities": {
+    "channel": "13 Realities",
+    "url": "https://i.imgur.com/p1Qpljw.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "ucv tv": {
+    "channel": "UCV TV",
+    "url": "https://cdn.m3u.cl/logo/54_UCV.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "la red": {
+    "channel": "La Red",
+    "url": "https://i.imgur.com/nJOVM6e.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "tv+": {
+    "channel": "TV+",
+    "url": "https://cdn.m3u.cl/logo/458_TV_.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "bio bio tv": {
+    "channel": "Bio Bio TV",
+    "url": "https://i.imgur.com/lhglEUP.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "canal 24 horas": {
+    "channel": "Canal 24 Horas",
+    "url": "https://i.imgur.com/xO40xQy.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "solo tv": {
+    "channel": "Solo TV",
+    "url": "https://i.imgur.com/Ad2ueID.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "cnn chile": {
+    "channel": "CNN Chile",
+    "url": "https://i.ibb.co/YWf6xcv/cnn-chile.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "estrella news": {
+    "channel": "Estrella News",
+    "url": "https://i.imgur.com/HRrkhLq.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "puranoticia": {
+    "channel": "Puranoticia",
+    "url": "https://cdn.m3u.cl/logo/415_Puranoticia.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "nickelodeon": {
+    "channel": "Nickelodeon",
+    "url": "https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "retromagico": {
+    "channel": "RetroMagico",
+    "url": "https://regionnet.com.ar/wp-content/uploads/2019/11/Logomagic96-450x401.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "supertoons tv": {
+    "channel": "SuperToons TV",
+    "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD5100001G0_20250729T045047SQUARE.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "laika channel": {
+    "channel": "Laika Channel",
+    "url": "https://i.ibb.co/yc2r75Tg/OIP.jpg",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "tvn": {
+    "channel": "TVN",
+    "url": "https://cdn.m3u.cl/logo/452_TVN.png",
+    "source": "assets",
+    "verified_at": "2026-09-11"
+  },
+  "zona latina": {
+    "channel": "Zona Latina",
+    "url": "https://zonalatinatv.com/wp-content/uploads/2023/04/ZL-Lateral-NO-OFICIAL.png",
+    "source": "assets",
+    "verified_at": "2026-09-11"
+  },
+  "via x": {
+    "channel": "Via X",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/chile/via-x-cl.png",
+    "source": "assets",
+    "verified_at": "2026-09-11"
+  },
+  "etc tv": {
+    "channel": "ETC TV",
+    "url": "https://docdog.top/logo/countries/chile/etctv.png",
+    "source": "docdog_chile",
+    "verified_at": "2026-09-11"
   }
 }
