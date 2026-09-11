@@ -163,26 +163,26 @@
   },
   "tvn": {
     "channel": "TVN",
-    "url": "https://cdn.m3u.cl/logo/452_TVN.png",
-    "source": "assets",
+    "url": "http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png",
+    "source": "official_m3u",
     "verified_at": "2026-09-11"
   },
   "zona latina": {
     "channel": "Zona Latina",
-    "url": "https://zonalatinatv.com/wp-content/uploads/2023/04/ZL-Lateral-NO-OFICIAL.png",
-    "source": "assets",
+    "url": "https://static.wikia.nocookie.net/logopedia/images/e/e9/Zona_Latina_2021.svg/revision/latest/scale-to-width-down/150?cb=20210805180712&path-prefix=es",
+    "source": "official_m3u",
     "verified_at": "2026-09-11"
   },
   "via x": {
     "channel": "Via X",
-    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/chile/via-x-cl.png",
-    "source": "assets",
+    "url": "https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es",
+    "source": "official_m3u",
     "verified_at": "2026-09-11"
   },
   "etc tv": {
     "channel": "ETC TV",
-    "url": "https://docdog.top/logo/countries/chile/etctv.png",
-    "source": "docdog_chile",
+    "url": "http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png",
+    "source": "official_m3u",
     "verified_at": "2026-09-11"
   },
   "bob esponja": {
@@ -267,6 +267,210 @@
     "channel": "HBO Pop",
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png",
     "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "fx": {
+    "channel": "FX",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png",
+    "source": "official_m3u",
+    "verified_at": "2026-09-11"
+  },
+  "cnn en español": {
+    "channel": "CNN en Español",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "cnn internacional": {
+    "channel": "CNN Internacional",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "bbc news": {
+    "channel": "BBC News",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png",
+    "source": "tv_logos_uk",
+    "verified_at": "2026-09-11"
+  },
+  "disney channel": {
+    "channel": "Disney Channel",
+    "url": "https://docdog.top/logo/countries/latino/disneychannel.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "disney jr.": {
+    "channel": "Disney Jr.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg",
+    "source": "logo_library",
+    "verified_at": "2026-09-11"
+  },
+  "discovery kids": {
+    "channel": "Discovery Kids",
+    "url": "https://docdog.top/logo/countries/latino/discoverykids.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "cartoonito": {
+    "channel": "Cartoonito",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "adult swim": {
+    "channel": "Adult Swim",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/adult-swim-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "baby tv": {
+    "channel": "Baby Tv",
+    "url": "https://docdog.top/logo/countries/latino/babytv.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "golden edge": {
+    "channel": "Golden Edge",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png",
+    "source": "logo_library",
+    "verified_at": "2026-09-11"
+  },
+  "tnt": {
+    "channel": "TNT",
+    "url": "https://docdog.top/logo/countries/latino/tnt.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "lifetime": {
+    "channel": "Lifetime",
+    "url": "https://docdog.top/logo/countries/latino/lifetime.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "tnt novelas": {
+    "channel": "TNT Novelas",
+    "url": "https://docdog.top/logo/countries/latino/tnt.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "tnt series": {
+    "channel": "TNT Series",
+    "url": "https://docdog.top/logo/countries/latino/tntseries.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "a&e": {
+    "channel": "A&E",
+    "url": "https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "comedy central": {
+    "channel": "Comedy central",
+    "url": "https://docdog.top/logo/countries/latino/comedycentral.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "telemundo": {
+    "channel": "Telemundo",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "tnt sports premium": {
+    "channel": "TNT Sports Premium",
+    "url": "https://docdog.top/logo/countries/latino/tnt.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "espn": {
+    "channel": "ESPN",
+    "url": "https://docdog.top/logo/countries//argentina/espn-ar.png",
+    "source": "current",
+    "verified_at": "2026-09-11"
+  },
+  "htv": {
+    "channel": "HTV",
+    "url": "https://docdog.top/logo/countries/argentina/htv-ar.png",
+    "source": "docdog_argentina_ar",
+    "verified_at": "2026-09-11"
+  },
+  "discovery channel": {
+    "channel": "Discovery Channel",
+    "url": "https://docdog.top/logo/countries/latino/discoverychannel.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "discovery theater": {
+    "channel": "Discovery Theater",
+    "url": "https://docdog.top/logo/countries/latino/discoverytheater.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "discovery turbo": {
+    "channel": "Discovery Turbo",
+    "url": "https://docdog.top/logo/countries/latino/discoveryturbo.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "discovery science": {
+    "channel": "Discovery Science",
+    "url": "https://docdog.top/logo/countries/latino/discoveryscience.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "animal planet": {
+    "channel": "ANIMAL PLANET",
+    "url": "https://docdog.top/logo/countries/latino/animalplanet.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "natgeo": {
+    "channel": "NatGeo",
+    "url": "https://docdog.top/logo/countries/latino/natgeo.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "discovery home and health": {
+    "channel": "Discovery Home and Health",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/discovery-home-and-health-uk.png",
+    "source": "tv_logos_uk",
+    "verified_at": "2026-09-11"
+  },
+  "home and health": {
+    "channel": "Home and Health",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/home-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "hgtv discovery hgtv": {
+    "channel": "HGTV Discovery HGTV",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/hgtv-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "hgtv": {
+    "channel": "HGTV",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/hgtv-us.png",
+    "source": "tv_logos_us",
+    "verified_at": "2026-09-11"
+  },
+  "el gourmet": {
+    "channel": "El Gourmet",
+    "url": "https://docdog.top/logo/countries/latino/elgourmet.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "hola tv": {
+    "channel": "Hola Tv",
+    "url": "https://docdog.top/logo/countries/latino/holatv.png",
+    "source": "docdog_latino",
+    "verified_at": "2026-09-11"
+  },
+  "cgtn": {
+    "channel": "CGTN",
+    "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cgtn-int.png",
+    "source": "tv_logos_international",
     "verified_at": "2026-09-11"
   }
 }
