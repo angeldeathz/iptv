@@ -21,14 +21,34 @@ DEFAULT_USER_AGENT = (
 )
 
 # Servidores verificados que publican catálogo completo en /playlist.m3u
+# Conteos verificados en septiembre de 2026; descubiertos desde official.m3u + probes.
 SOURCE_PLAYLISTS = [
     ("38.44.109.41:8003", "http://38.44.109.41:8003/playlist.m3u"),
+    ("181.78.8.199:8000", "http://181.78.8.199:8000/playlist.m3u"),
+    ("190.108.83.69:8000", "http://190.108.83.69:8000/playlist.m3u"),
+    ("45.167.1.137:8000", "http://45.167.1.137:8000/playlist.m3u"),
+    ("45.167.1.138:8000", "http://45.167.1.138:8000/playlist.m3u"),
     ("190.60.40.165:1010", "http://190.60.40.165:1010/playlist.m3u"),
+    ("72.1.184.5:8089", "http://72.1.184.5:8089/playlist.m3u"),
+    ("45.186.254.75:8000", "http://45.186.254.75:8000/playlist.m3u"),
+    ("209.14.98.47:8000", "http://209.14.98.47:8000/playlist.m3u"),
+    ("45.5.118.152:8000", "http://45.5.118.152:8000/playlist.m3u"),
     ("38.226.49.253:8000", "http://38.226.49.253:8000/playlist.m3u"),
+    ("181.224.255.210:8001", "http://181.224.255.210:8001/playlist.m3u"),
+    ("45.5.116.228:8000", "http://45.5.116.228:8000/playlist.m3u"),
     ("190.61.42.218:9000", "http://190.61.42.218:9000/playlist.m3u"),
     ("187.102.211.240:9001", "http://187.102.211.240:9001/playlist.m3u"),
+    ("45.167.2.101:8000", "http://45.167.2.101:8000/playlist.m3u"),
+    ("190.14.10.19:16000", "http://190.14.10.19:16000/playlist.m3u"),
+    ("170.247.204.9:8000", "http://170.247.204.9:8000/playlist.m3u"),
+    ("205.235.6.29:8000", "http://205.235.6.29:8000/playlist.m3u"),
+    ("190.217.66.92:8000", "http://190.217.66.92:8000/playlist.m3u"),
+    ("181.78.20.119:58002", "http://181.78.20.119:58002/playlist.m3u"),
+    ("45.232.210.1:18000", "http://45.232.210.1:18000/playlist.m3u"),
     ("177.74.205.189:8000", "http://177.74.205.189:8000/playlist.m3u"),
     ("181.224.200.5:2277", "http://181.224.200.5:2277/playlist.m3u"),
+    ("190.108.90.142:8000", "http://190.108.90.142:8000/playlist.m3u"),
+    ("38.225.116.4:22000", "http://38.225.116.4:22000/playlist.m3u"),
 ]
 
 
@@ -373,8 +393,8 @@ def main() -> int:
     parser.add_argument(
         "--workers",
         type=int,
-        default=7,
-        help="Descargas en paralelo (por defecto: 7)",
+        default=12,
+        help="Descargas en paralelo (por defecto: 12)",
     )
     parser.add_argument(
         "--official",

@@ -239,15 +239,34 @@ Varios de los servidores que alimentan esta playlist corren Astra y publican su 
 
 | Servidor | Lista M3U | Canales publicados |
 |----------|-----------|--------------------|
-| `38.44.109.41:8003` | http://38.44.109.41:8003/playlist.m3u | 249 |
+| `38.44.109.41:8003` | http://38.44.109.41:8003/playlist.m3u | 248 |
+| `181.78.8.199:8000` | http://181.78.8.199:8000/playlist.m3u | 245 |
+| `190.108.83.69:8000` | http://190.108.83.69:8000/playlist.m3u | 211 |
+| `45.167.1.137:8000` | http://45.167.1.137:8000/playlist.m3u | 200 |
+| `45.167.1.138:8000` | http://45.167.1.138:8000/playlist.m3u | 200 |
 | `190.60.40.165:1010` | http://190.60.40.165:1010/playlist.m3u | 193 |
+| `72.1.184.5:8089` | http://72.1.184.5:8089/playlist.m3u | 171 |
+| `45.186.254.75:8000` | http://45.186.254.75:8000/playlist.m3u | 168 |
+| `209.14.98.47:8000` | http://209.14.98.47:8000/playlist.m3u | 157 |
+| `45.5.118.152:8000` | http://45.5.118.152:8000/playlist.m3u | 148 |
 | `38.226.49.253:8000` | http://38.226.49.253:8000/playlist.m3u | 142 |
+| `181.224.255.210:8001` | http://181.224.255.210:8001/playlist.m3u | 132 |
+| `45.5.116.228:8000` | http://45.5.116.228:8000/playlist.m3u | 132 |
 | `190.61.42.218:9000` | http://190.61.42.218:9000/playlist.m3u | 117 |
 | `187.102.211.240:9001` | http://187.102.211.240:9001/playlist.m3u | 117 |
-| `177.74.205.189:8000` | http://177.74.205.189:8000/playlist.m3u | 67 |
+| `45.167.2.101:8000` | http://45.167.2.101:8000/playlist.m3u | 117 |
+| `190.14.10.19:16000` | http://190.14.10.19:16000/playlist.m3u | 109 |
+| `170.247.204.9:8000` | http://170.247.204.9:8000/playlist.m3u | 104 |
+| `205.235.6.29:8000` | http://205.235.6.29:8000/playlist.m3u | 86 |
+| `190.217.66.92:8000` | http://190.217.66.92:8000/playlist.m3u | 82 |
+| `181.78.20.119:58002` | http://181.78.20.119:58002/playlist.m3u | 77 |
+| `45.232.210.1:18000` | http://45.232.210.1:18000/playlist.m3u | 66 |
+| `177.74.205.189:8000` | http://177.74.205.189:8000/playlist.m3u | 66 |
 | `181.224.200.5:2277` | http://181.224.200.5:2277/playlist.m3u | 47 |
+| `190.108.90.142:8000` | http://190.108.90.142:8000/playlist.m3u | 31 |
+| `38.225.116.4:22000` | http://38.225.116.4:22000/playlist.m3u | 21 |
 
-Conteos verificados en septiembre de 2026. `138.121.15.230:9002` responde pero devuelve el catálogo vacío.
+Conteos verificados en septiembre de 2026. Los servidores nuevos se descubrieron a partir de los hosts en `official.m3u` con patrón Astra (`/play/...`) y se validaron con `/playlist.m3u`. No aplican: `138.121.15.230:9002` (404), `177.234.249.178:8888` (404), `alfa.7057460.xyz:2095` (panel Xtream, no Astra) ni CDNs (`jmp2.uk`, `mdstrm.com`, `dps.live`, etc.).
 
 Para buscar un canal concreto en todos ellos:
 
