@@ -1,6 +1,6 @@
 ---
 name: m3u-source-update
-description: "Busca canales en las listas M3U de origen con scripts/search_sources.py y agrega TODAS las fuentes encontradas a official.m3u para que el usuario las pruebe en TV. Usar cuando el usuario pida buscar fuentes, agregar respaldos, reemplazar un canal caido, o actualizar la lista desde servidores de origen."
+description: "Busca canales en las listas M3U de origen con scripts/search_sources.py y agrega las mejores fuentes (maximo 6) a official.m3u para que el usuario las pruebe en TV. Usar cuando el usuario pida buscar fuentes, agregar respaldos, reemplazar un canal caido, o actualizar la lista desde servidores de origen."
 ---
 
 # Actualizar official.m3u desde fuentes de origen
@@ -9,9 +9,13 @@ Workflow para encontrar señales en servidores Astra y volcarlas en `official.m3
 
 ## Politica principal
 
-**Agregar TODAS las fuentes encontradas**, no elegir solo una. El usuario las prueba en su TV y luego elimina las que no sirvan.
+**Agregar solo las mejores fuentes, maximo 6 por canal.** El usuario las prueba en su TV y luego elimina las que no sirvan o pide mover el resto a backup.
 
-Excepcion: si el usuario pide explicitamente reemplazar una sola URL o agregar solo una fuente, seguir esa instruccion.
+Excepciones:
+
+- Si el usuario pide un numero distinto (ej. "solo 3", "maximo 7"), usar ese limite.
+- Si pide explicitamente **todas** las fuentes, agregar todas sin filtrar.
+- Si pide reemplazar una sola URL o agregar solo una fuente, seguir esa instruccion.
 
 ## Cuando usar esta skill
 
@@ -40,24 +44,30 @@ Reglas de consulta:
 - Si hay muchos resultados irrelevantes, afinar la consulta o usar `--regex`.
 - No usar `--source` salvo que el usuario limite la busqueda a un servidor.
 
-## Paso 2: Agregar todas las fuentes (no filtrar)
+## Paso 2: Seleccionar las mejores fuentes (maximo 6)
 
-Recorrer **todas** las coincidencias de **todas** las fuentes disponibles.
+Recorrer todas las coincidencias y **quedarse solo con las mejores**, hasta **6 URLs nuevas** por canal (o el limite que pida el usuario).
 
 Para cada match:
 
 | Condicion | Accion |
 |-----------|--------|
 | URL ya en `official.m3u` (`in_official: true`) | **Omitir** — ya esta para probar |
-| URL nueva | **Agregar** como variante del canal |
+| URL nueva | **Candidata** a agregar |
 | Fuente con error (timeout, lista vacia) | **Omitir** — no hay URL que agregar |
 
-No descartar candidatos por calidad, servidor o audio. El usuario decide en TV.
+### Criterios de seleccion (en orden)
 
-Orden sugerido al insertar (solo visual; `clean_m3u.py` reordena por calidad):
+1. **Servidor estable**: priorizar hosts que ya aparecen mucho en `official.m3u` (mismo criterio que HBO, Disney Channel, etc.).
+2. **Calidad**: preferir `1080p` / `FHD` / `HD` sobre `SD`.
+3. **URL completa**: preferir URLs con `/index.m3u8` sobre rutas incompletas.
+4. **Nombre limpio**: descartar variantes raras (`ENVIADO`, `NUEVO`, numeros de linea internos).
+5. **Una URL por servidor**: si un host tiene varias coincidencias del mismo canal, quedarse con la de mayor calidad.
+6. **Logo en origen**: desempate a favor de entradas con `tvg-logo` en el `#EXTINF`.
 
-1. Resolucion mas alta primero (`1080p` / `FHD` / `HD` antes que `SD`).
-2. Dentro de la misma calidad, mantener el orden del JSON de `search_sources.py`.
+Tras rankear, agregar solo las **top N** (default **6**). Si hay menos candidatas validas, agregar todas las que cumplan.
+
+Si el canal ya tiene variantes en `official.m3u` y el total superaria el limite, **no reemplazar** las existentes salvo que el usuario lo pida; agregar solo hasta completar el cupo.
 
 ## Paso 3: Editar official.m3u
 
@@ -106,18 +116,18 @@ Verificar que el script termina sin errores. Tras el cleanup, variantes del mism
 
 Resumir:
 
-1. Consulta usada.
-2. **Total agregadas** vs **ya existentes** vs **omitidas** (fuente caida).
-3. Rango de IDs finales del canal tras cleanup (ej. `88 Star Channel 1` … `88 Star Channel 9`).
+1. Consulta usada y limite aplicado (default 6).
+2. **Total agregadas** vs **ya existentes** vs **descartadas por ranking** vs **omitidas** (fuente caida).
+3. Rango de IDs finales del canal tras cleanup (ej. `67 HBO 2 1` … `67 HBO 2 6`).
 4. Listado breve: servidor + URL de cada fuente **nueva** agregada.
-5. Recordar que puede probar en TV y pedir eliminar las que fallen.
+5. Recordar que puede probar en TV y pedir eliminar las que fallen o mover a backup.
 
 ## Checklist
 
 ```
 - [ ] Ejecutar search_sources.py --json con full_network (nunca sandbox)
-- [ ] Agregar TODAS las URLs nuevas (sin filtrar por calidad)
-- [ ] Omitir solo URLs ya presentes o fuentes no disponibles
+- [ ] Rankear candidatas y agregar solo las mejores (max 6 por defecto)
+- [ ] Omitir URLs ya presentes o fuentes no disponibles
 - [ ] Ejecutar clean_m3u.py
 - [ ] Informar cuantas fuentes se agregaron y sus IDs finales
 ```
@@ -138,7 +148,7 @@ python3 scripts/check_channels.py
 ## Errores comunes
 
 - **Ejecutar en sandbox**: provoca HTTP 403 en todos los servidores; siempre usar `full_network` en el primer intento.
-- **Elegir solo la mejor fuente**: esta skill agrega todas; el usuario prueba en TV.
+- **Agregar todas las fuentes**: el default es maximo 6 mejores; solo agregar todas si el usuario lo pide explicitamente.
 - **Editar nombres/IDs a mano**: dejar que `clean_m3u.py` los normalice.
 - **Olvidar el cleanup**: rompe taxonomia, IDs y deduplicacion.
 - **Reemplazar en vez de agregar**: solo reemplazar si el usuario lo pide explicitamente.
