@@ -21,7 +21,7 @@ This skill defines how to maintain `official.m3u` as a TV provider lineup: clean
 2. Quality preference order is `1080p`, `720p`, `576p`, `480p`, `SD`.
 3. Keep secondary variants only when they serve as real backups or add a different region within LATAM.
 4. Avoid unnecessary duplicates. If there is more than one entry for the same channel, the first must be the primary one.
-5. Do not invent metadata: preserve `tvg-id`, `tvg-name`, `tvg-logo`, `group-title`, `user-agent`, and `#EXTVLCOPT` when they exist.
+5. Do not invent metadata: preserve `tvg-name`, `tvg-logo`, `group-title`, `user-agent`, and `#EXTVLCOPT` when they exist. Do not add `tvg-id` (see `.agents/AGENTS.md`).
 
 ## Lineup order
 
