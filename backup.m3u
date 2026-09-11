@@ -79,6 +79,89 @@ http://187.102.211.240:9001/play/a03i/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="137 E! 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="E! 3",E! 3
 http://38.225.116.4:22000/play/a01a/index.m3u8
 
+# ===== Documentales =====
+
+#EXTINF:-1 group-title="Documentales" tvg-name="183 ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 1
+http://190.60.40.165:1010/play/7gjf/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="184 ANIMAL PLANET 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 2
+http://170.247.204.9:8000/play/a01n/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="186 ANIMAL PLANET 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 4
+http://181.224.255.210:8001/play/a0lz/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="187 ANIMAL PLANET 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 5
+http://181.78.20.119:58002/play/a00w/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="188 ANIMAL PLANET 6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 6" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 6
+http://190.108.83.69:8000/play/a043/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="189 ANIMAL PLANET 7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 7
+http://190.61.42.218:9000/play/a07x/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="190 ANIMAL PLANET 8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 8
+http://190.61.43.117:45000/play/a07y/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="191 ANIMAL PLANET 9" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 9" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 9
+http://209.14.98.47:8000/play/a0xp/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="192 ANIMAL PLANET 10" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 10" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 10
+http://38.226.49.253:8000/play/a05r/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="193 ANIMAL PLANET 11" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 11" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 11
+http://45.186.254.75:8000/play/a06y/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="194 ANIMAL PLANET 12" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 12" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 12
+http://45.5.116.228:8000/play/a0gq/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="195 ANIMAL PLANET 13" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 13" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 13
+http://72.1.184.5:8089/play/a05c/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="196 ANIMAL PLANET 14" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 14" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 14
+http://181.78.8.199:8000/play/a0by/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="197 ANIMAL PLANET 15" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 15" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 15
+http://187.102.211.240:9001/play/a00o/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="198 ANIMAL PLANET 16" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 16" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 16
+http://190.217.66.92:8000/play/a0ov/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="199 ANIMAL PLANET 17" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 17" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 17
+http://190.60.40.165:1010/play/a0h9/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="200 ANIMAL PLANET 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 18
+http://205.235.6.29:8000/play/a0yp/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="201 ANIMAL PLANET 19" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 19" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 19
+http://38.226.49.253:8000/play/a054/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="202 ANIMAL PLANET 20" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 20" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 20
+http://38.44.109.41:8003/play/a0ho/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="203 ANIMAL PLANET 21" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 21" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 21
+http://45.232.210.1:18000/play/a08p/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="204 ANIMAL PLANET 22" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 22" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 22
+http://72.1.184.5:8089/play/a068/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="220 41 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="41 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",41 Animal Planet 1
+http://38.44.109.41:8003/play/a0hq/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="221 ANIMAL PLANET CIPA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET CIPA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET CIPA 1
+http://177.74.205.189:8000/play/a004/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="222 Animal Planet HD AMAZONAS 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="Animal Planet HD AMAZONAS 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",Animal Planet HD AMAZONAS 1
+http://181.78.8.199:8000/play/a06w/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="223 CANAL 52 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="CANAL 52 Animal Planet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",CANAL 52 Animal Planet 1
+http://45.5.118.152:8000/play/a09l/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="224 DVB-Animal Planet Latin 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="DVB-Animal Planet Latin 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",DVB-Animal Planet Latin 1
+http://45.167.2.101:8000/play/a0nt/index.m3u8
+
+#EXTINF:-1 group-title="Documentales" tvg-name="225 H ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="H ANIMAL PLANET 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",H ANIMAL PLANET 1
+http://190.108.83.69:8000/play/a09v/index.m3u8
+
 # ===== Variedades =====
 
 #EXTINF:-1 group-title="Variedades" tvg-name="200 El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png" group-title="Variedades" tvg-name="El Gourmet 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Elgourmet.com_logo.svg/320px-Elgourmet.com_logo.svg.png",El Gourmet 1
