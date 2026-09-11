@@ -1,61 +1,61 @@
 ---
 name: m3u-to-backup
-description: "Mueve canales de official.m3u a backup.m3u por ID global y reordena la lista oficial. Usar cuando el usuario pida pasar canales a respaldo, mover fuentes caidas a backup, o quitar entradas de official dejandolas en backup.m3u."
+description: "Move channels from official.m3u to backup.m3u by global ID and reorder the official list. Use when the user asks to move channels to backup, move down sources to backup, or remove entries from official while keeping them in backup.m3u."
 ---
 
-# Mover canales a backup.m3u
+# Move channels to backup.m3u
 
-Workflow para sacar entradas de `official.m3u` y guardarlas en `backup.m3u`.
+Workflow to remove entries from `official.m3u` and save them in `backup.m3u`.
 
-## Requisito obligatorio: IDs del usuario
+## Mandatory requirement: user IDs
 
-**No ejecutar sin IDs.** El usuario debe indicar uno o más IDs globales de `official.m3u` (el numero al inicio de `tvg-name`, ej. `88` en `88 Star Channel 1`).
+**Do not run without IDs.** The user must provide one or more global IDs from `official.m3u` (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`).
 
-Si el mensaje no incluye IDs, pedirlos y detenerse. No inferir IDs ni buscar canales por nombre.
+If the message does not include IDs, ask for them and stop. Do not infer IDs or search channels by name.
 
-Formatos aceptados del usuario:
+Accepted user formats:
 
-- Lista separada por comas: `88, 91, 102`
-- Lista separada por espacios: `88 91 102`
-- Rango: `88-92` (expandir a `88 89 90 91 92`)
+- Comma-separated list: `88, 91, 102`
+- Space-separated list: `88 91 102`
+- Range: `88-92` (expand to `88 89 90 91 92`)
 
-## Ejecucion
+## Execution
 
-Desde la raiz del repo:
+From the repo root:
 
 ```bash
 python3 scripts/move_to_backup.py <id1> <id2> ...
 ```
 
-Ejemplo:
+Example:
 
 ```bash
 python3 scripts/move_to_backup.py 88 91
 ```
 
-El script:
+The script:
 
-1. Extrae de `official.m3u` las entradas cuyo ID global coincida.
-2. Las agrega a `backup.m3u` sin el ID global en `tvg-name` ni en el nombre visible (formato `Star Channel 1`).
-3. Omite URLs ya presentes en `backup.m3u`.
-4. Reagrupa `backup.m3u` por `group-title`.
-5. Ejecuta `python3 scripts/clean_m3u.py` para reordenar y recalcular IDs en `official.m3u`.
+1. Extracts from `official.m3u` entries whose global ID matches.
+2. Adds them to `backup.m3u` without the global ID in `tvg-name` or the visible name (format `Star Channel 1`).
+3. Skips URLs already present in `backup.m3u`.
+4. Regroups `backup.m3u` by `group-title`.
+5. Runs `python3 scripts/clean_m3u.py` to reorder and recalculate IDs in `official.m3u`.
 
-Si algun ID no existe, el script falla; informar el error al usuario y no decir "trabajo realizado".
+If any ID does not exist, the script fails; report the error to the user and do not say "trabajo realizado".
 
-## Respuesta al finalizar (obligatorio)
+## Response on completion (required)
 
-Al terminar el trabajo con exito, la respuesta al usuario debe ser **exactamente** una sola linea:
+When the work finishes successfully, the response to the user must be **exactly** one line:
 
 ```text
 trabajo realizado
 ```
 
-Nada mas. Sin resumen, sin listado de canales movidos, sin conteos, sin explicaciones, sin preguntas de seguimiento.
+Nothing else. No summary, no list of moved channels, no counts, no explanations, no follow-up questions.
 
-## Errores comunes
+## Common mistakes
 
-- **Ejecutar sin IDs**: prohibido; pedir los IDs primero.
-- **Buscar por nombre en vez de ID**: prohibido; exigir el ID global.
-- **Editar las listas a mano**: usar siempre `move_to_backup.py`.
-- **Olvidar el cleanup**: el script ya ejecuta `clean_m3u.py`; no hace falta correrlo aparte.
+- **Running without IDs**: forbidden; ask for IDs first.
+- **Searching by name instead of ID**: forbidden; require the global ID.
+- **Editing lists manually**: always use `move_to_backup.py`.
+- **Forgetting cleanup**: the script already runs `clean_m3u.py`; no need to run it separately.

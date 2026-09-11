@@ -1,88 +1,88 @@
 ---
 name: m3u-remove-channels
-description: "Elimina canales de official.m3u por ID global y recalcula los IDs correlativos. Usar cuando el usuario pida quitar, borrar o eliminar canales de la lista oficial, sacar fuentes que no funcionan, o limpiar entradas probadas en TV."
+description: "Remove channels from official.m3u by global ID and recalculate correlative IDs. Use when the user asks to remove, delete, or drop channels from the official list, remove sources that don't work, or clean up entries tested on TV."
 ---
 
-# Eliminar canales de official.m3u
+# Remove channels from official.m3u
 
-Workflow para quitar entradas de `official.m3u` de forma permanente (no van a `backup.m3u`).
+Workflow to permanently remove entries from `official.m3u` (they do not go to `backup.m3u`).
 
-## Requisito obligatorio: IDs del usuario
+## Mandatory requirement: user IDs
 
-**No ejecutar sin IDs.** El usuario debe indicar uno o más IDs globales de `official.m3u` (el número al inicio de `tvg-name`, ej. `88` en `88 Star Channel 1`).
+**Do not run without IDs.** The user must provide one or more global IDs from `official.m3u` (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`).
 
-Si el mensaje no incluye IDs:
+If the message does not include IDs:
 
-1. Pedirlos explícitamente.
-2. Detenerse. No inferir IDs ni buscar canales por nombre.
+1. Ask for them explicitly.
+2. Stop. Do not infer IDs or search channels by name.
 
-Formatos aceptados del usuario:
+Accepted user formats:
 
-- Lista separada por comas: `88, 91, 102`
-- Lista separada por espacios: `88 91 102`
-- Rango: `88-92` (expandir a `88 89 90 91 92`)
+- Comma-separated list: `88, 91, 102`
+- Space-separated list: `88 91 102`
+- Range: `88-92` (expand to `88 89 90 91 92`)
 
-### Ayudar al usuario a identificar IDs
+### Help the user identify IDs
 
-Si el usuario no sabe qué ID corresponde a un canal, puedes listar entradas actuales sin ejecutar la eliminación:
+If the user does not know which ID corresponds to a channel, you may list current entries without running the removal:
 
 ```bash
 grep -E '^#EXTINF' official.m3u | head -30
 ```
 
-O, si acaba de probar en TV y quiere quitar caídos:
+Or, if they just tested on TV and want to remove down channels:
 
 ```bash
 python3 scripts/check_channels.py
 ```
 
-Aun así, **no eliminar hasta que el usuario confirme los IDs**.
+Even so, **do not remove until the user confirms the IDs**.
 
-## Ejecución
+## Execution
 
-Desde la raíz del repo:
+From the repo root:
 
 ```bash
 python3 scripts/remove_channels.py <id1> <id2> ...
 ```
 
-Ejemplo:
+Example:
 
 ```bash
 python3 scripts/remove_channels.py 88 91
 ```
 
-El script:
+The script:
 
-1. Extrae de `official.m3u` las entradas cuyo ID global coincida.
-2. Las elimina de forma permanente (no se copian a `backup.m3u`).
-3. Ejecuta `python3 scripts/clean_m3u.py` para reordenar categorías, recalcular IDs correlativos y deduplicar URLs.
+1. Extracts from `official.m3u` entries whose global ID matches.
+2. Removes them permanently (they are not copied to `backup.m3u`).
+3. Runs `python3 scripts/clean_m3u.py` to reorder categories, recalculate correlative IDs, and deduplicate URLs.
 
-Si algún ID no existe, el script falla; informar el error al usuario y no decir "trabajo realizado".
+If any ID does not exist, the script fails; report the error to the user and do not say "trabajo realizado".
 
-## Diferencia con m3u-to-backup
+## Difference from m3u-to-backup
 
-| Acción | Skill / script |
+| Action | Skill / script |
 |--------|----------------|
-| Quitar de official y guardar en backup | `m3u-to-backup` → `move_to_backup.py` |
-| Quitar de official sin respaldo | `m3u-remove-channels` → `remove_channels.py` |
+| Remove from official and save to backup | `m3u-to-backup` → `move_to_backup.py` |
+| Remove from official without backup | `m3u-remove-channels` → `remove_channels.py` |
 
-Si el usuario quiere conservar la fuente por si vuelve a funcionar, usar `m3u-to-backup`, no esta skill.
+If the user wants to keep the source in case it works again, use `m3u-to-backup`, not this skill.
 
-## Respuesta al usuario (obligatorio)
+## Response to the user (required)
 
-Tras una eliminación exitosa, la respuesta completa al usuario es **solo** esta línea, sin texto antes ni después:
+After a successful removal, the complete response to the user is **only** this line, with no text before or after:
 
 ```text
 trabajo realizado
 ```
 
-Prohibido añadir resúmenes, conteos, nombres de canales, IDs eliminados, confirmaciones extra o cualquier otra frase. Ni un punto más.
+Do not add summaries, counts, channel names, removed IDs, extra confirmations, or any other phrase. Not even a period more.
 
-## Errores comunes
+## Common mistakes
 
-- **Ejecutar sin IDs**: prohibido; pedir los IDs primero.
-- **Buscar por nombre en vez de ID**: prohibido; exigir el ID global.
-- **Editar official.m3u a mano**: usar siempre `remove_channels.py`.
-- **Confundir con backup**: si el usuario quiere respaldo, usar `move_to_backup.py`.
-- **Olvidar el cleanup**: el script ya ejecuta `clean_m3u.py`; no hace falta correrlo aparte.
+- **Running without IDs**: forbidden; ask for IDs first.
+- **Searching by name instead of ID**: forbidden; require the global ID.
+- **Editing official.m3u manually**: always use `remove_channels.py`.
+- **Confusing with backup**: if the user wants backup, use `move_to_backup.py`.
+- **Forgetting cleanup**: the script already runs `clean_m3u.py`; no need to run it separately.

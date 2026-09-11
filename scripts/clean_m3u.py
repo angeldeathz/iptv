@@ -494,8 +494,28 @@ def get_channel_base(clean_name):
     return re.sub(r"\s+\d+$", "", clean_name).strip()
 
 
+def load_logo_assets():
+    """Load verified logo URLs from assets/logos.json."""
+    assets_path = os.path.join(os.path.dirname(__file__), "..", "assets", "logos.json")
+    if not os.path.exists(assets_path):
+        return {}
+    try:
+        import json
+
+        with open(assets_path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    result = {}
+    for key, entry in data.items():
+        if isinstance(entry, dict) and entry.get("url"):
+            result[key.lower()] = entry["url"]
+    return result
+
+
 def resolve_missing_logos(entries):
-    """Fill missing tvg-logo from sibling variants or LOGO_LIBRARY."""
+    """Fill missing tvg-logo from sibling variants, assets, or LOGO_LIBRARY."""
+    logo_assets = load_logo_assets()
     logos_by_base = {}
     for entry in entries:
         logo = entry["attrs"].get("tvg-logo", "")
@@ -519,15 +539,24 @@ def resolve_missing_logos(entries):
                 entry["attrs"]["tvg-logo"] = logo
                 break
         else:
-            if clean_lower in LOGO_LIBRARY:
+            if base in logo_assets:
+                entry["attrs"]["tvg-logo"] = logo_assets[base]
+            elif clean_lower in logo_assets:
+                entry["attrs"]["tvg-logo"] = logo_assets[clean_lower]
+            elif clean_lower in LOGO_LIBRARY:
                 entry["attrs"]["tvg-logo"] = LOGO_LIBRARY[clean_lower]
             elif base in LOGO_LIBRARY:
                 entry["attrs"]["tvg-logo"] = LOGO_LIBRARY[base]
             else:
-                for key, logo in LOGO_LIBRARY.items():
+                for key, logo in logo_assets.items():
                     if key in clean_lower:
                         entry["attrs"]["tvg-logo"] = logo
                         break
+                else:
+                    for key, logo in LOGO_LIBRARY.items():
+                        if key in clean_lower:
+                            entry["attrs"]["tvg-logo"] = logo
+                            break
 
 
 def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):

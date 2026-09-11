@@ -3,51 +3,51 @@ name: m3u-lineup-curator
 description: "Use when curating IPTV M3U playlists, especially official.m3u, to prioritize Latin American channels, prefer 1080p sources, and order channels like a provider lineup (Movistar, DIRECTV, Claro)."
 ---
 
-# Curador de listas M3U
+# M3U Playlist Curator
 
-Esta skill define cómo mantener `official.m3u` como una parrilla de proveedor de TV: limpia, consistente y orientada a Latinoamérica.
+This skill defines how to maintain `official.m3u` as a TV provider lineup: clean, consistent, and Latin America–oriented.
 
-## Objetivo
+## Goal
 
-1. Tratar `official.m3u` como una grilla editorial, no como un volcado de enlaces.
-2. Priorizar canales de Latinoamérica, con foco en señales hispanohablantes y panregionales.
-3. Dejar Brasil y otros mercados no prioritarios al final, solo si aportan cobertura única o necesaria.
-4. Preferir siempre la mejor calidad disponible, con prioridad clara para `1080p`.
-5. Ordenar por categorías como lo hace un proveedor: nacionales, infantiles, películas, series, deportes, noticias, música, documentales y otros.
+1. Treat `official.m3u` as an editorial grid, not a link dump.
+2. Prioritize Latin American channels, focusing on Spanish-speaking and pan-regional streams.
+3. Leave Brazil and other non-priority markets at the end, only when they add unique or necessary coverage.
+4. Always prefer the best available quality, with clear priority for `1080p`.
+5. Order by categories like a provider: nationals, kids, movies, series, sports, news, music, documentaries, and others.
 
-## Criterios de selección
+## Selection criteria
 
-1. Si un canal tiene varias fuentes, elegir primero la más estable y con mejor resolución.
-2. El orden de preferencia de calidad es `1080p`, `720p`, `576p`, `480p`, `SD`.
-3. Mantener variantes secundarias solo cuando sirvan como respaldo real o aporten una región distinta dentro de LATAM.
-4. Evitar duplicados innecesarios. Si hay más de una entrada para el mismo canal, la primera debe ser la principal.
-5. No inventar metadatos: conservar `tvg-id`, `tvg-name`, `tvg-logo`, `group-title`, `user-agent` y `#EXTVLCOPT` cuando existan.
+1. If a channel has multiple sources, choose the most stable one with the best resolution first.
+2. Quality preference order is `1080p`, `720p`, `576p`, `480p`, `SD`.
+3. Keep secondary variants only when they serve as real backups or add a different region within LATAM.
+4. Avoid unnecessary duplicates. If there is more than one entry for the same channel, the first must be the primary one.
+5. Do not invent metadata: preserve `tvg-id`, `tvg-name`, `tvg-logo`, `group-title`, `user-agent`, and `#EXTVLCOPT` when they exist.
 
-## Orden de la grilla
+## Lineup order
 
-Sigue esta lógica de ordenación:
+Follow this sorting logic:
 
-1. Canales nacionales y abiertos del mercado objetivo.
-2. Canales regionales o locales relevantes.
-3. Infantiles.
-4. Películas.
-5. Series y entretenimiento.
-6. Deportes.
-7. Noticias e información.
-8. Música, estilo de vida y cultura.
-9. Documentales y educación.
-10. Internacionales y variantes secundarias.
+1. National and open channels of the target market.
+2. Relevant regional or local channels.
+3. Kids.
+4. Movies.
+5. Series and entertainment.
+6. Sports.
+7. News and information.
+8. Music, lifestyle, and culture.
+9. Documentaries and education.
+10. International and secondary variants.
 
-Dentro de cada grupo:
+Within each group:
 
-1. Canal principal primero.
-2. Versión `HD` o `1080p` inmediatamente después.
-3. Versiones `720p`, `576p` y `SD` al final.
-4. Si hay variantes por región, conservar el bloque de Latinoamérica hispanohablante antes que otras variantes.
+1. Main channel first.
+2. `HD` or `1080p` version immediately after.
+3. `720p`, `576p`, and `SD` versions at the end.
+4. If there are regional variants, keep the Spanish-speaking Latin America block before other variants.
 
-## Taxonomía sugerida de grupos
+## Suggested group taxonomy
 
-Usa categorías consistentes y reconocibles por el usuario:
+Use consistent, user-recognizable categories:
 
 1. `NACIONALES`
 2. `REGIONALES`
@@ -61,14 +61,14 @@ Usa categorías consistentes y reconocibles por el usuario:
 10. `VARIEDADES`
 11. `INTERNACIONALES`
 
-## Reglas editoriales
+## Editorial rules
 
-1. No ordenar alfabéticamente salvo que el usuario lo pida.
-2. No mezclar Brasil dentro del bloque principal de Latinoamérica hispanohablante.
-3. No mover canales solo por nombre si eso rompe la lógica de proveedor.
-4. Si un canal está duplicado con calidades distintas, dejar la mejor versión más arriba.
-5. Preservar la sintaxis M3U exacta para no romper reproductores.
+1. Do not sort alphabetically unless the user asks.
+2. Do not mix Brazil into the main Spanish-speaking Latin America block.
+3. Do not move channels by name alone if that breaks provider logic.
+4. If a channel is duplicated with different qualities, keep the best version higher up.
+5. Preserve exact M3U syntax so players do not break.
 
-## Resultado esperado
+## Expected outcome
 
-Cuando esta skill se use sobre `official.m3u`, el resultado debe parecer una lista curada por un operador de TV: orden por bloques temáticos, prioridad LATAM, calidad alta primero y estructura estable.
+When this skill is used on `official.m3u`, the result should look like a list curated by a TV operator: thematic block order, LATAM priority, high quality first, and stable structure.

@@ -1,155 +1,155 @@
 ---
 name: m3u-source-update
-description: "Busca canales en las listas M3U de origen con scripts/search_sources.py y agrega las mejores fuentes (maximo 6) a official.m3u para que el usuario las pruebe en TV. Usar cuando el usuario pida buscar fuentes, agregar respaldos, reemplazar un canal caido, o actualizar la lista desde servidores de origen."
+description: "Search for channels in source M3U lists with scripts/search_sources.py and add the best sources (max 6) to official.m3u for the user to test on TV. Use when the user asks to search for sources, add backups, replace a down channel, or update the list from origin servers."
 ---
 
-# Actualizar official.m3u desde fuentes de origen
+# Update official.m3u from source servers
 
-Workflow para encontrar señales en servidores Astra y volcarlas en `official.m3u`.
+Workflow to find streams on Astra servers and add them to `official.m3u`.
 
-## Politica principal
+## Core policy
 
-**Agregar solo las mejores fuentes, maximo 6 por canal.** El usuario las prueba en su TV y luego elimina las que no sirvan o pide mover el resto a backup.
+**Add only the best sources, max 6 per channel.** The user tests them on their TV and then removes the ones that don't work or asks to move the rest to backup.
 
-Excepciones:
+Exceptions:
 
-- Si el usuario pide un numero distinto (ej. "solo 3", "maximo 7"), usar ese limite.
-- Si pide explicitamente **todas** las fuentes, agregar todas sin filtrar.
-- Si pide reemplazar una sola URL o agregar solo una fuente, seguir esa instruccion.
+- If the user requests a different number (e.g. "only 3", "max 7"), use that limit.
+- If they explicitly ask for **all** sources, add all without filtering.
+- If they ask to replace a single URL or add only one source, follow that instruction.
 
-## Cuando usar esta skill
+## When to use this skill
 
-- El usuario pide buscar un canal en las fuentes de origen.
-- Hay que agregar respaldos o variantes para testear en TV.
-- Hay que reemplazar una URL caida (solo si el usuario lo pide).
-- Hay que incorporar un canal nuevo desde los servidores verificados.
+- The user asks to search for a channel in the source servers.
+- Backups or variants need to be added for TV testing.
+- A down URL needs to be replaced (only if the user requests it).
+- A new channel needs to be added from verified servers.
 
-Para criterios editoriales (prioridad LATAM, orden de parrilla), combinar con la skill `m3u-lineup`.
+For editorial criteria (LATAM priority, lineup order), combine with the `m3u-lineup` skill.
 
-## Paso 1: Buscar coincidencias
+## Step 1: Search for matches
 
-Ejecutar desde la raiz del repo con **acceso de red completo** (`required_permissions: ["full_network"]` en el Shell tool). **No usar el sandbox por defecto**: los servidores Astra no estan en la allowlist y devuelven HTTP 403 falso en la primera ejecucion.
+Run from the repo root with **full network access** (`required_permissions: ["full_network"]` in the Shell tool). **Do not use the default sandbox**: Astra servers are not on the allowlist and return a false HTTP 403 on the first run.
 
 ```bash
-python3 scripts/search_sources.py "<consulta>" --json
+python3 scripts/search_sources.py "<query>" --json
 ```
 
-Preferir `--json` para no omitir coincidencias al parsear la salida.
+Prefer `--json` to avoid missing matches when parsing output.
 
-Si `total_matches` es 0 y todos los `failed_sources` muestran `HTTP 403`, **no reintentar ni informar caida de servidores** — volver a ejecutar el mismo comando con `full_network` (o `all` si falla el permiso).
+If `total_matches` is 0 and all `failed_sources` show `HTTP 403`, **do not retry or report servers as down** — re-run the same command with `full_network` (or `all` if the permission fails).
 
-Reglas de consulta:
+Query rules:
 
-- Usar el nombre limpio del canal, sin prefijos de pais ni resolucion (ej. `star channel`, no `CL: Star Channel HD`).
-- Si hay muchos resultados irrelevantes, afinar la consulta o usar `--regex`.
-- No usar `--source` salvo que el usuario limite la busqueda a un servidor.
+- Use the clean channel name, without country prefixes or resolution (e.g. `star channel`, not `CL: Star Channel HD`).
+- If there are many irrelevant results, refine the query or use `--regex`.
+- Do not use `--source` unless the user limits the search to one server.
 
-## Paso 2: Seleccionar las mejores fuentes (maximo 6)
+## Step 2: Select the best sources (max 6)
 
-Recorrer todas las coincidencias y **quedarse solo con las mejores**, hasta **6 URLs nuevas** por canal (o el limite que pida el usuario).
+Go through all matches and **keep only the best**, up to **6 new URLs** per channel (or the limit the user requests).
 
-Para cada match:
+For each match:
 
-| Condicion | Accion |
+| Condition | Action |
 |-----------|--------|
-| URL ya en `official.m3u` (`in_official: true`) | **Omitir** — ya esta para probar |
-| URL nueva | **Candidata** a agregar |
-| Fuente con error (timeout, lista vacia) | **Omitir** — no hay URL que agregar |
+| URL already in `official.m3u` (`in_official: true`) | **Skip** — already available for testing |
+| New URL | **Candidate** to add |
+| Source with error (timeout, empty list) | **Skip** — no URL to add |
 
-### Criterios de seleccion (en orden)
+### Selection criteria (in order)
 
-1. **Servidor estable**: priorizar hosts que ya aparecen mucho en `official.m3u` (mismo criterio que HBO, Disney Channel, etc.).
-2. **Calidad**: preferir `1080p` / `FHD` / `HD` sobre `SD`.
-3. **URL completa**: preferir URLs con `/index.m3u8` sobre rutas incompletas.
-4. **Nombre limpio**: descartar variantes raras (`ENVIADO`, `NUEVO`, numeros de linea internos).
-5. **Una URL por servidor**: si un host tiene varias coincidencias del mismo canal, quedarse con la de mayor calidad.
-6. **Logo en origen**: desempate a favor de entradas con `tvg-logo` en el `#EXTINF`.
+1. **Stable server**: prioritize hosts that already appear frequently in `official.m3u` (same criterion as HBO, Disney Channel, etc.).
+2. **Quality**: prefer `1080p` / `FHD` / `HD` over `SD`.
+3. **Complete URL**: prefer URLs with `/index.m3u8` over incomplete paths.
+4. **Clean name**: discard odd variants (`ENVIADO`, `NUEVO`, internal line numbers).
+5. **One URL per server**: if a host has multiple matches for the same channel, keep the highest-quality one.
+6. **Logo in source**: tie-break in favor of entries with `tvg-logo` on the `#EXTINF`.
 
-Tras rankear, agregar solo las **top N** (default **6**). Si hay menos candidatas validas, agregar todas las que cumplan.
+After ranking, add only the **top N** (default **6**). If there are fewer valid candidates, add all that qualify.
 
-Si el canal ya tiene variantes en `official.m3u` y el total superaria el limite, **no reemplazar** las existentes salvo que el usuario lo pida; agregar solo hasta completar el cupo.
+If the channel already has variants in `official.m3u` and the total would exceed the limit, **do not replace** existing ones unless the user asks; add only up to the remaining quota.
 
-## Paso 3: Editar official.m3u
+## Step 3: Edit official.m3u
 
-### Canal ya existente
+### Existing channel
 
-1. Localizar el bloque del canal en `official.m3u` (por nombre o ID).
-2. Insertar **debajo del ultimo bloque de ese canal** (o al final del grupo si no hay variantes) un `#EXTINF` + URL por cada fuente nueva.
-3. **No reemplazar** la URL principal salvo que el usuario lo pida.
-4. Reutilizar el `tvg-logo` del canal existente en cada bloque nuevo.
+1. Locate the channel block in `official.m3u` (by name or ID).
+2. Insert **below the last block for that channel** (or at the end of the group if there are no variants) one `#EXTINF` + URL per new source.
+3. **Do not replace** the main URL unless the user asks.
+4. Reuse the existing channel's `tvg-logo` in each new block.
 
-### Canal nuevo (no esta en la lista)
+### New channel (not in the list)
 
-1. Insertar todos los bloques en la seccion tematica adecuada.
-2. Usar el `tvg-logo` del origen si existe; si no, dejar sin logo (el cleanup puede resolverlo).
+1. Insert all blocks in the appropriate thematic section.
+2. Use the source's `tvg-logo` if present; otherwise leave without logo (cleanup may resolve it).
 
-### Plantilla por fuente nueva
+### Template per new source
 
 ```text
 #EXTINF:-1 group-title="Peliculas" tvg-name="Star Channel HD",Star Channel HD
 http://servidor/play/xxxx/index.m3u8
 ```
 
-Si el origen trae `#EXTVLCOPT:http-user-agent=...`, copiar esas lineas entre `#EXTINF` y la URL.
+If the source includes `#EXTVLCOPT:http-user-agent=...`, copy those lines between `#EXTINF` and the URL.
 
-Reglas al copiar metadatos del origen:
+Rules when copying metadata from the source:
 
-- No copiar `tvg-id`.
-- Usar el `display_name` del origen como nombre provisional en `#EXTINF`.
-- No preocuparse por IDs correlativos, indices de repeticion ni `group-title` final: `clean_m3u.py` los recalcula y agrupa variantes del mismo canal.
+- Do not copy `tvg-id`.
+- Use the source's `display_name` as the provisional name in `#EXTINF`.
+- Do not worry about correlative IDs, repetition indices, or final `group-title`: `clean_m3u.py` recalculates them and groups variants of the same channel.
 
-### Quitar canal
+### Remove channel
 
-Solo si el usuario lo pide: eliminar bloque completo (`#EXTINF`, `#EXTVLCOPT` si hay, URL).
+Only if the user asks: delete the full block (`#EXTINF`, `#EXTVLCOPT` if any, URL).
 
-## Paso 4: Limpiar la lista (obligatorio)
+## Step 4: Clean the list (required)
 
-Tras cualquier edicion de `official.m3u`:
+After any edit to `official.m3u`:
 
 ```bash
 python3 scripts/clean_m3u.py
 ```
 
-Verificar que el script termina sin errores. Tras el cleanup, variantes del mismo canal quedan como `N Canal X 1`, `N Canal X 2`, etc., ordenadas por calidad.
+Verify the script finishes without errors. After cleanup, variants of the same channel appear as `N Canal X 1`, `N Canal X 2`, etc., sorted by quality.
 
-## Paso 5: Confirmar al usuario
+## Step 5: Confirm to the user
 
-Resumir:
+Summarize:
 
-1. Consulta usada y limite aplicado (default 6).
-2. **Total agregadas** vs **ya existentes** vs **descartadas por ranking** vs **omitidas** (fuente caida).
-3. Rango de IDs finales del canal tras cleanup (ej. `67 HBO 2 1` … `67 HBO 2 6`).
-4. Listado breve: servidor + URL de cada fuente **nueva** agregada.
-5. Recordar que puede probar en TV y pedir eliminar las que fallen o mover a backup.
+1. Query used and limit applied (default 6).
+2. **Total added** vs **already present** vs **discarded by ranking** vs **skipped** (down source).
+3. Final ID range for the channel after cleanup (e.g. `67 HBO 2 1` … `67 HBO 2 6`).
+4. Brief list: server + URL for each **new** source added.
+5. Remind them they can test on TV and ask to remove failed ones or move to backup.
 
 ## Checklist
 
 ```
-- [ ] Ejecutar search_sources.py --json con full_network (nunca sandbox)
-- [ ] Rankear candidatas y agregar solo las mejores (max 6 por defecto)
-- [ ] Omitir URLs ya presentes o fuentes no disponibles
-- [ ] Ejecutar clean_m3u.py
-- [ ] Informar cuantas fuentes se agregaron y sus IDs finales
+- [ ] Run search_sources.py --json with full_network (never sandbox)
+- [ ] Rank candidates and add only the best (max 6 by default)
+- [ ] Skip URLs already present or unavailable sources
+- [ ] Run clean_m3u.py
+- [ ] Report how many sources were added and their final IDs
 ```
 
-## Comandos utiles
+## Useful commands
 
 ```bash
-# Busqueda con salida estructurada (usar siempre para agregar fuentes)
+# Search with structured output (always use when adding sources)
 python3 scripts/search_sources.py "star channel" --json
 
-# Busqueda legible para revisar rapido
+# Readable search for quick review
 python3 scripts/search_sources.py "espn 2"
 
-# Verificar canales caidos despues de probar en TV (tambien requiere full_network)
+# Verify down channels after TV testing (also requires full_network)
 python3 scripts/check_channels.py
 ```
 
-## Errores comunes
+## Common mistakes
 
-- **Ejecutar en sandbox**: provoca HTTP 403 en todos los servidores; siempre usar `full_network` en el primer intento.
-- **Agregar todas las fuentes**: el default es maximo 6 mejores; solo agregar todas si el usuario lo pide explicitamente.
-- **Editar nombres/IDs a mano**: dejar que `clean_m3u.py` los normalice.
-- **Olvidar el cleanup**: rompe taxonomia, IDs y deduplicacion.
-- **Reemplazar en vez de agregar**: solo reemplazar si el usuario lo pide explicitamente.
-- **Copiar tvg-id del origen**: prohibido; el cleanup lo quita igual.
+- **Running in sandbox**: causes HTTP 403 on all servers; always use `full_network` on the first attempt.
+- **Adding all sources**: default is max 6 best; only add all if the user explicitly asks.
+- **Editing names/IDs manually**: let `clean_m3u.py` normalize them.
+- **Forgetting cleanup**: breaks taxonomy, IDs, and deduplication.
+- **Replacing instead of adding**: only replace if the user explicitly asks.
+- **Copying tvg-id from source**: forbidden; cleanup removes it anyway.
