@@ -87,6 +87,9 @@ http://bigenterprise.live:8080/07366617/45969898/1044400
 #EXTINF:-1 tvg-name="44 Cartoonito 1" group-title="Infantiles" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" tvg-name="Cartoonito 1" group-title="Infantiles" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png",Cartoonito 1
 http://190.61.42.218:9000/play/a05r/index.m3u8
 
+#EXTINF:-1 tvg-name="55 Simpsons Latino 24/7 1" tvg-logo="https://i.imgur.com/hSb8lg3.png" group-title="Infantiles" tvg-name="Simpsons Latino 24/7 1" tvg-logo="https://i.imgur.com/hSb8lg3.png" group-title="Infantiles",Simpsons Latino 24/7 1
+http://alfa.7057460.xyz:2095/Rubi1326/Gutierre2/16064
+
 # ===== Peliculas =====
 
 #EXTINF:-1 group-title="Peliculas" tvg-name="79 FX 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" group-title="Peliculas" tvg-name="FX 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png",FX 1
@@ -163,6 +166,21 @@ http://187.102.211.240:9001/play/a01w/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/argentina/cinemax.png" group-title="Peliculas" tvg-name="76 Cinemax 2" tvg-logo="https://docdog.top/logo/countries/argentina/cinemax.png" group-title="Peliculas" tvg-name="Cinemax 2",Cinemax 2
 http://45.186.254.75:8000/play/a0bt/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="71 Cinecanal 1" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 1",Cinecanal 1
+http://190.217.66.92:8000/play/a0og/index.m3u8?hls
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="72 Cinecanal 2" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 2",Cinecanal 2
+http://45.5.116.228:8000/play/a0hq/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="73 Cinecanal 3" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 3",Cinecanal 3
+http://181.224.200.5:2277/play/a013/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="74 Cinecanal 4" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 4",Cinecanal 4
+http://190.61.43.117:45000/play/a07r/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="75 Cinecanal 5" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 5",Cinecanal 5
+http://38.226.49.253:8000/play/a05z/index.m3u8?hls
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="63 HBO 2 1" tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="HBO 2 1",HBO 2 1
 http://72.1.184.5:8089/play/a07p/index.m3u8
