@@ -171,8 +171,11 @@ def clean_channel_name(display_name):
         "sony cine": "Sony Cine",
         "capitan tsubasa": "Capitan Tsubasa",
         "one piece 24/7": "One Piece 24/7",
+        "el chavo 24/7": "El Chavo 24/7",
+        "tom y jerry 24/7": "Tom y Jerry 24/7",
         "mega 2": "Mega 2",
         "simpsons latino 24/7": "Simpsons Latino 24/7",
+        "los simpson 24/7": "Los Simpson 24/7",
         "eurochannel": "Eurochannel",
         "grjngo": "Grjngo",
         "rewind": "Rewind",
@@ -193,6 +196,50 @@ def clean_channel_name(display_name):
         "discovery home and health": "Discovery Home and Health",
         "home & health": "Home and Health",
         "home and health": "Home and Health",
+        "doraemon 24/7": "Doraemon 24/7",
+        "delmi tv": "Delmi TV",
+        "pelis plus 24/7": "Pelis Plus 24/7",
+        "peliculas 24/7": "Peliculas 24/7",
+        "multivox cine": "MultiVox Cine",
+        "neo tv": "NEO TV",
+        "telemix": "Telemix",
+        "telecinco trelew": "Telecinco Trelew",
+        "todo novelas 24/7": "Todo Novelas 24/7",
+        "retro play": "Retro Play",
+        "pelis variedad 24/7": "Pelis Variedad 24/7",
+        "kanal d drama": "Kanal D Drama",
+        "video kapc": "Video KAPC",
+        "mega cine 24/7": "Mega Cine 24/7",
+        "jio cinema": "Jio Cinema",
+        "cine clasico": "Cine Clasico",
+        "retro plus": "Retro Plus",
+        "extrema terror": "Extrema Terror",
+        "extrema clasico": "Extrema Clasico",
+        "extrema accion": "Extrema Accion",
+        "extrema kids": "Extrema Kids",
+        "extrema cartoons": "Extrema Cartoons",
+        "ottera latino": "Ottera Latino",
+        "ottera films": "Ottera Films",
+        "ottera espanol": "Ottera Espanol",
+        "ottera cine and series": "Ottera Cine and Series",
+        "ottera familia": "Ottera Familia",
+        "ottera terror": "Ottera Terror",
+        "ottera romance": "Ottera Romance",
+        "ottera crimen": "Ottera Crimen",
+        "ottera comedia": "Ottera Comedia",
+        "ottera accion": "Ottera Accion",
+        "runtime peliculas": "Runtime Peliculas",
+        "runtime accion": "Runtime Accion",
+        "runtime terror": "Runtime Terror",
+        "runtime romance": "Runtime Romance",
+        "runtime familia": "Runtime Familia",
+        "runtime crimen": "Runtime Crimen",
+        "goku tv 24/7": "Goku TV 24/7",
+        "dragon ball z 24/7": "Dragon Ball Z 24/7",
+        "dragon ball 24/7": "Dragon Ball 24/7",
+        "dragon ball z pluto feed a": "Dragon Ball Z Pluto Feed A",
+        "dragon ball z pluto feed b": "Dragon Ball Z Pluto Feed B",
+        "dragon ball super 24/7": "Dragon Ball Super 24/7",
     }
     name = overrides.get(name.lower(), name)
     name = sanitize_display_name(name)
@@ -612,6 +659,9 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     original_group_lower = (original_group or "").lower()
     tvg_id_lower = (tvg_id or "").lower()
 
+    if original_group_lower in ("24/7 - experimentales", "24/7 experimentales"):
+        return "24/7 - Experimentales"
+
     # Editorial overrides (explicit category assignments)
     if "13 kids" in clean_name_lower:
         return "Infantiles"
@@ -746,7 +796,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Regionales"
         
     # 3. Infantiles
-    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "capitan tsubasa", "one piece", "simpsons", "baby tv", "babytv"]):
+    if any(w in clean_name_lower for w in ["cartoon", "cartoons", "disney", "dreamworks", "nick", "kids", "esponja", "spongebob", "disney jr", "tooncast", "cartoonito", "retromagico", "supertoons", "laika channel", "capitan tsubasa", "one piece", "simpsons", "chavo", "tom y jerry", "tom and jerry", "baby tv", "babytv"]):
         return "Infantiles"
         
     # 4. Peliculas
@@ -823,6 +873,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         "general": "Nacionales",
         "latin 3": "Nacionales",
         "internacionales": "Internacionales",
+        "24/7 - experimentales": "24/7 - Experimentales",
     }
     if original_group_lower in group_fallback:
         return group_fallback[original_group_lower]
@@ -840,7 +891,8 @@ GROUP_ORDER = [
     "Musica",
     "Documentales",
     "Variedades",
-    "Internacionales"
+    "Internacionales",
+    "24/7 - Experimentales",
 ]
 
 def get_group_priority(group_name):
