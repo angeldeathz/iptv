@@ -19,6 +19,9 @@ http://45.232.210.1:18000/play/a085/index.m3u8
 #EXTINF:-1 tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="16 TVN 7" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" tvg-name="TVN 7",TVN 7
 http://170.247.204.9:8000/play/a0ek/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2VL4Pts.png" group-title="Nacionales" tvg-name="17 UCV TV 2" tvg-logo="https://i.imgur.com/2VL4Pts.png" group-title="Nacionales" tvg-name="UCV TV 2",UCV TV 2
+https://unlimited1-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="3 CHV 1" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 1",CHV 1
 http://187.102.211.240:9001/play/a024/index.m3u8
 

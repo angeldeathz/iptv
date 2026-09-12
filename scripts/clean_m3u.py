@@ -55,6 +55,21 @@ def normalize_url(url):
     return url
 
 
+def repair_corrupted_name(name):
+    """Recover proper channel names when a logo URL was stored as the display name."""
+    n = name.lower()
+    if "https:" in n or "http:" in n or re.search(r"\b(?:docdog|githubusercontent|download\.logo)\b", n):
+        if "a%26e" in n or "a&e" in n or "a and e" in n:
+            return "A&E"
+        if "discovery-home-and-health" in n:
+            return "Discovery Home and Health"
+        if "home-us.png" in n or ("home" in n and "health" in n and "discovery" not in n):
+            return "Home and Health"
+        if "tnt.png" in n or ("docdog" in n and "tnt" in n):
+            return "TNT Sports Premium"
+    return name
+
+
 def clean_channel_name(display_name):
     # If the name is already in the formatted structure (e.g. "1 Chilevision 1"), extract the middle part first
     match = re.match(r'^\d+\s+(.+)\s+\d+$', display_name)
@@ -96,6 +111,8 @@ def clean_channel_name(display_name):
     # Step 7: Normalize spaces
     name = re.sub(r'\s+', ' ', name).strip()
 
+    name = repair_corrupted_name(name)
+
     # HBO2 without space (and numbered variants like "069 HBO2") -> HBO 2
     hbo2_candidate = re.sub(r'^\d+\s+', '', name, flags=re.IGNORECASE)
     if re.fullmatch(r'hbo\s*2', hbo2_candidate, flags=re.IGNORECASE):
@@ -115,7 +132,7 @@ def clean_channel_name(display_name):
         "atres series": "ATRES Series",
         "win futbol": "WIN Futbol",
         "bbc series": "BBC Series",
-        "tnt sports premium": "https://docdog.top/logo/countries/latino/tnt.png",
+        "tnt sports premium": "TNT Sports Premium",
         "dw español": "DW Español",
         "omusica tv": "OMusica TV",
         "warner channel": "Warner Channel",
@@ -169,13 +186,13 @@ def clean_channel_name(display_name):
         "ucl": "UCL",
         "film&arts": "Film and Arts",
         "film and arts": "Film and Arts",
-        "a&e": "https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png",
+        "a&e": "A&E",
         "a and e": "A&E",
         "aande": "A&E",
         "discovery h&h": "Discovery Home and Health",
-        "discovery home and health": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/discovery-home-and-health-uk.png",
+        "discovery home and health": "Discovery Home and Health",
         "home & health": "Home and Health",
-        "home and health": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/home-us.png",
+        "home and health": "Home and Health",
     }
     name = overrides.get(name.lower(), name)
     name = sanitize_display_name(name)
@@ -512,6 +529,7 @@ LOGO_LIBRARY = {
     "tlnovelas": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tlnovelas_logo.svg/320px-Tlnovelas_logo.svg.png",
     "htv": "https://docdog.top/logo/countries/argentina/htv-ar.png",
     "tnt": "https://docdog.top/logo/countries/latino/tnt.png",
+    "a&e": "https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png",
     "universal channel": "https://i.imgur.com/jnjvR5f.png",
     "hei": "https://cdn.m3u.cl/logo/1036_HEI.png",
     "gagsnetwork": "https://i.imgur.com/VgYCskX.png",
