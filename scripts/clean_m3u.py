@@ -113,6 +113,7 @@ def clean_channel_name(display_name):
         "disney jr": "Disney Jr.",
         "ent family": "ENT Family",
         "atres series": "ATRES Series",
+        "win futbol": "WIN Futbol",
         "bbc series": "BBC Series",
         "tnt sports premium": "https://docdog.top/logo/countries/latino/tnt.png",
         "dw español": "DW Español",
@@ -309,6 +310,11 @@ def get_peliculas_known_suborder(name_lower):
         return (2, 0)
     if name_lower == "cinemax":
         return (3, 0)
+    if name_lower == "tnt" or (
+        name_lower.startswith("tnt ")
+        and not any(x in name_lower for x in ["sports", "novelas", "series"])
+    ):
+        return (3, 1)
     if name_lower == "paramount":
         return (4, 0)
     if name_lower == "star channel":
@@ -404,6 +410,30 @@ def get_documentales_lineup_key(clean_name):
         return (4, 4, n)
 
     return (9, 0, n)
+
+
+def get_series_lineup_key(clean_name, first_occurrence_idx):
+    """Operator-style order for series channels."""
+    n = clean_name.lower()
+
+    if n == "universal tv" or n.startswith("universal tv "):
+        return (0, 0, n)
+    if n == "axn" or n.startswith("axn "):
+        return (1, 0, n)
+    if n == "universal channel" or n.startswith("universal channel "):
+        return (1, 1, n)
+    if n == "warner channel" or n.startswith("warner channel "):
+        return (2, 0, n)
+    if n == "warner" or n.startswith("warner "):
+        return (2, 1, n)
+    if n.startswith("e!") or n == "e":
+        return (3, 0, n)
+    if n == "lifetime" or n.startswith("lifetime "):
+        return (4, 0, n)
+    if n == "usa network" or n.startswith("usa network "):
+        return (5, 0, n)
+
+    return (9, first_occurrence_idx, 0, n)
 
 
 def get_noticias_lineup_key(clean_name):
@@ -594,6 +624,8 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Infantiles"
     if "telemundo" in clean_name_lower:
         return "Series"
+    if "win futbol" in clean_name_lower:
+        return "Deportes"
     if "nuestra tele" in clean_name_lower:
         return "Series"
     if clean_name_lower.startswith("cgtn"):
@@ -943,6 +975,10 @@ def clean_m3u(file_path):
             lineup_key = get_noticias_lineup_key(e['clean_name'])
         elif e['category'] == 'Documentales':
             lineup_key = get_documentales_lineup_key(e['clean_name'])
+        elif e['category'] == 'Series':
+            lineup_key = get_series_lineup_key(
+                e['clean_name'], first_occurrence[e['clean_name']]
+            )
         else:
             lineup_key = (first_occurrence[e['clean_name']], 0, e['clean_name'].lower())
         q_score = e['quality_score']
