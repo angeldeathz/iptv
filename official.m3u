@@ -537,153 +537,183 @@ http://187.102.211.240:9001/play/a03g/index.m3u8?hls
 #EXTINF:-1 group-title="Variedades" tvg-name="169 El Gourmet 1" tvg-logo="https://docdog.top/logo/countries/latino/elgourmet.png",169 El Gourmet 1
 http://187.102.211.240:9001/play/a01g/index.m3u8?hls
 
-#EXTINF:-1 group-title="Variedades" tvg-name="170 Hola Tv 1" tvg-logo="https://docdog.top/logo/countries/latino/holatv.png",170 Hola Tv 1
+#EXTINF:-1 group-title="Variedades" tvg-name="170 Food Network 1",170 Food Network 1
+http://190.61.43.117:45000/play/a08e/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="171 Food Network 2",171 Food Network 2
+http://38.226.49.253:8000/play/a07p/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="172 Food Network 3",172 Food Network 3
+http://45.186.254.75:8000/play/a058/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="173 Food Network 4",173 Food Network 4
+http://190.60.40.165:1010/play/a0og/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="174 Food Network 5",174 Food Network 5
+http://190.61.42.218:9000/play/a00j/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="175 Food Network 6",175 Food Network 6
+http://38.44.109.41:8003/play/a0hd/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="176 Mas Chic 1",176 Mas Chic 1
+http://190.60.40.165:1010/play/ye4s/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="177 Mas Chic 2",177 Mas Chic 2
+http://72.1.184.5:8089/play/a023/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="178 Mas Chic 3",178 Mas Chic 3
+http://45.167.2.101:8000/play/a0q5/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="179 Mas Chic 4",179 Mas Chic 4
+http://190.14.10.19:16000/play/a037/index.m3u8
+
+#EXTINF:-1 group-title="Variedades" tvg-name="180 Hola Tv 1" tvg-logo="https://docdog.top/logo/countries/latino/holatv.png",180 Hola Tv 1
 http://187.102.211.240:9001/play/a02c/index.m3u8?hls
 
 
 # ===== Internacionales =====
 
-#EXTINF:-1 group-title="Internacionales" tvg-name="171 TVE 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVE_logo.svg/320px-TVE_logo.svg.png",171 TVE 2
+#EXTINF:-1 group-title="Internacionales" tvg-name="181 TVE 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVE_logo.svg/320px-TVE_logo.svg.png",181 TVE 2
 http://187.102.211.240:9001/play/a04y/index.m3u8?hls
 
-#EXTINF:-1 group-title="Internacionales" tvg-name="172 CGTN 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cgtn-int.png",172 CGTN 1
+#EXTINF:-1 group-title="Internacionales" tvg-name="182 CGTN 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cgtn-int.png",182 CGTN 1
 http://187.102.211.240:9001/play/a03m/index.m3u8?hls
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/VgYCskX.png" group-title="Internacionales" tvg-name="173 Vision Latina Network 1",173 Vision Latina Network 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/VgYCskX.png" group-title="Internacionales" tvg-name="183 Vision Latina Network 1",183 Vision Latina Network 1
 https://cdn-cloudfront.us-east-1.prod.ingest.aws-infra.dacast.com/live/c1804a4c-ccbf-46e5-87c3-0f8d4a94d9e3/master.m3u8
 
-#EXTINF:-1 group-title="Internacionales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" tvg-name="174 ATRES Series 1",174 ATRES Series 1
+#EXTINF:-1 group-title="Internacionales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" tvg-name="184 ATRES Series 1",184 ATRES Series 1
 http://181.224.255.210:8001/play/a0rm/index.m3u8?hls
 
 
 # ===== 24/7 - Experimentales =====
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="175 Doraemon 24/7 1",175 Doraemon 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="185 Doraemon 24/7 1",185 Doraemon 24/7 1
 https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="176 Delmi TV 1",176 Delmi TV 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="186 Delmi TV 1",186 Delmi TV 1
 https://live20.bozztv.com/giatvplayout7/giatv-210634/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="177 Pelis Plus 24/7 1",177 Pelis Plus 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="187 Pelis Plus 24/7 1",187 Pelis Plus 24/7 1
 https://live20.bozztv.com/giatvplayout7/giatv-209633/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="178 Peliculas 24/7 1",178 Peliculas 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="188 Peliculas 24/7 1",188 Peliculas 24/7 1
 https://live20.bozztv.com/giatvplayout7/giatv-209634/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="179 MultiVox Cine 1",179 MultiVox Cine 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="189 MultiVox Cine 1",189 MultiVox Cine 1
 https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="180 NEO TV 1",180 NEO TV 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="190 NEO TV 1",190 NEO TV 1
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="181 Telemix 1",181 Telemix 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="191 Telemix 1",191 Telemix 1
 https://live20.bozztv.com/giatv/giatv-telemixenvivo/telemixenvivo/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="182 Telecinco Trelew 1",182 Telecinco Trelew 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="192 Telecinco Trelew 1",192 Telecinco Trelew 1
 https://videohd.live:19360/8016/8016.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="183 Todo Novelas 24/7 1",183 Todo Novelas 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="193 Todo Novelas 24/7 1",193 Todo Novelas 24/7 1
 https://dtsszjrztq9ti.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/ToDoNovelas_ES.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="184 Retro Play 1",184 Retro Play 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="194 Retro Play 1",194 Retro Play 1
 https://live20.bozztv.com/akamaissh101/ssh101/retrotvcr2025/chunks.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="185 Pelis Variedad 24/7 1",185 Pelis Variedad 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="195 Pelis Variedad 24/7 1",195 Pelis Variedad 24/7 1
 https://live20.bozztv.com/giatvplayout7/giatv-209595/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="186 Pelis Variedad 24/7 2",186 Pelis Variedad 24/7 2
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="196 Pelis Variedad 24/7 2",196 Pelis Variedad 24/7 2
 https://live20.bozztv.com/giatvplayout7/giatv-209595/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="187 Kanal D Drama 1",187 Kanal D Drama 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="197 Kanal D Drama 1",197 Kanal D Drama 1
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png" tvg-name="188 Video KAPC 1",188 Video KAPC 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png" tvg-name="198 Video KAPC 1",198 Video KAPC 1
 https://stmv2.voxtvhd.com.br/videokapc/videokapc/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-logo="https://i.imgur.com/RlZfR84.png" tvg-name="189 Mega Cine 24/7 1",189 Mega Cine 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-logo="https://i.imgur.com/RlZfR84.png" tvg-name="199 Mega Cine 24/7 1",199 Mega Cine 24/7 1
 https://cnn.hostlagarto.com/megacinetv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="190 Jio Cinema 1",190 Jio Cinema 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="200 Jio Cinema 1",200 Jio Cinema 1
 https://live20.bozztv.com/giatvplayout7/giatv-209622/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="191 Cine Clasico 1",191 Cine Clasico 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="201 Cine Clasico 1",201 Cine Clasico 1
 https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="192 Retro Plus 1",192 Retro Plus 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="202 Retro Plus 1",202 Retro Plus 1
 https://tls-cl.cdnz.cl/retroplustvtres/live/chunklist_w1351996930.m3u8?PlaylistM3UCL
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="24/7 - Experimentales" tvg-name="193 Extrema Terror 1",193 Extrema Terror 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="24/7 - Experimentales" tvg-name="203 Extrema Terror 1",203 Extrema Terror 1
 https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="24/7 - Experimentales" tvg-name="194 Extrema Clasico 1",194 Extrema Clasico 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="24/7 - Experimentales" tvg-name="204 Extrema Clasico 1",204 Extrema Clasico 1
 https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/X2d8y4e.png" group-title="24/7 - Experimentales" tvg-name="195 Extrema Kids 1",195 Extrema Kids 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/X2d8y4e.png" group-title="24/7 - Experimentales" tvg-name="205 Extrema Kids 1",205 Extrema Kids 1
 https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/X2d8y4e.png" group-title="24/7 - Experimentales" tvg-name="196 Extrema Cartoons 1",196 Extrema Cartoons 1
+#EXTINF:-1 tvg-logo="https://i.imgur.com/X2d8y4e.png" group-title="24/7 - Experimentales" tvg-name="206 Extrema Cartoons 1",206 Extrema Cartoons 1
 https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="197 Ottera Latino 1",197 Ottera Latino 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="207 Runtime Latino 1",207 Runtime Latino 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2154
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="198 Ottera Films 1",198 Ottera Films 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="208 Runtime Films 1",208 Runtime Films 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="199 Ottera Espanol 1",199 Ottera Espanol 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="209 Runtime Espanol 1",209 Runtime Espanol 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2649
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="200 Ottera Cine and Series 1",200 Ottera Cine and Series 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="210 Runtime Cine and Series 1",210 Runtime Cine and Series 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2152
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="201 Ottera Familia 1",201 Ottera Familia 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="211 Runtime Familia 1",211 Runtime Familia 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=3528
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="202 Ottera Terror 1",202 Ottera Terror 1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3529
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="203 Ottera Romance 1",203 Ottera Romance 1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3532
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="204 Ottera Crimen 1",204 Ottera Crimen 1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3533
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="205 Ottera Comedia 1",205 Ottera Comedia 1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2551
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="206 Ottera Accion 1",206 Ottera Accion 1
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=2550
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="207 Runtime Peliculas 1",207 Runtime Peliculas 1
-https://run-rt-mx.otteravision.com/run/rt_mx/rt_mx_720p_high.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="208 Runtime Accion 1",208 Runtime Accion 1
-https://run-rt-ac.otteravision.com/run/rt_ac/rt_ac_720.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="209 Runtime Terror 1",209 Runtime Terror 1
-https://run-ruthr.otteravision.com/run/ruthr/ruthr_720.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="210 Runtime Romance 1",210 Runtime Romance 1
-https://run-rurol.otteravision.com/run/rurol/rurol_720.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="211 Runtime Familia 1",211 Runtime Familia 1
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="212 Runtime Familia 2",212 Runtime Familia 2
 https://run-runfl.otteravision.com/run/runfl/runfl_720.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="212 Runtime Crimen 1",212 Runtime Crimen 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="213 Runtime Terror 1",213 Runtime Terror 1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=3529
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="214 Runtime Terror 2",214 Runtime Terror 2
+https://run-ruthr.otteravision.com/run/ruthr/ruthr_720.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="215 Runtime Romance 1",215 Runtime Romance 1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=3532
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="216 Runtime Romance 2",216 Runtime Romance 2
+https://run-rurol.otteravision.com/run/rurol/rurol_720.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="217 Runtime Crimen 1",217 Runtime Crimen 1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=3533
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="218 Runtime Crimen 2",218 Runtime Crimen 2
 https://run-rucrl.otteravision.com/run/rucrl/rucrl_720.m3u8
 
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/51CeYLr3qCL._AC_SL1141_.jpg" group-title="24/7 - Experimentales" tvg-name="213 Goku TV 24/7 1",213 Goku TV 24/7 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="219 Runtime Comedia 1",219 Runtime Comedia 1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2551
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX5MvIrXeh_m7dC68oFuef-NtrT9325lXvnS9pZycnQ&s=10" group-title="24/7 - Experimentales" tvg-name="220 Runtime Accion 1",220 Runtime Accion 1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2550
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="221 Runtime Accion 2",221 Runtime Accion 2
+https://run-rt-ac.otteravision.com/run/rt_ac/rt_ac_720.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales" tvg-name="222 Runtime Peliculas 1",222 Runtime Peliculas 1
+https://run-rt-mx.otteravision.com/run/rt_mx/rt_mx_720p_high.m3u8
+
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/51CeYLr3qCL._AC_SL1141_.jpg" group-title="24/7 - Experimentales" tvg-name="223 Goku TV 24/7 1",223 Goku TV 24/7 1
 https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="214 Dragon Ball Z 24/7 1",214 Dragon Ball Z 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="224 Dragon Ball Z 24/7 1",224 Dragon Ball Z 24/7 1
 https://live20.bozztv.com/giatv/giatv-dball/dball/chunks.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="215 Dragon Ball 24/7 1",215 Dragon Ball 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="225 Dragon Ball 24/7 1",225 Dragon Ball 24/7 1
 https://jmp2.uk/plu-685a996c7c4f2ad40cb4f276.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="216 Dragon Ball Z Pluto Feed A 1",216 Dragon Ball Z Pluto Feed A 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="226 Dragon Ball Z Pluto Feed A 1",226 Dragon Ball Z Pluto Feed A 1
 https://jmp2.uk/plu-2F69bd2cc70b6c04b3e635ba29.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="217 Dragon Ball Z Pluto Feed B 1",217 Dragon Ball Z Pluto Feed B 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="227 Dragon Ball Z Pluto Feed B 1",227 Dragon Ball Z Pluto Feed B 1
 https://jmp2.uk/plu-68e8fd7c3ede4398bc69af93.m3u8
 
