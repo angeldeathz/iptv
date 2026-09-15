@@ -717,12 +717,12 @@ https://run-rt-mx.otteravision.com/run/rt_mx/rt_mx_720p_high.m3u8
 #EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/51CeYLr3qCL._AC_SL1141_.jpg" group-title="24/7 - Experimentales" tvg-name="228 Goku TV 24/7 1",228 Goku TV 24/7 1
 https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="229 Dragon Ball Z 24/7 1",229 Dragon Ball Z 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="229 Dragon Ball Z 24/7 1" tvg-logo="https://images.pluto.tv/channels/685a996c7c4f2ad40cb4f276/colorLogoPNG_1756876796024.png",229 Dragon Ball Z 24/7 1
 https://live20.bozztv.com/giatv/giatv-dball/dball/chunks.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="230 Dragon Ball 24/7 1",230 Dragon Ball 24/7 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="230 Dragon Ball 24/7 1" tvg-logo="https://images.pluto.tv/channels/685a996c7c4f2ad40cb4f276/colorLogoPNG_1756876796024.png",230 Dragon Ball 24/7 1
 https://jmp2.uk/plu-685a996c7c4f2ad40cb4f276.m3u8
 
-#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="231 Dragon Ball Z Pluto Feed B 1",231 Dragon Ball Z Pluto Feed B 1
+#EXTINF:-1 group-title="24/7 - Experimentales" tvg-name="231 Dragon Ball Z Pluto Feed B 1" tvg-logo="https://images.pluto.tv/channels/685a996c7c4f2ad40cb4f276/colorLogoPNG_1756876796024.png",231 Dragon Ball Z Pluto Feed B 1
 https://jmp2.uk/plu-68e8fd7c3ede4398bc69af93.m3u8
 

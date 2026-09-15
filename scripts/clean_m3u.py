@@ -667,6 +667,9 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     if original_group_lower in ("24/7 - experimentales", "24/7 experimentales"):
         return "24/7 - Experimentales"
 
+    if original_group_lower == "pluto tv":
+        return "Pluto TV"
+
     # Editorial overrides (explicit category assignments)
     if "13 kids" in clean_name_lower:
         return "Infantiles"
@@ -879,6 +882,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         "latin 3": "Nacionales",
         "internacionales": "Internacionales",
         "24/7 - experimentales": "24/7 - Experimentales",
+        "pluto tv": "Pluto TV",
     }
     if original_group_lower in group_fallback:
         return group_fallback[original_group_lower]
@@ -898,6 +902,7 @@ GROUP_ORDER = [
     "Variedades",
     "Internacionales",
     "24/7 - Experimentales",
+    "Pluto TV",
 ]
 
 def get_group_priority(group_name):
