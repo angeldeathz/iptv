@@ -119,6 +119,9 @@ http://38.44.109.41:8003/play/a0fg/index.m3u8
 #EXTINF:-1 group-title="Peliculas" tvg-name="94 FX Colombia 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" group-title="Peliculas" tvg-name="FX Colombia 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png",FX Colombia 1
 http://177.74.205.189:8000/play/a00u/index.m3u8
 
+#EXTINF:-1 group-title="Peliculas" tvg-name="96 Golden Edge 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png" group-title="Peliculas" tvg-name="Golden Edge 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png",Golden Edge 1
+http://181.224.200.5:2277/play/a0bd/index.m3u8
+
 #EXTINF:-1 group-title="Peliculas" tvg-name="99 Golden 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png" group-title="Peliculas" tvg-name="Golden 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png",Golden 2
 http://187.102.211.240:9001/play/a03c/index.m3u8?hls
 
