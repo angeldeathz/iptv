@@ -472,5 +472,35 @@
     "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cgtn-int.png",
     "source": "tv_logos_international",
     "verified_at": "2026-09-11"
+  },
+  "totalmusic": {
+    "channel": "Totalmusic",
+    "url": "https://www.40mediagroup.com/images/channels/totalmusic.png",
+    "source": "assets",
+    "verified_at": "2026-09-16"
+  },
+  "totalmusic 80s": {
+    "channel": "Totalmusic 80s",
+    "url": "https://www.40mediagroup.com/images/channels/totalmusic-80s.png",
+    "source": "assets",
+    "verified_at": "2026-09-16"
+  },
+  "totalmusic 00s": {
+    "channel": "Totalmusic 00s",
+    "url": "https://www.40mediagroup.com/images/channels/totalmusic-00s.png",
+    "source": "assets",
+    "verified_at": "2026-09-16"
+  },
+  "totalmusic concerts": {
+    "channel": "Totalmusic Concerts",
+    "url": "https://www.40mediagroup.com/images/channels/totalmusic-concerts.png",
+    "source": "assets",
+    "verified_at": "2026-09-16"
+  },
+  "totalmusic dance": {
+    "channel": "Totalmusic Dance",
+    "url": "https://www.40mediagroup.com/images/channels/totalmusic-dance.png",
+    "source": "assets",
+    "verified_at": "2026-09-16"
   }
 }
