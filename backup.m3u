@@ -43,6 +43,18 @@ http://38.44.109.41:8003/play/a0h0/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="1 Mega 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="Mega 1",Mega 1
 https://iptv.bitred.cl/mega/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="Mega 2",Mega 2
+http://187.102.211.240:9001/play/a02h/index.m3u8?hls
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/mF2W8Uh.png" group-title="Nacionales" tvg-name="UChile TV 1",UChile TV 1
+https://unlimited1-us.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales" tvg-name="UCV TV 3",UCV TV 3
+https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1035_Cooperativa.png" group-title="Noticias" tvg-name="Cooperativa 1",Cooperativa 1
+https://unlimited1-cl-isp.dps.live/coopetv/coopetv.smil/playlist.m3u8?PlaylistM3UCL&PlaylistM3UCL
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/aJMBnse.png" group-title="Nacionales" tvg-name="15 13 Teleseries 2" tvg-logo="https://i.imgur.com/aJMBnse.png" group-title="Nacionales" tvg-name="13 Teleseries 2",13 Teleseries 2
 https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
 

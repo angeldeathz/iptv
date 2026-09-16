@@ -4,7 +4,7 @@
 # ===== Nacionales =====
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales" tvg-name="1 Mega 1",1 Mega 1
-http://187.102.211.240:9001/play/a02h/index.m3u8?hls
+https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-name="2 Mega 2 1" tvg-logo="https://i.imgur.com/GUlMQn4.png" group-title="Nacionales",2 Mega 2 1
 http://38.225.116.4:22000/play/a00u/index.m3u8
@@ -25,7 +25,7 @@ https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
 https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mF2W8Uh.png" group-title="Nacionales" tvg-name="8 UChile TV 1",8 UChile TV 1
-https://unlimited1-us.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
+https://pantera1-100gb-cl-movistar.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" tvg-name="9 Canal 13 1",9 Canal 13 1
 http://45.162.193.35/CANAL13_HD/index.m3u8
@@ -49,7 +49,7 @@ https://redirector.dps.live/hls/13pop/playlist.m3u8
 https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales" tvg-name="16 UCV TV 1",16 UCV TV 1
-https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="Nacionales" tvg-logo="https://i.imgur.com/nJOVM6e.png" tvg-name="17 La Red 1",17 La Red 1
 http://38.44.109.41:8003/play/a0ha/index.m3u8
@@ -88,7 +88,7 @@ https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
 #EXTINF:-1 group-title="Noticias" tvg-name="28 Cooperativa 1" tvg-logo="https://cdn.m3u.cl/logo/1035_Cooperativa.png",28 Cooperativa 1
-https://unlimited1-cl-isp.dps.live/coopetv/coopetv.smil/playlist.m3u8?PlaylistM3UCL&PlaylistM3UCL
+https://pantera1-100gb-cl-movistar.dps.live/coopetv/coopetv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/NgKYXQK5/LOGO-DIGITAL.png" group-title="Noticias" tvg-name="29 DW Español 1",29 DW Español 1
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/streamPlaylist.m3u8

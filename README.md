@@ -2,7 +2,7 @@
 
 Lista curada de canales IPTV orientada a Latinoamérica, con foco en señales de Chile y contenido en español. El archivo principal es [`official.m3u`](official.m3u).
 
-**Total:** 199 fuentes en 11 categorías.
+**Total:** 243 fuentes en 11 categorías.
 
 ## Uso
 
@@ -233,6 +233,69 @@ Importa `official.m3u` en tu reproductor IPTV (VLC, TiviMate, IPTV Smarters, etc
 | 198 | VICE TV | 1 |
 | 199 | We TV | 1 |
 
+## Hosts estables
+
+No todos los hosts se comportan igual. La mayoría de la parrilla usa **IPs de restream** (`187.102.211.240:9001`, `38.226.49.253:8000`, etc.): VPS o cabeceras caseras, sin CDN, con latencia y estabilidad variables. Los que suelen cargar más rápido y aguantar mejor son infraestructura de broadcast o CDN profesional.
+
+### CDN y plataformas de streaming (prioridad alta)
+
+| Host | Tipo | Canales en official | Notas |
+|------|------|---------------------|-------|
+| `origin.dpsgo.com` | CDN DPS / Canal 13 (SSAI) | 4 | 13 Cultura, 13 Festival, 13 Realities, 13 Kids. HTTPS, HLS nativo. |
+| `redirector.rudo.video` | CDN Rudo.video | 3 | T13, TV+, UCL. |
+| `redirector.dps.live` | CDN DPS | 2 | 13 Teleseries, 13 Pop. |
+| `unlimited*.dps.live`, `jireh-*.dps.live` | CDN DPS (edge por región) | 4 | UChile TV, UCV TV, Cooperativa, Bio Bio TV. |
+| `cdn.40mediagroup.com` | CDN 40media Group | 7 | ENT Family, ENT Channel + 5 Totalmusic. Ver patrón abajo. |
+| `mdstrm.com` | Mediastream | 4 | NTV, TVN3, TV Chile, Canal 24 Horas. |
+| `cdn.global.elektamedia.com` | CDN Elekta (mismo pack que 40media) | 1 | Variante de ENT Channel. |
+
+**Por qué van bien:** HTTPS, CDN con edge servers, HLS optimizado, sin restream intermedio. Suele notarse en el arranque del canal y en menos cortes.
+
+#### 40media Group — catálogo completo (7 señales)
+
+No publican `/playlist.m3u`, pero el patrón de URL es predecible:
+
+```text
+https://cdn.40mediagroup.com/live/c7eds/{NOMBRE}/SA_LIVE_hls_enc/master.m3u8
+```
+
+| `{NOMBRE}` | Canal |
+|------------|-------|
+| `ENT_Family` | ENT Family |
+| `ENT_Channel` | ENT Channel |
+| `Totalmusic` | Totalmusic |
+| `Totalmusic_80s` | Totalmusic 80s |
+| `Totalmusic_00s` | Totalmusic 00s |
+| `Totalmusic_Concerts` | Totalmusic Concerts |
+| `Totalmusic_Dance` | Totalmusic Dance |
+
+Sitio: [40mediagroup.com/canales](https://40mediagroup.com/canales). Logos oficiales en `https://www.40mediagroup.com/images/channels/{slug}.png`.
+
+#### DPS / Rudo — sin catálogo público
+
+Cada URL es un endpoint contratado (evento SSAI en `dpsgo.com`, redirector en `rudo.video`). No hay lista que recorrer; solo las señales que ya están en la playlist o que se encuentren en otra fuente.
+
+### Orígenes Astra rápidos
+
+Entre los servidores Astra (`/play/aXXX/index.m3u8`), algunos responden notablemente mejor que el resto:
+
+| Servidor | Lista M3U | Canales | Notas |
+|----------|-----------|---------|-------|
+| `45.232.210.1:18000` | http://45.232.210.1:18000/playlist.m3u | 66 | Zona Latina, Vía X, CHV HD, Canal 13, CNN Chile, Cartoon Network, etc. Origen dedicado; en pruebas arranca más rápido que muchos restreams genéricos. |
+
+En `official.m3u` solo usamos 2 de 66; el resto está disponible para probar con `search_sources.py` o revisando la playlist del servidor.
+
+### Restream por IP (mayoría de la lista)
+
+Hosts como `187.102.211.240:9001` (42 canales), `190.60.40.165:1010` (21), `190.61.42.218:9000` (13) concentran muchas señales pero dependen de un solo origen sin CDN. Útiles para variedad y respaldos; priorizar CDN cuando exista alternativa del mismo canal.
+
+### Cómo elegir fuente al agregar canales
+
+1. **Mismo canal, varias URLs:** preferir host de la tabla CDN si existe.
+2. **Buscar en Astra:** `python3 scripts/search_sources.py "nombre canal" --json` — priorizar `45.232.210.1:18000` y hosts que ya aparecen mucho en `official.m3u`.
+3. **URL HLS:** preferir `master.m3u8` sobre `tracks-v1a1/mono.ts.m3u8` (adaptive bitrate).
+4. **Probar en TV** y mover fallos a `backup.m3u` con `scripts/move_to_backup.py`.
+
 ## Listas de origen
 
 Varios de los servidores que alimentan esta playlist corren Astra y publican su catálogo completo en `/playlist.m3u`. Sirven para buscar reemplazos cuando un canal se cae, o para comparar señales del mismo canal (por ejemplo, para encontrar una fuente en 1080p o sin audio en inglés).
@@ -267,7 +330,7 @@ Varios de los servidores que alimentan esta playlist corren Astra y publican su 
 | `190.108.90.142:8000` | http://190.108.90.142:8000/playlist.m3u | 31 |
 | `38.225.116.4:22000` | http://38.225.116.4:22000/playlist.m3u | 21 |
 
-Conteos verificados en septiembre de 2026. Los servidores nuevos se descubrieron a partir de los hosts en `official.m3u` con patrón Astra (`/play/...`) y se validaron con `/playlist.m3u`. No aplican: `138.121.15.230:9002` (404), `177.234.249.178:8888` (404), `alfa.7057460.xyz:2095` (panel Xtream, no Astra) ni CDNs (`jmp2.uk`, `mdstrm.com`, `dps.live`, etc.).
+Conteos verificados en septiembre de 2026. Los servidores nuevos se descubrieron a partir de los hosts en `official.m3u` con patrón Astra (`/play/...`) y se validaron con `/playlist.m3u`. No aplican: `138.121.15.230:9002` (404), `177.234.249.178:8888` (404), `alfa.7057460.xyz:2095` (panel Xtream, no Astra) ni CDNs con catálogo cerrado (`jmp2.uk`, `mdstrm.com`, `dps.live`, `dpsgo.com`, `rudo.video`, `40mediagroup.com`, etc.) — esos no tienen `/playlist.m3u`; ver sección [Hosts estables](#hosts-estables).
 
 Para buscar un canal concreto en todos ellos:
 
