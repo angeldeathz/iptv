@@ -342,8 +342,14 @@ def get_nacional_lineup_key(clean_name):
     if n in ("tv+", "tv plus"):
         return (6, 0, clean_name.lower())
 
-    if any(w in n for w in ["bio bio tv", "24 horas"]):
+    if "bio bio tv" in n:
         return (7, 0, clean_name.lower())
+    if n == "cooperativa":
+        return (7, 1, clean_name.lower())
+    if "puranoticia" in n:
+        return (7, 2, clean_name.lower())
+    if "24 horas" in n:
+        return (7, 3, clean_name.lower())
 
     return (8, 0, clean_name.lower())
 
@@ -731,7 +737,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
         return "Series"
     if "lifetime" in clean_name_lower:
         return "Series"
-    if clean_name_lower in ("cooperativa", "cnn chile", "ucl"):
+    if clean_name_lower in ("cnn chile", "ucl"):
         return "Noticias"
     if clean_name_lower in ("dw español", "dw espanol"):
         return "Noticias"
@@ -789,12 +795,8 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     if any(w in clean_name_lower for w in ["zona latina", "via x"]) or clean_name_lower in ("tv+", "tv plus"):
         return "Nacionales"
 
-    # Puranoticia -> Noticias
-    if "puranoticia" in clean_name_lower:
-        return "Noticias"
-
     # 1. Nacionales
-    if any(w in clean_name_lower for w in ["chilevision", "tvn", "tv chile", "uchile", "bio bio tv", "la red", "mega", "ucv", "24 horas", "chv", "ntv"]):
+    if any(w in clean_name_lower for w in ["chilevision", "tvn", "tv chile", "uchile", "bio bio tv", "la red", "mega", "ucv", "24 horas", "chv", "ntv", "cooperativa", "puranoticia"]):
         return "Nacionales"
     if original_group_lower in ["general", "latin 3", "nacionales", "01. tv abierta"]:
         return "Nacionales"
