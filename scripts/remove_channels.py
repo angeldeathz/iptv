@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Remove channels from official.m3u by global ID and recalculate lineup IDs."""
+from __future__ import annotations
+
 import argparse
 import os
 import re

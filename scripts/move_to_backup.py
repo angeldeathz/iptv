@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Move channels from official.m3u to backup.m3u by global ID."""
+from __future__ import annotations
+
 import argparse
 import os
 import re
