@@ -670,6 +670,9 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     original_group_lower = (original_group or "").lower()
     tvg_id_lower = (tvg_id or "").lower()
 
+    if any(w in clean_name_lower for w in ["dragon ball", "goku tv"]):
+        return "Infantiles"
+
     if original_group_lower in ("24/7 - experimentales", "24/7 experimentales"):
         return "24/7 - Experimentales"
 

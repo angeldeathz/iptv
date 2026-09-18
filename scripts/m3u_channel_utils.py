@@ -8,12 +8,37 @@ import sys
 from dataclasses import dataclass
 from typing import Dict, Iterable, List, Optional, Sequence, Set
 
-from clean_m3u import parse_extinf
+from clean_m3u import GROUP_ORDER, parse_extinf
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.join(SCRIPT_DIR, "..")
 OFFICIAL = os.path.join(REPO_ROOT, "official.m3u")
 BACKUP = os.path.join(REPO_ROOT, "backup.m3u")
+
+GROUP_ALIASES = {
+    "infantiles": "Infantiles",
+    "kids": "Infantiles",
+    "peliculas": "Peliculas",
+    "películas": "Peliculas",
+    "cine": "Peliculas",
+    "series": "Series",
+    "deportes": "Deportes",
+    "sports": "Deportes",
+    "noticias": "Noticias",
+    "news": "Noticias",
+    "musica": "Musica",
+    "música": "Musica",
+    "documentales": "Documentales",
+    "nacionales": "Nacionales",
+    "regionales": "Regionales",
+    "variedades": "Variedades",
+    "internacionales": "Internacionales",
+    "pluto tv": "Pluto TV",
+    "pluto": "Pluto TV",
+    "24/7 - experimentales": "24/7 - Experimentales",
+    "24/7 experimentales": "24/7 - Experimentales",
+    "experimentales": "24/7 - Experimentales",
+}
 
 
 @dataclass(frozen=True)
@@ -92,6 +117,46 @@ def index_entries_by_id(entries: Sequence[ChannelEntry]) -> Dict[int, ChannelEnt
     return indexed
 
 
+def normalize_group_name(raw: str) -> Optional[str]:
+    stripped = raw.strip()
+    if stripped in GROUP_ORDER:
+        return stripped
+    return GROUP_ALIASES.get(stripped.casefold())
+
+
+def apply_group_to_entry(entry: ChannelEntry, group: str) -> ChannelEntry:
+    duration_match = re.match(r"#EXTINF:([^,]+)", entry.extinf)
+    duration = duration_match.group(1) if duration_match else "-1"
+    attrs, display_name = parse_extinf(entry.extinf)
+    attrs["group-title"] = group
+    attrs["editorial-group"] = group
+    attrs_str = "".join(f' {k}="{v}"' for k, v in attrs.items())
+    return ChannelEntry(
+        extinf=f"#EXTINF:{duration}{attrs_str},{display_name}",
+        options=entry.options,
+        url=entry.url,
+    )
+
+
+def parse_recategorizations(values: Sequence[str]) -> Dict[int, str]:
+    moves: Dict[int, str] = {}
+    for raw in values:
+        if ":" not in raw:
+            raise ValueError(
+                f"Invalid --recategorize value '{raw}'. Use ID:GROUP, e.g. 188:Infantiles"
+            )
+        id_part, group_part = raw.split(":", 1)
+        channel_id = int(id_part.strip())
+        group = normalize_group_name(group_part)
+        if group is None:
+            known = ", ".join(GROUP_ORDER)
+            raise ValueError(
+                f"Unknown group '{group_part.strip()}'. Valid groups: {known}"
+            )
+        moves[channel_id] = group
+    return moves
+
+
 def write_official_entries(entries: Sequence[ChannelEntry], path: str = OFFICIAL) -> None:
     with open(path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
@@ -158,14 +223,25 @@ def format_action_plan(
     remove_ids: Set[int],
     backup_ids: Set[int],
     indexed: Dict[int, ChannelEntry],
+    recategorize_map: Optional[Dict[int, str]] = None,
 ) -> str:
     lines: List[str] = []
-    overlap = sorted(remove_ids & backup_ids)
+    recategorize_map = recategorize_map or {}
+    recategorize_ids = set(recategorize_map)
+    overlap = sorted((remove_ids & backup_ids) | (remove_ids & recategorize_ids) | (backup_ids & recategorize_ids))
     if overlap:
-        lines.append("ERROR: same ID requested for remove and backup:")
+        lines.append("ERROR: same ID requested for multiple actions:")
         for channel_id in overlap:
             lines.append(f"  {channel_id} = {indexed[channel_id].label}")
         return "\n".join(lines)
+
+    if recategorize_map:
+        lines.append("RECATEGORIZE:")
+        for channel_id in sorted(recategorize_map):
+            entry = indexed[channel_id]
+            target_group = recategorize_map[channel_id]
+            lines.append(f"  {channel_id} = {entry.label} -> {target_group}")
+            lines.append(f"    {entry.url}")
 
     if backup_ids:
         lines.append("BACKUP:")

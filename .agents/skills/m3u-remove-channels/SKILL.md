@@ -4,15 +4,36 @@ description: >-
   Permanently deletes channel entries from official.m3u via scripts/remove_channels.py
   or scripts/channel_ops.py and recalculates IDs. Entries are NOT saved to backup.m3u.
   Use when the user wants to eliminar, borrar, quitar, delete, or drop channels/sources
-  for good after TV testing. Requires explicit global IDs — never infer from name. If the
-  user says backup, respaldo, or mover a backup, use m3u-to-backup instead. For mixed
-  remove+backup in one request, use channel_ops.py. Do NOT use for fixing logos or
-  searching new stream URLs.
+  for good after TV testing — with NO destination section named. Requires explicit
+  global IDs — never infer from name. If the user also names a target section
+  (infantiles, películas, experimentales, …), use m3u-lineup (recategorize) instead.
+  If the user says backup, respaldo, or mover a backup, use m3u-to-backup instead.
+  For mixed remove+backup in one request, use channel_ops.py. Do NOT use for fixing
+  logos or searching new stream URLs.
 ---
 
 # Remove channels from official.m3u
 
 Workflow to permanently remove entries from `official.m3u` (they do not go to `backup.m3u`).
+
+## Do NOT use this skill (read first)
+
+**STOP** if the user message mentions **both**:
+
+1. One or more global IDs, and  
+2. A **destination section** — e.g. `infantiles`, `películas`, `series`, `deportes`, `experimentales`, `24/7`, or phrases like *déjalo en…*, *ponlo en…*, *mueve a…*, *saca de experimentales*.
+
+Those requests are **recategorization** (move between sections), not permanent delete. Use [`m3u-lineup`](../m3u-lineup/SKILL.md) and `scripts/recategorize_channels.py` instead.
+
+Examples that must **not** use this skill:
+
+| User message | Correct action |
+|--------------|----------------|
+| `borra el 188, el 189, déjalos en infantiles` | `recategorize_channels.py 188:Infantiles 189:Infantiles` |
+| `saca el 50 de experimentales y ponlo en series` | `recategorize_channels.py 50:Series` |
+| `mueve el 88 a películas` | `recategorize_channels.py 88:Peliculas` |
+
+Only use this skill when the user wants the channel **gone from official.m3u entirely** with no target section.
 
 ## Mandatory requirement: user IDs
 
@@ -107,6 +128,7 @@ Do not add summaries, counts, channel names, removed IDs, extra confirmations, o
 
 ## Common mistakes
 
+- **Confusing recategorize with delete**: if a destination section appears in the message, use `m3u-lineup` / `recategorize_channels.py`, not this skill.
 - **Running without IDs**: forbidden; ask for IDs first.
 - **Chaining remove + backup scripts**: forbidden; use `channel_ops.py`.
 - **Using stale IDs after a prior remove/backup in the same turn**: forbidden; re-list IDs or pass all IDs to `channel_ops.py` in one command.

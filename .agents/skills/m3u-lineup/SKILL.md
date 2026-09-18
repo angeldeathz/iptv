@@ -2,11 +2,13 @@
 name: m3u-lineup
 description: >-
   Applies editorial lineup rules to official.m3u: LATAM-first channel priority,
-  1080p preferred, provider-style category blocks (Movistar, DIRECTV, Claro).
-  Use when the user asks to ordenar, curar, reordenar la parrilla/grilla, fix
-  category placement, or align the grid like a TV operator — without adding new
-  stream URLs. Do NOT use for searching origin servers, deleting channels,
-  moving to backup.m3u, or repairing tvg-logo icons.
+  1080p preferred, provider-style category blocks (Movistar, DIRECTV, Claro),
+  and moving channels between sections by global ID. Use when the user asks to
+  ordenar, curar, reordenar la parrilla/grilla, fix category placement, mover
+  a infantiles/películas/experimentales, sacar de experimentales, déjalo en
+  [sección], or align the grid like a TV operator — without adding new stream
+  URLs. Do NOT use for searching origin servers, permanent delete, moving to
+  backup.m3u, or repairing tvg-logo icons.
 ---
 
 # M3U Playlist Curator
@@ -66,6 +68,61 @@ Use consistent, user-recognizable categories:
 9. `DOCUMENTALES`
 10. `VARIEDADES`
 11. `INTERNACIONALES`
+
+## Recategorize channels (move between sections)
+
+Use this workflow when the user gives **global IDs** and a **target section** — even if they say *borra*, *saca*, or *quita*. In LATAM curation slang, *"borra el 188 de experimentales"* or *"borra el 188, déjalo en infantiles"* means **remove from the current section and place elsewhere**, not permanent deletion.
+
+### Disambiguation (critical)
+
+| User intent | Skill / script |
+|-------------|----------------|
+| IDs + target section (`infantiles`, `películas`, `experimentales`, …) | **This skill** → `recategorize_channels.py` or `channel_ops.py --recategorize` |
+| IDs only, no destination section, user wants it gone for good | `m3u-remove-channels` |
+| IDs + `backup` / `respaldo` | `m3u-to-backup` |
+
+**Never** run `remove_channels.py` when the message also names a destination section.
+
+### Mandatory requirement: user IDs
+
+Same rules as other ID-based skills: explicit global IDs only; ask if missing; never infer from channel name.
+
+### Execution
+
+From the repo root:
+
+```bash
+python3 scripts/recategorize_channels.py 188:Infantiles 189:Infantiles \
+  --expect '188:Goku TV' --expect '189:Dragon Ball' --dry-run
+python3 scripts/recategorize_channels.py 188:Infantiles 189:Infantiles \
+  --expect '188:Goku TV' --expect '189:Dragon Ball'
+```
+
+Or via the atomic multi-action script:
+
+```bash
+python3 scripts/channel_ops.py \
+  --recategorize 188:Infantiles --recategorize 189:Infantiles \
+  --expect '188:Goku TV' --expect '189:Dragon Ball'
+```
+
+Group names accept PascalCase (`Infantiles`) or aliases (`infantiles`, `experimentales`, `peliculas`, …).
+
+The script:
+
+1. Prints a `RECATEGORIZE:` plan with ID, current name, target section, and URL.
+2. Sets both `group-title` and `editorial-group` so `clean_m3u.py` keeps the channel in that section (including when leaving `24/7 - Experimentales`).
+3. Runs `python3 scripts/clean_m3u.py` once at the end.
+
+Use `--dry-run` before applying when 2+ IDs are involved.
+
+### Response to the user (required)
+
+After a successful recategorization, the complete response to the user is **only** this line, with no text before or after:
+
+```text
+trabajo realizado
+```
 
 ## Editorial rules
 

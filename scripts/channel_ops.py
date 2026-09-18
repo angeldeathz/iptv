@@ -16,11 +16,13 @@ from clean_m3u import GROUP_ORDER, parse_extinf
 from m3u_channel_utils import (
     BACKUP,
     ChannelEntry,
+    apply_group_to_entry,
     find_missing_ids,
     format_action_plan,
     index_entries_by_id,
     load_official_entries,
     parse_expectations,
+    parse_recategorizations,
     run_clean_m3u,
     strip_global_id,
     verify_expectations,
@@ -117,21 +119,26 @@ def apply_operations(
     backup_ids: set[int],
     expectations: dict[int, str],
     dry_run: bool,
+    recategorize_map: dict[int, str] | None = None,
 ) -> int:
-    if not remove_ids and not backup_ids:
+    recategorize_map = recategorize_map or {}
+    recategorize_ids = set(recategorize_map)
+
+    if not remove_ids and not backup_ids and not recategorize_ids:
         print("No channel operations requested.", file=sys.stderr)
         return 1
 
-    if remove_ids & backup_ids:
+    conflicting_ids = (remove_ids & backup_ids) | (remove_ids & recategorize_ids) | (backup_ids & recategorize_ids)
+    if conflicting_ids:
         print(
-            "The same ID cannot be removed and backed up in one operation.",
+            "The same ID cannot be removed, backed up, and recategorized in one operation.",
             file=sys.stderr,
         )
         return 1
 
     official_entries = load_official_entries()
     indexed = index_entries_by_id(official_entries)
-    all_requested = remove_ids | backup_ids
+    all_requested = remove_ids | backup_ids | recategorize_ids
 
     missing = find_missing_ids(all_requested, set(indexed))
     if missing:
@@ -151,8 +158,10 @@ def apply_operations(
             print(f"  {channel_id} = {indexed[channel_id].label}", file=sys.stderr)
         return 1
 
-    plan = format_action_plan(remove_ids, backup_ids, indexed)
+    plan = format_action_plan(remove_ids, backup_ids, indexed, recategorize_map)
     print(plan)
+    if plan.startswith("ERROR:"):
+        return 1
 
     if dry_run:
         print("\nDry run: no files were modified.")
@@ -167,6 +176,8 @@ def apply_operations(
             moved.append(entry)
         elif channel_id in remove_ids:
             continue
+        elif channel_id in recategorize_map:
+            kept.append(apply_group_to_entry(entry, recategorize_map[channel_id]))
         else:
             kept.append(entry)
 
@@ -217,6 +228,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="Global ID to move from official.m3u to backup.m3u.",
     )
     parser.add_argument(
+        "--recategorize",
+        action="append",
+        default=[],
+        metavar="ID:GROUP",
+        help=(
+            "Move a channel to another section by setting group-title and "
+            "editorial-group (e.g. 188:Infantiles). Repeat per channel."
+        ),
+    )
+    parser.add_argument(
         "--expect",
         action="append",
         default=[],
@@ -252,6 +273,7 @@ def main() -> None:
 
     try:
         expectations = parse_expectations(args.expect)
+        recategorize_map = parse_recategorizations(args.recategorize)
     except ValueError as exc:
         print(str(exc), file=sys.stderr)
         sys.exit(1)
@@ -264,6 +286,7 @@ def main() -> None:
             backup_ids=backup_ids,
             expectations=expectations,
             dry_run=args.dry_run,
+            recategorize_map=recategorize_map,
         )
     )
 
