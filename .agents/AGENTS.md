@@ -25,6 +25,19 @@ Read the full `SKILL.md` before running a workflow. Skills live under `.agents/s
 
 **ID-based skills** (`m3u-sync-logos-json`, `m3u-fix-logos`, `m3u-remove-channels`, `m3u-to-backup`): never run without explicit global IDs (the number at the start of `tvg-name`, e.g. `88` in `88 Star Channel 1`). Ask first; do not grep-and-guess.
 
+### ID safety for remove / backup (mandatory)
+
+Global IDs are **reassigned after every** remove or backup because `clean_m3u.py` recalculates the lineup. Wrong-channel deletes happen when agents chain scripts with stale IDs.
+
+| Situation | Required tool |
+|-----------|----------------|
+| One user message with **both** remove and backup | `scripts/channel_ops.py` |
+| Multiple IDs in one user message | `channel_ops.py` or a single `remove_channels.py` / `move_to_backup.py` call with **all** IDs at once |
+| User names a channel (e.g. "borrá Universal Premiere 83") | `channel_ops.py --list --filter ...` first, then `--expect ID:NAME` on every ID |
+| Before applying 2+ ID changes | `--dry-run` and read the printed plan |
+
+**Never** run `remove_channels.py` and `move_to_backup.py` sequentially in the same turn. **Always** pass `--expect ID:NAME` when the channel name is known from context or from `--list`.
+
 **Logo skills**: `m3u-sync-logos-json` only writes `assets/logos.json` (copy URLs as-is). `m3u-fix-logos` verifies URLs, searches replacements, and edits `official.m3u`.
 
 **Typical flow**: `m3u-source-update` (find streams) → user tests on TV → `m3u-remove-channels` or `m3u-to-backup` (drop failures). `m3u-lineup` is for editorial reorder only. After any `official.m3u` edit, run `clean_m3u.py`.
@@ -104,5 +117,6 @@ Full workflow: [`m3u-lineup` skill](skills/m3u-lineup/SKILL.md).
 | `scripts/check_channels.py` | List channels whose URLs fail (needs `full_network`) |
 | `scripts/sync_logos_json.py` | Copy `tvg-logo` from `official.m3u` into `assets/logos.json` |
 | `scripts/fix_logos.py` | Repair `tvg-logo` by global ID |
-| `scripts/remove_channels.py` | Permanently remove channels by global ID |
-| `scripts/move_to_backup.py` | Move channels to `backup.m3u` by global ID |
+| `scripts/channel_ops.py` | **Atomic** remove/backup by global ID (`--remove`, `--backup`, `--expect`, `--dry-run`, `--list`) |
+| `scripts/remove_channels.py` | Permanently remove channels by global ID (single action only) |
+| `scripts/move_to_backup.py` | Move channels to `backup.m3u` by global ID (single action only) |

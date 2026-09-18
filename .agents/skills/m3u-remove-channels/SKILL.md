@@ -2,11 +2,12 @@
 name: m3u-remove-channels
 description: >-
   Permanently deletes channel entries from official.m3u via scripts/remove_channels.py
-  and recalculates IDs. Entries are NOT saved to backup.m3u. Use when the user
-  wants to eliminar, borrar, quitar, delete, or drop channels/sources for good
-  after TV testing. Requires explicit global IDs — never infer from name. If the
-  user says backup, respaldo, or mover a backup, use m3u-to-backup instead.
-  Do NOT use for fixing logos or searching new stream URLs.
+  or scripts/channel_ops.py and recalculates IDs. Entries are NOT saved to backup.m3u.
+  Use when the user wants to eliminar, borrar, quitar, delete, or drop channels/sources
+  for good after TV testing. Requires explicit global IDs — never infer from name. If the
+  user says backup, respaldo, or mover a backup, use m3u-to-backup instead. For mixed
+  remove+backup in one request, use channel_ops.py. Do NOT use for fixing logos or
+  searching new stream URLs.
 ---
 
 # Remove channels from official.m3u
@@ -28,50 +29,69 @@ Accepted user formats:
 - Space-separated list: `88 91 102`
 - Range: `88-92` (expand to `88 89 90 91 92`)
 
-### Help the user identify IDs
+## ID safety (critical — read before every run)
 
-If the user does not know which ID corresponds to a channel, you may list current entries without running the removal:
+**IDs are reassigned after every remove/backup because `clean_m3u.py` recalculates them.**
 
-```bash
-grep -E '^#EXTINF' official.m3u | head -30
-```
+To avoid deleting the wrong channel:
 
-Or, if they just tested on TV and want to remove down channels:
+1. **List and verify first** when the user names a channel or when multiple IDs are involved:
 
-```bash
-python3 scripts/check_channels.py
-```
+   ```bash
+   python3 scripts/channel_ops.py --list --filter "universal premiere"
+   ```
 
-Even so, **do not remove until the user confirms the IDs**.
+2. **Never chain** `remove_channels.py` and `move_to_backup.py` in separate commands for one user request. IDs from the first command are stale for the second. Use `channel_ops.py` instead.
+
+3. **Use `--expect ID:NAME`** whenever you know the channel name from context. The script aborts if the ID does not match.
+
+4. **Use `--dry-run`** before applying when the request touches 2+ IDs or mixes remove + backup.
+
+5. **Read the plan output** before confirming success. If any resolved name does not match the user's intent, stop and fix the command.
 
 ## Execution
+
+### Single action: remove only
 
 From the repo root:
 
 ```bash
-python3 scripts/remove_channels.py <id1> <id2> ...
+python3 scripts/remove_channels.py <id1> <id2> ... --expect <id>:<name> ...
 ```
 
 Example:
 
 ```bash
-python3 scripts/remove_channels.py 88 91
+python3 scripts/remove_channels.py 83 85 --expect '83:UNIVERSAL PREMIERE' --expect '85:UNIVERSAL CINEMA' --dry-run
+python3 scripts/remove_channels.py 83 85 --expect '83:UNIVERSAL PREMIERE' --expect '85:UNIVERSAL CINEMA'
 ```
+
+### Mixed action: remove + backup in one request
+
+Use the atomic script:
+
+```bash
+python3 scripts/channel_ops.py --backup 84 --remove 83 85 --expect '84:UNIVERSAL PREMIERE' --expect '83:UNIVERSAL PREMIERE' --expect '85:UNIVERSAL CINEMA'
+```
+
+`channel_ops.py` resolves all IDs in a single read, applies every change, then runs `clean_m3u.py` once.
 
 The script:
 
-1. Extracts from `official.m3u` entries whose global ID matches.
-2. Removes them permanently (they are not copied to `backup.m3u`).
-3. Runs `python3 scripts/clean_m3u.py` to reorder categories, recalculate correlative IDs, and deduplicate URLs.
+1. Prints the resolved plan (`REMOVE:` / `BACKUP:` with ID, tvg-name, URL).
+2. Aborts if `--expect` does not match or an ID is missing.
+3. Removes matching entries permanently (not copied to `backup.m3u`).
+4. Runs `python3 scripts/clean_m3u.py` once at the end.
 
-If any ID does not exist, the script fails; report the error to the user and do not say "trabajo realizado".
+If any ID does not exist or name verification fails, the script fails; report the error to the user and do not say "trabajo realizado".
 
 ## Difference from m3u-to-backup
 
 | Action | Skill / script |
 |--------|----------------|
-| Remove from official and save to backup | `m3u-to-backup` → `move_to_backup.py` |
-| Remove from official without backup | `m3u-remove-channels` → `remove_channels.py` |
+| Remove from official and save to backup | `m3u-to-backup` → `move_to_backup.py` or `channel_ops.py --backup` |
+| Remove from official without backup | `m3u-remove-channels` → `remove_channels.py` or `channel_ops.py --remove` |
+| Both in one user message | `channel_ops.py` only |
 
 If the user wants to keep the source in case it works again, use `m3u-to-backup`, not this skill.
 
@@ -88,7 +108,10 @@ Do not add summaries, counts, channel names, removed IDs, extra confirmations, o
 ## Common mistakes
 
 - **Running without IDs**: forbidden; ask for IDs first.
-- **Searching by name instead of ID**: forbidden; require the global ID.
-- **Editing official.m3u manually**: always use `remove_channels.py`.
-- **Confusing with backup**: if the user wants backup, use `move_to_backup.py`.
-- **Forgetting cleanup**: the script already runs `clean_m3u.py`; no need to run it separately.
+- **Chaining remove + backup scripts**: forbidden; use `channel_ops.py`.
+- **Using stale IDs after a prior remove/backup in the same turn**: forbidden; re-list IDs or pass all IDs to `channel_ops.py` in one command.
+- **Skipping `--expect` when the channel name is known**: risky; always add it.
+- **Searching by name instead of ID**: forbidden for choosing targets; `grep`/`--list` is only to help the user confirm IDs.
+- **Editing official.m3u manually**: always use the scripts.
+- **Confusing with backup**: if the user wants backup, use `move_to_backup.py` or `channel_ops.py --backup`.
+- **Forgetting cleanup**: the scripts already run `clean_m3u.py`; no need to run it separately.
