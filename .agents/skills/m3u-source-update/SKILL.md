@@ -66,7 +66,7 @@ For each match:
 
 1. **Stable server**: prioritize hosts that already appear frequently in `official.m3u` (same criterion as HBO, Disney Channel, etc.).
 2. **Quality**: prefer `1080p` / `FHD` / `HD` over `SD`.
-3. **Complete URL**: prefer URLs with `/index.m3u8` over incomplete paths.
+3. **Astra URL**: use MPEG-TS `http://host/play/<id>` (not `/index.m3u8`). `search_sources.py --json` already returns this in `url`; `hls_url` is the origin form. If MPEG-TS 404s, `ssiptv_audio.py` keeps HLS.
 4. **Clean name**: discard odd variants (`ENVIADO`, `NUEVO`, internal line numbers).
 5. **One URL per server**: if a host has multiple matches for the same channel, keep the highest-quality one.
 6. **Logo in source**: tie-break in favor of entries with `tvg-logo` on the `#EXTINF`.
@@ -92,9 +92,11 @@ If the channel already has variants in `official.m3u` and the total would exceed
 ### Template per new source
 
 ```text
-#EXTINF:-1 group-title="Peliculas" tvg-name="Star Channel HD",Star Channel HD
-http://servidor/play/xxxx/index.m3u8
+#EXTINF:-1 group-title="Peliculas" tvg-name="Star Channel HD" audio-track="spa,eng",Star Channel HD
+http://servidor/play/xxxx
 ```
+
+Use the MPEG-TS URL from search JSON (`url`), not `hls_url`. Always include `audio-track="spa,eng"` on Astra `/play/` entries.
 
 If the source includes `#EXTVLCOPT:http-user-agent=...`, copy those lines between `#EXTINF` and the URL.
 
@@ -108,15 +110,18 @@ Rules when copying metadata from the source:
 
 Only if the user asks: delete the full block (`#EXTINF`, `#EXTVLCOPT` if any, URL).
 
-## Step 4: Clean the list (required)
+## Step 4: SS IPTV audio fix + clean the list (required)
 
-After any edit to `official.m3u`:
+After any edit to `official.m3u` that adds or replaces stream URLs:
 
 ```bash
+python3 scripts/ssiptv_audio.py
 python3 scripts/clean_m3u.py
 ```
 
-Verify the script finishes without errors. After cleanup, variants of the same channel appear as `N Canal X 1`, `N Canal X 2`, etc., sorted by quality.
+`ssiptv_audio.py` probes each Astra `/play/` URL (needs `full_network`): keeps MPEG-TS when the server serves it, falls back to `/index.m3u8` on 404, and sets `audio-track="spa,eng"`. `clean_m3u.py` preserves MPEG-TS (it must never append `.m3u8` to `/play/<id>`) and re-injects `audio-track` on Astra entries.
+
+Verify both scripts finish without errors. After cleanup, variants of the same channel appear as `N Canal X 1`, `N Canal X 2`, etc., sorted by quality.
 
 ## Step 5: Confirm to the user
 
@@ -134,7 +139,8 @@ Summarize:
 - [ ] Run search_sources.py --json with full_network (never sandbox)
 - [ ] Rank candidates and add only the best (max 6 by default)
 - [ ] Skip URLs already present or unavailable sources
-- [ ] Run clean_m3u.py
+- [ ] Add Astra URLs as MPEG-TS `/play/<id>` with audio-track="spa,eng"
+- [ ] Run ssiptv_audio.py (full_network) then clean_m3u.py
 - [ ] Report how many sources were added and their final IDs
 ```
 
@@ -146,6 +152,9 @@ python3 scripts/search_sources.py "star channel" --json
 
 # Readable search for quick review
 python3 scripts/search_sources.py "espn 2"
+
+# After adding Astra URLs: MPEG-TS + audio-track (needs full_network)
+python3 scripts/ssiptv_audio.py
 
 # Verify down channels after TV testing (also requires full_network)
 python3 scripts/check_channels.py
@@ -159,3 +168,5 @@ python3 scripts/check_channels.py
 - **Forgetting cleanup**: breaks taxonomy, IDs, and deduplication.
 - **Replacing instead of adding**: only replace if the user explicitly asks.
 - **Copying tvg-id from source**: forbidden; cleanup removes it anyway.
+- **Adding HLS `/index.m3u8` for Astra**: forbidden when MPEG-TS works. SS IPTV will not show the language menu. Use `/play/<id>` and run `ssiptv_audio.py`.
+- **Omitting `audio-track="spa,eng"`** on Astra `/play/` entries: forbidden; cleanup injects it, but new blocks must include it.

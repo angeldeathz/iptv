@@ -3,6 +3,13 @@ import re
 import os
 import sys
 
+from ssiptv_audio import (
+    SSIPTV_AUDIO_TRACK,
+    astra_mpegts_url,
+    canonical_stream_url,
+    is_astra_play_url,
+)
+
 def parse_extinf(extinf_line):
     # Split the attributes and the display name on the first comma not in quotes
     comma_idx = -1
@@ -46,12 +53,14 @@ def normalize_url(url):
     url = url.strip()
     # Repair repeated .m3u8 suffixes from earlier buggy normalize runs
     url = re.sub(r'(\.m3u8)+(?=\?|$)', '.m3u8', url, flags=re.IGNORECASE)
-    path = url.split('?', 1)[0]
-    if path.lower().endswith('.m3u8'):
-        return url
-    # Xtream-style /play/<id> URLs without extension break many IPTV TV apps
-    if re.search(r'/play/[^/?]+$', url):
-        url += '.m3u8'
+    if is_astra_play_url(url):
+        path = url.split("?", 1)[0]
+        # Keep MPEG-TS (/play/id) as-is. HLS /index.m3u8 is only the fallback
+        # when the origin does not expose MPEG-TS (SS IPTV needs MPEG-TS to
+        # show the language menu).
+        if path.lower().endswith(".m3u8"):
+            return path
+        return astra_mpegts_url(url)
     return url
 
 
@@ -916,22 +925,38 @@ def get_group_priority(group_name):
     except ValueError:
         return len(GROUP_ORDER)
 
+def _astra_mpegts_bonus(url):
+    path = url.split("?", 1)[0]
+    if is_astra_play_url(path) and not path.lower().endswith(".m3u8"):
+        return 1
+    return 0
+
+
 def deduplicate_by_url(entries):
     """Keep one entry per unique URL, preferring higher quality then earliest appearance."""
     best_by_url = {}
     for entry in entries:
-        url = normalize_url(entry['url'])
-        if url not in best_by_url:
-            best_by_url[url] = entry
+        url = normalize_url(entry["url"])
+        key = canonical_stream_url(url)
+        if key not in best_by_url:
+            best_by_url[key] = entry
             continue
-        current = best_by_url[url]
+        current = best_by_url[key]
         candidate = entry
-        if (candidate['quality_score'], -candidate['original_index']) > (
-            current['quality_score'], -current['original_index']
-        ):
-            best_by_url[url] = candidate
+        candidate_key = (
+            candidate["quality_score"],
+            _astra_mpegts_bonus(url),
+            -candidate["original_index"],
+        )
+        current_key = (
+            current["quality_score"],
+            _astra_mpegts_bonus(normalize_url(current["url"])),
+            -current["original_index"],
+        )
+        if candidate_key > current_key:
+            best_by_url[key] = candidate
 
-    deduped = sorted(best_by_url.values(), key=lambda e: e['original_index'])
+    deduped = sorted(best_by_url.values(), key=lambda e: e["original_index"])
     return deduped, len(entries) - len(deduped)
 
 def clean_m3u(file_path):
@@ -1020,6 +1045,8 @@ def clean_m3u(file_path):
         attrs.pop('tvg-id', None)
         # Set category as group-title
         attrs['group-title'] = category
+        if is_astra_play_url(entry['url']):
+            attrs['audio-track'] = SSIPTV_AUDIO_TRACK
         
         entry['duration'] = '-1'
         entry['attrs'] = attrs

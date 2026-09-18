@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from clean_m3u import parse_extinf
+from ssiptv_audio import astra_mpegts_url, canonical_stream_url, is_astra_play_url
 
 DEFAULT_USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -196,11 +197,13 @@ def load_official_urls(official_path: str) -> tuple[set[str], dict[str, Official
 
             urls.add(line)
             if channel_id is not None:
-                by_url[line] = OfficialMatch(
+                match = OfficialMatch(
                     channel_id=channel_id,
                     name=tvg_name or display_name,
                     url=line,
                 )
+                by_url[line] = match
+                by_url[canonical_stream_url(line)] = match
             current_extinf = None
 
     return urls, by_url
@@ -253,13 +256,18 @@ def format_entry_block(
     if entry.tvg_name and entry.tvg_name != entry.display_name:
         lines.append(f"     tvg-name: {entry.tvg_name}")
 
-    official = official_by_url.get(entry.url)
+    official = official_by_url.get(entry.url) or official_by_url.get(
+        canonical_stream_url(entry.url)
+    )
     if official:
         lines.append(f"     EN LISTA -> ID {official.channel_id}  {official.name}")
     else:
         lines.append("     (nueva fuente)")
 
-    lines.append(f"     {entry.url}")
+    add_url = astra_mpegts_url(entry.url) if is_astra_play_url(entry.url) else entry.url
+    lines.append(f"     {add_url}")
+    if add_url != entry.url:
+        lines.append(f"     hls: {entry.url}")
     if entry.vlc_options:
         for option in entry.vlc_options:
             lines.append(f"     {option}")
@@ -337,13 +345,19 @@ def print_json(
             if not matcher(entry):
                 continue
 
-            official = official_by_url.get(entry.url)
+            official = official_by_url.get(entry.url) or official_by_url.get(
+                canonical_stream_url(entry.url)
+            )
+            mpegts_url = (
+                astra_mpegts_url(entry.url) if is_astra_play_url(entry.url) else entry.url
+            )
             matches.append(
                 {
                     "display_name": entry.display_name,
                     "tvg_name": entry.tvg_name,
                     "group": entry.group,
-                    "url": entry.url,
+                    "url": mpegts_url,
+                    "hls_url": entry.url,
                     "extinf": entry.extinf,
                     "vlc_options": entry.vlc_options,
                     "in_official": official is not None,

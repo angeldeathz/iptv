@@ -2,11 +2,14 @@
 
 This repo maintains a curated Latin America–oriented channel list in `official.m3u`, with retired sources in `backup.m3u`. Agents should treat `official.m3u` as an editorial TV lineup, not a raw link dump.
 
-**After any edit to `official.m3u`**, run the cleanup script (idempotent — safe to run every time):
+**After any edit to `official.m3u`**, run:
 
 ```bash
+python3 scripts/ssiptv_audio.py
 python3 scripts/clean_m3u.py
 ```
+
+`ssiptv_audio.py` is required when adding or replacing Astra `/play/` URLs (MPEG-TS + `audio-track`). `clean_m3u.py` is idempotent and always required. Skip `ssiptv_audio.py` only for edits that do not touch stream URLs (logos, recategorize, rename-only).
 
 ---
 
@@ -50,7 +53,7 @@ Global IDs are **reassigned after every** remove or backup because `clean_m3u.py
 
 **Logo skills**: `m3u-sync-logos-json` only writes `assets/logos.json` (copy URLs as-is). `m3u-fix-logos` verifies URLs, searches replacements, and edits `official.m3u`.
 
-**Typical flow**: `m3u-source-update` (find streams) → user tests on TV → `m3u-remove-channels` or `m3u-to-backup` (drop failures). `m3u-lineup` is for editorial reorder only. After any `official.m3u` edit, run `clean_m3u.py`.
+**Typical flow**: `m3u-source-update` (find streams) → user tests on TV → `m3u-remove-channels` or `m3u-to-backup` (drop failures). `m3u-lineup` is for editorial reorder only. After URL edits, run `ssiptv_audio.py` then `clean_m3u.py`.
 
 ---
 
@@ -80,7 +83,19 @@ Examples: `1 Chilevision 1`, `4 Canal 13 2`.
 | `tvg-id` | **Do not include.** This list is used without EPG. |
 | `tvg-logo` | Include when known. Use `m3u-fix-logos` for broken URLs; use `m3u-sync-logos-json` to register current URLs in `assets/logos.json`. |
 | `group-title` | **PascalCase** only (e.g. `Nacionales`, `Peliculas`). Never ALL CAPS or all lowercase. |
+| `audio-track` | **Required** on every Astra HTTP Play URL (`/play/<id>`). Always `audio-track="spa,eng"` so SS IPTV defaults to Spanish and shows the language menu. `clean_m3u.py` injects it. |
 | `#EXTVLCOPT` | Copy from source when required (e.g. `http-user-agent`). |
+
+### Astra stream URLs (SS IPTV dual audio)
+
+SS IPTV on Smart TV only lists audio languages for **MPEG-TS**, not for HLS. Origin playlists publish `/play/<id>/index.m3u8`; this repo must not keep that form when MPEG-TS is available.
+
+| Form | When to use |
+|------|-------------|
+| `http://host:port/play/<id>` | **Default.** MPEG-TS. Required for the SS IPTV language menu. |
+| `http://host:port/play/<id>/index.m3u8` | **Fallback only** if MPEG-TS returns 404. No language menu on SS IPTV. |
+
+Never append `.m3u8` to `/play/<id>`. Never add `?hls`. After adding or replacing Astra URLs, run `python3 scripts/ssiptv_audio.py` then `python3 scripts/clean_m3u.py`.
 
 ### Category order
 
@@ -122,7 +137,8 @@ Full workflow: [`m3u-lineup` skill](skills/m3u-lineup/SKILL.md).
 
 | Script | Purpose |
 |--------|---------|
-| `scripts/clean_m3u.py` | Normalize names, IDs, groups, dedup URLs (**run after every edit**) |
+| `scripts/clean_m3u.py` | Normalize names, IDs, groups, dedup URLs, inject `audio-track` on Astra (**run after every edit**) |
+| `scripts/ssiptv_audio.py` | Probe Astra `/play/` URLs: MPEG-TS if available, else HLS; set `audio-track="spa,eng"` (**run after adding/replacing streams**) |
 | `scripts/search_sources.py` | Search origin M3U servers (needs `full_network`) |
 | `scripts/check_channels.py` | List channels whose URLs fail (needs `full_network`) |
 | `scripts/sync_logos_json.py` | Copy `tvg-logo` from `official.m3u` into `assets/logos.json` |
