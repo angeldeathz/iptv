@@ -88,17 +88,13 @@ def probe_mpegts_url(url: str, timeout: float = 12.0) -> bool:
 
 
 def resolve_astra_play_url(url: str, timeout: float = 12.0) -> str:
-    """Prefer MPEG-TS; keep HLS when the server does not expose MPEG-TS."""
+    """Prefer MPEG-TS; fall back to HLS when the server does not expose MPEG-TS."""
     stripped = url.strip()
     if not is_astra_play_url(stripped):
         return stripped
-    path = stripped.split("?", 1)[0]
-    already_mpegts = not path.lower().endswith(".m3u8")
     if probe_mpegts_url(stripped, timeout=timeout):
         return astra_mpegts_url(stripped)
-    if already_mpegts:
-        return astra_mpegts_url(stripped)
-    return path
+    return astra_hls_url(stripped)
 
 
 def _rewrite_extinf_audio_track(extinf: str) -> str:

@@ -223,7 +223,7 @@ http://181.224.200.5:2277/play/a0df
 http://45.5.118.152:8000/play/a04m
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="71 Star Channel 2" audio-track="spa,eng",71 Star Channel 2
-http://187.102.211.240:9001/play/a02j
+http://187.102.211.240:9001/play/a02j/index.m3u8
 
 #EXTINF:-1 group-title="Peliculas" tvg-name="72 FX 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" audio-track="spa,eng",72 FX 1
 http://209.14.98.47:8000/play/a0y4
@@ -280,7 +280,7 @@ https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
 http://181.224.200.5:2277/play/a0co
 
 #EXTINF:-1 group-title="Peliculas" tvg-name="90 A H EUROCHANNEL 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Eurochannel_logo.svg/320px-Eurochannel_logo.svg.png" audio-track="spa,eng",90 A H EUROCHANNEL 1
-http://190.108.83.69:8000/play/a09n/index.m3u8
+http://45.5.118.152:8000/play/a03e
 
 #EXTINF:-1 tvg-name="91 FMH Movies 1" tvg-logo="https://www.fmh.la/images/team/logo_movies.png" group-title="Peliculas" audio-track="spa,eng",91 FMH Movies 1
 http://45.186.254.75:8000/play/a07j
@@ -325,7 +325,7 @@ http://181.78.20.119:58002/play/a06u
 http://187.102.211.240:9001/play/a05v/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="104 Warner 1" audio-track="spa,eng",104 Warner 1
-http://170.247.204.9:8000/play/a01w
+http://170.247.204.9:8000/play/a01w/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="105 E! 1" audio-track="spa,eng",105 E! 1
 http://72.1.184.5:8089/play/a05d
@@ -361,7 +361,7 @@ http://187.102.211.240:9001/play/a03j/index.m3u8
 http://187.102.211.240:9001/play/a03q/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="116 TNT Series 1" audio-track="spa,eng",116 TNT Series 1
-http://170.247.204.9:8000/play/a0aa
+http://170.247.204.9:8000/play/a0aa/index.m3u8
 
 
 # ===== Deportes =====
@@ -472,7 +472,7 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.
 http://181.224.200.5:2277/play/a00t
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="150 Discovery Theater 1" audio-track="spa,eng",150 Discovery Theater 1
-http://170.247.204.9:8000/play/a04b
+http://170.247.204.9:8000/play/a04b/index.m3u8
 
 #EXTINF:-1 group-title="Documentales" tvg-name="151 Discovery Turbo 1" tvg-logo="https://docdog.top/logo/countries/latino/discoveryturbo.png" audio-track="spa,eng",151 Discovery Turbo 1
 http://187.102.211.240:9001/play/a01a/index.m3u8
@@ -493,7 +493,7 @@ http://187.102.211.240:9001/play/a01p/index.m3u8
 http://181.224.200.5:2277/play/a00m
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="157 History 1" audio-track="spa,eng",157 History 1
-http://170.247.204.9:8000/play/a01p
+http://170.247.204.9:8000/play/a01p/index.m3u8
 
 #EXTINF:-1 tvg-name="158 History 2 1" tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" audio-track="spa,eng",158 History 2 1
 http://181.78.8.199:8000/play/a0ag
