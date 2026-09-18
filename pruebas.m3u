@@ -3,12 +3,6 @@
 # ===== Peliculas =====
 
 # ----- HBO 2 -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="1 HBO 2 Alt 1" audio-track="spa,eng",1 HBO 2 Alt 1
-http://190.14.10.19:16000/play/a041
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="2 HBO 2 Alt 2" audio-track="spa,eng",2 HBO 2 Alt 2
-http://190.61.43.117:45000/play/a07x
-
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="3 HBO 2 Alt 3",3 HBO 2 Alt 3
 http://45.5.116.228:8000/play/a00c
 
@@ -19,13 +13,7 @@ http://181.224.255.210:8001/play/a0re
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" tvg-name="5 HBO Signature Alt 2" audio-track="spa,eng",5 HBO Signature Alt 2
 http://187.102.211.240:9001/play/a04q/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" tvg-name="6 HBO Signature Alt 3",6 HBO Signature Alt 3
-http://190.108.83.69:8000/play/a01g
-
 # ----- HBO Pop -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="7 HBO Pop Alt 1" audio-track="spa,eng",7 HBO Pop Alt 1
-http://190.108.83.69:8000/play/a03k
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="8 HBO Pop Alt 2" audio-track="spa,eng",8 HBO Pop Alt 2
 http://190.217.66.92:8000/play/a0pz
 
@@ -36,16 +24,10 @@ http://190.61.42.218:9000/play/a01n
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="10 HBO Family Alt 1" audio-track="spa,eng",10 HBO Family Alt 1
 http://170.247.204.9:8000/play/a04t/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="11 HBO Family Alt 2" audio-track="spa,eng",11 HBO Family Alt 2
-http://190.14.10.19:16000/play/a043
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="12 HBO Family Alt 3" audio-track="spa,eng",12 HBO Family Alt 3
 http://190.217.66.92:8000/play/a0pk
 
 # ----- Star Channel (backup) -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="13 Star Channel Alt 1" audio-track="spa,eng",13 Star Channel Alt 1
-http://187.102.211.240:9001/play/a02j/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="14 Star Channel Alt 2" audio-track="spa,eng",14 Star Channel Alt 2
 http://181.224.255.210:8001/play/a0oh
 
@@ -55,9 +37,6 @@ http://190.61.42.218:9000/play/a07t
 # ----- Universal Premiere -----
 #EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="16 Universal Premiere Alt 1",16 Universal Premiere Alt 1
 http://45.5.116.228:8000/play/a0i1
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="17 Universal Premiere Alt 2" audio-track="spa,eng",17 Universal Premiere Alt 2
-http://45.5.118.152:8000/play/a0dn
 
 #EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="18 Universal Premiere Alt 3",18 Universal Premiere Alt 3
 http://170.247.204.9:8000/play/a0ey/index.m3u8
@@ -69,17 +48,11 @@ http://45.5.116.228:8000/play/a0kt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="20 Universal Cinema Alt 2" audio-track="spa,eng",20 Universal Cinema Alt 2
 http://45.167.1.138:8000/play/a06m
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="21 Universal Cinema Alt 3" audio-track="spa,eng",21 Universal Cinema Alt 3
-http://190.61.43.117:45000/play/a05x
-
 # ===== Series =====
 
 # ----- Universal TV -----
 #EXTINF:-1 tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" tvg-name="22 Universal TV Alt 1" audio-track="spa,eng",22 Universal TV Alt 1
 http://170.247.204.9:8000/play/a0ca/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" tvg-name="23 Universal TV Alt 2",23 Universal TV Alt 2
-http://181.224.200.5:2277/play/a0ak
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" tvg-name="24 Universal TV Alt 3" audio-track="spa,eng",24 Universal TV Alt 3
 http://190.108.83.69:8000/play/a031
@@ -88,36 +61,17 @@ http://190.108.83.69:8000/play/a031
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="25 AXN Alt 1" audio-track="spa,eng",25 AXN Alt 1
 http://170.247.204.9:8000/play/a01x/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="26 AXN Alt 2" audio-track="spa,eng",26 AXN Alt 2
-http://181.78.20.119:58002/play/a06u
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="27 AXN Alt 3" audio-track="spa,eng",27 AXN Alt 3
 http://187.102.211.240:9001/play/a01u/index.m3u8
 
 # ----- Warner -----
-#EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="28 Warner Alt 1" audio-track="spa,eng",28 Warner Alt 1
-http://170.247.204.9:8000/play/a01w/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="29 Warner Alt 2",29 Warner Alt 2
 http://181.224.200.5:2277/play/a01g
 
 #EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="30 Warner Alt 3" audio-track="spa,eng",30 Warner Alt 3
 http://181.224.255.210:8001/play/a0od
 
-# ----- USA Network -----
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" tvg-name="31 USA Network Alt 1",31 USA Network Alt 1
-http://181.78.8.199:8000/play/a0kq
-
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" tvg-name="32 USA Network Alt 2" audio-track="spa,eng",32 USA Network Alt 2
-http://181.224.255.210:8001/play/a0qt
-
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" tvg-name="33 USA Network Alt 3" audio-track="spa,eng",33 USA Network Alt 3
-http://187.102.211.240:9001/play/a041/index.m3u8
-
 # ----- TNT Series -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="34 TNT Series Alt 1" audio-track="spa,eng",34 TNT Series Alt 1
-http://170.247.204.9:8000/play/a0aa/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="35 TNT Series Alt 2" audio-track="spa,eng",35 TNT Series Alt 2
 http://181.224.255.210:8001/play/a0ls
 
@@ -127,29 +81,17 @@ http://181.78.8.199:8000/play/a0jw
 # ===== Documentales =====
 
 # ----- History -----
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="37 History Alt 1" audio-track="spa,eng",37 History Alt 1
-http://170.247.204.9:8000/play/a01p/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="38 History Alt 2",38 History Alt 2
 http://181.224.200.5:2277/play/a02b
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="39 History Alt 3" audio-track="spa,eng",39 History Alt 3
-http://181.224.255.210:8001/play/a0m1
 
 # ----- Discovery Channel -----
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="40 Discovery Channel Alt 1" audio-track="spa,eng",40 Discovery Channel Alt 1
 http://170.247.204.9:8000/play/a01o/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="41 Discovery Channel Alt 2",41 Discovery Channel Alt 2
-http://181.224.200.5:2277/play/a00t
-
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="42 Discovery Channel Alt 3" audio-track="spa,eng",42 Discovery Channel Alt 3
 http://181.224.255.210:8001/play/a0m0
 
 # ----- Discovery Theater -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="43 Discovery Theater Alt 1" audio-track="spa,eng",43 Discovery Theater Alt 1
-http://170.247.204.9:8000/play/a04b/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="44 Discovery Theater Alt 2" audio-track="spa,eng",44 Discovery Theater Alt 2
 http://181.224.255.210:8001/play/a0fc
 

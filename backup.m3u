@@ -340,6 +340,12 @@ http://138.121.15.230:9002/LIFETIME/index.m3u8
 #EXTINF:-1 group-title="Series" tvg-name="122 TNT Series 2" tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="TNT Series 2" tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png",TNT Series 2
 http://187.102.211.240:9001/play/a05x/index.m3u8?hls
 
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" tvg-name="USA Network" audio-track="spa,eng",USA Network
+http://181.224.255.210:8001/play/a0qt
+
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" tvg-name="USA Network" audio-track="spa,eng",USA Network
+http://187.102.211.240:9001/play/a041/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="127 A&E 2" tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" tvg-name="A&E 2",A&E 2
 http://187.102.211.240:9001/play/a01m/index.m3u8?hls
 
@@ -454,6 +460,9 @@ http://190.108.83.69:8000/play/a09v/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="175 History 2" tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="History 2",History 2
 http://38.225.116.4:22000/play/a00w/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="History" audio-track="spa,eng",History
+http://181.224.255.210:8001/play/a0m1
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="177 History 2 2" tvg-logo="https://i.imgur.com/ypR4tvy.jpg" group-title="Documentales" tvg-name="History 2 2",History 2 2
 http://187.102.211.240:9001/play/a03f/index.m3u8?hls
