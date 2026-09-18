@@ -349,7 +349,15 @@ http://187.102.211.240:9001/play/a03i/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="137 E! 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Series" tvg-name="E! 3",E! 3
 http://38.225.116.4:22000/play/a01a/index.m3u8
 
+# ===== Deportes =====
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" tvg-name="132 ESPN 5 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" tvg-name="ESPN 5 4",ESPN 5 4
+http://187.102.211.240:9001/play/a05w/index.m3u8?hls
+
 # ===== Documentales =====
+
+#EXTINF:-1 group-title="Documentales" tvg-name="156 Discovery SCI 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_logo.svg/320px-Discovery_Science_logo.svg.png" group-title="Documentales" tvg-name="Discovery SCI 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_logo.svg/320px-Discovery_Science_logo.svg.png",Discovery SCI 1
+http://187.102.211.240:9001/play/a06n/index.m3u8?hls
 
 #EXTINF:-1 group-title="Documentales" tvg-name="163 Discovery Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="Discovery Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png",Discovery Channel 1
 http://181.224.200.5:2277/play/a00t/index.m3u8
