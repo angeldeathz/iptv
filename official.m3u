@@ -469,7 +469,7 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.
 # ===== Documentales =====
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="149 Discovery Channel 1" audio-track="spa,eng",149 Discovery Channel 1
-http://181.224.200.5:2277/play/a00t
+http://170.247.204.9:8000/play/a01o/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="150 Discovery Theater 1" audio-track="spa,eng",150 Discovery Theater 1
 http://170.247.204.9:8000/play/a04b/index.m3u8
