@@ -217,7 +217,7 @@ http://187.102.211.240:9001/play/a01b/index.m3u8
 http://187.102.211.240:9001/play/a05h/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="69 Paramount 1" audio-track="spa,eng",69 Paramount 1
-http://181.224.200.5:2277/play/a0df
+http://45.5.116.228:8000/play/a0kl
 
 #EXTINF:-1 group-title="Peliculas" tvg-name="70 Star Channel 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" audio-track="spa,eng",70 Star Channel 1
 http://45.5.118.152:8000/play/a04m

@@ -48,6 +48,25 @@ http://45.5.116.228:8000/play/a0kt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="20 Universal Cinema Alt 2" audio-track="spa,eng",20 Universal Cinema Alt 2
 http://45.167.1.138:8000/play/a06m
 
+# ----- Paramount -----
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="46 Paramount Alt 1" audio-track="spa,eng",46 Paramount Alt 1
+http://45.5.116.228:8000/play/a0kl
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="47 Paramount Alt 2" audio-track="spa,eng",47 Paramount Alt 2
+http://45.186.254.75:8000/play/a0cd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="48 Paramount Alt 3" audio-track="spa,eng",48 Paramount Alt 3
+http://190.14.10.19:16000/play/a07w
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="49 Paramount Alt 4" audio-track="spa,eng",49 Paramount Alt 4
+http://72.1.184.5:8089/play/a05w
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="50 Paramount Alt 5" audio-track="spa,eng",50 Paramount Alt 5
+http://45.167.1.137:8000/play/a06f
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="51 Paramount Alt 6" audio-track="spa,eng",51 Paramount Alt 6
+http://45.167.2.101:8000/play/a0ro
+
 # ===== Series =====
 
 # ----- Universal TV -----
