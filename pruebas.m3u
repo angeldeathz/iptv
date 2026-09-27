@@ -97,6 +97,10 @@ http://181.224.255.210:8001/play/a0ls
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="36 TNT Series Alt 3",36 TNT Series Alt 3
 http://181.78.8.199:8000/play/a0jw
 
+# ----- REC TV -----
+#EXTINF:-1 group-title="Series" tvg-name="REC TV Alt 1" audio-track="spa,eng",REC TV Alt 1
+http://45.186.254.75:8000/play/a0ha
+
 # ===== Documentales =====
 
 # ----- History -----
@@ -116,3 +120,39 @@ http://181.224.255.210:8001/play/a0fc
 
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="45 Discovery Theater Alt 3" audio-track="spa,eng",45 Discovery Theater Alt 3
 http://187.102.211.240:9001/play/a023/index.m3u8
+
+# ----- Love Nature -----
+#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 1" audio-track="spa,eng",Love Nature Alt 1
+http://190.60.40.165:1010/play/a0o6
+
+#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 2" audio-track="spa,eng",Love Nature Alt 2
+http://181.224.200.5:2277/play/a036
+
+#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 3" audio-track="spa,eng",Love Nature Alt 3
+http://190.108.83.69:8000/play/a085
+
+# ===== Deportes =====
+
+# ----- TNT Sports -----
+#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 1" audio-track="spa,eng",TNT Sports Alt 1
+http://170.247.204.9:8000/play/a0c0/index.m3u8
+
+#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 2" audio-track="spa,eng",TNT Sports Alt 2
+http://45.186.254.75:8000/play/a041
+
+#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 3" audio-track="spa,eng",TNT Sports Alt 3
+http://209.14.98.47:8000/play/a0vc
+
+# ===== Internacionales =====
+
+# ----- RAI -----
+#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Alt 1" audio-track="spa,eng",RAI Alt 1
+http://38.226.49.253:8000/play/a04s
+
+#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Alt 2" audio-track="spa,eng",RAI Alt 2
+http://45.186.254.75:8000/play/a047
+
+# ----- RAI Italia -----
+#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Italia Alt 1" audio-track="spa,eng",RAI Italia Alt 1
+http://209.14.98.47:8000/play/a0vd
+
