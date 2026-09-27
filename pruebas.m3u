@@ -156,3 +156,10 @@ http://45.186.254.75:8000/play/a047
 #EXTINF:-1 group-title="Internacionales" tvg-name="RAI Italia Alt 1" audio-track="spa,eng",RAI Italia Alt 1
 http://209.14.98.47:8000/play/a0vd
 
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="71 Paramount 1" audio-track="spa,eng",71 Paramount 1
+http://45.5.116.228:8000/play/a0kl
+
+#EXTINF:-1 tvg-id="" tvg-name="CLARO CINEMA HD" tvg-logo="https://s3.us-east-1.amazonaws.com/forofms.na/gallery/category_7/large.gallery_5692_7_22692.png.e5fe062660250e2df713bdb2d0a8c40b.png" group-title="⚡️CINEMA⚡️",CLARO CINEMA HD
+http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/167553
