@@ -257,6 +257,8 @@ def clean_channel_name(display_name):
         "dragon ball z pluto feed a": "Dragon Ball Z Pluto Feed A",
         "dragon ball z pluto feed b": "Dragon Ball Z Pluto Feed B",
         "dragon ball super 24/7": "Dragon Ball Super 24/7",
+        "dbz super": "Dbz Super",
+        "amc living": "AMC Living",
     }
     name = overrides.get(name.lower(), name)
     name = sanitize_display_name(name)
@@ -684,7 +686,7 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     original_group_lower = (original_group or "").lower()
     tvg_id_lower = (tvg_id or "").lower()
 
-    if any(w in clean_name_lower for w in ["dragon ball", "goku tv"]):
+    if any(w in clean_name_lower for w in ["dragon ball", "goku tv", "dbz"]):
         return "Infantiles"
 
     if original_group_lower in ("24/7 - experimentales", "24/7 experimentales"):
@@ -707,6 +709,8 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
             return "Musica"
     if clean_name_lower.startswith("e!") or clean_name_lower == "e":
         return "Series"
+    if "amc living" in clean_name_lower:
+        return "Variedades"
     if clean_name_lower == "amc" or (
         clean_name_lower.startswith("amc ") and "series" not in clean_name_lower
     ):
