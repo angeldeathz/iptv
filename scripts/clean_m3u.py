@@ -189,6 +189,8 @@ def clean_channel_name(display_name):
         "grjngo": "Grjngo",
         "rewind": "Rewind",
         "west": "West",
+        "rai": "RAI",
+        "rec tv": "REC TV",
         "paramount": "Paramount",
         "multipremier": "Multipremier",
         "history": "History",
@@ -294,18 +296,18 @@ def get_13_suborder(name_lower):
     if name_lower in ("13c",) or "13 cultura" in name_lower:
         return 1
     if name_lower == "t13":
-        return 2
-    if "13 internacional" in name_lower:
         return 3
-    if "13 festival" in name_lower:
+    if "13 internacional" in name_lower:
         return 4
-    if "13 teleseries" in name_lower:
+    if "13 festival" in name_lower:
         return 5
-    if "13 pop" in name_lower:
+    if "13 teleseries" in name_lower:
         return 6
-    if "13 realities" in name_lower:
+    if "13 pop" in name_lower:
         return 7
-    return 8
+    if "13 realities" in name_lower:
+        return 8
+    return 9
 
 
 def get_nacional_lineup_key(clean_name):
@@ -337,6 +339,8 @@ def get_nacional_lineup_key(clean_name):
 
     if is_13_channel(n):
         return (3, get_13_suborder(n), clean_name.lower())
+    if n == "rec tv":
+        return (3, 2, n)
 
     if "ucv" in n:
         return (4, 0, clean_name.lower())
@@ -691,6 +695,8 @@ def classify_channel(clean_name, original_group, tvg_id, url="", logo=""):
     # Editorial overrides (explicit category assignments)
     if "13 kids" in clean_name_lower:
         return "Infantiles"
+    if clean_name_lower == "rec tv" or clean_name_lower.startswith("rec tv "):
+        return "Nacionales"
     if "via x esports" in clean_name_lower or "via x esport" in clean_name_lower:
         return "Infantiles"
     if clean_name_lower == "hei" or clean_name_lower.startswith("hei "):

@@ -67,6 +67,19 @@ http://45.167.1.137:8000/play/a06f
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="51 Paramount Alt 6" audio-track="spa,eng",51 Paramount Alt 6
 http://45.167.2.101:8000/play/a0ro
 
+# ----- SONY -----
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 1" audio-track="spa,eng",81 SONY Alt 1
+http://187.102.211.240:9001/play/a065/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 2" audio-track="spa,eng",81 SONY Alt 2
+http://190.60.40.165:1010/play/a0hw
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 3" audio-track="spa,eng",81 SONY Alt 3
+http://170.247.204.9:8000/play/a01v/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 4" audio-track="spa,eng",81 SONY Alt 4
+http://181.224.200.5:2277/play/a01f
+
 # ===== Series =====
 
 # ----- Universal TV -----
@@ -155,3 +168,4 @@ http://45.186.254.75:8000/play/a047
 # ----- RAI Italia -----
 #EXTINF:-1 group-title="Internacionales" tvg-name="RAI Italia Alt 1" audio-track="spa,eng",RAI Italia Alt 1
 http://209.14.98.47:8000/play/a0vd
+
