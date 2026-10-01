@@ -99,6 +99,20 @@ http://170.247.204.9:8000/play/a01v/index.m3u8
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 4" audio-track="spa,eng",81 SONY Alt 4
 http://181.224.200.5:2277/play/a01f
 
+# ----- Cine Familiar -----
+#EXTINF:-1 group-title="Peliculas" tvg-name="Cine Familiar Alt 1" audio-track="spa,eng",Cine Familiar Alt 1
+http://181.78.8.199:8000/play/a09p
+
+# ----- Cinema Global -----
+#EXTINF:-1 group-title="Peliculas" tvg-name="Cinema Global Alt 1" audio-track="spa,eng",Cinema Global Alt 1
+http://190.61.42.218:9000/play/a08e
+
+# ===== Infantiles =====
+
+# ----- DreamWorks -----
+#EXTINF:-1 group-title="Infantiles" tvg-name="DreamWorks Alt 1" audio-track="spa,eng",DreamWorks Alt 1
+http://38.225.116.4:22000/play/a010
+
 # ===== Series =====
 
 # ----- Universal TV -----
@@ -206,9 +220,4 @@ http://23.153.217.158:8080/998411519tv/pa9qnqi/281194
 http://23.153.217.158:8080/998411519tv/pa9qnqi/281224
 
 
-#EXTINF:-1 tvg-id="" tvg-name="Dbz Super" tvg-logo="http://127.0.0.1/" group-title="♾️24/7 PLUS♾️",Dbz Super
-http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/252467
 
-
-#EXTINF:-1 tvg-id="" tvg-name="CANAL COCINA" tvg-logo="http://daleplay.club:8080/images/3041b87f49c9700bb3b929c737953f71.png" group-title="⚡️ESPAÑA⚡️",AMC Living
-http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/258204
