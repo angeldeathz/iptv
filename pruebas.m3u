@@ -15,24 +15,24 @@ http://187.102.211.240:9001/play/a04q/index.m3u8
 
 # ----- HBO Pop -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="8 HBO Pop Alt 2" audio-track="spa,eng",8 HBO Pop Alt 2
-http://190.217.66.92:8000/play/a0pz/index.m3u8
+http://190.217.66.92:8000/play/a0pz
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="9 HBO Pop Alt 3" audio-track="spa,eng",9 HBO Pop Alt 3
-http://190.61.42.218:9000/play/a01n/index.m3u8
+http://190.61.42.218:9000/play/a01n
 
 # ----- HBO Family -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="10 HBO Family Alt 1" audio-track="spa,eng",10 HBO Family Alt 1
 http://170.247.204.9:8000/play/a04t/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="12 HBO Family Alt 3" audio-track="spa,eng",12 HBO Family Alt 3
-http://190.217.66.92:8000/play/a0pk/index.m3u8
+http://190.217.66.92:8000/play/a0pk
 
 # ----- Star Channel (backup) -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="14 Star Channel Alt 2" audio-track="spa,eng",14 Star Channel Alt 2
 http://181.224.255.210:8001/play/a0oh
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="15 Star Channel Alt 3" audio-track="spa,eng",15 Star Channel Alt 3
-http://190.61.42.218:9000/play/a07t/index.m3u8
+http://190.61.42.218:9000/play/a07t
 
 # ----- Universal Premiere -----
 #EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="16 Universal Premiere Alt 1" audio-track="spa,eng",16 Universal Premiere Alt 1
@@ -65,7 +65,7 @@ http://72.1.184.5:8089/play/a05w
 http://45.167.1.137:8000/play/a06f
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="51 Paramount Alt 6" audio-track="spa,eng",51 Paramount Alt 6
-http://45.167.2.101:8000/play/a0ro
+http://45.167.2.101:8000/play/a0ro/index.m3u8
 
 # ----- DHE -----
 #EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 1" audio-track="spa,eng",DHE Alt 1
@@ -107,6 +107,25 @@ http://181.78.8.199:8000/play/a09p
 #EXTINF:-1 group-title="Peliculas" tvg-name="Cinema Global Alt 1" audio-track="spa,eng",Cinema Global Alt 1
 http://190.61.42.218:9000/play/a08e
 
+# ----- De Pelicula -----
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 1" audio-track="spa,eng",De Pelicula Alt 1
+http://190.60.40.165:1010/play/bqjt
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 2" audio-track="spa,eng",De Pelicula Alt 2
+http://181.224.200.5:2277/play/a0d1
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 3" audio-track="spa,eng",De Pelicula Alt 3
+http://190.61.42.218:9000/play/a080
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 4" audio-track="spa,eng",De Pelicula Alt 4
+http://45.186.254.75:8000/play/a03m
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 5" audio-track="spa,eng",De Pelicula Alt 5
+http://45.5.118.152:8000/play/a089
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 6" audio-track="spa,eng",De Pelicula Alt 6
+http://209.14.98.47:8000/play/a0x0
+
 # ===== Infantiles =====
 
 # ----- DreamWorks -----
@@ -146,6 +165,20 @@ http://181.78.8.199:8000/play/a0jw
 # ----- REC TV -----
 #EXTINF:-1 group-title="Series" tvg-name="REC TV Alt 1" audio-track="spa,eng",REC TV Alt 1
 http://45.186.254.75:8000/play/a0ha
+
+# ----- Tru TV -----
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/tru-tv-us.png" group-title="Series" tvg-name="Tru TV Alt 1" audio-track="spa,eng",Tru TV Alt 1
+http://72.1.184.5:8089/play/a0ce
+
+# ----- TBS -----
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0g9.png" group-title="Series" tvg-name="TBS Alt 1" audio-track="spa,eng",TBS Alt 1
+http://45.5.116.228:8000/play/a0g9
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TBS_2020_logo.svg/320px-TBS_2020_logo.svg.png" group-title="Series" tvg-name="TBS Alt 2" audio-track="spa,eng",TBS Alt 2
+http://190.14.10.19:16000/play/a02l
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TBS_2020_logo.svg/320px-TBS_2020_logo.svg.png" group-title="Series" tvg-name="TBS Alt 3" audio-track="spa,eng",TBS Alt 3
+http://72.1.184.5:8089/play/a06r
 
 # ===== Documentales =====
 
@@ -189,6 +222,32 @@ http://45.186.254.75:8000/play/a041
 #EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 3" audio-track="spa,eng",TNT Sports Alt 3
 http://209.14.98.47:8000/play/a0vc
 
+# ----- Fox Sports -----
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0kj.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 1" audio-track="spa,eng",Fox Sports 3 Alt 1
+http://45.5.116.228:8000/play/a0kj
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 2 Alt 1" audio-track="spa,eng",Fox Sports 2 Alt 1
+http://190.61.43.117:45000/play/a01g
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 2" audio-track="spa,eng",Fox Sports 3 Alt 2
+http://190.14.10.19:16000/play/a07u
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports Alt 1" audio-track="spa,eng",Fox Sports Alt 1
+http://45.232.210.1:18000/play/a08s
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 2 Alt 2" audio-track="spa,eng",Fox Sports 2 Alt 2
+http://45.232.210.1:18000/play/a094
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 3" audio-track="spa,eng",Fox Sports 3 Alt 3
+http://45.232.210.1:18000/play/a095
+
+# ===== Noticias =====
+
+# ----- Al Jazeera English -----
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="Noticias" tvg-name="Al Jazeera English Alt 1",Al Jazeera English Alt 1
+#EXTVLCOPT:http-referrer=https://www.aljazeera.com/
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+
 # ===== Internacionales =====
 
 # ----- RAI -----
@@ -221,3 +280,22 @@ http://23.153.217.158:8080/998411519tv/pa9qnqi/281224
 
 
 
+#EXTINF:-1 tvg-id="" tvg-name="ISAT" tvg-logo="" group-title="CLARO TV",ISAT
+http://teamnextlevel.xyz:25461/vicente/vicente/227418
+
+#EXTINF:-1 tvg-chno="101" tvg-id="ISat.ar" tvg-name="ISat.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/I.Sat_logo.svg/1920px-I.Sat_logo.svg.png" group-title="CINE Y SERIES",I.Sat
+http://138.36.253.14:8010/play/a01f/index.m3u8
+
+#EXTINF:-1 tvg-chno="69073" tvg-name="ISAT" tvg-logo="https://emby.tmsimg.com/assets/s16497_ll_h15_aa.png" group-title="Peru" tvg-id="ISATENG" tvc-guide-stationid="69073",ISAT
+http://example.local/PER-ISATENG.ts
+#EXTINF:-1 tvg-chno="60799" tvg-name="ISAT 21 Mexico" tvg-logo="https://emby.tmsimg.com/assets/s16497_ll_h15_aa.png" group-title="Peru" tvg-id="ISATMX" tvc-guide-stationid="60799",ISAT 21 Mexico
+http://example.local/PER-ISATMX.ts
+
+#EXTINF:-1 tvg-chno="106" tvg-id="ISat.ar" tvg-name="ISat.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/I.Sat_logo.svg/1920px-I.Sat_logo.svg.png" group-title="CINE Y SERIES",I.Sat
+http://45.232.210.1:8062/play/a09f/index.m3u8
+
+#EXTINF:-1 tvg-name="ISAT (MX) (BONUS)" tvg-id="ISAT (MX) (BONUS)"  group-title="SPANISH",ISAT (MX) (BONUS)
+http://ok2.se:8000/live/JosephMGrooms@gtech.com/sqjstbfe/6371.ts
+
+#EXTINF:-1 tvg-ID="ISAT.mx" tvg-name="ISAT.mx" tvg-logo="https://raw.githubusercontent.com/millanf606/iptvtest/main/pngch/isat_m.png" group-title="Cine",Isat 
+http://hidra.live:80/ypamzjtt/xY2597mnGj/34972
