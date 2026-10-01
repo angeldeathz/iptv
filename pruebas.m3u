@@ -3,7 +3,7 @@
 # ===== Peliculas =====
 
 # ----- HBO 2 -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="3 HBO 2 Alt 3",3 HBO 2 Alt 3
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="3 HBO 2 Alt 3" audio-track="spa,eng",3 HBO 2 Alt 3
 http://45.5.116.228:8000/play/a00c
 
 # ----- HBO Signature -----
@@ -15,34 +15,34 @@ http://187.102.211.240:9001/play/a04q/index.m3u8
 
 # ----- HBO Pop -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="8 HBO Pop Alt 2" audio-track="spa,eng",8 HBO Pop Alt 2
-http://190.217.66.92:8000/play/a0pz
+http://190.217.66.92:8000/play/a0pz/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="9 HBO Pop Alt 3" audio-track="spa,eng",9 HBO Pop Alt 3
-http://190.61.42.218:9000/play/a01n
+http://190.61.42.218:9000/play/a01n/index.m3u8
 
 # ----- HBO Family -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="10 HBO Family Alt 1" audio-track="spa,eng",10 HBO Family Alt 1
 http://170.247.204.9:8000/play/a04t/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="12 HBO Family Alt 3" audio-track="spa,eng",12 HBO Family Alt 3
-http://190.217.66.92:8000/play/a0pk
+http://190.217.66.92:8000/play/a0pk/index.m3u8
 
 # ----- Star Channel (backup) -----
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="14 Star Channel Alt 2" audio-track="spa,eng",14 Star Channel Alt 2
 http://181.224.255.210:8001/play/a0oh
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="15 Star Channel Alt 3" audio-track="spa,eng",15 Star Channel Alt 3
-http://190.61.42.218:9000/play/a07t
+http://190.61.42.218:9000/play/a07t/index.m3u8
 
 # ----- Universal Premiere -----
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="16 Universal Premiere Alt 1",16 Universal Premiere Alt 1
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="16 Universal Premiere Alt 1" audio-track="spa,eng",16 Universal Premiere Alt 1
 http://45.5.116.228:8000/play/a0i1
 
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="18 Universal Premiere Alt 3",18 Universal Premiere Alt 3
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="18 Universal Premiere Alt 3" audio-track="spa,eng",18 Universal Premiere Alt 3
 http://170.247.204.9:8000/play/a0ey/index.m3u8
 
 # ----- Universal Cinema -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="19 Universal Cinema Alt 1",19 Universal Cinema Alt 1
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="19 Universal Cinema Alt 1" audio-track="spa,eng",19 Universal Cinema Alt 1
 http://45.5.116.228:8000/play/a0kt
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="20 Universal Cinema Alt 2" audio-track="spa,eng",20 Universal Cinema Alt 2
@@ -53,7 +53,7 @@ http://45.167.1.138:8000/play/a06m
 http://45.5.116.228:8000/play/a0kl
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="47 Paramount Alt 2" audio-track="spa,eng",47 Paramount Alt 2
-http://45.186.254.75:8000/play/a0cd/index.m3u8
+http://45.186.254.75:8000/play/a0cd
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="48 Paramount Alt 3" audio-track="spa,eng",48 Paramount Alt 3
 http://190.14.10.19:16000/play/a07w
@@ -66,6 +66,25 @@ http://45.167.1.137:8000/play/a06f
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="51 Paramount Alt 6" audio-track="spa,eng",51 Paramount Alt 6
 http://45.167.2.101:8000/play/a0ro
+
+# ----- DHE -----
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 1" audio-track="spa,eng",DHE Alt 1
+http://45.5.116.228:8000/play/a0gy
+
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 2" audio-track="spa,eng",DHE Alt 2
+http://181.224.255.210:8001/play/a0nt
+
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 3" audio-track="spa,eng",DHE Alt 3
+http://190.61.42.218:9000/play/a066
+
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 4" audio-track="spa,eng",DHE Alt 4
+http://45.167.1.138:8000/play/a05p
+
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 5" audio-track="spa,eng",DHE Alt 5
+http://209.14.98.47:8000/play/a0xh
+
+#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 6" audio-track="spa,eng",DHE Alt 6
+http://38.226.49.253:8000/play/a07s
 
 # ----- SONY -----
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 1" audio-track="spa,eng",81 SONY Alt 1
@@ -97,7 +116,7 @@ http://170.247.204.9:8000/play/a01x/index.m3u8
 http://187.102.211.240:9001/play/a01u/index.m3u8
 
 # ----- Warner -----
-#EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="29 Warner Alt 2",29 Warner Alt 2
+#EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="29 Warner Alt 2" audio-track="spa,eng",29 Warner Alt 2
 http://181.224.200.5:2277/play/a01g
 
 #EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="30 Warner Alt 3" audio-track="spa,eng",30 Warner Alt 3
@@ -107,7 +126,7 @@ http://181.224.255.210:8001/play/a0od
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="35 TNT Series Alt 2" audio-track="spa,eng",35 TNT Series Alt 2
 http://181.224.255.210:8001/play/a0ls
 
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="36 TNT Series Alt 3",36 TNT Series Alt 3
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="36 TNT Series Alt 3" audio-track="spa,eng",36 TNT Series Alt 3
 http://181.78.8.199:8000/play/a0jw
 
 # ----- REC TV -----
@@ -117,7 +136,7 @@ http://45.186.254.75:8000/play/a0ha
 # ===== Documentales =====
 
 # ----- History -----
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="38 History Alt 2",38 History Alt 2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="38 History Alt 2" audio-track="spa,eng",38 History Alt 2
 http://181.224.200.5:2277/play/a02b
 
 # ----- Discovery Channel -----
@@ -168,4 +187,21 @@ http://45.186.254.75:8000/play/a047
 # ----- RAI Italia -----
 #EXTINF:-1 group-title="Internacionales" tvg-name="RAI Italia Alt 1" audio-track="spa,eng",RAI Italia Alt 1
 http://209.14.98.47:8000/play/a0vd
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 2
+http://23.153.217.158:8080/998411519tv/pa9qnqi/54694
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 3
+http://23.153.217.158:8080/998411519tv/pa9qnqi/281201
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 4
+http://23.153.217.158:8080/998411519tv/pa9qnqi/54687
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animación 5
+http://23.153.217.158:8080/998411519tv/pa9qnqi/281200
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Estrenos
+http://23.153.217.158:8080/998411519tv/pa9qnqi/281194
+
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="chilevisualretro" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Game of Thrones
+http://23.153.217.158:8080/998411519tv/pa9qnqi/281224
 

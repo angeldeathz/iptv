@@ -406,12 +406,12 @@ def get_peliculas_known_suborder(name_lower):
         return (3, 1)
     if name_lower == "paramount":
         return (4, 0)
+    if name_lower == "dhe" or name_lower.startswith("dhe "):
+        return (4, 1)
     if name_lower == "star channel":
         return (5, 0)
     if name_lower == "fx" or name_lower.startswith("fx "):
         return (6, 0)
-    if name_lower == "dhe" or name_lower.startswith("dhe "):
-        return (7, 0)
     if name_lower == "amc" or name_lower.startswith("amc "):
         return (8, 0)
     if name_lower == "amc series" or name_lower.startswith("amc series "):
