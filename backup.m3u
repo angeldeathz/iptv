@@ -232,6 +232,9 @@ http://187.102.211.240:9001/play/a03r/index.m3u8?hls
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDR02bhnjx7hyphenhyphen9sy4ErJx8PUT-WM5hP9axbkLjVFrxyJ1Qz9qxG0cIzbcBWazT6CxgQSrvMRKAOiNvlCY7kSEeG_tTpGNaBHTkHTzv6CdkOYRkCKrSgx3ULAHwijhlnl9vDK3FBpG6wJsvucp0-tif9g7_bbDYu4XQW3MN-Sxtg68OD5u1pWZVzng4xxg/s159/amc-series.png" group-title="Peliculas" tvg-name="86 AMC Series 3" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDR02bhnjx7hyphenhyphen9sy4ErJx8PUT-WM5hP9axbkLjVFrxyJ1Qz9qxG0cIzbcBWazT6CxgQSrvMRKAOiNvlCY7kSEeG_tTpGNaBHTkHTzv6CdkOYRkCKrSgx3ULAHwijhlnl9vDK3FBpG6wJsvucp0-tif9g7_bbDYu4XQW3MN-Sxtg68OD5u1pWZVzng4xxg/s159/amc-series.png" group-title="Peliculas" tvg-name="AMC Series 3",AMC Series 3
 http://38.225.116.4:22000/play/a01b/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="SONY 1" audio-track="spa,eng",SONY 1
+http://38.226.49.253:8000/play/a060
+
 #EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/space-ar.png" group-title="Peliculas" tvg-name="74 SPACE 2" tvg-logo="https://docdog.top/logo/countries//argentina/space-ar.png" group-title="Peliculas" tvg-name="SPACE 2",SPACE 2
 http://187.102.211.240:9001/play/a01w/index.m3u8?hls
 

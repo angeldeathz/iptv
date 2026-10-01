@@ -925,6 +925,8 @@ GROUP_ORDER = [
     "Pluto TV",
 ]
 
+SECTION_HEADER_RE = re.compile(r"^#\s*=====\s*(.+?)\s*=====\s*$")
+
 def get_group_priority(group_name):
     try:
         return GROUP_ORDER.index(group_name)
@@ -965,7 +967,7 @@ def deduplicate_by_url(entries):
     deduped = sorted(best_by_url.values(), key=lambda e: e["original_index"])
     return deduped, len(entries) - len(deduped)
 
-def clean_m3u(file_path):
+def clean_m3u(file_path, preserve_order=False):
     if not os.path.exists(file_path):
         print(f"Error: {file_path} does not exist.")
         sys.exit(1)
@@ -977,6 +979,7 @@ def clean_m3u(file_path):
     entries = []
     current_extinf = None
     current_options = []
+    current_file_section = None
     
     for idx, line in enumerate(raw_lines):
         line_str = line.strip()
@@ -991,6 +994,9 @@ def clean_m3u(file_path):
         elif line_str.startswith("#EXTVLCOPT:"):
             current_options.append(line_str)
         elif line_str.startswith("#") and not line_str.startswith("#EXTINF") and not line_str.startswith("#EXTVLCOPT"):
+            section_match = SECTION_HEADER_RE.match(line_str)
+            if section_match:
+                current_file_section = section_match.group(1).strip()
             continue
         else:
             # We have a URL line
@@ -999,7 +1005,8 @@ def clean_m3u(file_path):
                     'extinf': current_extinf,
                     'options': current_options,
                     'url': line_str,
-                    'original_index': len(entries)
+                    'original_index': len(entries),
+                    'file_section': current_file_section,
                 })
                 current_extinf = None
                 current_options = []
@@ -1036,8 +1043,11 @@ def clean_m3u(file_path):
         
         # Determine taxonomy category
         forced_group = attrs.pop('editorial-group', None)
+        file_section = entry.get('file_section')
         if forced_group in GROUP_ORDER:
             category = forced_group
+        elif file_section in GROUP_ORDER:
+            category = file_section
         else:
             category = classify_channel(
                 clean_name,
@@ -1103,7 +1113,10 @@ def clean_m3u(file_path):
         orig_idx = e['original_index']
         return (g_priority, lineup_key, -q_score, orig_idx)
         
-    sorted_entries = sorted(entries, key=sort_key)
+    if preserve_order:
+        sorted_entries = sorted(entries, key=lambda e: e['original_index'])
+    else:
+        sorted_entries = sorted(entries, key=sort_key)
 
     # Step 5: Assign global incremental IDs and repetition indexes
     occurrence_count = {}
@@ -1146,8 +1159,9 @@ def clean_m3u(file_path):
             # Write URL
             f.write(f"{entry['url']}\n\n")
 
+    order_note = " (playlist order preserved)" if preserve_order else ""
     print(
-        f"Successfully cleaned and sorted {len(sorted_entries)} channels in {file_path}"
+        f"Successfully cleaned and sorted {len(sorted_entries)} channels in {file_path}{order_note}"
         + (f" (removed {removed_duplicates} duplicate URL(s))." if removed_duplicates else ".")
     )
 
@@ -1155,6 +1169,11 @@ if __name__ == "__main__":
     # Default to official.m3u in the parent directory of this script
     script_dir = os.path.dirname(os.path.abspath(__file__))
     target = os.path.join(script_dir, "..", "official.m3u")
-    if len(sys.argv) > 1:
-        target = sys.argv[1]
-    clean_m3u(target)
+    argv = sys.argv[1:]
+    preserve_order = False
+    if "--preserve-order" in argv:
+        preserve_order = True
+        argv = [arg for arg in argv if arg != "--preserve-order"]
+    if argv:
+        target = argv[0]
+    clean_m3u(target, preserve_order=preserve_order)
