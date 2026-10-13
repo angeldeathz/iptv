@@ -25,26 +25,31 @@ class PlaylistError(Exception):
 
 @dataclass(frozen=True)
 class Section:
+    order: int
     key: str
     title: str
 
     @property
+    def filename(self) -> str:
+        return f"{self.order:02d}_{self.key}.m3u"
+
+    @property
     def path(self) -> str:
-        return os.path.join(DATASOURCE_DIR, f"{self.key}.m3u")
+        return os.path.join(DATASOURCE_DIR, self.filename)
 
 
 SECTIONS = (
-    Section("nacionales", "Nacionales"),
-    Section("noticias", "Noticias"),
-    Section("infantiles", "Infantiles"),
-    Section("peliculas", "Peliculas"),
-    Section("series", "Series"),
-    Section("deportes", "Deportes"),
-    Section("musica", "Musica"),
-    Section("documentales", "Documentales"),
-    Section("variedades", "Variedades"),
-    Section("internacionales", "Internacionales"),
-    Section("experimentales", "24/7 - Experimentales"),
+    Section(1, "nacionales", "Nacionales"),
+    Section(2, "noticias", "Noticias"),
+    Section(3, "infantiles", "Infantiles"),
+    Section(4, "peliculas", "Peliculas"),
+    Section(5, "series", "Series"),
+    Section(6, "deportes", "Deportes"),
+    Section(7, "musica", "Musica"),
+    Section(8, "documentales", "Documentales"),
+    Section(9, "variedades", "Variedades"),
+    Section(10, "internacionales", "Internacionales"),
+    Section(11, "experimentales", "24/7 - Experimentales"),
 )
 
 
@@ -83,7 +88,7 @@ class Playlist:
 
     @classmethod
     def load(cls) -> Playlist:
-        expected_files = {f"{section.key}.m3u" for section in SECTIONS}
+        expected_files = {section.filename for section in SECTIONS}
         unknown_files = sorted(set(os.listdir(DATASOURCE_DIR)) - expected_files)
         if unknown_files:
             raise PlaylistError(
