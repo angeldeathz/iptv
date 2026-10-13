@@ -202,7 +202,7 @@ http://190.108.83.69:8000/play/a01h
 http://190.108.83.69:8000/play/a01g
 
 #EXTINF:-1 tvg-name="64 HBO+ 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" audio-track="spa,eng",64 HBO+ 1
-http://45.5.116.228:8000/play/a0l4
+http://187.102.211.240:9001/play/a047/index.m3u8
 
 #EXTINF:-1 tvg-name="65 HBO Pop 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",65 HBO Pop 1
 http://190.108.83.69:8000/play/a03k
