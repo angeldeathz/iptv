@@ -1,301 +1,66 @@
 #EXTM3U
 
-# ===== Peliculas =====
-
-# ----- HBO 2 -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="3 HBO 2 Alt 3" audio-track="spa,eng",3 HBO 2 Alt 3
-http://45.5.116.228:8000/play/a00c
-
-# ----- HBO Signature -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" tvg-name="4 HBO Signature Alt 1" audio-track="spa,eng",4 HBO Signature Alt 1
-http://181.224.255.210:8001/play/a0re
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" tvg-name="5 HBO Signature Alt 2" audio-track="spa,eng",5 HBO Signature Alt 2
-http://187.102.211.240:9001/play/a04q/index.m3u8
-
-# ----- HBO Pop -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="8 HBO Pop Alt 2" audio-track="spa,eng",8 HBO Pop Alt 2
-http://190.217.66.92:8000/play/a0pz
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" tvg-name="9 HBO Pop Alt 3" audio-track="spa,eng",9 HBO Pop Alt 3
-http://190.61.42.218:9000/play/a01n
-
-# ----- HBO Family -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="10 HBO Family Alt 1" audio-track="spa,eng",10 HBO Family Alt 1
-http://170.247.204.9:8000/play/a04t/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="12 HBO Family Alt 3" audio-track="spa,eng",12 HBO Family Alt 3
-http://190.217.66.92:8000/play/a0pk
-
-# ----- Star Channel (backup) -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="14 Star Channel Alt 2" audio-track="spa,eng",14 Star Channel Alt 2
-http://181.224.255.210:8001/play/a0oh
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="15 Star Channel Alt 3" audio-track="spa,eng",15 Star Channel Alt 3
-http://190.61.42.218:9000/play/a07t
-
-# ----- Universal Premiere -----
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="16 Universal Premiere Alt 1" audio-track="spa,eng",16 Universal Premiere Alt 1
-http://45.5.116.228:8000/play/a0i1
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" tvg-name="18 Universal Premiere Alt 3" audio-track="spa,eng",18 Universal Premiere Alt 3
-http://170.247.204.9:8000/play/a0ey/index.m3u8
-
-# ----- Universal Cinema -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="19 Universal Cinema Alt 1" audio-track="spa,eng",19 Universal Cinema Alt 1
-http://45.5.116.228:8000/play/a0kt
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" tvg-name="20 Universal Cinema Alt 2" audio-track="spa,eng",20 Universal Cinema Alt 2
-http://45.167.1.138:8000/play/a06m
-
-# ----- Paramount -----
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="46 Paramount Alt 1" audio-track="spa,eng",46 Paramount Alt 1
-http://45.5.116.228:8000/play/a0kl
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="47 Paramount Alt 2" audio-track="spa,eng",47 Paramount Alt 2
-http://45.186.254.75:8000/play/a0cd
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="48 Paramount Alt 3" audio-track="spa,eng",48 Paramount Alt 3
-http://190.14.10.19:16000/play/a07w
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="49 Paramount Alt 4" audio-track="spa,eng",49 Paramount Alt 4
-http://72.1.184.5:8089/play/a05w
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="50 Paramount Alt 5" audio-track="spa,eng",50 Paramount Alt 5
-http://45.167.1.137:8000/play/a06f
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" tvg-name="51 Paramount Alt 6" audio-track="spa,eng",51 Paramount Alt 6
-http://45.167.2.101:8000/play/a0ro/index.m3u8
-
-# ----- DHE -----
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 1" audio-track="spa,eng",DHE Alt 1
-http://45.5.116.228:8000/play/a0gy
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 2" audio-track="spa,eng",DHE Alt 2
-http://181.224.255.210:8001/play/a0nt
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 3" audio-track="spa,eng",DHE Alt 3
-http://190.61.42.218:9000/play/a066
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 4" audio-track="spa,eng",DHE Alt 4
-http://45.167.1.138:8000/play/a05p
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 5" audio-track="spa,eng",DHE Alt 5
-http://209.14.98.47:8000/play/a0xh
-
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" tvg-name="DHE Alt 6" audio-track="spa,eng",DHE Alt 6
-http://38.226.49.253:8000/play/a07s
-
-# ----- SONY -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 1" audio-track="spa,eng",81 SONY Alt 1
-http://187.102.211.240:9001/play/a065/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 2" audio-track="spa,eng",81 SONY Alt 2
-http://190.60.40.165:1010/play/a0hw
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 3" audio-track="spa,eng",81 SONY Alt 3
-http://170.247.204.9:8000/play/a01v/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="81 SONY Alt 4" audio-track="spa,eng",81 SONY Alt 4
-http://181.224.200.5:2277/play/a01f
-
-# ----- Cine Familiar -----
-#EXTINF:-1 group-title="Peliculas" tvg-name="Cine Familiar Alt 1" audio-track="spa,eng",Cine Familiar Alt 1
-http://181.78.8.199:8000/play/a09p
-
-# ----- Cinema Global -----
-#EXTINF:-1 group-title="Peliculas" tvg-name="Cinema Global Alt 1" audio-track="spa,eng",Cinema Global Alt 1
-http://190.61.42.218:9000/play/a08e
-
-# ----- De Pelicula -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 1" audio-track="spa,eng",De Pelicula Alt 1
-http://190.60.40.165:1010/play/bqjt
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 2" audio-track="spa,eng",De Pelicula Alt 2
-http://181.224.200.5:2277/play/a0d1
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 3" audio-track="spa,eng",De Pelicula Alt 3
-http://190.61.42.218:9000/play/a080
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 4" audio-track="spa,eng",De Pelicula Alt 4
-http://45.186.254.75:8000/play/a03m
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 5" audio-track="spa,eng",De Pelicula Alt 5
-http://45.5.118.152:8000/play/a089
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/De_Pel%C3%ADcula_logo.svg/320px-De_Pel%C3%ADcula_logo.svg.png" group-title="Peliculas" tvg-name="De Pelicula Alt 6" audio-track="spa,eng",De Pelicula Alt 6
-http://209.14.98.47:8000/play/a0x0
-
 # ===== Infantiles =====
 
-# ----- DreamWorks -----
-#EXTINF:-1 group-title="Infantiles" tvg-name="DreamWorks Alt 1" audio-track="spa,eng",DreamWorks Alt 1
-http://38.225.116.4:22000/play/a010
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Infantiles" tvg-name="Nickelodeon Teen 1" audio-track="spa,eng",Nickelodeon Teen 1
+http://38.226.49.253:8000/play/a03t
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Infantiles" tvg-name="Nickelodeon Teen 2" audio-track="spa,eng",Nickelodeon Teen 2
+http://45.186.254.75:8000/play/a038
+
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Infantiles" tvg-name="Nickelodeon Teen 3" audio-track="spa,eng",Nickelodeon Teen 3
+http://181.224.255.210:8001/play/a0qk
+
+# ===== Peliculas =====
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" tvg-name="HBO+ 1" audio-track="spa,eng",HBO+ 1
+http://187.102.211.240:9001/play/a047/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" tvg-name="HBO+ 2" audio-track="spa,eng",HBO+ 2
+http://190.60.40.165:1010/play/a0nr
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Peliculas" tvg-name="HBO+ 3" audio-track="spa,eng",HBO+ 3
+http://38.226.49.253:8000/play/a031
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh02V2X6MR3LSkUAGLwFdYNbdWhFeCae1umzy3GbYLsk72K5Kw5SXJ3W4x&s=10" group-title="Peliculas" tvg-name="Paramount 1" audio-track="spa,eng",Paramount 1
+http://181.224.200.5:2277/play/a0df
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh02V2X6MR3LSkUAGLwFdYNbdWhFeCae1umzy3GbYLsk72K5Kw5SXJ3W4x&s=10" group-title="Peliculas" tvg-name="Paramount 2" audio-track="spa,eng",Paramount 2
+http://45.186.254.75:8000/play/a0cd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh02V2X6MR3LSkUAGLwFdYNbdWhFeCae1umzy3GbYLsk72K5Kw5SXJ3W4x&s=10" group-title="Peliculas" tvg-name="Paramount 3" audio-track="spa,eng",Paramount 3
+http://72.1.184.5:8089/play/a05w
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Syfy.svg/1024px-Syfy.svg.png" group-title="Peliculas" tvg-name="SyFy USA 1" audio-track="spa,eng",SyFy USA 1
+http://181.78.8.199:8000/play/a09x
 
 # ===== Series =====
 
-# ----- Universal TV -----
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" tvg-name="22 Universal TV Alt 1" audio-track="spa,eng",22 Universal TV Alt 1
-http://170.247.204.9:8000/play/a0ca/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" tvg-name="24 Universal TV Alt 3" audio-track="spa,eng",24 Universal TV Alt 3
-http://190.108.83.69:8000/play/a031
-
-# ----- AXN -----
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="25 AXN Alt 1" audio-track="spa,eng",25 AXN Alt 1
-http://170.247.204.9:8000/play/a01x/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="27 AXN Alt 3" audio-track="spa,eng",27 AXN Alt 3
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="AXN 1" audio-track="spa,eng",AXN 1
 http://187.102.211.240:9001/play/a01u/index.m3u8
 
-# ----- Warner -----
-#EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="29 Warner Alt 2" audio-track="spa,eng",29 Warner Alt 2
-http://181.224.200.5:2277/play/a01g
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="AXN 2" audio-track="spa,eng",AXN 2
+http://190.60.40.165:1010/play/a0en
 
-#EXTINF:-1 tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Series" tvg-name="30 Warner Alt 3" audio-track="spa,eng",30 Warner Alt 3
-http://181.224.255.210:8001/play/a0od
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" tvg-name="AXN 3" audio-track="spa,eng",AXN 3
+http://181.224.200.5:2277/play/a01h
 
-# ----- TNT Series -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="35 TNT Series Alt 2" audio-track="spa,eng",35 TNT Series Alt 2
-http://181.224.255.210:8001/play/a0ls
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/lifetime.png" group-title="Series" tvg-name="Lifetime 1" audio-track="spa,eng",Lifetime 1
+http://187.102.211.240:9001/play/a040/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" tvg-name="36 TNT Series Alt 3" audio-track="spa,eng",36 TNT Series Alt 3
-http://181.78.8.199:8000/play/a0jw
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/lifetime.png" group-title="Series" tvg-name="Lifetime 2" audio-track="spa,eng",Lifetime 2
+http://190.60.40.165:1010/play/a0lf
 
-# ----- REC TV -----
-#EXTINF:-1 group-title="Series" tvg-name="REC TV Alt 1" audio-track="spa,eng",REC TV Alt 1
-http://45.186.254.75:8000/play/a0ha
-
-# ----- Tru TV -----
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/tru-tv-us.png" group-title="Series" tvg-name="Tru TV Alt 1" audio-track="spa,eng",Tru TV Alt 1
-http://72.1.184.5:8089/play/a0ce
-
-# ----- TBS -----
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0g9.png" group-title="Series" tvg-name="TBS Alt 1" audio-track="spa,eng",TBS Alt 1
-http://45.5.116.228:8000/play/a0g9
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TBS_2020_logo.svg/320px-TBS_2020_logo.svg.png" group-title="Series" tvg-name="TBS Alt 2" audio-track="spa,eng",TBS Alt 2
-http://190.14.10.19:16000/play/a02l
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TBS_2020_logo.svg/320px-TBS_2020_logo.svg.png" group-title="Series" tvg-name="TBS Alt 3" audio-track="spa,eng",TBS Alt 3
-http://72.1.184.5:8089/play/a06r
-
-# ===== Documentales =====
-
-# ----- History -----
-#EXTINF:-1 tvg-logo="https://i.imgur.com/J897iGL.jpg" group-title="Documentales" tvg-name="38 History Alt 2" audio-track="spa,eng",38 History Alt 2
-http://181.224.200.5:2277/play/a02b
-
-# ----- Discovery Channel -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="40 Discovery Channel Alt 1" audio-track="spa,eng",40 Discovery Channel Alt 1
-http://170.247.204.9:8000/play/a01o/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverychannel.png" group-title="Documentales" tvg-name="42 Discovery Channel Alt 3" audio-track="spa,eng",42 Discovery Channel Alt 3
-http://181.224.255.210:8001/play/a0m0
-
-# ----- Discovery Theater -----
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="44 Discovery Theater Alt 2" audio-track="spa,eng",44 Discovery Theater Alt 2
-http://181.224.255.210:8001/play/a0fc
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/discoverytheater.png" group-title="Documentales" tvg-name="45 Discovery Theater Alt 3" audio-track="spa,eng",45 Discovery Theater Alt 3
-http://187.102.211.240:9001/play/a023/index.m3u8
-
-# ----- Love Nature -----
-#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 1" audio-track="spa,eng",Love Nature Alt 1
-http://190.60.40.165:1010/play/a0o6
-
-#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 2" audio-track="spa,eng",Love Nature Alt 2
-http://181.224.200.5:2277/play/a036
-
-#EXTINF:-1 group-title="Documentales" tvg-name="Love Nature Alt 3" audio-track="spa,eng",Love Nature Alt 3
-http://190.108.83.69:8000/play/a085
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/lifetime.png" group-title="Series" tvg-name="Lifetime 3" audio-track="spa,eng",Lifetime 3
+http://38.226.49.253:8000/play/a043
 
 # ===== Deportes =====
 
-# ----- TNT Sports -----
-#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 1" audio-track="spa,eng",TNT Sports Alt 1
-http://170.247.204.9:8000/play/a0c0/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Sports_logo.svg/320px-TNT_Sports_logo.svg.png" group-title="Deportes" tvg-name="TNT Sports 1" audio-track="spa,eng",TNT Sports 1
+http://170.247.204.9:8000/play/a0g7/index.m3u8
 
-#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 2" audio-track="spa,eng",TNT Sports Alt 2
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Sports_logo.svg/320px-TNT_Sports_logo.svg.png" group-title="Deportes" tvg-name="TNT Sports 2" audio-track="spa,eng",TNT Sports 2
 http://45.186.254.75:8000/play/a041
 
-#EXTINF:-1 group-title="Deportes" tvg-name="TNT Sports Alt 3" audio-track="spa,eng",TNT Sports Alt 3
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Sports_logo.svg/320px-TNT_Sports_logo.svg.png" group-title="Deportes" tvg-name="TNT Sports 3" audio-track="spa,eng",TNT Sports 3
 http://209.14.98.47:8000/play/a0vc
-
-# ----- Fox Sports -----
-#EXTINF:-1 tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0kj.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 1" audio-track="spa,eng",Fox Sports 3 Alt 1
-http://45.5.116.228:8000/play/a0kj
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 2 Alt 1" audio-track="spa,eng",Fox Sports 2 Alt 1
-http://190.61.43.117:45000/play/a01g
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 2" audio-track="spa,eng",Fox Sports 3 Alt 2
-http://190.14.10.19:16000/play/a07u
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports Alt 1" audio-track="spa,eng",Fox Sports Alt 1
-http://45.232.210.1:18000/play/a08s
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 2 Alt 2" audio-track="spa,eng",Fox Sports 2 Alt 2
-http://45.232.210.1:18000/play/a094
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fox_Sports_logo.svg/320px-Fox_Sports_logo.svg.png" group-title="Deportes" tvg-name="Fox Sports 3 Alt 3" audio-track="spa,eng",Fox Sports 3 Alt 3
-http://45.232.210.1:18000/play/a095
-
-# ===== Noticias =====
-
-# ----- Al Jazeera English -----
-#EXTINF:-1 tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="Noticias" tvg-name="Al Jazeera English Alt 1",Al Jazeera English Alt 1
-#EXTVLCOPT:http-referrer=https://www.aljazeera.com/
-https://live-hls-web-aje.getaj.net/AJE/index.m3u8
-
-# ===== Internacionales =====
-
-# ----- RAI -----
-#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Alt 1" audio-track="spa,eng",RAI Alt 1
-http://38.226.49.253:8000/play/a04s
-
-#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Alt 2" audio-track="spa,eng",RAI Alt 2
-http://45.186.254.75:8000/play/a047
-
-# ----- RAI Italia -----
-#EXTINF:-1 group-title="Internacionales" tvg-name="RAI Italia Alt 1" audio-track="spa,eng",RAI Italia Alt 1
-http://209.14.98.47:8000/play/a0vd
-
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 2
-http://23.153.217.158:8080/998411519tv/pa9qnqi/54694
-
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 3
-http://23.153.217.158:8080/998411519tv/pa9qnqi/281201
-
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animacion 4
-http://23.153.217.158:8080/998411519tv/pa9qnqi/54687
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Cine Animación 5
-http://23.153.217.158:8080/998411519tv/pa9qnqi/281200
-
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Estrenos
-http://23.153.217.158:8080/998411519tv/pa9qnqi/281194
-
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="chilevisualretro" tvg-logo="" group-title="todos" tvg-shift="-7", audio-track="esp,spa", Game of Thrones
-http://23.153.217.158:8080/998411519tv/pa9qnqi/281224
-
-
-
-#EXTINF:-1 tvg-id="" tvg-name="ISAT" tvg-logo="" group-title="CLARO TV",ISAT
-http://teamnextlevel.xyz:25461/vicente/vicente/227418
-
-#EXTINF:-1 tvg-chno="101" tvg-id="ISat.ar" tvg-name="ISat.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/I.Sat_logo.svg/1920px-I.Sat_logo.svg.png" group-title="CINE Y SERIES",I.Sat
-http://138.36.253.14:8010/play/a01f/index.m3u8
-
-#EXTINF:-1 tvg-chno="69073" tvg-name="ISAT" tvg-logo="https://emby.tmsimg.com/assets/s16497_ll_h15_aa.png" group-title="Peru" tvg-id="ISATENG" tvc-guide-stationid="69073",ISAT
-http://example.local/PER-ISATENG.ts
-#EXTINF:-1 tvg-chno="60799" tvg-name="ISAT 21 Mexico" tvg-logo="https://emby.tmsimg.com/assets/s16497_ll_h15_aa.png" group-title="Peru" tvg-id="ISATMX" tvc-guide-stationid="60799",ISAT 21 Mexico
-http://example.local/PER-ISATMX.ts
-
-#EXTINF:-1 tvg-chno="106" tvg-id="ISat.ar" tvg-name="ISat.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/I.Sat_logo.svg/1920px-I.Sat_logo.svg.png" group-title="CINE Y SERIES",I.Sat
-http://45.232.210.1:8062/play/a09f/index.m3u8
-
-#EXTINF:-1 tvg-name="ISAT (MX) (BONUS)" tvg-id="ISAT (MX) (BONUS)"  group-title="SPANISH",ISAT (MX) (BONUS)
-http://ok2.se:8000/live/JosephMGrooms@gtech.com/sqjstbfe/6371.ts
-
-#EXTINF:-1 tvg-ID="ISAT.mx" tvg-name="ISAT.mx" tvg-logo="https://raw.githubusercontent.com/millanf606/iptvtest/main/pngch/isat_m.png" group-title="Cine",Isat 
-http://hidra.live:80/ypamzjtt/xY2597mnGj/34972

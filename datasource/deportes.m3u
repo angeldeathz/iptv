@@ -1,0 +1,70 @@
+#EXTM3U
+
+#EXTINF:-1,TNT Sports
+http://170.247.204.9:8000/play/a0c0/index.m3u8
+
+#EXTINF:-1,TNT Sports Premium
+http://209.14.98.47:8000/play/a0x5
+
+#EXTINF:-1,CDO 2
+http://starlatino.tv:8880/kevin5239@/PSFZBncgkEyU/273686
+
+#EXTINF:-1,ESPN
+http://190.60.40.165:1010/play/0kpe
+
+#EXTINF:-1,ESPN
+http://190.60.40.165:1010/play/a0nt
+
+#EXTINF:-1,ESPN
+http://190.60.40.165:1010/play/a0jx
+
+#EXTINF:-1,ESPN 2
+http://190.60.40.165:1010/play/db56
+
+#EXTINF:-1,ESPN 2
+http://190.60.40.165:1010/play/a0mo
+
+#EXTINF:-1,ESPN 3
+http://190.60.40.165:1010/play/4gph
+
+#EXTINF:-1,ESPN 3
+http://190.60.40.165:1010/play/a0jm
+
+#EXTINF:-1,ESPN 4
+http://187.102.211.240:9001/play/a01x/index.m3u8
+
+#EXTINF:-1,ESPN 4
+http://190.60.40.165:1010/play/uemr
+
+#EXTINF:-1,ESPN 4
+http://190.60.40.165:1010/play/a0mp
+
+#EXTINF:-1,ESPN 5
+http://190.60.40.165:1010/play/ueu4
+
+#EXTINF:-1,ESPN 5
+http://190.60.40.165:1010/play/a0jg
+
+#EXTINF:-1,ESPN 5
+http://170.247.204.9:8000/play/a0cc/index.m3u8
+
+#EXTINF:-1,ESPN 6
+http://190.60.40.165:1010/play/a0ja
+
+#EXTINF:-1,ESPN 6
+http://170.247.204.9:8000/play/a0ac/index.m3u8
+
+#EXTINF:-1,ESPN 6
+http://187.102.211.240:9001/play/a01h/index.m3u8
+
+#EXTINF:-1,ESPN 7
+http://190.60.40.165:1010/play/569m
+
+#EXTINF:-1,ESPN 7
+http://190.60.40.165:1010/play/a0lr
+
+#EXTINF:-1,ESPN Premium
+http://38.226.49.253:8000/play/a07t
+
+#EXTINF:-1,UFC
+https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8?PlaylistM3UCL

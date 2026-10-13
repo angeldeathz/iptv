@@ -1,0 +1,37 @@
+#EXTM3U
+
+#EXTINF:-1,CNN en Español
+http://190.61.42.218:9000/play/a00t/index.m3u8
+
+#EXTINF:-1,CNN Chile
+http://38.226.49.253:8000/play/a04y
+
+#EXTINF:-1,CNN Internacional
+http://187.102.211.240:9001/play/a00j/index.m3u8
+
+#EXTINF:-1,Estrella News
+https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg00567-estrellamedia-estrellanews-distrotv/playlist.m3u8
+
+#EXTINF:-1,Puranoticia
+https://pnt.janusmedia.tv/hls/pnt.m3u8
+
+#EXTINF:-1,Cooperativa
+https://pantera1-100gb-cl-movistar.dps.live/coopetv/coopetv.smil/playlist.m3u8
+
+#EXTINF:-1,DW Español
+https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/streamPlaylist.m3u8
+
+#EXTINF:-1,BBC News
+http://187.102.211.240:9001/play/a04k/index.m3u8
+
+#EXTINF:-1,Bio Bio TV
+https://jireh-7-hls-video-us-isp.dps.live/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8
+
+#EXTINF:-1,Canal 24 Horas
+https://mdstrm.com/live-stream-playlist/57d1a22064f5d85712b20dab.m3u8
+
+#EXTINF:-1,France 24
+http://187.102.211.240:9001/play/a04t/index.m3u8
+
+#EXTINF:-1,T13
+https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8

@@ -1,0 +1,13 @@
+#EXTM3U
+
+#EXTINF:-1,El Gourmet
+http://187.102.211.240:9001/play/a01g/index.m3u8
+
+#EXTINF:-1,AMC Living
+http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/258204
+
+#EXTINF:-1,Food Network
+http://190.61.43.117:45000/play/a08e
+
+#EXTINF:-1,Hola Tv
+http://187.102.211.240:9001/play/a02c/index.m3u8

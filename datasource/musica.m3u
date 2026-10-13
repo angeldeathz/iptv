@@ -1,0 +1,25 @@
+#EXTM3U
+
+#EXTINF:-1,HTV
+http://187.102.211.240:9001/play/a03t/index.m3u8
+
+#EXTINF:-1,Hei
+http://187.102.211.240:9001/play/a06y/index.m3u8
+
+#EXTINF:-1,TVE
+http://181.143.237.211:85/tsfile/live/1088_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1,Totalmusic
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,Totalmusic 80s
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_80s/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,Totalmusic 00s
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_00s/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,Totalmusic Concerts
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Concerts/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,Totalmusic Dance
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.m3u8

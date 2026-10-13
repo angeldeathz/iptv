@@ -1,0 +1,55 @@
+#EXTM3U
+
+#EXTINF:-1,Mega
+https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
+
+#EXTINF:-1,Mega 2
+http://38.225.116.4:22000/play/a00u
+
+#EXTINF:-1,CHV
+http://45.186.254.75:8000/play/a04v
+
+#EXTINF:-1,TVN
+http://38.226.49.253:8000/play/a06c
+
+#EXTINF:-1,NTV
+https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
+
+#EXTINF:-1,TVN3
+https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
+
+#EXTINF:-1,TV Chile
+https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
+
+#EXTINF:-1,UChile TV
+https://pantera1-100gb-cl-movistar.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
+
+#EXTINF:-1,Canal 13
+http://187.102.211.240:9001/play/a05u/index.m3u8
+
+#EXTINF:-1,13 Cultura
+https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
+
+#EXTINF:-1,13 Festival
+https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+
+#EXTINF:-1,13 Teleseries
+https://redirector.dps.live/hls/13t/playlist.m3u8
+
+#EXTINF:-1,13 Pop
+https://redirector.dps.live/hls/13pop/playlist.m3u8
+
+#EXTINF:-1,13 Realities
+https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
+
+#EXTINF:-1,13 REC
+http://45.186.254.75:8000/play/a0ha
+
+#EXTINF:-1,UCV TV
+https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
+
+#EXTINF:-1,Zona Latina
+http://45.232.210.1:18000/play/a09h
+
+#EXTINF:-1,Via X
+http://45.232.210.1:18000/play/a092
