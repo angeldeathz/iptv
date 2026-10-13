@@ -8,4 +8,4 @@ This repo maintains a curated Latin America–oriented channel lineup.
 
 Every lineup task (delete, move, reorder, backup, add sources, search, replace URL, logos, IDs) follows the single skill [`iptv`](skills/iptv/SKILL.md). Read it before acting and change files only through `scripts/iptv.py`.
 
-Out of scope unless the user asks explicitly: `pruebas.m3u`, `pluto_tv.m3u` and the structure of `backup.m3u`.
+Out of scope unless the user asks explicitly: `pluto_tv.m3u` and the structure of `backup.m3u`. For `pruebas.m3u`, use the skill workflow *search channels into pruebas.m3u* (origin `search`, top 3 per channel — never copy from `official.m3u`).

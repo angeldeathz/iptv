@@ -7,7 +7,8 @@ description: >-
   replace a URL, fix or change logos, list global IDs, rebuild/verify
   official.m3u. Use for eliminar, borrar, quitar, mover, déjalo en, ordenar,
   backup, respaldo, agregar canal, buscar fuentes, nuevas variantes, URL caída,
-  actualizar URL, iconos, logos, IDs, parrilla, grilla.
+  actualizar URL, iconos, logos, IDs, parrilla, grilla, lista de pruebas,
+  pruebas.m3u, buscar canales para probar.
 ---
 
 # IPTV lineup
@@ -19,13 +20,14 @@ description: >-
 - `official.m3u`: **generated** by the build. Never edited.
 - Global ID = position across all sections in order. Labels are `<id> <name> <rep>` (e.g. `88 Star Channel 1`); `rep` numbers the variants of one channel.
 - Everything goes through `python3 scripts/iptv.py <command>` from the repo root. Output is JSON; errors go to stderr with exit code 1. Every command that changes channels or logos rebuilds `official.m3u` itself.
+- `pruebas.m3u`: scratch playlist for the user to test streams on TV. **Not** part of the build. Filled only by the [search → pruebas](#workflow-search-channels-into-pruebasm3u) workflow.
 
 Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `series`, `deportes`, `musica`, `documentales`, `variedades`, `internacionales`, `experimentales` (24/7 - Experimentales). Accents and case are ignored.
 
 ## Golden rules
 
 1. Never edit `official.m3u`, `datasource/` or `assets/logos.json` by hand or with edit tools. Only `iptv.py` writes them.
-2. Never touch `pruebas.m3u` or `pluto_tv.m3u`. `backup.m3u` is only written by `edit --backup`.
+2. Never touch `pluto_tv.m3u`. `backup.m3u` is only written by `edit --backup`. Edit `pruebas.m3u` **only** when the user asks to search channels and put them on the test list (see workflow below); do **not** copy entries from `official.m3u` for that request.
 3. ID-based operations need explicit global IDs from the user (`88`, `88, 91`, `88-92` = 88 to 92). If they are missing, ask and stop. Never choose IDs by name; `list --filter` is only to show candidates for the user to confirm.
 4. IDs shift after `edit` and `add`. Put all removes, backups and moves of one request in **one** `edit` call. Run `set-url` and `logo` (they do not shift IDs) before `edit`/`add`; if something must run after them, `list` again for fresh IDs.
 5. For `edit` with 2+ IDs run `--dry-run` first and check that every planned name matches the user's intent. Pass `--expect ID:NAME` whenever the name is known.
@@ -46,6 +48,7 @@ Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `se
 | Add sources to an existing channel | `add --name "ESPN 2" --url URL1 --url URL2` (inserted after its last variant) |
 | Add a new channel | `add --name "Star Channel" --section peliculas [--after 104] --url URL [--logo LOGO]` |
 | Search stream sources | `search "star channel"` · `search "espn.*1080" --regex` · `--source 45.232.210.1` |
+| Search channels → test list | Per channel: `search "<name>"`, rank, top **3** URLs → write `pruebas.m3u` (workflow below) |
 | Fix broken logos | `logo 197 198` |
 | Set a specific logo | `logo 197 --url "https://..."` |
 | Rebuild / verify official | `build` · `build --check` |
@@ -56,6 +59,18 @@ Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `se
 - *backup*, *respaldo*, *quitar pero guardar* = `--backup`.
 - Only IDs with *eliminar / borrar / quitar* = `--remove`.
 - A given replacement URL = `set-url`. *Buscar fuentes*, *agregar respaldos/variantes*, *la URL se cayó y no hay otra* = search and add.
+- *Buscar canales* + *pruebas* / *lista de pruebas* / *dejarlos en pruebas.m3u* = [search → pruebas](#workflow-search-channels-into-pruebasm3u), **not** `list --filter` and **not** copying `official.m3u`.
+
+## Workflow: search channels into `pruebas.m3u`
+
+When the user names one or more channels and wants them on the test playlist (*buscar … y ponerlos en pruebas*, *lista de pruebas*, etc.):
+
+1. For **each** channel name, run `search "<clean name>"` on the configured Astra origin hosts (same as add-sources search). Refine with `--regex` if the query is ambiguous. Use `--source` only if the user limits servers.
+2. Rank matches with the same rules as [add stream sources](#workflow-add-stream-sources) (stable hosts, quality, clean LATAM/ES variants, one URL per host, logo tie-break). Ignore `failed_sources`.
+3. Unlike `add`, **do not** discard hits just because `in_official` is set — pruebas is for trying origins, including alternatives to what is already in the lineup.
+4. Keep the top **3** URLs per channel (unless the user gives another count). Fewer than 3 if there are not enough good matches; say so in the reply.
+5. Rewrite `pruebas.m3u` from scratch for that request: `#EXTM3U`, then all chosen entries in the order the user listed the channels. For each family use the lineup **clean name** with variants `1`–`3` (best first), e.g. `NTV 1`, `NTV 2`, `NTV 3`. Set `tvg-name` and display name to match; add `tvg-logo` from the best match that has one; add `audio-track="spa,eng"` on Astra `/play/<id>` URLs (not on bare HLS unless the repo already does elsewhere).
+6. Do not run `add`, `edit`, or `build` for this workflow unless the user also asks to change `official.m3u`.
 
 ## Workflow: add stream sources
 
