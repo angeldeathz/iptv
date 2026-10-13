@@ -349,7 +349,7 @@ https://live20.bozztv.com/giatvplayout7/giatv-208138/tracks-v1a1/mono.m3u8
 http://181.224.200.5:2277/play/a0ak
 
 #EXTINF:-1 tvg-name="112 AXN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" audio-track="spa,eng",112 AXN 1
-http://181.78.20.119:58002/play/a06u
+http://187.102.211.240:9001/play/a01u/index.m3u8
 
 #EXTINF:-1 tvg-name="113 Universal channel 1" tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" audio-track="spa,eng",113 Universal channel 1
 http://187.102.211.240:9001/play/a05v/index.m3u8
@@ -361,7 +361,7 @@ http://170.247.204.9:8000/play/a01w/index.m3u8
 http://72.1.184.5:8089/play/a05d
 
 #EXTINF:-1 tvg-name="116 Lifetime 1" tvg-logo="https://docdog.top/logo/countries/latino/lifetime.png" group-title="Series" audio-track="spa,eng",116 Lifetime 1
-http://38.225.116.4:22000/play/a00x
+http://187.102.211.240:9001/play/a040/index.m3u8
 
 #EXTINF:-1 tvg-name="117 USA Network 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" audio-track="spa,eng",117 USA Network 1
 http://181.78.8.199:8000/play/a0kq
@@ -397,7 +397,7 @@ http://170.247.204.9:8000/play/a0aa/index.m3u8
 # ===== Deportes =====
 
 #EXTINF:-1 tvg-name="127 TNT Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TNT_Sports_logo.svg/320px-TNT_Sports_logo.svg.png" group-title="Deportes" audio-track="spa,eng",127 TNT Sports 1
-http://170.247.204.9:8000/play/a0c0/index.m3u8
+http://170.247.204.9:8000/play/a0g7/index.m3u8
 
 #EXTINF:-1 tvg-name="128 TNT Sports Premium 1" tvg-logo="https://docdog.top/logo/countries/latino/tnt.png" group-title="Deportes" audio-track="spa,eng",128 TNT Sports Premium 1
 http://209.14.98.47:8000/play/a0x5

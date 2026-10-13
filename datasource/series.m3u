@@ -4,7 +4,7 @@
 http://181.224.200.5:2277/play/a0ak
 
 #EXTINF:-1,AXN
-http://181.78.20.119:58002/play/a06u
+http://187.102.211.240:9001/play/a01u/index.m3u8
 
 #EXTINF:-1,Universal channel
 http://187.102.211.240:9001/play/a05v/index.m3u8
@@ -16,7 +16,7 @@ http://170.247.204.9:8000/play/a01w/index.m3u8
 http://72.1.184.5:8089/play/a05d
 
 #EXTINF:-1,Lifetime
-http://38.225.116.4:22000/play/a00x
+http://187.102.211.240:9001/play/a040/index.m3u8
 
 #EXTINF:-1,USA Network
 http://181.78.8.199:8000/play/a0kq
