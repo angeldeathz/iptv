@@ -65,3 +65,30 @@ http://45.232.210.1:18000/play/a09h
 
 #EXTINF:-1,Via X
 http://45.232.210.1:18000/play/a092
+
+#EXTINF:-1,TVR
+https://unlimited1-cl-isp.dps.live/tvr/tvr.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Telecanal Santa Cruz
+https://origin-us.streaminghd.cl/telecanal/telecanal/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,RTV
+https://origin-us.streaminghd.cl/rtv/rtv/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Contivision
+https://unlimited2-cl-isp.dps.live/cm/cm.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Supersonika TV
+https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Club TV
+https://tv.arkeo.cl:1936/clubtv/clubtv/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,SurTV
+https://surtv-2.mddsoluciones.cl/play/ZZZ-M3U-CL:79W62zMmFSbBFoIE/index.m3u8
+
+#EXTINF:-1,VClassicTV
+https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,LCR Televisión
+https://stream.blserver.cl/hls/expresiontv/index.m3u8?PlaylistM3UCL
