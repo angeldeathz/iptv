@@ -9,6 +9,9 @@ https://pantera1-100gb-cl-movistar.dps.live/coopetv/coopetv.smil/playlist.m3u8
 #EXTINF:-1,Puranoticia
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
+#EXTINF:-1,ADN
+https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/adntv/adntv.smil/playlist.m3u8
+
 #EXTINF:-1,CNN Chile
 http://38.226.49.253:8000/play/a04y
 
