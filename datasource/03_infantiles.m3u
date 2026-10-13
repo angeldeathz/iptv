@@ -83,3 +83,9 @@ http://23.153.217.158:8080/998411519tv/pa9qnqi/281253
 
 #EXTINF:-1,DreamWorks
 http://38.225.116.4:22000/play/a010
+
+#EXTINF:-1,C y G TV
+https://stream.cygtv.cl/live/cygtv/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Dodo TV
+https://cloud5.streaminglivehd.com:3651/hybrid/play.m3u8?PlaylistM3UCL
