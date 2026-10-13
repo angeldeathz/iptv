@@ -6,6 +6,9 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 #EXTINF:-1,Via X Esports
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
+#EXTINF:-1,Cartoon Network
+http://181.224.255.210:8001/play/a0py
+
 #EXTINF:-1,Disney Channel
 http://187.102.211.240:9001/play/a00m/index.m3u8
 
@@ -47,9 +50,6 @@ https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
 
 #EXTINF:-1,MAX Anime
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
-
-#EXTINF:-1,Cartoon Network
-http://181.224.255.210:8001/play/a0py
 
 #EXTINF:-1,Tooncast
 http://181.224.255.210:8001/play/a0ou

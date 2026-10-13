@@ -3,98 +3,98 @@
 
 # ===== Nacionales =====
 
-#EXTINF:-1 tvg-name="1 Mega 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales",1 Mega 1
-https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="2 Mega 2 1" tvg-logo="https://i.imgur.com/GUlMQn4.png" group-title="Nacionales" audio-track="spa,eng",2 Mega 2 1
-http://38.225.116.4:22000/play/a00u
-
-#EXTINF:-1 tvg-name="3 CHV 1" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" audio-track="spa,eng",3 CHV 1
-http://45.186.254.75:8000/play/a04v
-
-#EXTINF:-1 tvg-name="4 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" audio-track="spa,eng",4 TVN 1
-http://38.226.49.253:8000/play/a06c
-
-#EXTINF:-1 tvg-name="5 NTV 1" tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales",5 NTV 1
-https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
-
-#EXTINF:-1 tvg-name="6 TVN3 1" tvg-logo="https://i.imgur.com/9LEiQPJ.png" group-title="Nacionales",6 TVN3 1
-https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
-
-#EXTINF:-1 tvg-name="7 TV Chile 1" tvg-logo="https://i.imgur.com/yCL888l.png" group-title="Nacionales",7 TV Chile 1
-https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
-
-#EXTINF:-1 tvg-name="8 UChile TV 1" tvg-logo="https://i.imgur.com/mF2W8Uh.png" group-title="Nacionales",8 UChile TV 1
-https://pantera1-100gb-cl-movistar.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="9 Canal 13 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" audio-track="spa,eng",9 Canal 13 1
+#EXTINF:-1 tvg-name="1 Canal 13 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Canal_13_2025.svg/960px-Canal_13_2025.svg.png" group-title="Nacionales" audio-track="spa,eng",1 Canal 13 1
 http://187.102.211.240:9001/play/a05u/index.m3u8
 
-#EXTINF:-1 tvg-name="10 13 Cultura 1" tvg-logo="https://i.imgur.com/Zfe2f5j.png" group-title="Nacionales",10 13 Cultura 1
+#EXTINF:-1 tvg-name="2 13 Cultura 1" tvg-logo="https://i.imgur.com/Zfe2f5j.png" group-title="Nacionales",2 13 Cultura 1
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
 
-#EXTINF:-1 tvg-name="11 13 Festival 1" tvg-logo="https://i.imgur.com/Ymk6j5o.png" group-title="Nacionales",11 13 Festival 1
-https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+#EXTINF:-1 tvg-name="3 T13 1" tvg-logo="https://cdn.m3u.cl/logo/1054_T13.png" group-title="Nacionales",3 T13 1
+https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-name="12 13 Teleseries 1" tvg-logo="https://cdn.m3u.cl/logo/1032_13_Teleseries.png" group-title="Nacionales",12 13 Teleseries 1
-https://redirector.dps.live/hls/13t/playlist.m3u8
+#EXTINF:-1 tvg-name="4 CHV 1" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" audio-track="spa,eng",4 CHV 1
+http://45.186.254.75:8000/play/a04v
 
-#EXTINF:-1 tvg-name="13 13 Pop 1" tvg-logo="https://cdn.m3u.cl/logo/1033_13_Pop.png" group-title="Nacionales",13 13 Pop 1
-https://redirector.dps.live/hls/13pop/playlist.m3u8
+#EXTINF:-1 tvg-name="5 Mega 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="Nacionales",5 Mega 1
+https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-name="14 13 Realities 1" tvg-logo="https://i.imgur.com/p1Qpljw.png" group-title="Nacionales",14 13 Realities 1
-https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
+#EXTINF:-1 tvg-name="6 Mega 2 1" tvg-logo="https://i.imgur.com/GUlMQn4.png" group-title="Nacionales" audio-track="spa,eng",6 Mega 2 1
+http://38.225.116.4:22000/play/a00u
 
-#EXTINF:-1 tvg-name="15 13 REC 1" group-title="Nacionales" audio-track="spa,eng",15 13 REC 1
-http://45.186.254.75:8000/play/a0ha
+#EXTINF:-1 tvg-name="7 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" audio-track="spa,eng",7 TVN 1
+http://38.226.49.253:8000/play/a06c
 
-#EXTINF:-1 tvg-name="16 UCV TV 1" tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales",16 UCV TV 1
+#EXTINF:-1 tvg-name="8 NTV 1" tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales",8 NTV 1
+https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
+
+#EXTINF:-1 tvg-name="9 TVN3 1" tvg-logo="https://i.imgur.com/9LEiQPJ.png" group-title="Nacionales",9 TVN3 1
+https://mdstrm.com/live-stream-playlist/5653641561b4eba30a7e4929.m3u8
+
+#EXTINF:-1 tvg-name="10 Canal 24 Horas 1" tvg-logo="https://i.imgur.com/xO40xQy.png" group-title="Nacionales",10 Canal 24 Horas 1
+https://mdstrm.com/live-stream-playlist/57d1a22064f5d85712b20dab.m3u8
+
+#EXTINF:-1 tvg-name="11 UCV TV 1" tvg-logo="https://cdn.m3u.cl/logo/54_UCV.png" group-title="Nacionales",11 UCV TV 1
 https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-name="17 Zona Latina 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/Zona_Latina_2021.svg/revision/latest/scale-to-width-down/150?cb=20210805180712&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",17 Zona Latina 1
+#EXTINF:-1 tvg-name="12 TV Chile 1" tvg-logo="https://i.imgur.com/yCL888l.png" group-title="Nacionales",12 TV Chile 1
+https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
+
+#EXTINF:-1 tvg-name="13 UChile TV 1" tvg-logo="https://i.imgur.com/mF2W8Uh.png" group-title="Nacionales",13 UChile TV 1
+https://pantera1-100gb-cl-movistar.dps.live/uchiletv/uchiletv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-name="14 13 Festival 1" tvg-logo="https://i.imgur.com/Ymk6j5o.png" group-title="Nacionales",14 13 Festival 1
+https://origin.dpsgo.com/ssai/event/Nftd0fM2SXasfDlRphvUsg/master.m3u8
+
+#EXTINF:-1 tvg-name="15 13 Teleseries 1" tvg-logo="https://cdn.m3u.cl/logo/1032_13_Teleseries.png" group-title="Nacionales",15 13 Teleseries 1
+https://redirector.dps.live/hls/13t/playlist.m3u8
+
+#EXTINF:-1 tvg-name="16 13 Pop 1" tvg-logo="https://cdn.m3u.cl/logo/1033_13_Pop.png" group-title="Nacionales",16 13 Pop 1
+https://redirector.dps.live/hls/13pop/playlist.m3u8
+
+#EXTINF:-1 tvg-name="17 13 Realities 1" tvg-logo="https://i.imgur.com/p1Qpljw.png" group-title="Nacionales",17 13 Realities 1
+https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
+
+#EXTINF:-1 tvg-name="18 13 REC 1" group-title="Nacionales" audio-track="spa,eng",18 13 REC 1
+http://45.186.254.75:8000/play/a0ha
+
+#EXTINF:-1 tvg-name="19 Zona Latina 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/Zona_Latina_2021.svg/revision/latest/scale-to-width-down/150?cb=20210805180712&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",19 Zona Latina 1
 http://45.232.210.1:18000/play/a09h
 
-#EXTINF:-1 tvg-name="18 Via X 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",18 Via X 1
+#EXTINF:-1 tvg-name="20 Via X 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",20 Via X 1
 http://45.232.210.1:18000/play/a092
 
 
 # ===== Noticias =====
 
-#EXTINF:-1 tvg-name="19 CNN en Español 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",19 CNN en Español 1
-http://190.61.42.218:9000/play/a00t/index.m3u8
+#EXTINF:-1 tvg-name="21 Bio Bio TV 1" tvg-logo="https://i.imgur.com/lhglEUP.png" group-title="Noticias",21 Bio Bio TV 1
+https://jireh-7-hls-video-us-isp.dps.live/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-name="20 CNN Chile 1" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",20 CNN Chile 1
-http://38.226.49.253:8000/play/a04y
-
-#EXTINF:-1 tvg-name="21 CNN Internacional 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",21 CNN Internacional 1
-http://187.102.211.240:9001/play/a00j/index.m3u8
-
-#EXTINF:-1 tvg-name="22 Estrella News 1" tvg-logo="https://i.imgur.com/HRrkhLq.png" group-title="Noticias",22 Estrella News 1
-https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg00567-estrellamedia-estrellanews-distrotv/playlist.m3u8
+#EXTINF:-1 tvg-name="22 Cooperativa 1" tvg-logo="https://cdn.m3u.cl/logo/1035_Cooperativa.png" group-title="Noticias",22 Cooperativa 1
+https://pantera1-100gb-cl-movistar.dps.live/coopetv/coopetv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-name="23 Puranoticia 1" tvg-logo="https://cdn.m3u.cl/logo/415_Puranoticia.png" group-title="Noticias",23 Puranoticia 1
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
-#EXTINF:-1 tvg-name="24 Cooperativa 1" tvg-logo="https://cdn.m3u.cl/logo/1035_Cooperativa.png" group-title="Noticias",24 Cooperativa 1
-https://pantera1-100gb-cl-movistar.dps.live/coopetv/coopetv.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="24 CNN Chile 1" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",24 CNN Chile 1
+http://38.226.49.253:8000/play/a04y
 
-#EXTINF:-1 tvg-name="25 DW Español 1" tvg-logo="https://i.ibb.co/NgKYXQK5/LOGO-DIGITAL.png" group-title="Noticias",25 DW Español 1
+#EXTINF:-1 tvg-name="25 CNN en Español 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",25 CNN en Español 1
+http://190.61.42.218:9000/play/a00t/index.m3u8
+
+#EXTINF:-1 tvg-name="26 CNN Internacional 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",26 CNN Internacional 1
+http://187.102.211.240:9001/play/a00j/index.m3u8
+
+#EXTINF:-1 tvg-name="27 Estrella News 1" tvg-logo="https://i.imgur.com/HRrkhLq.png" group-title="Noticias",27 Estrella News 1
+https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg00567-estrellamedia-estrellanews-distrotv/playlist.m3u8
+
+#EXTINF:-1 tvg-name="28 DW Español 1" tvg-logo="https://i.ibb.co/NgKYXQK5/LOGO-DIGITAL.png" group-title="Noticias",28 DW Español 1
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/streamPlaylist.m3u8
 
-#EXTINF:-1 tvg-name="26 BBC News 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" group-title="Noticias" audio-track="spa,eng",26 BBC News 1
+#EXTINF:-1 tvg-name="29 BBC News 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" group-title="Noticias" audio-track="spa,eng",29 BBC News 1
 http://187.102.211.240:9001/play/a04k/index.m3u8
 
-#EXTINF:-1 tvg-name="27 Bio Bio TV 1" tvg-logo="https://i.imgur.com/lhglEUP.png" group-title="Noticias",27 Bio Bio TV 1
-https://jireh-7-hls-video-us-isp.dps.live/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="28 Canal 24 Horas 1" tvg-logo="https://i.imgur.com/xO40xQy.png" group-title="Noticias",28 Canal 24 Horas 1
-https://mdstrm.com/live-stream-playlist/57d1a22064f5d85712b20dab.m3u8
-
-#EXTINF:-1 tvg-name="29 France 24 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/France_24_logo.svg/320px-France_24_logo.svg.png" group-title="Noticias" audio-track="spa,eng",29 France 24 1
+#EXTINF:-1 tvg-name="30 France 24 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/France_24_logo.svg/320px-France_24_logo.svg.png" group-title="Noticias" audio-track="spa,eng",30 France 24 1
 http://187.102.211.240:9001/play/a04t/index.m3u8
-
-#EXTINF:-1 tvg-name="30 T13 1" tvg-logo="https://cdn.m3u.cl/logo/1054_T13.png" group-title="Noticias",30 T13 1
-https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
 
 
 # ===== Infantiles =====
@@ -105,50 +105,50 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 #EXTINF:-1 tvg-name="32 Via X Esports 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es" group-title="Infantiles" audio-track="spa,eng",32 Via X Esports 1
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
-#EXTINF:-1 tvg-name="33 Disney Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/disneychannel.png" group-title="Infantiles" audio-track="spa,eng",33 Disney Channel 1
+#EXTINF:-1 tvg-name="33 Cartoon Network 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Infantiles" audio-track="spa,eng",33 Cartoon Network 1
+http://181.224.255.210:8001/play/a0py
+
+#EXTINF:-1 tvg-name="34 Disney Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/disneychannel.png" group-title="Infantiles" audio-track="spa,eng",34 Disney Channel 1
 http://187.102.211.240:9001/play/a00m/index.m3u8
 
-#EXTINF:-1 tvg-name="34 Disney Jr. 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles" audio-track="spa,eng",34 Disney Jr. 1
+#EXTINF:-1 tvg-name="35 Disney Jr. 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles" audio-track="spa,eng",35 Disney Jr. 1
 http://190.60.40.165:1010/play/a0l2
 
-#EXTINF:-1 tvg-name="35 Nickelodeon 1" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantiles",35 Nickelodeon 1
+#EXTINF:-1 tvg-name="36 Nickelodeon 1" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantiles",36 Nickelodeon 1
 https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
 
-#EXTINF:-1 tvg-name="36 Nickelodeon 2" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantiles" audio-track="spa,eng",36 Nickelodeon 2
+#EXTINF:-1 tvg-name="37 Nickelodeon 2" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantiles" audio-track="spa,eng",37 Nickelodeon 2
 http://187.102.211.240:9001/play/a02d/index.m3u8
 
-#EXTINF:-1 tvg-name="37 Discovery Kids 1" tvg-logo="https://docdog.top/logo/countries/latino/discoverykids.png" group-title="Infantiles" audio-track="spa,eng",37 Discovery Kids 1
+#EXTINF:-1 tvg-name="38 Discovery Kids 1" tvg-logo="https://docdog.top/logo/countries/latino/discoverykids.png" group-title="Infantiles" audio-track="spa,eng",38 Discovery Kids 1
 http://181.224.200.5:2277/play/a00o
 
-#EXTINF:-1 tvg-name="38 Cartoonito 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",38 Cartoonito 1
+#EXTINF:-1 tvg-name="39 Cartoonito 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",39 Cartoonito 1
 http://187.102.211.240:9001/play/a03d/index.m3u8
 
-#EXTINF:-1 tvg-name="39 RetroMagico 1" tvg-logo="https://regionnet.com.ar/wp-content/uploads/2019/11/Logomagic96-450x401.png" group-title="Infantiles",39 RetroMagico 1
+#EXTINF:-1 tvg-name="40 RetroMagico 1" tvg-logo="https://regionnet.com.ar/wp-content/uploads/2019/11/Logomagic96-450x401.png" group-title="Infantiles",40 RetroMagico 1
 https://183.bozztv.com/giatv/giatv-retromagicochnl/retromagicochnl/playlist.m3u8
 
-#EXTINF:-1 tvg-name="40 SuperToons TV 1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD5100001G0_20250729T045047SQUARE.png" group-title="Infantiles",40 SuperToons TV 1
+#EXTINF:-1 tvg-name="41 SuperToons TV 1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD5100001G0_20250729T045047SQUARE.png" group-title="Infantiles",41 SuperToons TV 1
 https://jmp2.uk/stvp-ESBD5100001G0
 
-#EXTINF:-1 tvg-name="41 Laika Channel 1" tvg-logo="https://i.ibb.co/yc2r75Tg/OIP.jpg" group-title="Infantiles",41 Laika Channel 1
+#EXTINF:-1 tvg-name="42 Laika Channel 1" tvg-logo="https://i.ibb.co/yc2r75Tg/OIP.jpg" group-title="Infantiles",42 Laika Channel 1
 https://live20.bozztv.com/giatvplayout7/giatv-209474/playlist.m3u8
 
-#EXTINF:-1 tvg-name="42 Adult Swim 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/adult-swim-us.png" group-title="Infantiles" audio-track="spa,eng",42 Adult Swim 1
+#EXTINF:-1 tvg-name="43 Adult Swim 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/adult-swim-us.png" group-title="Infantiles" audio-track="spa,eng",43 Adult Swim 1
 http://190.61.42.218:9000/play/a06r/index.m3u8
 
-#EXTINF:-1 tvg-name="43 Bob Esponja 1" tvg-logo="https://images.pluto.tv/channels/6254598f5083f800076d8563/colorLogoPNG_1781042617821.png" group-title="Infantiles",43 Bob Esponja 1
+#EXTINF:-1 tvg-name="44 Bob Esponja 1" tvg-logo="https://images.pluto.tv/channels/6254598f5083f800076d8563/colorLogoPNG_1781042617821.png" group-title="Infantiles",44 Bob Esponja 1
 https://jmp2.uk/plu-6254598f5083f800076d8563.m3u8
 
-#EXTINF:-1 tvg-name="44 Nickelodeon Teen 1" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Infantiles",44 Nickelodeon Teen 1
+#EXTINF:-1 tvg-name="45 Nickelodeon Teen 1" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Infantiles",45 Nickelodeon Teen 1
 https://jmp2.uk/plu-5fab09a8749b1a00077d35d2.m3u8
 
-#EXTINF:-1 tvg-name="45 Nickelodeon Toons 1" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" group-title="Infantiles",45 Nickelodeon Toons 1
+#EXTINF:-1 tvg-name="46 Nickelodeon Toons 1" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" group-title="Infantiles",46 Nickelodeon Toons 1
 https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
 
-#EXTINF:-1 tvg-name="46 MAX Anime 1" tvg-logo="https://i.imgur.com/Oj3hEBh.jpg" group-title="Infantiles",46 MAX Anime 1
+#EXTINF:-1 tvg-name="47 MAX Anime 1" tvg-logo="https://i.imgur.com/Oj3hEBh.jpg" group-title="Infantiles",47 MAX Anime 1
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
-
-#EXTINF:-1 tvg-name="47 Cartoon Network 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Infantiles" audio-track="spa,eng",47 Cartoon Network 1
-http://181.224.255.210:8001/play/a0py
 
 #EXTINF:-1 tvg-name="48 Tooncast 1" tvg-logo="https://i.imgur.com/3yXRbQy.png" group-title="Infantiles" audio-track="spa,eng",48 Tooncast 1
 http://181.224.255.210:8001/play/a0ou
