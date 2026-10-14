@@ -330,10 +330,10 @@ http://190.61.42.218:9000/play/a08e
 #EXTINF:-1 tvg-name="106 Cine Premium 1" tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" audio-track="spa,eng",106 Cine Premium 1
 http://45.5.116.228:8000/play/a0kl
 
-#EXTINF:-1 tvg-name="107 UNIVERSAL PREMIERE 1" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" group-title="Peliculas" audio-track="spa,eng",107 UNIVERSAL PREMIERE 1
-http://45.5.118.152:8000/play/a0dn
+#EXTINF:-1 tvg-name="107 Universal Premiere 1" group-title="Peliculas" audio-track="spa,eng",107 Universal Premiere 1
+http://186.33.1.71:8000/play/a0i1
 
-#EXTINF:-1 tvg-name="108 UNIVERSAL CINEMA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" audio-track="spa,eng",108 UNIVERSAL CINEMA 1
+#EXTINF:-1 tvg-name="108 Universal Cinema 1" group-title="Peliculas" audio-track="spa,eng",108 Universal Cinema 1
 http://190.61.43.117:45000/play/a05x
 
 #EXTINF:-1 tvg-name="109 Rewind 1" tvg-logo="https://www.fmh.la/images/team/logo_rewind.png" group-title="Peliculas" audio-track="spa,eng",109 Rewind 1

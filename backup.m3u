@@ -503,3 +503,6 @@ http://187.102.211.240:9001/play/a065/index.m3u8
 
 #EXTINF:-1,ENT CHANNEL
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="UNIVERSAL PREMIERE 3" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" audio-track="spa,eng",UNIVERSAL PREMIERE 3
+http://72.1.184.5:8089/play/a074

@@ -64,7 +64,7 @@ http://187.102.211.240:9001/play/a02j/index.m3u8
 http://187.102.211.240:9001/play/a06o/index.m3u8
 
 #EXTINF:-1,FX
-http://186.33.1.71:8000/play/a0gw
+http://190.108.83.69:8000/play/a04i/index.m3u8
 
 #EXTINF:-1,AMC
 http://187.102.211.240:9001/play/a01y/index.m3u8
@@ -108,10 +108,10 @@ http://190.61.42.218:9000/play/a08e
 #EXTINF:-1,Cine Premium
 http://45.5.116.228:8000/play/a0kl
 
-#EXTINF:-1,UNIVERSAL PREMIERE
-http://45.5.118.152:8000/play/a0dn
+#EXTINF:-1,Universal Premiere
+http://186.33.1.71:8000/play/a0i1
 
-#EXTINF:-1,UNIVERSAL CINEMA
+#EXTINF:-1,Universal Cinema
 http://190.61.43.117:45000/play/a05x
 
 #EXTINF:-1,Rewind
