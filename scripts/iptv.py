@@ -25,6 +25,7 @@ from playlist import (
     append_to_backup,
     normalize_text,
     render_official,
+    search_text_matches_query,
     resolve_section,
     validate_channel_name,
 )
@@ -396,8 +397,7 @@ def build_matcher(query: str, use_regex: bool):
         except re.error as exc:
             raise PlaylistError(f"invalid regex: {exc}") from None
         return lambda name, group, url: pattern.search(f"{name} {group} {url}") is not None
-    needle = normalize_text(query)
-    return lambda name, group, url: needle in normalize_text(f"{name} {group} {url}")
+    return lambda name, group, url: search_text_matches_query(query, name, group, url)
 
 
 if __name__ == "__main__":

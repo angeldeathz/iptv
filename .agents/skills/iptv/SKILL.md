@@ -47,7 +47,7 @@ Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `se
 | Replace the URL of a source | `set-url 42 "http://host/play/a0xx"` |
 | Add sources to an existing channel | `add --name "ESPN 2" --url URL1 --url URL2` (inserted after its last variant) |
 | Add a new channel | `add --name "Star Channel" --section peliculas [--after 104] --url URL [--logo LOGO]` |
-| Search stream sources | `search "star channel"` · `search "espn.*1080" --regex` · `--source 45.232.210.1` |
+| Search stream sources | `search "star channel"` · `search "espn.*1080" --regex` · `--source 45.232.210.1` (token match: `&`/`and`, `+`/`plus`, glued names like `ESPN2`, `TVChile`; short names match on channel title only) |
 | Search channels → test list | Per channel: `search "<name>"`, rank, top **3** URLs → write `pruebas.m3u` (workflow below) |
 | Fix broken logos | `logo 197 198` |
 | Set a specific logo | `logo 197 --url "https://..."` |
@@ -65,7 +65,7 @@ Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `se
 
 When the user names one or more channels and wants them on the test playlist (*buscar … y ponerlos en pruebas*, *lista de pruebas*, etc.):
 
-1. For **each** channel name, run `search "<clean name>"` on the configured Astra origin hosts (same as add-sources search). Refine with `--regex` if the query is ambiguous. Use `--source` only if the user limits servers.
+1. For **each** channel name, run `search "<clean name>"` on the configured Astra origin hosts (same as add-sources search). If the result is empty or clearly wrong, retry with a host spelling alias (`Universal Channel` for Universal TV, `Nat Geo` for National Geographic, `Film & Arts`, `H&H` / `Home & Health`, `HBO Plus` for HBO+) or `--regex`. Use `--source` only if the user limits servers.
 2. Rank matches with the same rules as [add stream sources](#workflow-add-stream-sources) (stable hosts, quality, clean LATAM/ES variants, one URL per host, logo tie-break). Ignore `failed_sources`.
 3. Unlike `add`, **do not** discard hits just because `in_official` is set — pruebas is for trying origins, including alternatives to what is already in the lineup.
 4. Keep the top **3** URLs per channel (unless the user gives another count). Fewer than 3 if there are not enough good matches; say so in the reply.
@@ -74,7 +74,7 @@ When the user names one or more channels and wants them on the test playlist (*b
 
 ## Workflow: add stream sources
 
-1. `search "<clean name>"`: no country prefix, no resolution (`star channel`, not `CL: Star Channel HD`). Refine with `--regex` if noisy. Use `--source` only if the user limits servers.
+1. `search "<clean name>"`: no country prefix, no resolution (`star channel`, not `CL: Star Channel HD`). Same token matching as above; if too few hits, retry aliases or `--regex`. Use `--source` only if the user limits servers.
 2. Discard matches whose `in_official` is not null (already in the lineup) and sources in `failed_sources`.
 3. Rank the rest:
    1. Stable host: hosts that already appear often in `official.m3u`.

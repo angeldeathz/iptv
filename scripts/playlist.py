@@ -287,3 +287,117 @@ def write_section_file(section: Section, entries: list[Entry]) -> None:
 def normalize_text(value: str) -> str:
     decomposed = unicodedata.normalize("NFKD", value.strip().casefold())
     return "".join(char for char in decomposed if not unicodedata.combining(char))
+
+
+SEARCH_NOISE_TOKENS = frozenset(
+    {
+        "hd",
+        "fhd",
+        "sd",
+        "4k",
+        "uhd",
+        "hevc",
+        "h265",
+        "latino",
+        "latam",
+        "nuevo",
+        "enviado",
+        "principal",
+        "interno",
+    }
+)
+SEARCH_OPTIONAL_QUERY_TOKENS = frozenset(
+    {"en", "de", "del", "la", "las", "lo", "los", "el", "y", "the"}
+)
+SEARCH_TOKEN_ALIASES = {
+    "premiun": "premium",
+    "junior": "jr",
+    "chanel": "channel",
+}
+SEARCH_QUERY_SYNONYMS: dict[tuple[str, ...], tuple[str, ...]] = {
+    ("national", "geographic"): ("nat", "geo"),
+    ("universal", "tv"): ("universal", "channel"),
+}
+
+
+def squash_search_text(value: str) -> str:
+    text = normalize_text(value)
+    text = text.replace("&", " and ").replace("+", " plus ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return " ".join(text.split())
+
+
+def tokenize_for_search(value: str, *, drop_noise: bool) -> list[str]:
+    tokens = squash_search_text(value).split()
+    tokens = [SEARCH_TOKEN_ALIASES.get(token, token) for token in tokens]
+    if drop_noise:
+        tokens = [token for token in tokens if token not in SEARCH_NOISE_TOKENS]
+    return tokens
+
+
+def query_tokens_for_search(query: str) -> list[str]:
+    if "!" in query:
+        return []
+    tokens = tokenize_for_search(query, drop_noise=False)
+    required = [token for token in tokens if token not in SEARCH_OPTIONAL_QUERY_TOKENS]
+    return required if required else tokens
+
+
+def search_text_matches_query(query: str, name: str, group: str, url: str) -> bool:
+    name_field = f"{name} {group}".strip()
+    query_tokens = query_tokens_for_search(query)
+    if not query_tokens:
+        normalized_query = normalize_text(query)
+        if len(normalized_query) >= 2:
+            return normalized_query in normalize_text(name_field)
+        return False
+
+    token_variants = [query_tokens]
+    synonym = SEARCH_QUERY_SYNONYMS.get(tuple(query_tokens))
+    if synonym:
+        token_variants.append(list(synonym))
+
+    for tokens in token_variants:
+        if _search_tokens_match(tokens, name_field, url):
+            return True
+
+    normalized_query = normalize_text(query)
+    normalized_name = normalize_text(name_field)
+    if len(normalized_query) >= 2 and any(char in query for char in "!&+"):
+        return normalized_query in normalized_name
+
+    return False
+
+
+def _search_tokens_match(query_tokens: list[str], name_field: str, url: str) -> bool:
+    name_tokens = tokenize_for_search(name_field, drop_noise=True)
+    raw_name_tokens = tokenize_for_search(name_field, drop_noise=False)
+
+    if _tokens_ordered_subsequence(query_tokens, name_tokens):
+        return True
+
+    compact_query = "".join(query_tokens)
+    if len(compact_query) >= 4:
+        for token_list in (raw_name_tokens, tokenize_for_search(url, drop_noise=False)):
+            if compact_query in "".join(token_list):
+                return True
+
+    normalized_query = " ".join(query_tokens)
+    normalized_name = normalize_text(name_field)
+    if len(normalized_query) >= 3 and normalized_query in normalized_name:
+        return True
+
+    if len(query_tokens) == 1 and len(query_tokens[0]) == 2:
+        return query_tokens[0] in name_tokens
+
+    return False
+
+
+def _tokens_ordered_subsequence(query: list[str], haystack: list[str]) -> bool:
+    index = 0
+    for token in haystack:
+        if token == query[index]:
+            index += 1
+            if index == len(query):
+                return True
+    return False

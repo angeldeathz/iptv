@@ -65,3 +65,12 @@ http://38.226.49.253:8000/play/a07t
 
 #EXTINF:-1,UFC
 https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,TyC Sports
+http://45.186.254.75:8000/play/a08n
+
+#EXTINF:-1,DirecTV Sports
+http://45.186.254.75:8000/play/a0en
+
+#EXTINF:-1,Sky Sports
+http://45.232.210.1:18000/play/a094
