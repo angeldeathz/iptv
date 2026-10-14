@@ -1,9 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="NTV 1" tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales",NTV 1
-https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
-#EXTINF:-1 tvg-name="DreamWorks 1" tvg-logo="http://186.33.1.71:8000/playlist/tvg-logo/a0a5.png" group-title="Infantiles" audio-track="spa,eng",DreamWorks 1
-http://186.33.1.71:8000/play/a0a5
-#EXTINF:-1 tvg-name="DreamWorks 2" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/5/55/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png/330px-1024px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png" group-title="Infantiles" audio-track="spa,eng",DreamWorks 2
-http://38.225.116.4:22000/play/a010
-#EXTINF:-1 tvg-name="CDO 2 1" tvg-logo="http://redworld.pro:8880/images/6f10030345febec933f4dc617a9ee8cf.png" group-title="Deportes",CDO 2 1
-http://starlatino.tv:8880/kevin5239@/PSFZBncgkEyU/273686
+
+#EXTINF:-1 tvg-name="Mega 2 1" tvg-logo="https://i.imgur.com/GUlMQn4.png" group-title="Nacionales" audio-track="spa,eng",Mega 2 1
+http://38.225.116.4:22000/play/a00u
+
+#EXTINF:-1 tvg-name="La Red 1" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Nacionales" audio-track="spa,eng",La Red 1
+http://45.232.210.1:18000/play/a07e
+
+#EXTINF:-1 tvg-name="La Red 2" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Nacionales" audio-track="spa,eng",La Red 2
+http://45.186.254.75:8000/play/a055
+
+#EXTINF:-1 tvg-name="La Red 3" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Nacionales" audio-track="spa,eng",La Red 3
+http://38.226.49.253:8000/play/a08f
+
+#EXTINF:-1 tvg-name="MAX Anime 1" tvg-logo="https://i.imgur.com/Oj3hEBh.jpg" group-title="Infantiles",MAX Anime 1
+https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
+
+#EXTINF:-1 tvg-name="FX 1" tvg-logo="http://186.33.1.71:8000/playlist/tvg-logo/a0gw.png" group-title="Peliculas" audio-track="spa,eng",FX 1
+http://186.33.1.71:8000/play/a0gw
+
+#EXTINF:-1 tvg-name="FX 2" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gw.png" group-title="Peliculas" audio-track="spa,eng",FX 2
+http://45.5.116.228:8000/play/a0gw
+
+#EXTINF:-1 tvg-name="FX 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" group-title="Peliculas" audio-track="spa,eng",FX 3
+http://45.232.210.1:18000/play/a0b8
+
+#EXTINF:-1 tvg-name="SyFy 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Syfy.svg/1024px-Syfy.svg.png" group-title="Peliculas" audio-track="spa,eng",SyFy 1
+http://181.78.8.199:8000/play/a0cl
+
+#EXTINF:-1 tvg-name="SyFy 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Syfy.svg/1024px-Syfy.svg.png" group-title="Peliculas" audio-track="spa,eng",SyFy 2
+http://181.78.8.199:8000/play/a09x

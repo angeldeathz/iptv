@@ -39,6 +39,12 @@ https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 #EXTINF:-1,UCV 2
 https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8
 
+#EXTINF:-1,La Red
+http://45.232.210.1:18000/play/a07e
+
+#EXTINF:-1,Telecanal Santa Cruz
+https://origin-us.streaminghd.cl/telecanal/telecanal/playlist.m3u8?PlaylistM3UCL
+
 #EXTINF:-1,TV Chile
 https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8
 
@@ -69,9 +75,6 @@ http://45.232.210.1:18000/play/a092
 #EXTINF:-1,TVR
 https://unlimited1-cl-isp.dps.live/tvr/tvr.smil/playlist.m3u8?PlaylistM3UCL
 
-#EXTINF:-1,Telecanal Santa Cruz
-https://origin-us.streaminghd.cl/telecanal/telecanal/playlist.m3u8?PlaylistM3UCL
-
 #EXTINF:-1,RTV
 https://origin-us.streaminghd.cl/rtv/rtv/playlist.m3u8?PlaylistM3UCL
 
@@ -80,12 +83,6 @@ https://unlimited2-cl-isp.dps.live/cm/cm.smil/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,Supersonika TV
 https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,Club TV
-https://tv.arkeo.cl:1936/clubtv/clubtv/playlist.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,SurTV
-https://surtv-2.mddsoluciones.cl/play/ZZZ-M3U-CL:79W62zMmFSbBFoIE/index.m3u8
 
 #EXTINF:-1,VClassicTV
 https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8?PlaylistM3UCL

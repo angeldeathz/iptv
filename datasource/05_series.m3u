@@ -1,49 +1,43 @@
 #EXTM3U
 
+#EXTINF:-1,A&E
+http://38.226.49.253:8000/play/a05u
+
 #EXTINF:-1,Universal TV
 http://181.224.200.5:2277/play/a0ak
-
-#EXTINF:-1,AXN
-http://187.102.211.240:9001/play/a01u/index.m3u8
 
 #EXTINF:-1,Universal channel
 http://187.102.211.240:9001/play/a05v/index.m3u8
 
-#EXTINF:-1,Warner
-http://170.247.204.9:8000/play/a01w/index.m3u8
-
-#EXTINF:-1,E!
-http://72.1.184.5:8089/play/a05d
-
-#EXTINF:-1,Lifetime
-http://187.102.211.240:9001/play/a040/index.m3u8
-
 #EXTINF:-1,USA Network
 http://181.78.8.199:8000/play/a0kq
+
+#EXTINF:-1,TNT Series
+http://170.247.204.9:8000/play/a0aa/index.m3u8
 
 #EXTINF:-1,TNT Novelas
 http://190.61.42.218:9000/play/a07d
 
+#EXTINF:-1,AXN
+http://187.102.211.240:9001/play/a01u/index.m3u8
+
+#EXTINF:-1,Lifetime
+http://187.102.211.240:9001/play/a040/index.m3u8
+
+#EXTINF:-1,Comedy central
+http://187.102.211.240:9001/play/a01n/index.m3u8
+
 #EXTINF:-1,Las Estrellas
 http://190.61.42.218:9000/play/a09t
-
-#EXTINF:-1,Distrito Comedia
-http://205.235.6.29:8000/play/a0z5
 
 #EXTINF:-1,BBC Series
 https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1,A&E
-http://38.226.49.253:8000/play/a05u
-
-#EXTINF:-1,Comedy central
-http://187.102.211.240:9001/play/a01n/index.m3u8
+#EXTINF:-1,Distrito Comedia
+http://205.235.6.29:8000/play/a0z5
 
 #EXTINF:-1,Telemundo
 http://187.102.211.240:9001/play/a03j/index.m3u8
 
 #EXTINF:-1,TLNovelas
 http://187.102.211.240:9001/play/a03q/index.m3u8
-
-#EXTINF:-1,TNT Series
-http://170.247.204.9:8000/play/a0aa/index.m3u8

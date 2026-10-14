@@ -15,10 +15,13 @@ http://187.102.211.240:9001/play/a05y/index.m3u8
 #EXTINF:-1,Discovery Science
 http://190.61.42.218:9000/play/a00h
 
-#EXTINF:-1,ANIMAL PLANET
+#EXTINF:-1,Animal Planet
 http://181.224.200.5:2277/play/a00r
 
-#EXTINF:-1,NatGeo
+#EXTINF:-1,Love Nature
+http://181.224.200.5:2277/play/a036
+
+#EXTINF:-1,National Geographic
 http://187.102.211.240:9001/play/a01p/index.m3u8
 
 #EXTINF:-1,ID
@@ -36,11 +39,8 @@ http://187.102.211.240:9001/play/a00s/index.m3u8
 #EXTINF:-1,Home and Health
 http://181.224.200.5:2277/play/a00p
 
-#EXTINF:-1,HGTV Discovery HGTV
+#EXTINF:-1,HGTV Discovery
 http://190.61.42.218:9000/play/a05p
 
 #EXTINF:-1,TLC
 http://187.102.211.240:9001/play/a03g/index.m3u8
-
-#EXTINF:-1,Love Nature
-http://181.224.200.5:2277/play/a036

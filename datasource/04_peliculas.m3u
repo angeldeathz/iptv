@@ -1,5 +1,11 @@
 #EXTM3U
 
+#EXTINF:-1,ENT Family
+https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,ENT CHANNEL
+https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
+
 #EXTINF:-1,HBO
 http://187.102.211.240:9001/play/a01z/index.m3u8
 
@@ -39,6 +45,9 @@ http://187.102.211.240:9001/play/a01b/index.m3u8
 #EXTINF:-1,TNT
 http://187.102.211.240:9001/play/a05h/index.m3u8
 
+#EXTINF:-1,Warner
+http://170.247.204.9:8000/play/a01w/index.m3u8
+
 #EXTINF:-1,Paramount
 http://181.224.200.5:2277/play/a0df
 
@@ -51,17 +60,17 @@ http://45.5.118.152:8000/play/a04m
 #EXTINF:-1,Star Channel
 http://187.102.211.240:9001/play/a02j/index.m3u8
 
+#EXTINF:-1,Studio Universal
+http://187.102.211.240:9001/play/a06o/index.m3u8
+
 #EXTINF:-1,FX
-http://209.14.98.47:8000/play/a0y4
+http://186.33.1.71:8000/play/a0gw
 
 #EXTINF:-1,AMC
 http://187.102.211.240:9001/play/a01y/index.m3u8
 
 #EXTINF:-1,AMC Series
 http://38.226.49.253:8000/play/a03y
-
-#EXTINF:-1,SONY
-http://187.102.211.240:9001/play/a065/index.m3u8
 
 #EXTINF:-1,SONY
 http://190.60.40.165:1010/play/a0hw
@@ -71,9 +80,6 @@ https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
 
 #EXTINF:-1,Sony Cine
 https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
-
-#EXTINF:-1,Studio Universal
-http://187.102.211.240:9001/play/a06o/index.m3u8
 
 #EXTINF:-1,TCM
 http://45.5.116.228:8000/play/a04z
@@ -90,9 +96,6 @@ http://190.60.40.165:1010/play/a0e5
 #EXTINF:-1,Golden
 http://181.224.200.5:2277/play/a0do
 
-#EXTINF:-1,GOLDEN PLUS
-http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/167512
-
 #EXTINF:-1,Multipremier
 http://190.108.90.142:8000/play/a017
 
@@ -102,14 +105,8 @@ http://181.78.8.199:8000/play/a09p
 #EXTINF:-1,Cinema Global
 http://190.61.42.218:9000/play/a08e
 
-#EXTINF:-1,ENT Family
-https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
-
-#EXTINF:-1,ENT CHANNEL
-https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1,ENT CHANNEL
-https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
+#EXTINF:-1,Cine Premium
+http://45.5.116.228:8000/play/a0kl
 
 #EXTINF:-1,UNIVERSAL PREMIERE
 http://45.5.118.152:8000/play/a0dn
@@ -117,32 +114,20 @@ http://45.5.118.152:8000/play/a0dn
 #EXTINF:-1,UNIVERSAL CINEMA
 http://190.61.43.117:45000/play/a05x
 
-#EXTINF:-1,SyFy
-http://iptvpremium.ink:55577/Doctorhusem84/Doctorhusem84/167076
-
 #EXTINF:-1,Rewind
 http://45.186.254.75:8000/play/a07p
 
 #EXTINF:-1,Multicinema
 http://45.5.118.152:8000/play/a03r
 
-#EXTINF:-1,Cine Premium
-http://45.5.116.228:8000/play/a0kl
-
 #EXTINF:-1,Global
 http://181.224.200.5:2277/play/a0co
 
-#EXTINF:-1,A H EUROCHANNEL
+#EXTINF:-1,A H Eurochannel
 http://45.5.118.152:8000/play/a03e
 
 #EXTINF:-1,FMH Movies
 http://45.186.254.75:8000/play/a07j
-
-#EXTINF:-1,Grjngo
-https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8
-
-#EXTINF:-1,West
-http://190.108.83.69:8000/play/a0c9
 
 #EXTINF:-1,MAX2
 https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8
@@ -155,3 +140,9 @@ https://live20.bozztv.com/giatvplayout7/giatv-208744/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1,MGTV MOVIES
 https://live20.bozztv.com/giatvplayout7/giatv-208138/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1,Grjngo
+https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8
+
+#EXTINF:-1,West
+http://190.108.83.69:8000/play/a0c9

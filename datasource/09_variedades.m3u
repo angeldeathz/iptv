@@ -11,3 +11,6 @@ http://190.61.43.117:45000/play/a08e
 
 #EXTINF:-1,Hola Tv
 http://187.102.211.240:9001/play/a02c/index.m3u8
+
+#EXTINF:-1,E!
+http://72.1.184.5:8089/play/a05d

@@ -494,3 +494,12 @@ http://181.224.200.5:2277/play/a00n/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.phototourl.com/free/2026-04-19-6f57f921-9009-4f58-a0a5-d3ab6f07b80d.png"group-title="CINE PREMIUM" tvg-logo="https://cdn.phototourl.com/free/2026-04-19-6f57f921-9009-4f58-a0a5-d3ab6f07b80d.png" group-title="CINE PREMIUM" tvg-name="ENT FAMILY",ENT FAMILY
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1,FX
+http://209.14.98.47:8000/play/a0y4
+
+#EXTINF:-1,SONY
+http://187.102.211.240:9001/play/a065/index.m3u8
+
+#EXTINF:-1,ENT CHANNEL
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
