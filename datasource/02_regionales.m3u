@@ -1,0 +1,76 @@
+#EXTM3U
+
+#EXTINF:-1,TVR
+https://unlimited1-cl-isp.dps.live/tvr/tvr.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,RTV
+https://origin-us.streaminghd.cl/rtv/rtv/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Contivision
+https://unlimited2-cl-isp.dps.live/cm/cm.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Supersonika TV
+https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,VClassicTV
+https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,LCR Televisión
+https://stream.blserver.cl/hls/expresiontv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Grupo Libra TV
+https://v2.tustreaming.cl/libratv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Oli TV
+https://v4.tustreaming.cl/retroplaytv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Exprezion TV
+https://lbgo.bozztv.com/ssh101/ssh101/exprezion2026/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,TVU
+https://unlimited1-cl-isp.dps.live/tvu/tvu.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,RLOTV
+https://stmv7.voxtvhd.com.br/catto5860/catto5860/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Chile Channel
+https://v2.tustreaming.cl/chilechannel/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Campo Abierto TV
+https://v2.tustreaming.cl:443/catvlive/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Holvoet TV
+https://unlimited1-cl-isp.dps.live/holvoettv/holvoettv.smil/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Atacama TV
+https://v2.tustreaming.cl/atacamatv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Enfoque Digital TV
+https://5eaccbab48461.streamlock.net:1936/8074/8074/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,La Popular TV
+https://tv.arkeo.cl:1936/enlacetv1/enlacetv1/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Estacion Limache TV
+https://v4.tustreaming.cl/limachemovil/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Tendencias Prime
+https://v4.tustreaming.cl/tendenciastv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,RialTv
+https://5eaccbab48461.streamlock.net:1936/8124/8124/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Milodon TV
+https://video3.servidordevideo.net:3585/live/upbsfzhdlive.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Emocion TV
+https://v1.tustreaming.cl/emociontv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,TV Valdivia
+https://5eaccbab48461.streamlock.net:1936/8206/8206/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Pirque TV
+https://eu1.servers10.com:8081/laureltv/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,WappTV
+https://stream.wapptv.cl/video/index.m3u8?PlaylistM3UCL

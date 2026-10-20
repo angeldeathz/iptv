@@ -22,7 +22,7 @@ description: >-
 - Everything goes through `python3 scripts/iptv.py <command>` from the repo root. Output is JSON; errors go to stderr with exit code 1. Every command that changes channels or logos rebuilds `official.m3u` itself.
 - `pruebas.m3u`: scratch playlist for the user to test streams on TV. **Not** part of the build. Filled only by the [search → pruebas](#workflow-search-channels-into-pruebasm3u) workflow.
 
-Sections (use the key): `nacionales`, `noticias`, `infantiles`, `peliculas`, `series`, `deportes`, `musica`, `documentales`, `variedades`, `internacionales`, `experimentales` (24/7 - Experimentales). Accents and case are ignored.
+Sections (use the key): `nacionales`, `regionales`, `noticias`, `infantiles`, `peliculas`, `series`, `deportes`, `musica`, `documentales`, `variedades`, `internacionales`, `experimentales` (24/7 - Experimentales). Accents and case are ignored.
 
 ## Golden rules
 

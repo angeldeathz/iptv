@@ -40,16 +40,17 @@ class Section:
 
 SECTIONS = (
     Section(1, "nacionales", "Nacionales"),
-    Section(2, "noticias", "Noticias"),
-    Section(3, "infantiles", "Infantiles"),
-    Section(4, "peliculas", "Peliculas"),
-    Section(5, "series", "Series"),
-    Section(6, "deportes", "Deportes"),
-    Section(7, "musica", "Musica"),
-    Section(8, "documentales", "Documentales"),
-    Section(9, "variedades", "Variedades"),
-    Section(10, "internacionales", "Internacionales"),
-    Section(11, "experimentales", "24/7 - Experimentales"),
+    Section(2, "regionales", "Regionales"),
+    Section(3, "noticias", "Noticias"),
+    Section(4, "infantiles", "Infantiles"),
+    Section(5, "peliculas", "Peliculas"),
+    Section(6, "series", "Series"),
+    Section(7, "deportes", "Deportes"),
+    Section(8, "musica", "Musica"),
+    Section(9, "documentales", "Documentales"),
+    Section(10, "variedades", "Variedades"),
+    Section(11, "internacionales", "Internacionales"),
+    Section(12, "experimentales", "24/7 - Experimentales"),
 )
 
 

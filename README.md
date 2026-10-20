@@ -16,7 +16,7 @@ Import `official.m3u` into your IPTV player (SS IPTV, VLC, TiviMate, IPTV Smarte
 | `assets/logos.json` | One logo URL per channel name, shared by all its variants. |
 | `scripts/iptv.py` | The only tool that changes the lineup; rebuilds `official.m3u` after every change. |
 
-Sections, in lineup order: `nacionales`, `noticias`, `infantiles`, `peliculas`, `series`, `deportes`, `musica`, `documentales`, `variedades`, `internacionales`, `experimentales` (24/7 - Experimentales).
+Sections, in lineup order: `nacionales`, `regionales`, `noticias`, `infantiles`, `peliculas`, `series`, `deportes`, `musica`, `documentales`, `variedades`, `internacionales`, `experimentales` (24/7 - Experimentales).
 
 A datasource entry only holds the clean channel name and the stream URL (plus `#EXTVLCOPT` lines when a source needs them):
 
