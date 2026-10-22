@@ -74,3 +74,6 @@ https://eu1.servers10.com:8081/laureltv/index.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,WappTV
 https://stream.wapptv.cl/video/index.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,C y G TV
+https://stream.cygtv.cl/live/cygtv/playlist.m3u8?PlaylistM3UCL
