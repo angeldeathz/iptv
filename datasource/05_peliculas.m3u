@@ -46,7 +46,7 @@ http://187.102.211.240:9001/play/a01b/index.m3u8
 http://187.102.211.240:9001/play/a05h/index.m3u8
 
 #EXTINF:-1,Warner
-http://170.247.204.9:8000/play/a01w/index.m3u8
+http://181.224.200.5:2277/play/a01g
 
 #EXTINF:-1,Paramount
 http://181.224.200.5:2277/play/a0df

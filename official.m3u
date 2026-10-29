@@ -328,7 +328,7 @@ http://187.102.211.240:9001/play/a01b/index.m3u8
 http://187.102.211.240:9001/play/a05h/index.m3u8
 
 #EXTINF:-1 tvg-name="105 Warner 1" tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Peliculas" audio-track="spa,eng",105 Warner 1
-http://170.247.204.9:8000/play/a01w/index.m3u8
+http://181.224.200.5:2277/play/a01g
 
 #EXTINF:-1 tvg-name="106 Paramount 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh02V2X6MR3LSkUAGLwFdYNbdWhFeCae1umzy3GbYLsk72K5Kw5SXJ3W4x&s=10" group-title="Peliculas" audio-track="spa,eng",106 Paramount 1
 http://181.224.200.5:2277/play/a0df
