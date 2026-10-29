@@ -10,22 +10,19 @@ https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
 http://187.102.211.240:9001/play/a01z/index.m3u8
 
 #EXTINF:-1,HBO 2
-http://190.14.10.19:16000/play/a041
-
-#EXTINF:-1,HBO 2
-http://190.61.43.117:45000/play/a07x
+http://187.102.211.240:9001/play/a048/index.m3u8
 
 #EXTINF:-1,HBO Mundi
-http://190.108.83.69:8000/play/a01h
+http://187.102.211.240:9001/play/a04r/index.m3u8
 
 #EXTINF:-1,HBO Signature
-http://190.108.83.69:8000/play/a01g
+http://187.102.211.240:9001/play/a04q/index.m3u8
 
 #EXTINF:-1,HBO+
 http://187.102.211.240:9001/play/a047/index.m3u8
 
 #EXTINF:-1,HBO Pop
-http://190.108.83.69:8000/play/a03k
+http://187.102.211.240:9001/play/a028/index.m3u8
 
 #EXTINF:-1,HBO Xtreme
 http://45.186.254.75:8000/play/a05d

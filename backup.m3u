@@ -506,3 +506,16 @@ https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/tracks
 
 #EXTINF:-1 tvg-name="UNIVERSAL PREMIERE 3" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0i1.png" audio-track="spa,eng",UNIVERSAL PREMIERE 3
 http://72.1.184.5:8089/play/a074
+
+# Warner (170.247.204.9): en TV no se escucha en español — HLS sin menú de audio.
+#EXTINF:-1 tvg-name="Warner" tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Peliculas" audio-track="spa,eng",Warner
+http://170.247.204.9:8000/play/a01w/index.m3u8
+
+#EXTINF:-1 tvg-name="HBO Mundi" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwW06hJWmRtoAPThSha_H5O-pqWQyZeOJd5qTTWBngloXimEqZPy4ze8zaUt1VAHHjrJkF003hHOw1g8UV_I8d-o-ZByuW5NIyz_8L9jfqk4WWSthingqiUQbw6EOnkFCpa5BAJyZlNo/s0/HBO-Mundi.png" group-title="Peliculas" audio-track="spa,eng",HBO Mundi
+http://190.108.83.69:8000/play/a01h
+
+#EXTINF:-1 tvg-name="HBO Signature" tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" audio-track="spa,eng",HBO Signature
+http://190.108.83.69:8000/play/a01g
+
+#EXTINF:-1 tvg-name="HBO Pop" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",HBO Pop
+http://190.108.83.69:8000/play/a03k
