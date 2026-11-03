@@ -6,17 +6,11 @@ https://unlimited1-cl-isp.dps.live/tvr/tvr.smil/playlist.m3u8?PlaylistM3UCL
 #EXTINF:-1,RTV
 https://origin-us.streaminghd.cl/rtv/rtv/playlist.m3u8?PlaylistM3UCL
 
-#EXTINF:-1,Contivision
-https://unlimited2-cl-isp.dps.live/cm/cm.smil/playlist.m3u8?PlaylistM3UCL
-
 #EXTINF:-1,Supersonika TV
 https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,VClassicTV
 https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,LCR Televisión
-https://stream.blserver.cl/hls/expresiontv/index.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,Grupo Libra TV
 https://v2.tustreaming.cl/libratv/index.m3u8?PlaylistM3UCL
@@ -42,9 +36,6 @@ https://v2.tustreaming.cl:443/catvlive/index.m3u8?PlaylistM3UCL
 #EXTINF:-1,Holvoet TV
 https://unlimited1-cl-isp.dps.live/holvoettv/holvoettv.smil/playlist.m3u8?PlaylistM3UCL
 
-#EXTINF:-1,Atacama TV
-https://v2.tustreaming.cl/atacamatv/index.m3u8?PlaylistM3UCL
-
 #EXTINF:-1,Enfoque Digital TV
 https://5eaccbab48461.streamlock.net:1936/8074/8074/playlist.m3u8?PlaylistM3UCL
 
@@ -53,9 +44,6 @@ https://tv.arkeo.cl:1936/enlacetv1/enlacetv1/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,Estacion Limache TV
 https://v4.tustreaming.cl/limachemovil/index.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,Tendencias Prime
-https://v4.tustreaming.cl/tendenciastv/index.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,RialTv
 https://5eaccbab48461.streamlock.net:1936/8124/8124/playlist.m3u8?PlaylistM3UCL

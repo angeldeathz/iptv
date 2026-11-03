@@ -1,0 +1,177 @@
+#EXTM3U
+#EXTINF:-1 group-title="Nacionales",CHV HD
+http://190.211.172.154:8965/play/a048/index.m3u8
+#EXTINF:-1 group-title="Nacionales",Canal 13 HD
+http://190.211.172.154:8965/play/a01j/index.m3u8
+#EXTINF:-1 group-title="Nacionales",La Red HD
+http://190.211.172.154:8965/play/a06x/index.m3u8
+#EXTINF:-1 group-title="Nacionales",MEGA 2 HD
+http://190.211.172.154:8965/play/a07a/index.m3u8
+#EXTINF:-1 group-title="Nacionales",MEGA HD
+http://190.211.172.154:8965/play/a01r/index.m3u8
+#EXTINF:-1 group-title="Nacionales",T13
+http://190.211.172.154:8965/play/T13/index.m3u8
+#EXTINF:-1 group-title="Nacionales",TV+ HD
+http://190.211.172.154:8965/play/a01q/index.m3u8
+#EXTINF:-1 group-title="Nacionales",TVN HD
+http://190.211.172.154:8965/play/a044/index.m3u8
+#EXTINF:-1 group-title="Nacionales",Via X
+http://190.211.172.154:8965/play/a07b/index.m3u8
+#EXTINF:-1 group-title="Musica",KARAVANA URBANO
+http://190.211.172.154:8965/play/KARAVANAURBANO/index.m3u8
+#EXTINF:-1 group-title="Musica",KARAVANATV
+http://190.211.172.154:8965/play/KARAVANATV/index.m3u8
+#EXTINF:-1 group-title="Musica",OLD MUSIC
+http://190.211.172.154:8965/play/OLDMUSIC/index.m3u8
+#EXTINF:-1 group-title="Musica",POPUTV
+http://190.211.172.154:8965/play/a07f/index.m3u8
+#EXTINF:-1 group-title="Musica",Retro Plus Tv
+http://190.211.172.154:8965/play/Retro/index.m3u8
+#EXTINF:-1 group-title="Musica",VClassic Tropical
+http://190.211.172.154:8965/play/urbana/index.m3u8
+#EXTINF:-1 group-title="Musica",VclassicTv
+http://190.211.172.154:8965/play/Vclassic/index.m3u8
+#EXTINF:-1 group-title="Musica",ZOOM BACK TV
+http://190.211.172.154:8965/play/ZOOMBACKTV/index.m3u8
+#EXTINF:-1 group-title="Musica",m2o
+http://190.211.172.154:8965/play/4568/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Cartoon Network HD
+http://190.211.172.154:8965/play/a078/index.m3u8
+#EXTINF:-1 group-title="Infantiles",DOS KIDS
+http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Discovery Kids HD
+http://190.211.172.154:8965/play/a02w/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Disney HD
+http://190.211.172.154:8965/play/a046/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Disney Jr
+http://190.211.172.154:8965/play/a028/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Nickelodeon
+http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
+#EXTINF:-1 group-title="Infantiles",Tooncats
+http://190.211.172.154:8965/play/a02p/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",AMC HD
+http://190.211.172.154:8965/play/a04i/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",ATRES SERIES
+http://190.211.172.154:8965/play/a06n/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",AXN
+http://190.211.172.154:8965/play/a04g/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",Cinecanal HD
+http://190.211.172.154:8965/play/a02b/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",Clover
+http://190.211.172.154:8965/play/a05c/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",DHE HD
+http://190.211.172.154:8965/play/a021/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",De Peliculas
+http://190.211.172.154:8965/play/a07e/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",EUROPA EUROPA
+http://190.211.172.154:8965/play/a07d/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",FX HD
+http://190.211.172.154:8965/play/a035/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",Film&Arts
+http://190.211.172.154:8965/play/a04a/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",GOLDEN HD
+http://190.211.172.154:8965/play/a07g/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",HBO 
+http://190.211.172.154:8965/play/a06t/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",HBO Family
+http://190.211.172.154:8965/play/a06u/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",MONITV
+http://190.211.172.154:8965/play/a06v/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",MX CLASSIC
+http://190.211.172.154:8965/play/MXCLASSIC/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",MX DRAMA
+http://190.211.172.154:8965/play/MXDRAMA/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",MXSERIES
+http://190.211.172.154:8965/play/MXSERIES/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",OLD
+http://190.211.172.154:8965/play/OLD/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",SONY CHANNEL HD
+http://190.211.172.154:8965/play/a02i/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",STAR CHANNEL HD
+http://190.211.172.154:8965/play/a02z/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",Space HD
+http://190.211.172.154:8965/play/a04h/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",Studio Universal HD
+http://190.211.172.154:8965/play/a02h/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",TNT HD
+http://190.211.172.154:8965/play/a047/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",TNT Series
+http://190.211.172.154:8965/play/Paramount/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",UNIVERSAL CHANNEL HD
+http://190.211.172.154:8965/play/a030/index.m3u8
+#EXTINF:-1 group-title="Peliculas ",USA
+http://190.211.172.154:8965/play/a02o/index.m3u8
+#EXTINF:-1 group-title="Regionales",Canal 9
+http://190.211.172.154:8965/play/a02q/index.m3u8
+#EXTINF:-1 group-title="Regionales",ClickTV
+http://190.211.172.154:8965/play/Click/index.m3u8
+#EXTINF:-1 group-title="Regionales",ETC
+http://190.211.172.154:8965/play/a07i/index.m3u8
+#EXTINF:-1 group-title="Regionales",TVU
+http://190.211.172.154:8965/play/a02r/index.m3u8
+#EXTINF:-1 group-title="Cultura",Animal Planet HD
+http://190.211.172.154:8965/play/a02m/index.m3u8
+#EXTINF:-1 group-title="Cultura",CGTN
+http://190.211.172.154:8965/play/a06j/index.m3u8
+#EXTINF:-1 group-title="Cultura",Chile Channel
+http://190.211.172.154:8965/play/a02x/index.m3u8
+#EXTINF:-1 group-title="Cultura",Discovery HD
+http://190.211.172.154:8965/play/a06y/index.m3u8
+#EXTINF:-1 group-title="Cultura",History HD
+http://190.211.172.154:8965/play/History2/index.m3u8
+#EXTINF:-1 group-title="Cultura",Love ThePlanet
+http://190.211.172.154:8965/play/a01x/index.m3u8
+#EXTINF:-1 group-title="Cultura",ON TOUR CHANNEL
+http://190.211.172.154:8965/play/ONTOURCHANNEL/index.m3u8
+#EXTINF:-1 group-title="Cultura",Sun Channel HD
+http://190.211.172.154:8965/play/a04b/index.m3u8
+#EXTINF:-1 group-title="Deportes",ESPN 2 HD
+http://190.211.172.154:8965/play/a06c/index.m3u8
+#EXTINF:-1 group-title="Deportes",ESPN 5 HD
+http://190.211.172.154:8965/play/a031/index.m3u8
+#EXTINF:-1 group-title="Deportes",ESPN HD
+http://190.211.172.154:8965/play/a036/index.m3u8
+#EXTINF:-1 group-title="Deportes",TNT SPORTS HD
+http://190.211.172.154:8965/play/a040/index.m3u8
+#EXTINF:-1 group-title="Deportes",TNT Sport 3
+http://190.211.172.154:8965/play/Sport3/index.m3u8
+#EXTINF:-1 group-title="Novelas",Pasiones HD
+http://190.211.172.154:8965/play/a049/index.m3u8
+#EXTINF:-1 group-title="Novelas",TLNovelas
+http://190.211.172.154:8965/play/a079/index.m3u8
+#EXTINF:-1 group-title="Novelas",TNT Novelas HD
+http://190.211.172.154:8965/play/a02f/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",AUTONOMATV
+http://190.211.172.154:8965/play/a04c/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",CANAL DOS
+http://190.211.172.154:8965/play/CANALDOS/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",DW Español
+http://190.211.172.154:8965/play/a06s/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",EL GAREGE
+http://190.211.172.154:8965/play/a06w/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",FITMAXX
+http://190.211.172.154:8965/play/FITMAXX/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",LADIES
+http://190.211.172.154:8965/play/LADIES/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",MUNDO & SABOR
+http://190.211.172.154:8965/play/MUNDOSABOR/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",RAI Italia
+http://190.211.172.154:8965/play/a07c/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",TLC
+http://190.211.172.154:8965/play/a050/index.m3u8
+#EXTINF:-1 group-title="Miselaneos",TV Diputados
+http://190.211.172.154:8965/play/a051/index.m3u8
+#EXTINF:-1 group-title="Noticias",ESPN Premium
+http://190.211.172.154:8965/play/a04l/index.m3u8
+#EXTINF:-1 group-title="Noticias",WARNER CHANNEL 
+http://190.211.172.154:8965/play/a077/index.m3u8
+#EXTINF:-1 group-title="Cristianos",Enlace 
+http://190.211.172.154:8965/play/a052/index.m3u8
+#EXTINF:-1 group-title="Cristianos",RED DE FE
+http://190.211.172.154:8965/play/a059/index.m3u8
+#EXTINF:-1 group-title="Cristianos",Restaurando Vidas
+http://190.211.172.154:8965/play/Restaurando/index.m3u8
+#EXTINF:-1 group-title="-",Telemundo
+http://190.211.172.154:8965/play/a07n/index.m3u8
+#EXTINF:-1 group-title="-",Win Sport
+http://190.211.172.154:8965/play/a07m/index.m3u8

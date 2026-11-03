@@ -6,6 +6,12 @@ https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
 #EXTINF:-1,ENT CHANNEL
 https://cdn.40mediagroup.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
 
+#EXTINF:-1,ENT Extreme
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Concerts/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1,ENT Comedy
+https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.m3u8
+
 #EXTINF:-1,HBO
 http://187.102.211.240:9001/play/a01z/index.m3u8
 
