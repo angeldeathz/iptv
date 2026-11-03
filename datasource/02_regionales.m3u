@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1,ClickTV
+http://190.211.172.154:8965/play/Click/index.m3u8
+
 #EXTINF:-1,TVR
 https://unlimited1-cl-isp.dps.live/tvr/tvr.smil/playlist.m3u8?PlaylistM3UCL
 

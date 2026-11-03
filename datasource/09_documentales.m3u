@@ -21,6 +21,9 @@ http://181.224.200.5:2277/play/a00r
 #EXTINF:-1,Love Nature
 http://181.224.200.5:2277/play/a036
 
+#EXTINF:-1,Love ThePlanet
+http://190.211.172.154:8965/play/a01x/index.m3u8
+
 #EXTINF:-1,National Geographic
 http://187.102.211.240:9001/play/a01p/index.m3u8
 

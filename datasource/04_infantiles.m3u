@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1,DOS KIDS
+http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
+
 #EXTINF:-1,ETC TV
 http://187.102.211.240:9001/play/a04u/index.m3u8
 
@@ -14,6 +17,9 @@ http://187.102.211.240:9001/play/a00m/index.m3u8
 
 #EXTINF:-1,Disney Jr.
 http://190.60.40.165:1010/play/a0l2
+
+#EXTINF:-1,Disney Jr.
+http://190.211.172.154:8965/play/a028/index.m3u8
 
 #EXTINF:-1,Nickelodeon
 https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
