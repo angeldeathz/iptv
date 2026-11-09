@@ -20,3 +20,36 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_00s/SA_LIVE_hls_enc/master.m3
 
 #EXTINF:-1,Telehit Musica
 http://181.78.8.199:8000/play/a0g7
+
+#EXTINF:-1,Stingray Today's Latin Pop
+https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1,V2 Beat
+https://de1se01.v2beat.live/playlist.m3u8
+
+#EXTINF:-1,Vevo Hip Hop and R&B
+https://d7i20u8nlyf1b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lymqk2na77cwn/VevoHipHopRB_GB.m3u8
+
+#EXTINF:-1,Vevo Pop
+https://d2n3779oy6efpi.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5rxuagztow0k3/playlist.m3u8
+
+#EXTINF:-1,Trace UK
+https://d2l4tng0wskzvn.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-i4w0aagbo260c/Trace_GB.m3u8
+
+#EXTINF:-1,XITE
+https://xite-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1,XITE Hits
+https://d726x48n2pd5h.cloudfront.net/XITE_Hits.m3u8
+
+#EXTINF:-1,XITE Hits UK
+https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
+
+#EXTINF:-1,XITE Just Chill
+https://dvnftgdlbnemm.cloudfront.net/XITE_Just_Chill.m3u8
+
+#EXTINF:-1,XITE Summer
+https://d33m2dcwuwzaia.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4g0r3vai0va2v/XITE_Celebrates.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=%7BAFSDK_VALUE%7D&ads.service_id=CABD17000043J
+
+#EXTINF:-1,Stingray Concerts
+http://190.60.40.165:1010/play/a0ou
