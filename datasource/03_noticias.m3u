@@ -13,7 +13,7 @@ https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
 #EXTINF:-1,CNN Chile
-http://38.226.49.253:8000/play/a04y
+http://38.226.49.253:8000/play/a04y/index.m3u8
 
 #EXTINF:-1,CNN en Español
 http://190.61.42.218:9000/play/a00t/index.m3u8

@@ -151,7 +151,7 @@ https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
 #EXTINF:-1 tvg-name="48 CNN Chile 1" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",48 CNN Chile 1
-http://38.226.49.253:8000/play/a04y
+http://38.226.49.253:8000/play/a04y/index.m3u8
 
 #EXTINF:-1 tvg-name="49 CNN en Español 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",49 CNN en Español 1
 http://190.61.42.218:9000/play/a00t/index.m3u8
@@ -286,10 +286,10 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.
 http://187.102.211.240:9001/play/a01z/index.m3u8
 
 #EXTINF:-1 tvg-name="91 HBO 2 1" tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" audio-track="spa,eng",91 HBO 2 1
-http://190.14.10.19:16000/play/a041
+http://190.14.10.19:16000/play/a041/index.m3u8
 
 #EXTINF:-1 tvg-name="92 HBO 2 2" tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" audio-track="spa,eng",92 HBO 2 2
-http://190.61.43.117:45000/play/a07x
+http://190.61.43.117:45000/play/a07x/index.m3u8
 
 #EXTINF:-1 tvg-name="93 HBO Mundi 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwW06hJWmRtoAPThSha_H5O-pqWQyZeOJd5qTTWBngloXimEqZPy4ze8zaUt1VAHHjrJkF003hHOw1g8UV_I8d-o-ZByuW5NIyz_8L9jfqk4WWSthingqiUQbw6EOnkFCpa5BAJyZlNo/s0/HBO-Mundi.png" group-title="Peliculas" audio-track="spa,eng",93 HBO Mundi 1
 http://187.102.211.240:9001/play/a04r/index.m3u8
@@ -301,19 +301,19 @@ http://187.102.211.240:9001/play/a04q/index.m3u8
 http://187.102.211.240:9001/play/a047/index.m3u8
 
 #EXTINF:-1 tvg-name="96 HBO Pop 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",96 HBO Pop 1
-http://190.60.40.165:1010/play/a0n1
+http://190.60.40.165:1010/play/a0n1/index.m3u8
 
 #EXTINF:-1 tvg-name="97 HBO Xtreme 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png" group-title="Peliculas" audio-track="spa,eng",97 HBO Xtreme 1
-http://45.186.254.75:8000/play/a05d
+http://45.186.254.75:8000/play/a05d/index.m3u8
 
 #EXTINF:-1 tvg-name="98 HBO Family 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" audio-track="spa,eng",98 HBO Family 1
-http://190.60.40.165:1010/play/a0p7
+http://190.60.40.165:1010/play/a0p7/index.m3u8
 
 #EXTINF:-1 tvg-name="99 Cinecanal 1" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" audio-track="spa,eng",99 Cinecanal 1
 http://187.102.211.240:9001/play/a01r/index.m3u8
 
 #EXTINF:-1 tvg-name="100 SPACE 1" tvg-logo="https://docdog.top/logo/countries//argentina/space-ar.png" group-title="Peliculas" audio-track="spa,eng",100 SPACE 1
-http://38.226.49.253:8000/play/a064
+http://38.226.49.253:8000/play/a064/index.m3u8
 
 #EXTINF:-1 tvg-name="101 Cinemax 1" tvg-logo="https://docdog.top/logo/countries/argentina/cinemax.png" group-title="Peliculas" audio-track="spa,eng",101 Cinemax 1
 http://187.102.211.240:9001/play/a01b/index.m3u8
@@ -322,16 +322,16 @@ http://187.102.211.240:9001/play/a01b/index.m3u8
 http://187.102.211.240:9001/play/a05h/index.m3u8
 
 #EXTINF:-1 tvg-name="103 Warner 1" tvg-logo="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f5712d-1535-4d60-a967-e7d5e3c1902f/dhrbjhn-eb1b8a6f-8873-4fe0-bdee-eade1218a86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmY1NzEyZC0xNTM1LTRkNjAtYTk2Ny1lN2Q1ZTNjMTkwMmYvZGhyYmpobi1lYjFiOGE2Zi04ODczLTRmZTAtYmRlZS1lYWRlMTIxOGE4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iswXcWSD3c_tODdOVs4e2eV0hAIgB-EQllC7W2bqDc0" group-title="Peliculas" audio-track="spa,eng",103 Warner 1
-http://181.224.200.5:2277/play/a01g
+http://181.224.200.5:2277/play/a01g/index.m3u8
 
 #EXTINF:-1 tvg-name="104 Clover 1" group-title="Peliculas" audio-track="spa,eng",104 Clover 1
 http://190.211.172.154:8965/play/a05c/index.m3u8
 
 #EXTINF:-1 tvg-name="105 DHE 1" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" group-title="Peliculas" audio-track="spa,eng",105 DHE 1
-http://190.211.172.154:8965/play/a021
+http://190.211.172.154:8965/play/a021/index.m3u8
 
 #EXTINF:-1 tvg-name="106 Star Channel 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" audio-track="spa,eng",106 Star Channel 1
-http://190.211.172.154:8965/play/a02z
+http://190.211.172.154:8965/play/a02z/index.m3u8
 
 #EXTINF:-1 tvg-name="107 Studio Universal 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" group-title="Peliculas" audio-track="spa,eng",107 Studio Universal 1
 http://187.102.211.240:9001/play/a06o/index.m3u8
@@ -343,10 +343,10 @@ http://190.108.83.69:8000/play/a04i/index.m3u8
 http://187.102.211.240:9001/play/a01y/index.m3u8
 
 #EXTINF:-1 tvg-name="110 AMC Series 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDR02bhnjx7hyphenhyphen9sy4ErJx8PUT-WM5hP9axbkLjVFrxyJ1Qz9qxG0cIzbcBWazT6CxgQSrvMRKAOiNvlCY7kSEeG_tTpGNaBHTkHTzv6CdkOYRkCKrSgx3ULAHwijhlnl9vDK3FBpG6wJsvucp0-tif9g7_bbDYu4XQW3MN-Sxtg68OD5u1pWZVzng4xxg/s159/amc-series.png" group-title="Peliculas" audio-track="spa,eng",110 AMC Series 1
-http://38.226.49.253:8000/play/a03y
+http://38.226.49.253:8000/play/a03y/index.m3u8
 
 #EXTINF:-1 tvg-name="111 SONY 1" tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" audio-track="spa,eng",111 SONY 1
-http://190.60.40.165:1010/play/a0hw
+http://190.60.40.165:1010/play/a0hw/index.m3u8
 
 #EXTINF:-1 tvg-name="112 Sony Accion 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVnwxAJAHsn8hbw_ZXGvugo4e4xC7iRcdqw&s" group-title="Peliculas",112 Sony Accion 1
 https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
@@ -355,7 +355,7 @@ https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
 https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
 
 #EXTINF:-1 tvg-name="114 TCM 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" audio-track="spa,eng",114 TCM 1
-http://45.5.116.228:8000/play/a04z
+http://45.5.116.228:8000/play/a04z/index.m3u8
 
 #EXTINF:-1 tvg-name="115 EUROPA EUROPA 1" group-title="Peliculas" audio-track="spa,eng",115 EUROPA EUROPA 1
 http://190.211.172.154:8965/play/a07d/index.m3u8
@@ -364,40 +364,40 @@ http://190.211.172.154:8965/play/a07d/index.m3u8
 http://187.102.211.240:9001/play/a03o/index.m3u8
 
 #EXTINF:-1 tvg-name="117 Golden Edge 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png" group-title="Peliculas" audio-track="spa,eng",117 Golden Edge 1
-http://190.60.40.165:1010/play/a0e5
+http://190.60.40.165:1010/play/a0e5/index.m3u8
 
 #EXTINF:-1 tvg-name="118 Golden 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png" group-title="Peliculas" audio-track="spa,eng",118 Golden 1
-http://190.211.172.154:8965/play/a07g
+http://190.211.172.154:8965/play/a07g/index.m3u8
 
 #EXTINF:-1 tvg-name="119 Multipremier 1" tvg-logo="https://e7.pngegg.com/pngimages/860/591/png-clipart-multipremier-52mx-television-multicinema-mvs-comunicaciones-cine-miscellaneous-television.png" group-title="Peliculas" audio-track="spa,eng",119 Multipremier 1
-http://190.108.90.142:8000/play/a017
+http://190.108.90.142:8000/play/a017/index.m3u8
 
 #EXTINF:-1 tvg-name="120 Cine Familiar 1" group-title="Peliculas" audio-track="spa,eng",120 Cine Familiar 1
-http://181.78.8.199:8000/play/a09p
+http://181.78.8.199:8000/play/a09p/index.m3u8
 
 #EXTINF:-1 tvg-name="121 Cinema Global 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Global_TV_%28Argentina%29_logo.svg/320px-Global_TV_%28Argentina%29_logo.svg.png" group-title="Peliculas" audio-track="spa,eng",121 Cinema Global 1
-http://190.61.42.218:9000/play/a08e
+http://190.61.42.218:9000/play/a08e/index.m3u8
 
 #EXTINF:-1 tvg-name="122 Cine Premium 1" tvg-logo="https://i.ibb.co/zr8Cbvm/Tr1bp-Stg-400x400.jpg" group-title="Peliculas" audio-track="spa,eng",122 Cine Premium 1
-http://45.5.116.228:8000/play/a0kl
+http://45.5.116.228:8000/play/a0kl/index.m3u8
 
 #EXTINF:-1 tvg-name="123 Universal Premiere 1" group-title="Peliculas" audio-track="spa,eng",123 Universal Premiere 1
-http://186.33.1.71:8000/play/a0i1
+http://186.33.1.71:8000/play/a0i1/index.m3u8
 
 #EXTINF:-1 tvg-name="124 Universal Cinema 1" group-title="Peliculas" audio-track="spa,eng",124 Universal Cinema 1
-http://190.61.43.117:45000/play/a05x
+http://190.61.43.117:45000/play/a05x/index.m3u8
 
 #EXTINF:-1 tvg-name="125 Multicinema 1" tvg-logo="https://static.wikia.nocookie.net/logo-timeline/images/e/ef/Multicinema_MC_Logo_2022.png/revision/latest/scale-to-width-down/397?cb=20240614230549" group-title="Peliculas" audio-track="spa,eng",125 Multicinema 1
-http://45.5.118.152:8000/play/a03r
+http://45.5.118.152:8000/play/a03r/index.m3u8
 
 #EXTINF:-1 tvg-name="126 Global 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Global_TV_%28Argentina%29_logo.svg/320px-Global_TV_%28Argentina%29_logo.svg.png" group-title="Peliculas" audio-track="spa,eng",126 Global 1
-http://181.224.200.5:2277/play/a0co
+http://181.224.200.5:2277/play/a0co/index.m3u8
 
 #EXTINF:-1 tvg-name="127 A H Eurochannel 1" group-title="Peliculas" audio-track="spa,eng",127 A H Eurochannel 1
-http://45.5.118.152:8000/play/a03e
+http://45.5.118.152:8000/play/a03e/index.m3u8
 
 #EXTINF:-1 tvg-name="128 FMH Movies 1" tvg-logo="https://www.fmh.la/images/team/logo_movies.png" group-title="Peliculas" audio-track="spa,eng",128 FMH Movies 1
-http://45.186.254.75:8000/play/a07j
+http://45.186.254.75:8000/play/a07j/index.m3u8
 
 #EXTINF:-1 tvg-name="129 MAX2 1" tvg-logo="https://tinyurl.com/Max2fucsia" group-title="Peliculas",129 MAX2 1
 https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8
@@ -412,28 +412,28 @@ https://live20.bozztv.com/giatvplayout7/giatv-208744/tracks-v1a1/mono.m3u8
 https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8
 
 #EXTINF:-1 tvg-name="133 West 1" tvg-logo="https://www.shutterstock.com/shutterstock/photos/256794835/display_1500/stock-vector-western-logo-256794835.jpg" group-title="Peliculas" audio-track="spa,eng",133 West 1
-http://190.108.83.69:8000/play/a0c9
+http://190.108.83.69:8000/play/a0c9/index.m3u8
 
 
 # ===== Series =====
 
 #EXTINF:-1 tvg-name="134 A&E 1" tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" audio-track="spa,eng",134 A&E 1
-http://38.226.49.253:8000/play/a05u
+http://38.226.49.253:8000/play/a05u/index.m3u8
 
 #EXTINF:-1 tvg-name="135 Universal TV 1" tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" audio-track="spa,eng",135 Universal TV 1
-http://181.224.200.5:2277/play/a0ak
+http://181.224.200.5:2277/play/a0ak/index.m3u8
 
 #EXTINF:-1 tvg-name="136 Universal channel 1" tvg-logo="https://i.imgur.com/jnjvR5f.png" group-title="Series" audio-track="spa,eng",136 Universal channel 1
 http://187.102.211.240:9001/play/a05v/index.m3u8
 
 #EXTINF:-1 tvg-name="137 USA Network 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" group-title="Series" audio-track="spa,eng",137 USA Network 1
-http://190.211.172.154:8965/play/a02o
+http://190.211.172.154:8965/play/a02o/index.m3u8
 
 #EXTINF:-1 tvg-name="138 TNT Series 1" tvg-logo="https://docdog.top/logo/countries/latino/tntseries.png" group-title="Series" audio-track="spa,eng",138 TNT Series 1
 http://170.247.204.9:8000/play/a0aa/index.m3u8
 
 #EXTINF:-1 tvg-name="139 TNT Novelas 1" tvg-logo="https://docdog.top/logo/countries/latino/tnt.png" group-title="Series" audio-track="spa,eng",139 TNT Novelas 1
-http://190.61.42.218:9000/play/a07d
+http://190.61.42.218:9000/play/a07d/index.m3u8
 
 #EXTINF:-1 tvg-name="140 AXN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Series" audio-track="spa,eng",140 AXN 1
 http://187.102.211.240:9001/play/a01u/index.m3u8
