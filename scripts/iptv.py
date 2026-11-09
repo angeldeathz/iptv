@@ -103,6 +103,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     audio_cmd = commands.add_parser("audio", help="Classify Astra audio into assets/stream_audio.json")
     audio_cmd.add_argument("--refresh", action="store_true", help="Reclassify sources already in the catalog")
+    audio_cmd.add_argument(
+        "--verify", nargs="+", metavar="ID:spa|eng|dual",
+        help="What the TV actually plays; kept across --refresh",
+    )
     audio_cmd.set_defaults(handler=run_audio)
     return parser
 
@@ -232,6 +236,8 @@ def run_logo(args: argparse.Namespace) -> dict:
 
 
 def run_audio(args: argparse.Namespace) -> dict:
+    if args.verify:
+        return verify_audio(args.verify)
     playlist = Playlist.load()
     entries = [(channel.entry.name, channel.entry.url) for channel in playlist.channels()]
     catalog = audio.classify_lineup(entries, refresh=args.refresh)
@@ -264,6 +270,29 @@ def run_audio(args: argparse.Namespace) -> dict:
         "unlabeled": pick(lambda item: item.get("audio") in ("unknown", "other")),
         "failed": pick(lambda item: item.get("delivery") == "down"),
     }
+
+
+def verify_audio(specs: list[str]) -> dict:
+    playlist = Playlist.load()
+    catalog = audio.load_audio()
+    updated = []
+    for raw in specs:
+        id_part, separator, kind = raw.partition(":")
+        kind = kind.strip().lower()
+        if not separator or not id_part.strip().isdigit() or kind not in ("spa", "eng", "dual"):
+            raise PlaylistError(f"invalid --verify '{raw}', use ID:spa, ID:eng or ID:dual")
+        channel = playlist.channel(int(id_part))
+        if not streams.is_astra_play_url(channel.entry.url):
+            raise PlaylistError(f"ID {channel.channel_id} ({channel.label}) is not an Astra source")
+        key = streams.astra_mpegts_url(channel.entry.url)
+        record = catalog.get(key)
+        if record is None:
+            raise PlaylistError(f"ID {channel.channel_id} is not in the audio catalog; run: python3 scripts/iptv.py audio")
+        audio.apply_verified(record, kind)
+        record["channel"] = channel.entry.name
+        updated.append({"id": channel.channel_id, "channel": channel.label, "audio": kind, "form": record["form"]})
+    audio.save_audio(catalog)
+    return {"verified": updated}
 
 
 def run_search(args: argparse.Namespace) -> dict:

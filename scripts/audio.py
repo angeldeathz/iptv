@@ -63,7 +63,8 @@ def preferred_astra_url(url: str) -> str:
 
 def classify_lineup(entries: list[tuple[str, str]], refresh: bool = False) -> dict:
     """Classify (channel name, url) pairs. Returns the catalog and does not rewrite playlists."""
-    catalog = {} if refresh else load_audio()
+    previous = load_audio()
+    catalog = {} if refresh else previous
     pending = []
     for name, url in entries:
         if not streams.is_astra_play_url(url):
@@ -81,6 +82,9 @@ def classify_lineup(entries: list[tuple[str, str]], refresh: bool = False) -> di
             key, name = futures[future]
             record = future.result()
             record["channel"] = name
+            verified = previous.get(key, {}).get("verified")
+            if verified:
+                apply_verified(record, verified)
             found[key] = record
 
     catalog.update(found)
@@ -107,6 +111,17 @@ def classify_source(url: str) -> dict:
         "fix": fix,
         "checked": date.today().isoformat(),
     }
+
+
+def apply_verified(record: dict, kind: str) -> dict:
+    """The TV language wins over the language tag inside the stream. A refresh keeps it."""
+    record["verified"] = kind
+    record["audio"] = kind
+    hls_ok = record.get("delivery") == "hls-only" or record.get("form") == "hls"
+    form, fix = decide_form(kind, record.get("delivery") or "down", hls_ok)
+    record["form"] = form
+    record["fix"] = fix
+    return record
 
 
 def audio_kind(languages: list[str]) -> str:

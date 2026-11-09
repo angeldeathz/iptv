@@ -191,7 +191,7 @@
     "channel": "ATRES Series"
   },
   "http://181.78.8.199:8000/play/a09p": {
-    "audio": "eng",
+    "audio": "spa",
     "languages": [
       "eng"
     ],
@@ -199,7 +199,8 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09",
-    "channel": "Cine Familiar"
+    "channel": "Cine Familiar",
+    "verified": "spa"
   },
   "http://181.78.8.199:8000/play/a0ag": {
     "audio": "spa",
@@ -368,7 +369,7 @@
     "channel": "ESPN 4"
   },
   "http://187.102.211.240:9001/play/a01y": {
-    "audio": "eng",
+    "audio": "spa",
     "languages": [
       "eng"
     ],
@@ -376,7 +377,8 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09",
-    "channel": "AMC"
+    "channel": "AMC",
+    "verified": "spa"
   },
   "http://187.102.211.240:9001/play/a01z": {
     "audio": "spa",
@@ -412,7 +414,7 @@
     "channel": "Cartoonito"
   },
   "http://187.102.211.240:9001/play/a03e": {
-    "audio": "eng",
+    "audio": "spa",
     "languages": [
       "eng"
     ],
@@ -420,7 +422,8 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09",
-    "channel": "Nick Jr"
+    "channel": "Nick Jr",
+    "verified": "spa"
   },
   "http://187.102.211.240:9001/play/a03g": {
     "audio": "spa",
@@ -843,7 +846,7 @@
     "channel": "Mega 2"
   },
   "http://190.211.172.154:8965/play/a07d": {
-    "audio": "eng",
+    "audio": "spa",
     "languages": [
       "eng"
     ],
@@ -851,7 +854,8 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09",
-    "channel": "EUROPA EUROPA"
+    "channel": "EUROPA EUROPA",
+    "verified": "spa"
   },
   "http://190.211.172.154:8965/play/a07g": {
     "audio": "spa",
@@ -1422,7 +1426,7 @@
     "channel": "TCM"
   },
   "http://45.5.116.228:8000/play/a0kl": {
-    "audio": "eng",
+    "audio": "spa",
     "languages": [
       "eng"
     ],
@@ -1430,7 +1434,8 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09",
-    "channel": "Cine Premium"
+    "channel": "Cine Premium",
+    "verified": "spa"
   },
   "http://45.5.118.152:8000/play/a03e": {
     "audio": "spa",

@@ -54,6 +54,7 @@ Sections (use the key): `nacionales`, `regionales`, `noticias`, `infantiles`, `p
 | Set a specific logo | `logo 197 --url "https://..."` |
 | Rebuild / verify official | `build` · `build --check` |
 | Refresh the audio catalog | `audio` · `audio --refresh` |
+| Correct what the TV actually plays | `audio --verify 74:spa 108:spa` |
 
 ### Disambiguation
 
@@ -109,6 +110,7 @@ When the user names one or more channels and wants them on the test playlist (*b
 - `audio: dual` and `delivery: mpegts` — `form: mpegts` (no `.m3u8`). HLS of the same source starts in English on the TV; the bare URL keeps Spanish first and the language menu. Never append `.m3u8` to these.
 - `delivery: hls-only` — the bare URL 404s. `form: hls`. Never strip `.m3u8`. If that record is also `dual` (`fix: replace-source`), the TV will play English: replace the source, do not edit the suffix.
 - `audio: other` or `unknown` — leave the MPEG-TS URL alone. Do not guess a suffix change.
+- `verified` is what the user heard on the TV. It wins over `languages` (the tag inside the stream is often wrong). Set it with `audio --verify ID:spa`. A refresh keeps it. Do not call a `verified: spa` source English.
 
 ## Logos
 
