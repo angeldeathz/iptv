@@ -93,19 +93,13 @@ def serves_hls(url: str) -> bool:
 
 
 def resolve_stream_url(url: str) -> str:
-    """Astra URLs with /index.m3u8 stay on HLS; bare /play/<id> prefers MPEG-TS (often Spanish-only LATAM)."""
+    """Pick MPEG-TS or HLS from assets/stream_audio.json so dual-audio stays bare and HLS-only stays .m3u8."""
     stripped = url.strip()
     if not is_astra_play_url(stripped):
         return stripped
-    mpegts = astra_mpegts_url(stripped)
-    hls = astra_hls_url(stripped)
-    if "/index.m3u8" in stripped.lower():
-        return hls
-    if serves_mpegts(mpegts):
-        return mpegts
-    if serves_hls(hls):
-        return hls
-    return mpegts
+    import audio
+
+    return audio.preferred_astra_url(stripped)
 
 
 def search_sources(matches_query, hosts: tuple[str, ...] = SOURCE_PLAYLISTS) -> dict:

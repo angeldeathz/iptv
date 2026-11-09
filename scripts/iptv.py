@@ -12,6 +12,7 @@ import re
 import sys
 from dataclasses import dataclass
 
+import audio
 import logos
 import streams
 from playlist import (
@@ -99,6 +100,10 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("--regex", action="store_true")
     search.add_argument("--source", action="append", default=[], metavar="HOST")
     search.set_defaults(handler=run_search)
+
+    audio_cmd = commands.add_parser("audio", help="Classify Astra audio into assets/stream_audio.json")
+    audio_cmd.add_argument("--refresh", action="store_true", help="Reclassify sources already in the catalog")
+    audio_cmd.set_defaults(handler=run_audio)
     return parser
 
 
@@ -226,12 +231,51 @@ def run_logo(args: argparse.Namespace) -> dict:
     return {"results": results, "dry_run": args.dry_run, "build": build}
 
 
+def run_audio(args: argparse.Namespace) -> dict:
+    playlist = Playlist.load()
+    entries = [(channel.entry.name, channel.entry.url) for channel in playlist.channels()]
+    catalog = audio.classify_lineup(entries, refresh=args.refresh)
+    listed = []
+    for channel in playlist.channels():
+        if not streams.is_astra_play_url(channel.entry.url):
+            continue
+        record = catalog.get(streams.astra_mpegts_url(channel.entry.url), {})
+        listed.append({"id": channel.channel_id, "channel": channel.label, **record})
+
+    def pick(predicate):
+        return [
+            {"id": item["id"], "channel": item["channel"], "languages": item.get("languages", []),
+             "delivery": item.get("delivery"), "form": item.get("form"), "fix": item.get("fix")}
+            for item in listed
+            if predicate(item)
+        ]
+
+    counts: dict[str, int] = {}
+    for item in listed:
+        kind = item.get("audio") or "unknown"
+        counts[kind] = counts.get(kind, 0) + 1
+    return {
+        "catalog": len(catalog),
+        "astra_in_lineup": len(listed),
+        "by_audio": counts,
+        "dual": pick(lambda item: item.get("audio") == "dual"),
+        "english": pick(lambda item: item.get("audio") == "eng"),
+        "hls_only": pick(lambda item: item.get("delivery") == "hls-only"),
+        "unlabeled": pick(lambda item: item.get("audio") in ("unknown", "other")),
+        "failed": pick(lambda item: item.get("delivery") == "down"),
+    }
+
+
 def run_search(args: argparse.Namespace) -> dict:
     hosts = select_hosts(args.source)
     official_by_url = {streams.canonical_url(c.entry.url): c.label for c in Playlist.load().channels()}
     result = streams.search_sources(build_matcher(args.query, args.regex), hosts)
     for match in result["matches"]:
+        known = audio.load_audio().get(streams.canonical_url(match["url"]))
         match["in_official"] = official_by_url.get(streams.canonical_url(match["url"]))
+        if known:
+            match["audio"] = known.get("audio")
+            match["form"] = known.get("form")
     return {"query": args.query, "total_matches": len(result["matches"]), **result}
 
 

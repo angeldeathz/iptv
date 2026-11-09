@@ -17,6 +17,7 @@ description: >-
 
 - `datasource/<section>.m3u`: the channels. One file per section; **file order is the lineup order**.
 - `assets/logos.json`: `{"<exact channel name>": "<logo URL>"}`. Every variant of a channel shares its logo.
+- `assets/stream_audio.json`: one record per Astra source (bare `http://host/play/<id>`). `audio` is `spa`, `eng`, `dual` or `other`. `form` is the URL shape `add`/`set-url` must store.
 - `official.m3u`: **generated** by the build. Never edited.
 - Global ID = position across all sections in order. Labels are `<id> <name> <rep>` (e.g. `88 Star Channel 1`); `rep` numbers the variants of one channel.
 - Everything goes through `python3 scripts/iptv.py <command>` from the repo root. Output is JSON; errors go to stderr with exit code 1. Every command that changes channels or logos rebuilds `official.m3u` itself.
@@ -26,7 +27,7 @@ Sections (use the key): `nacionales`, `regionales`, `noticias`, `infantiles`, `p
 
 ## Golden rules
 
-1. Never edit `official.m3u`, `datasource/` or `assets/logos.json` by hand or with edit tools. Only `iptv.py` writes them.
+1. Never edit `official.m3u`, `datasource/`, `assets/logos.json` or `assets/stream_audio.json` by hand or with edit tools. Only `iptv.py` writes them.
 2. Never touch `pluto_tv.m3u`. `backup.m3u` is only written by `edit --backup`. Edit `pruebas.m3u` **only** when the user asks to search channels and put them on the test list (see workflow below); do **not** copy entries from `official.m3u` for that request.
 3. ID-based operations need explicit global IDs from the user (`88`, `88, 91`, `88-92` = 88 to 92). If they are missing, ask and stop. Never choose IDs by name; `list --filter` is only to show candidates for the user to confirm.
 4. IDs shift after `edit` and `add`. Put all removes, backups and moves of one request in **one** `edit` call. Run `set-url` and `logo` (they do not shift IDs) before `edit`/`add`; if something must run after them, `list` again for fresh IDs.
@@ -52,6 +53,7 @@ Sections (use the key): `nacionales`, `regionales`, `noticias`, `infantiles`, `p
 | Fix broken logos | `logo 197 198` |
 | Set a specific logo | `logo 197 --url "https://..."` |
 | Rebuild / verify official | `build` · `build --check` |
+| Refresh the audio catalog | `audio` · `audio --refresh` |
 
 ### Disambiguation
 
@@ -83,7 +85,7 @@ When the user names one or more channels and wants them on the test playlist (*b
    4. One URL per host (keep its best quality).
    5. Tie-break: the match has a `logo`.
 4. Keep the top **6** new URLs (or the number the user asks; "todas" = all). Never replace existing variants unless asked.
-5. `add` once with every chosen `--url`, best first. New channel: add `--section`, and `--logo` with the best match `logo` if any. Astra URLs are probed automatically (MPEG-TS `/play/<id>` when served, HLS `/index.m3u8` as fallback) and get `audio-track="spa,eng"` in the build.
+5. `add` once with every chosen `--url`, best first. New channel: add `--section`, and `--logo` with the best match `logo` if any. Astra URLs are classified on the way in (`assets/stream_audio.json`) and stored in the form from [Audio and the .m3u8 suffix](#audio-and-the-m3u8-suffix). The build still adds `audio-track="spa,eng"` on every Astra URL.
 6. Report the added IDs; the user tests them on TV and later asks to remove or back up the failures.
 
 ## Naming rules
@@ -97,6 +99,16 @@ When the user names one or more channels and wants them on the test playlist (*b
 - Latin American and Spanish-speaking channels first; Brazil and non-priority markets at the end of their section.
 - Within a channel, variant `1` is the best source; put better sources first.
 - File order is the lineup the user maintains: never reorder unless asked, never sort alphabetically.
+
+## Audio and the .m3u8 suffix
+
+`assets/stream_audio.json` is keyed by the bare Astra URL. Read it before changing a URL's extension. `python3 scripts/iptv.py audio` fills missing sources; `audio --refresh` reclassifies the lineup. `add` and `set-url` follow `form` and record a source the first time they see it.
+
+- `audio: spa` — Spanish only. `form: hls` (`…/index.m3u8`) when the server has HLS: it loads faster and the language does not change.
+- `audio: eng` — English only, in both URL forms. Stripping `.m3u8` does not make it Spanish. Say so and look for another source whose `audio` is `spa`.
+- `audio: dual` and `delivery: mpegts` — `form: mpegts` (no `.m3u8`). HLS of the same source starts in English on the TV; the bare URL keeps Spanish first and the language menu. Never append `.m3u8` to these.
+- `delivery: hls-only` — the bare URL 404s. `form: hls`. Never strip `.m3u8`. If that record is also `dual` (`fix: replace-source`), the TV will play English: replace the source, do not edit the suffix.
+- `audio: other` or `unknown` — leave the MPEG-TS URL alone. Do not guess a suffix change.
 
 ## Logos
 

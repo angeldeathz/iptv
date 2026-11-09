@@ -1,0 +1,1467 @@
+{
+  "http://170.247.204.9:8000/play/a01o": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "Discovery Channel"
+  },
+  "http://170.247.204.9:8000/play/a01p": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "History"
+  },
+  "http://170.247.204.9:8000/play/a04b": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "Discovery Theater"
+  },
+  "http://170.247.204.9:8000/play/a0aa": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "TNT Series"
+  },
+  "http://170.247.204.9:8000/play/a0ac": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 6"
+  },
+  "http://170.247.204.9:8000/play/a0cc": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 5"
+  },
+  "http://170.247.204.9:8000/play/a0g7": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TNT Sports"
+  },
+  "http://181.224.200.5:2277/play/a00m": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "ID"
+  },
+  "http://181.224.200.5:2277/play/a00o": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Discovery Kids"
+  },
+  "http://181.224.200.5:2277/play/a00p": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Home and Health"
+  },
+  "http://181.224.200.5:2277/play/a00r": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Animal Planet"
+  },
+  "http://181.224.200.5:2277/play/a01g": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Warner"
+  },
+  "http://181.224.200.5:2277/play/a01j": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Studio Universal"
+  },
+  "http://181.224.200.5:2277/play/a036": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Love Nature"
+  },
+  "http://181.224.200.5:2277/play/a0ak": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Universal TV"
+  },
+  "http://181.224.200.5:2277/play/a0co": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Global"
+  },
+  "http://181.224.255.210:8001/play/a0rm": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "ATRES Series"
+  },
+  "http://181.78.8.199:8000/play/a09p": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cine Familiar"
+  },
+  "http://181.78.8.199:8000/play/a0ag": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "History 2"
+  },
+  "http://181.78.8.199:8000/play/a0g7": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Telehit Musica"
+  },
+  "http://186.33.1.71:8000/play/a0i1": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Universal Premiere"
+  },
+  "http://187.102.211.240:9001/play/a00j": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "CNN Internacional"
+  },
+  "http://187.102.211.240:9001/play/a00n": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Baby Tv"
+  },
+  "http://187.102.211.240:9001/play/a00s": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "down",
+    "form": "mpegts",
+    "fix": "unknown",
+    "checked": "2026-11-09",
+    "channel": "Discovery Home and Health"
+  },
+  "http://187.102.211.240:9001/play/a01a": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Discovery Turbo"
+  },
+  "http://187.102.211.240:9001/play/a01b": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cinemax"
+  },
+  "http://187.102.211.240:9001/play/a01g": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "El Gourmet"
+  },
+  "http://187.102.211.240:9001/play/a01h": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 6"
+  },
+  "http://187.102.211.240:9001/play/a01n": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "Comedy central"
+  },
+  "http://187.102.211.240:9001/play/a01p": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "National Geographic"
+  },
+  "http://187.102.211.240:9001/play/a01r": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cinecanal"
+  },
+  "http://187.102.211.240:9001/play/a01u": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "AXN"
+  },
+  "http://187.102.211.240:9001/play/a01x": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 4"
+  },
+  "http://187.102.211.240:9001/play/a01y": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "AMC"
+  },
+  "http://187.102.211.240:9001/play/a01z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "HBO"
+  },
+  "http://187.102.211.240:9001/play/a02c": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Hola Tv"
+  },
+  "http://187.102.211.240:9001/play/a03d": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cartoonito"
+  },
+  "http://187.102.211.240:9001/play/a03e": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Nick Jr"
+  },
+  "http://187.102.211.240:9001/play/a03g": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TLC"
+  },
+  "http://187.102.211.240:9001/play/a03j": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Telemundo"
+  },
+  "http://187.102.211.240:9001/play/a03m": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "CGTN"
+  },
+  "http://187.102.211.240:9001/play/a03o": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Film and Arts"
+  },
+  "http://187.102.211.240:9001/play/a03q": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TLNovelas"
+  },
+  "http://187.102.211.240:9001/play/a03t": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "HTV"
+  },
+  "http://187.102.211.240:9001/play/a03z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Via X Esports"
+  },
+  "http://187.102.211.240:9001/play/a040": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Lifetime"
+  },
+  "http://187.102.211.240:9001/play/a047": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "HBO+"
+  },
+  "http://187.102.211.240:9001/play/a04k": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "BBC News"
+  },
+  "http://187.102.211.240:9001/play/a04q": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "HBO Signature"
+  },
+  "http://187.102.211.240:9001/play/a04r": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "HBO Mundi"
+  },
+  "http://187.102.211.240:9001/play/a04t": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "France 24"
+  },
+  "http://187.102.211.240:9001/play/a04u": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ETC TV"
+  },
+  "http://187.102.211.240:9001/play/a04y": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TVE"
+  },
+  "http://187.102.211.240:9001/play/a05h": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TNT"
+  },
+  "http://187.102.211.240:9001/play/a05u": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Canal 13"
+  },
+  "http://187.102.211.240:9001/play/a05v": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "replace-source",
+    "checked": "2026-11-09",
+    "channel": "Universal channel"
+  },
+  "http://187.102.211.240:9001/play/a05y": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Discovery world"
+  },
+  "http://187.102.211.240:9001/play/a06y": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Hei"
+  },
+  "http://190.108.83.69:8000/play/a04i": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "FX"
+  },
+  "http://190.108.83.69:8000/play/a0c9": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "West"
+  },
+  "http://190.108.90.142:8000/play/a017": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Multipremier"
+  },
+  "http://190.14.10.19:16000/play/a041": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "HBO 2"
+  },
+  "http://190.211.172.154:8965/play/Click": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "ClickTV"
+  },
+  "http://190.211.172.154:8965/play/DOSKIDS": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "DOS KIDS"
+  },
+  "http://190.211.172.154:8965/play/Nickelodeon": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Nickelodeon"
+  },
+  "http://190.211.172.154:8965/play/a01x": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Love ThePlanet"
+  },
+  "http://190.211.172.154:8965/play/a021": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "DHE"
+  },
+  "http://190.211.172.154:8965/play/a028": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Disney Jr."
+  },
+  "http://190.211.172.154:8965/play/a02o": {
+    "audio": "dual",
+    "languages": [
+      "?",
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "USA Network"
+  },
+  "http://190.211.172.154:8965/play/a02p": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Tooncast"
+  },
+  "http://190.211.172.154:8965/play/a02z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Star Channel"
+  },
+  "http://190.211.172.154:8965/play/a040": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TNT Sports Premium"
+  },
+  "http://190.211.172.154:8965/play/a046": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Disney Channel"
+  },
+  "http://190.211.172.154:8965/play/a05c": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Clover"
+  },
+  "http://190.211.172.154:8965/play/a078": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cartoon Network"
+  },
+  "http://190.211.172.154:8965/play/a07a": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Mega 2"
+  },
+  "http://190.211.172.154:8965/play/a07d": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "EUROPA EUROPA"
+  },
+  "http://190.211.172.154:8965/play/a07g": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Golden"
+  },
+  "http://190.60.40.165:1010/play/0kpe": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "ESPN"
+  },
+  "http://190.60.40.165:1010/play/4gph": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 3"
+  },
+  "http://190.60.40.165:1010/play/569m": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 7"
+  },
+  "http://190.60.40.165:1010/play/a0e5": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Golden Edge"
+  },
+  "http://190.60.40.165:1010/play/a0hw": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "SONY"
+  },
+  "http://190.60.40.165:1010/play/a0ja": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 6"
+  },
+  "http://190.60.40.165:1010/play/a0jg": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 5"
+  },
+  "http://190.60.40.165:1010/play/a0jm": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 3"
+  },
+  "http://190.60.40.165:1010/play/a0jn": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "MTV"
+  },
+  "http://190.60.40.165:1010/play/a0jx": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN"
+  },
+  "http://190.60.40.165:1010/play/a0lr": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 7"
+  },
+  "http://190.60.40.165:1010/play/a0mo": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 2"
+  },
+  "http://190.60.40.165:1010/play/a0mp": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 4"
+  },
+  "http://190.60.40.165:1010/play/a0n1": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng",
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "HBO Pop"
+  },
+  "http://190.60.40.165:1010/play/a0nt": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "ESPN"
+  },
+  "http://190.60.40.165:1010/play/a0ou": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Stingray Concerts"
+  },
+  "http://190.60.40.165:1010/play/a0p7": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "HBO Family"
+  },
+  "http://190.60.40.165:1010/play/db56": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 2"
+  },
+  "http://190.60.40.165:1010/play/uemr": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 4"
+  },
+  "http://190.60.40.165:1010/play/ueu4": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN 5"
+  },
+  "http://190.61.42.218:9000/play/a00h": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Discovery Science"
+  },
+  "http://190.61.42.218:9000/play/a00t": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "CNN en Español"
+  },
+  "http://190.61.42.218:9000/play/a05p": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "HGTV Discovery"
+  },
+  "http://190.61.42.218:9000/play/a06r": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Adult Swim"
+  },
+  "http://190.61.42.218:9000/play/a07d": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TNT Novelas"
+  },
+  "http://190.61.42.218:9000/play/a08e": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Cinema Global"
+  },
+  "http://190.61.42.218:9000/play/a09t": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Las Estrellas"
+  },
+  "http://190.61.43.117:45000/play/a05x": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng",
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Universal Cinema"
+  },
+  "http://190.61.43.117:45000/play/a07x": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "HBO 2"
+  },
+  "http://190.61.43.117:45000/play/a08e": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Food Network"
+  },
+  "http://205.235.6.29:8000/play/a0z5": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Distrito Comedia"
+  },
+  "http://209.14.98.47:8000/play/a0x5": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TNT Sports Premium"
+  },
+  "http://38.226.49.253:8000/play/a03y": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "AMC Series"
+  },
+  "http://38.226.49.253:8000/play/a04j": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09"
+  },
+  "http://38.226.49.253:8000/play/a04s": {
+    "audio": "other",
+    "languages": [
+      "qad"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "RAI"
+  },
+  "http://38.226.49.253:8000/play/a04y": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "CNN Chile"
+  },
+  "http://38.226.49.253:8000/play/a05u": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "A&E"
+  },
+  "http://38.226.49.253:8000/play/a064": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "SPACE"
+  },
+  "http://38.226.49.253:8000/play/a06c": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TVN"
+  },
+  "http://38.226.49.253:8000/play/a07t": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "ESPN Premium"
+  },
+  "http://45.186.254.75:8000/play/a04v": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "CHV"
+  },
+  "http://45.186.254.75:8000/play/a05d": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "HBO Xtreme"
+  },
+  "http://45.186.254.75:8000/play/a07j": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "FMH Movies"
+  },
+  "http://45.186.254.75:8000/play/a08n": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "TyC Sports"
+  },
+  "http://45.186.254.75:8000/play/a0en": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "down",
+    "form": "mpegts",
+    "fix": "unknown",
+    "checked": "2026-11-09",
+    "channel": "DirecTV Sports"
+  },
+  "http://45.186.254.75:8000/play/a0ha": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "13 REC"
+  },
+  "http://45.232.210.1:18000/play/a07e": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "La Red"
+  },
+  "http://45.232.210.1:18000/play/a092": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Via X"
+  },
+  "http://45.232.210.1:18000/play/a09h": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Zona Latina"
+  },
+  "http://45.5.116.228:8000/play/a04z": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "TCM"
+  },
+  "http://45.5.116.228:8000/play/a0kl": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "Cine Premium"
+  },
+  "http://45.5.118.152:8000/play/a03e": {
+    "audio": "spa",
+    "languages": [
+      "spa",
+      "por"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-09",
+    "channel": "A H Eurochannel"
+  },
+  "http://45.5.118.152:8000/play/a03r": {
+    "audio": "other",
+    "languages": [
+      "und"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-09",
+    "channel": "Multicinema"
+  },
+  "http://72.1.184.5:8089/play/a05d": {
+    "audio": "unknown",
+    "languages": [],
+    "delivery": "down",
+    "form": "mpegts",
+    "fix": "unknown",
+    "checked": "2026-11-09",
+    "channel": "E!"
+  }
+}
