@@ -21,9 +21,6 @@ https://v2.tustreaming.cl/libratv/index.m3u8?PlaylistM3UCL
 #EXTINF:-1,Oli TV
 https://v4.tustreaming.cl/retroplaytv/index.m3u8?PlaylistM3UCL
 
-#EXTINF:-1,Exprezion TV
-https://lbgo.bozztv.com/ssh101/ssh101/exprezion2026/playlist.m3u8?PlaylistM3UCL
-
 #EXTINF:-1,TVU
 https://unlimited1-cl-isp.dps.live/tvu/tvu.smil/playlist.m3u8?PlaylistM3UCL
 
@@ -32,12 +29,6 @@ https://stmv7.voxtvhd.com.br/catto5860/catto5860/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,Chile Channel
 https://v2.tustreaming.cl/chilechannel/index.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,Campo Abierto TV
-https://v2.tustreaming.cl:443/catvlive/index.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,Holvoet TV
-https://unlimited1-cl-isp.dps.live/holvoettv/holvoettv.smil/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,Enfoque Digital TV
 https://5eaccbab48461.streamlock.net:1936/8074/8074/playlist.m3u8?PlaylistM3UCL
