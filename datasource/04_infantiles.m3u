@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1,DOS KIDS
-http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
+http://190.211.172.154:8965/play/DOSKIDS
 
 #EXTINF:-1,ETC TV
 http://187.102.211.240:9001/play/a04u/index.m3u8
@@ -10,16 +10,16 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
 #EXTINF:-1,Cartoon Network
-http://190.211.172.154:8965/play/a078/index.m3u8
+http://190.211.172.154:8965/play/a078
 
 #EXTINF:-1,Disney Channel
-http://190.211.172.154:8965/play/a046/index.m3u8
+http://190.211.172.154:8965/play/a046
 
 #EXTINF:-1,Disney Jr.
-http://190.211.172.154:8965/play/a028/index.m3u8
+http://190.211.172.154:8965/play/a028
 
 #EXTINF:-1,Nickelodeon
-http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
+http://190.211.172.154:8965/play/Nickelodeon
 
 #EXTINF:-1,Discovery Kids
 http://181.224.200.5:2277/play/a00o
@@ -31,7 +31,7 @@ http://187.102.211.240:9001/play/a03d/index.m3u8
 https://jmp2.uk/stvp-ESBD5100001G0
 
 #EXTINF:-1,Adult Swim
-http://190.61.42.218:9000/play/a06r/index.m3u8
+http://190.61.42.218:9000/play/a06r
 
 #EXTINF:-1,Bob Esponja
 https://jmp2.uk/plu-6254598f5083f800076d8563.m3u8
@@ -71,3 +71,21 @@ http://23.153.217.158:8080/998411519tv/pa9qnqi/281253
 
 #EXTINF:-1,Dodo TV
 https://cloud5.streaminglivehd.com:3651/hybrid/play.m3u8?PlaylistM3UCL
+
+#EXTINF:-1,Yu-Gi-Oh
+https://jmp2.uk/plu-5fceaab478f2af00080ff51f.m3u8
+
+#EXTINF:-1,One Piece
+https://jmp2.uk/plu-5ff4b9ccf938f8000779eb99.m3u8
+
+#EXTINF:-1,Hunter x Hunter
+https://jmp2.uk/plu-65d916a2f7f0af0008b6540d.m3u8
+
+#EXTINF:-1,Inuyasha
+https://jmp2.uk/plu-66b26665d512590008c507b7.m3u8
+
+#EXTINF:-1,JoJo Bizarre Adventure
+https://jmp2.uk/plu-66c790f780a0af0008583aa4.m3u8
+
+#EXTINF:-1,Pokemon
+https://jmp2.uk/plu-6870072ca9d5c45c3e9466f1.m3u8
