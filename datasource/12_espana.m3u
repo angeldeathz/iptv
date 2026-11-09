@@ -1,0 +1,7 @@
+#EXTM3U
+
+#EXTINF:-1,TVE
+http://187.102.211.240:9001/play/a04y/index.m3u8
+
+#EXTINF:-1,ATRES Series
+http://181.224.255.210:8001/play/a0rm

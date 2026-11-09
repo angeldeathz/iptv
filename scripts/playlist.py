@@ -49,9 +49,13 @@ SECTIONS = (
     Section(8, "musica", "Musica"),
     Section(9, "documentales", "Documentales"),
     Section(10, "variedades", "Variedades"),
-    Section(11, "internacionales", "Internacionales"),
-    Section(12, "corea", "Corea"),
-    Section(13, "experimentales", "24/7 - Experimentales"),
+    Section(11, "mexico", "Mexico"),
+    Section(12, "espana", "Espana"),
+    Section(13, "italia", "Italia"),
+    Section(14, "turquia", "Turquia"),
+    Section(15, "estados_unidos", "Estados Unidos"),
+    Section(16, "corea", "Corea"),
+    Section(17, "experimentales", "24/7 - Experimentales"),
 )
 
 
