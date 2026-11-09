@@ -16,10 +16,10 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.
 http://187.102.211.240:9001/play/a01z/index.m3u8
 
 #EXTINF:-1,HBO 2
-http://190.14.10.19:16000/play/a041/index.m3u8
+http://190.14.10.19:16000/play/a041
 
 #EXTINF:-1,HBO 2
-http://190.61.43.117:45000/play/a07x/index.m3u8
+http://190.61.43.117:45000/play/a07x
 
 #EXTINF:-1,HBO Mundi
 http://187.102.211.240:9001/play/a04r/index.m3u8
@@ -31,13 +31,13 @@ http://187.102.211.240:9001/play/a04q/index.m3u8
 http://187.102.211.240:9001/play/a047/index.m3u8
 
 #EXTINF:-1,HBO Pop
-http://190.60.40.165:1010/play/a0n1/index.m3u8
+http://190.60.40.165:1010/play/a0n1
 
 #EXTINF:-1,HBO Xtreme
 http://45.186.254.75:8000/play/a05d/index.m3u8
 
 #EXTINF:-1,HBO Family
-http://190.60.40.165:1010/play/a0p7/index.m3u8
+http://190.60.40.165:1010/play/a0p7
 
 #EXTINF:-1,Cinecanal
 http://187.102.211.240:9001/play/a01r/index.m3u8
@@ -58,7 +58,7 @@ http://181.224.200.5:2277/play/a01g/index.m3u8
 http://190.211.172.154:8965/play/a05c/index.m3u8
 
 #EXTINF:-1,DHE
-http://190.211.172.154:8965/play/a021/index.m3u8
+http://190.211.172.154:8965/play/a021
 
 #EXTINF:-1,Star Channel
 http://190.211.172.154:8965/play/a02z/index.m3u8
@@ -76,7 +76,7 @@ http://187.102.211.240:9001/play/a01y/index.m3u8
 http://38.226.49.253:8000/play/a03y/index.m3u8
 
 #EXTINF:-1,SONY
-http://190.60.40.165:1010/play/a0hw/index.m3u8
+http://190.60.40.165:1010/play/a0hw
 
 #EXTINF:-1,Sony Accion
 https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
@@ -85,7 +85,7 @@ https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
 https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
 
 #EXTINF:-1,TCM
-http://45.5.116.228:8000/play/a04z/index.m3u8
+http://45.5.116.228:8000/play/a04z
 
 #EXTINF:-1,EUROPA EUROPA
 http://190.211.172.154:8965/play/a07d/index.m3u8
@@ -115,7 +115,7 @@ http://45.5.116.228:8000/play/a0kl/index.m3u8
 http://186.33.1.71:8000/play/a0i1/index.m3u8
 
 #EXTINF:-1,Universal Cinema
-http://190.61.43.117:45000/play/a05x/index.m3u8
+http://190.61.43.117:45000/play/a05x
 
 #EXTINF:-1,Multicinema
 http://45.5.118.152:8000/play/a03r/index.m3u8

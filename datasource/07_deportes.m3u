@@ -13,10 +13,10 @@ http://190.211.172.154:8965/play/a040/index.m3u8
 http://38.226.49.253:8000/play/a07t/index.m3u8
 
 #EXTINF:-1,ESPN
-http://190.60.40.165:1010/play/0kpe/index.m3u8
+http://190.60.40.165:1010/play/0kpe
 
 #EXTINF:-1,ESPN
-http://190.60.40.165:1010/play/a0nt/index.m3u8
+http://190.60.40.165:1010/play/a0nt
 
 #EXTINF:-1,ESPN
 http://190.60.40.165:1010/play/a0jx/index.m3u8
