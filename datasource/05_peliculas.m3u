@@ -54,20 +54,14 @@ http://187.102.211.240:9001/play/a05h/index.m3u8
 #EXTINF:-1,Warner
 http://181.224.200.5:2277/play/a01g
 
-#EXTINF:-1,Paramount
-http://181.224.200.5:2277/play/a0df
-
 #EXTINF:-1,Clover
 http://190.211.172.154:8965/play/a05c/index.m3u8
 
 #EXTINF:-1,DHE
-http://181.224.255.210:8001/play/a0nt
+http://190.211.172.154:8965/play/a021
 
 #EXTINF:-1,Star Channel
-http://45.5.118.152:8000/play/a04m
-
-#EXTINF:-1,Star Channel
-http://187.102.211.240:9001/play/a02j/index.m3u8
+http://190.211.172.154:8965/play/a02z
 
 #EXTINF:-1,Studio Universal
 http://187.102.211.240:9001/play/a06o/index.m3u8
@@ -93,8 +87,8 @@ https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
 #EXTINF:-1,TCM
 http://45.5.116.228:8000/play/a04z
 
-#EXTINF:-1,EUROPA
-http://187.102.211.240:9001/play/a045/index.m3u8
+#EXTINF:-1,EUROPA EUROPA
+http://190.211.172.154:8965/play/a07d/index.m3u8
 
 #EXTINF:-1,Film and Arts
 http://187.102.211.240:9001/play/a03o/index.m3u8
@@ -103,7 +97,7 @@ http://187.102.211.240:9001/play/a03o/index.m3u8
 http://190.60.40.165:1010/play/a0e5
 
 #EXTINF:-1,Golden
-http://181.224.200.5:2277/play/a0do
+http://190.211.172.154:8965/play/a07g
 
 #EXTINF:-1,Multipremier
 http://190.108.90.142:8000/play/a017
@@ -122,9 +116,6 @@ http://186.33.1.71:8000/play/a0i1
 
 #EXTINF:-1,Universal Cinema
 http://190.61.43.117:45000/play/a05x
-
-#EXTINF:-1,Rewind
-http://45.186.254.75:8000/play/a07p
 
 #EXTINF:-1,Multicinema
 http://45.5.118.152:8000/play/a03r
@@ -146,9 +137,6 @@ https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8
 
 #EXTINF:-1,MALVINAS TV
 https://live20.bozztv.com/giatvplayout7/giatv-208744/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1,MGTV MOVIES
-https://live20.bozztv.com/giatvplayout7/giatv-208138/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1,Grjngo
 https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8

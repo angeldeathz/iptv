@@ -10,22 +10,16 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
 #EXTINF:-1,Cartoon Network
-http://181.224.255.210:8001/play/a0py
+http://190.211.172.154:8965/play/a078/index.m3u8
 
 #EXTINF:-1,Disney Channel
-http://187.102.211.240:9001/play/a00m/index.m3u8
-
-#EXTINF:-1,Disney Jr.
-http://190.60.40.165:1010/play/a0l2
+http://190.211.172.154:8965/play/a046/index.m3u8
 
 #EXTINF:-1,Disney Jr.
 http://190.211.172.154:8965/play/a028/index.m3u8
 
 #EXTINF:-1,Nickelodeon
-https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
-
-#EXTINF:-1,Nickelodeon
-http://187.102.211.240:9001/play/a02d/index.m3u8
+http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
 
 #EXTINF:-1,Discovery Kids
 http://181.224.200.5:2277/play/a00o
@@ -52,7 +46,7 @@ https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
 
 #EXTINF:-1,Tooncast
-http://181.224.255.210:8001/play/a0ou
+http://190.211.172.154:8965/play/a02p
 
 #EXTINF:-1,Goku TV 24/7
 https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
