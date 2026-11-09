@@ -553,3 +553,9 @@ http://181.78.8.199:8000/play/a0kq
 
 #EXTINF:-1,Disney Jr.
 http://190.60.40.165:1010/play/a0l2/index.m3u8
+
+#EXTINF:-1 tvg-name="HBO Pop 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",HBO Pop 2
+http://45.186.254.75:8000/play/a0cm
+
+#EXTINF:-1 tvg-name="HBO Pop 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",HBO Pop 3
+http://190.61.42.218:9000/play/a01n

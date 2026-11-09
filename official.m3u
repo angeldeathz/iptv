@@ -178,7 +178,7 @@ http://187.102.211.240:9001/play/a03m/index.m3u8
 # ===== Infantiles =====
 
 #EXTINF:-1 tvg-name="56 DOS KIDS 1" group-title="Infantiles" audio-track="spa,eng",56 DOS KIDS 1
-http://190.211.172.154:8965/play/DOSKIDS
+http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
 
 #EXTINF:-1 tvg-name="57 ETC TV 1" tvg-logo="http://xplatinmedia.com:8080/images/9501ebc873c0595ec0f1e237a16aa407.png" group-title="Infantiles" audio-track="spa,eng",57 ETC TV 1
 http://187.102.211.240:9001/play/a04u/index.m3u8
@@ -187,19 +187,19 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
 #EXTINF:-1 tvg-name="59 Cartoon Network 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Infantiles" audio-track="spa,eng",59 Cartoon Network 1
-http://190.211.172.154:8965/play/a078
+http://190.211.172.154:8965/play/a078/index.m3u8
 
 #EXTINF:-1 tvg-name="60 Disney Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/disneychannel.png" group-title="Infantiles" audio-track="spa,eng",60 Disney Channel 1
-http://190.211.172.154:8965/play/a046
+http://190.211.172.154:8965/play/a046/index.m3u8
 
 #EXTINF:-1 tvg-name="61 Disney Jr. 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles" audio-track="spa,eng",61 Disney Jr. 1
-http://190.211.172.154:8965/play/a028
+http://190.211.172.154:8965/play/a028/index.m3u8
 
 #EXTINF:-1 tvg-name="62 Nickelodeon 1" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantiles" audio-track="spa,eng",62 Nickelodeon 1
-http://190.211.172.154:8965/play/Nickelodeon
+http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
 
 #EXTINF:-1 tvg-name="63 Discovery Kids 1" tvg-logo="https://docdog.top/logo/countries/latino/discoverykids.png" group-title="Infantiles" audio-track="spa,eng",63 Discovery Kids 1
-http://181.224.200.5:2277/play/a00o
+http://181.224.200.5:2277/play/a00o/index.m3u8
 
 #EXTINF:-1 tvg-name="64 Cartoonito 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",64 Cartoonito 1
 http://187.102.211.240:9001/play/a03d/index.m3u8
@@ -223,7 +223,7 @@ https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
 
 #EXTINF:-1 tvg-name="71 Tooncast 1" tvg-logo="https://i.imgur.com/3yXRbQy.png" group-title="Infantiles" audio-track="spa,eng",71 Tooncast 1
-http://190.211.172.154:8965/play/a02p
+http://190.211.172.154:8965/play/a02p/index.m3u8
 
 #EXTINF:-1 tvg-name="72 Goku TV 24/7 1" tvg-logo="https://m.media-amazon.com/images/I/51CeYLr3qCL._AC_SL1141_.jpg" group-title="Infantiles",72 Goku TV 24/7 1
 https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
@@ -301,7 +301,7 @@ http://187.102.211.240:9001/play/a04q/index.m3u8
 http://187.102.211.240:9001/play/a047/index.m3u8
 
 #EXTINF:-1 tvg-name="96 HBO Pop 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",96 HBO Pop 1
-http://187.102.211.240:9001/play/a028/index.m3u8
+http://190.60.40.165:1010/play/a0n1
 
 #EXTINF:-1 tvg-name="97 HBO Xtreme 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png" group-title="Peliculas" audio-track="spa,eng",97 HBO Xtreme 1
 http://45.186.254.75:8000/play/a05d

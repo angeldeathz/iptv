@@ -79,6 +79,8 @@ def resolve_stream_url(url: str) -> str:
     if not is_astra_play_url(stripped):
         return stripped
     mpegts = astra_mpegts_url(stripped)
+    if "/index.m3u8" in stripped.lower():
+        return f"{mpegts}/index.m3u8"
     if serves_mpegts(mpegts):
         return mpegts
     return f"{mpegts}/index.m3u8"

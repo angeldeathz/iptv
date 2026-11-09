@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1,DOS KIDS
-http://190.211.172.154:8965/play/DOSKIDS
+http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
 
 #EXTINF:-1,ETC TV
 http://187.102.211.240:9001/play/a04u/index.m3u8
@@ -10,19 +10,19 @@ http://187.102.211.240:9001/play/a04u/index.m3u8
 http://187.102.211.240:9001/play/a03z/index.m3u8
 
 #EXTINF:-1,Cartoon Network
-http://190.211.172.154:8965/play/a078
+http://190.211.172.154:8965/play/a078/index.m3u8
 
 #EXTINF:-1,Disney Channel
-http://190.211.172.154:8965/play/a046
+http://190.211.172.154:8965/play/a046/index.m3u8
 
 #EXTINF:-1,Disney Jr.
-http://190.211.172.154:8965/play/a028
+http://190.211.172.154:8965/play/a028/index.m3u8
 
 #EXTINF:-1,Nickelodeon
-http://190.211.172.154:8965/play/Nickelodeon
+http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
 
 #EXTINF:-1,Discovery Kids
-http://181.224.200.5:2277/play/a00o
+http://181.224.200.5:2277/play/a00o/index.m3u8
 
 #EXTINF:-1,Cartoonito
 http://187.102.211.240:9001/play/a03d/index.m3u8
@@ -46,7 +46,7 @@ https://jmp2.uk/plu-645952687cb4b100084ed52e.m3u8
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
 
 #EXTINF:-1,Tooncast
-http://190.211.172.154:8965/play/a02p
+http://190.211.172.154:8965/play/a02p/index.m3u8
 
 #EXTINF:-1,Goku TV 24/7
 https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
