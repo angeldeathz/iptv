@@ -50,7 +50,8 @@ SECTIONS = (
     Section(9, "documentales", "Documentales"),
     Section(10, "variedades", "Variedades"),
     Section(11, "internacionales", "Internacionales"),
-    Section(12, "experimentales", "24/7 - Experimentales"),
+    Section(12, "corea", "Corea"),
+    Section(13, "experimentales", "24/7 - Experimentales"),
 )
 
 

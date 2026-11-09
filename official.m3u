@@ -625,40 +625,52 @@ http://181.224.255.210:8001/play/a0rm
 http://38.226.49.253:8000/play/a04s
 
 
+# ===== Corea =====
+
+#EXTINF:-1 tvg-name="198 Kpop Mix 1" tvg-logo="https://tvomix.com/Logos/Kpopmix.png" group-title="Corea",198 Kpop Mix 1
+https://cloud.tvomix.com/KPOPMIX/index.m3u8
+
+#EXTINF:-1 tvg-name="199 Kpop TV 1" group-title="Corea",199 Kpop TV 1
+https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+
+#EXTINF:-1 tvg-name="200 Korea Pop 1" tvg-logo="https://i.ibb.co/vJ5sQNG/d5qk7xl-c2d79eae-935a-4336-bf93-e6a6d5ace6fe.png" group-title="Corea",200 Korea Pop 1
+https://live.24hrkpop.com/hls/3/stream.m3u8
+
+
 # ===== 24/7 - Experimentales =====
 
-#EXTINF:-1 tvg-name="198 MultiVox Cine 1" group-title="24/7 - Experimentales",198 MultiVox Cine 1
+#EXTINF:-1 tvg-name="201 MultiVox Cine 1" group-title="24/7 - Experimentales",201 MultiVox Cine 1
 https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
 
-#EXTINF:-1 tvg-name="199 NEO TV 1" group-title="24/7 - Experimentales",199 NEO TV 1
+#EXTINF:-1 tvg-name="202 NEO TV 1" group-title="24/7 - Experimentales",202 NEO TV 1
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
 
-#EXTINF:-1 tvg-name="200 Telemix 1" group-title="24/7 - Experimentales",200 Telemix 1
+#EXTINF:-1 tvg-name="203 Telemix 1" group-title="24/7 - Experimentales",203 Telemix 1
 https://live20.bozztv.com/giatv/giatv-telemixenvivo/telemixenvivo/playlist.m3u8
 
-#EXTINF:-1 tvg-name="201 Todo Novelas 24/7 1" group-title="24/7 - Experimentales",201 Todo Novelas 24/7 1
+#EXTINF:-1 tvg-name="204 Todo Novelas 24/7 1" group-title="24/7 - Experimentales",204 Todo Novelas 24/7 1
 https://dtsszjrztq9ti.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/ToDoNovelas_ES.m3u8
 
-#EXTINF:-1 tvg-name="202 Pelis Variedad 24/7 1" group-title="24/7 - Experimentales",202 Pelis Variedad 24/7 1
+#EXTINF:-1 tvg-name="205 Pelis Variedad 24/7 1" group-title="24/7 - Experimentales",205 Pelis Variedad 24/7 1
 https://live20.bozztv.com/giatvplayout7/giatv-209595/playlist.m3u8
 
-#EXTINF:-1 tvg-name="203 Video KAPC 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png" group-title="24/7 - Experimentales",203 Video KAPC 1
+#EXTINF:-1 tvg-name="206 Video KAPC 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Investigation_Discovery_2018_logo.svg/320px-Investigation_Discovery_2018_logo.svg.png" group-title="24/7 - Experimentales",206 Video KAPC 1
 https://stmv2.voxtvhd.com.br/videokapc/videokapc/playlist.m3u8
 
-#EXTINF:-1 tvg-name="204 Mega Cine 24/7 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="24/7 - Experimentales",204 Mega Cine 24/7 1
+#EXTINF:-1 tvg-name="207 Mega Cine 24/7 1" tvg-logo="https://i.imgur.com/RlZfR84.png" group-title="24/7 - Experimentales",207 Mega Cine 24/7 1
 https://cnn.hostlagarto.com/megacinetv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="205 Runtime Familia 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",205 Runtime Familia 1
+#EXTINF:-1 tvg-name="208 Runtime Familia 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",208 Runtime Familia 1
 https://run-runfl.otteravision.com/run/runfl/runfl_720.m3u8
 
-#EXTINF:-1 tvg-name="206 Runtime Terror 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",206 Runtime Terror 1
+#EXTINF:-1 tvg-name="209 Runtime Terror 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",209 Runtime Terror 1
 https://run-ruthr.otteravision.com/run/ruthr/ruthr_720.m3u8
 
-#EXTINF:-1 tvg-name="207 Runtime Crimen 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",207 Runtime Crimen 1
+#EXTINF:-1 tvg-name="210 Runtime Crimen 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",210 Runtime Crimen 1
 https://run-rucrl.otteravision.com/run/rucrl/rucrl_720.m3u8
 
-#EXTINF:-1 tvg-name="208 Runtime Accion 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",208 Runtime Accion 1
+#EXTINF:-1 tvg-name="211 Runtime Accion 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",211 Runtime Accion 1
 https://run-rt-ac.otteravision.com/run/rt_ac/rt_ac_720.m3u8
 
-#EXTINF:-1 tvg-name="209 Runtime Peliculas 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",209 Runtime Peliculas 1
+#EXTINF:-1 tvg-name="212 Runtime Peliculas 1" tvg-logo="https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png" group-title="24/7 - Experimentales",212 Runtime Peliculas 1
 https://run-rt-mx.otteravision.com/run/rt_mx/rt_mx_720p_high.m3u8

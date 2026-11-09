@@ -519,3 +519,37 @@ http://190.108.83.69:8000/play/a01g
 
 #EXTINF:-1 tvg-name="HBO Pop" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",HBO Pop
 http://190.108.83.69:8000/play/a03k
+
+#EXTM3U
+#EXTINF:-1 tvg-name="Cartoon Network 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" audio-track="spa,eng",Cartoon Network 1
+http://181.224.255.210:8001/play/a0py
+
+#EXTINF:-1 tvg-name="Disney Channel 1" tvg-logo="https://docdog.top/logo/countries/latino/disneychannel.png" audio-track="spa,eng",Disney Channel 1
+http://187.102.211.240:9001/play/a00m/index.m3u8
+
+#EXTINF:-1 tvg-name="Nickelodeon 1" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png",Nickelodeon 1
+https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
+
+#EXTINF:-1 tvg-name="Nickelodeon 2" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" audio-track="spa,eng",Nickelodeon 2
+http://187.102.211.240:9001/play/a02d/index.m3u8
+
+#EXTINF:-1 tvg-name="Tooncast 1" tvg-logo="https://i.imgur.com/3yXRbQy.png" audio-track="spa,eng",Tooncast 1
+http://181.224.255.210:8001/play/a0ou
+
+#EXTINF:-1 tvg-name="DHE 1" tvg-logo="http://45.5.116.228:8000/playlist/tvg-logo/a0gy.png" audio-track="spa,eng",DHE 1
+http://181.224.255.210:8001/play/a0nt
+
+#EXTINF:-1 tvg-name="Golden 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png" audio-track="spa,eng",Golden 1
+http://181.224.200.5:2277/play/a0do
+
+#EXTINF:-1 tvg-name="Star Channel 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" audio-track="spa,eng",Star Channel 1
+http://45.5.118.152:8000/play/a04m
+
+#EXTINF:-1 tvg-name="Star Channel 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" audio-track="spa,eng",Star Channel 2
+http://187.102.211.240:9001/play/a02j/index.m3u8
+
+#EXTINF:-1 tvg-name="USA Network 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBQYAcg5B2Bb7_Cs4nXz7kseUTnLWagQZP36mYMDpSGpsr9Ic96-sw70dG5h1Vyb-O7E0_F7fECQRDYaCdkpfHW3LtessqGEnfcYSmsufnVIGgwvMtPapn2IELO_B1pO7Vmywxn9fPran3ykMzHbVWrizGBDMOYUd3e7h_XQKAQteXFAfW8N624gneuZQ/s1684/USA_Network.png" audio-track="spa,eng",USA Network 1
+http://181.78.8.199:8000/play/a0kq
+
+#EXTINF:-1,Disney Jr.
+http://190.60.40.165:1010/play/a0l2/index.m3u8
