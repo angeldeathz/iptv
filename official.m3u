@@ -13,7 +13,7 @@ https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
 https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-name="4 CHV 1" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" audio-track="spa,eng",4 CHV 1
-http://45.186.254.75:8000/play/a04v
+http://45.186.254.75:8000/play/a04v/index.m3u8
 
 #EXTINF:-1 tvg-name="5 CHV Deportes 1" tvg-logo="https://cdn.m3u.cl/logo/1763_CHV_Deportes.png" group-title="Nacionales",5 CHV Deportes 1
 https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/chvdeportes/chvdeportes.smil/playlist.m3u8
@@ -25,7 +25,7 @@ https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
 http://190.211.172.154:8965/play/a07a/index.m3u8
 
 #EXTINF:-1 tvg-name="8 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" audio-track="spa,eng",8 TVN 1
-http://38.226.49.253:8000/play/a06c
+http://38.226.49.253:8000/play/a06c/index.m3u8
 
 #EXTINF:-1 tvg-name="9 NTV 1" tvg-logo="https://i.imgur.com/J55nHPi.png" group-title="Nacionales",9 NTV 1
 https://mdstrm.com/live-stream-playlist/5aaabe9e2c56420918184c6d.m3u8
@@ -43,7 +43,7 @@ https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-name="14 La Red 1" tvg-logo="https://cdn.m3u.cl/logo/790_La_Red.png" group-title="Nacionales" audio-track="spa,eng",14 La Red 1
-http://45.232.210.1:18000/play/a07e
+http://45.232.210.1:18000/play/a07e/index.m3u8
 
 #EXTINF:-1 tvg-name="15 Telecanal Santa Cruz 1" tvg-logo="https://cdn.m3u.cl/logo/1025_Telecanal_Santa_Cruz.png" group-title="Nacionales",15 Telecanal Santa Cruz 1
 https://origin-us.streaminghd.cl/telecanal/telecanal/playlist.m3u8?PlaylistM3UCL
@@ -67,13 +67,13 @@ https://redirector.dps.live/hls/13pop/playlist.m3u8
 https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
 
 #EXTINF:-1 tvg-name="22 13 REC 1" group-title="Nacionales" audio-track="spa,eng",22 13 REC 1
-http://45.186.254.75:8000/play/a0ha
+http://45.186.254.75:8000/play/a0ha/index.m3u8
 
 #EXTINF:-1 tvg-name="23 Zona Latina 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/Zona_Latina_2021.svg/revision/latest/scale-to-width-down/150?cb=20210805180712&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",23 Zona Latina 1
-http://45.232.210.1:18000/play/a09h
+http://45.232.210.1:18000/play/a09h/index.m3u8
 
 #EXTINF:-1 tvg-name="24 Via X 1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/V%C3%ADa_X_2005.jpg/revision/latest?cb=20190809004317&path-prefix=es" group-title="Nacionales" audio-track="spa,eng",24 Via X 1
-http://45.232.210.1:18000/play/a092
+http://45.232.210.1:18000/play/a092/index.m3u8
 
 
 # ===== Regionales =====
@@ -454,55 +454,55 @@ https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 http://170.247.204.9:8000/play/a0g7/index.m3u8
 
 #EXTINF:-1 tvg-name="145 TNT Sports Premium 1" tvg-logo="https://docdog.top/logo/countries/latino/tnt.png" group-title="Deportes" audio-track="spa,eng",145 TNT Sports Premium 1
-http://209.14.98.47:8000/play/a0x5
+http://209.14.98.47:8000/play/a0x5/index.m3u8
 
 #EXTINF:-1 tvg-name="146 TNT Sports Premium 2" tvg-logo="https://docdog.top/logo/countries/latino/tnt.png" group-title="Deportes" audio-track="spa,eng",146 TNT Sports Premium 2
 http://190.211.172.154:8965/play/a040/index.m3u8
 
 #EXTINF:-1 tvg-name="147 ESPN Premium 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/1920px-ESPN_Premium_logo.svg.png" group-title="Deportes" audio-track="spa,eng",147 ESPN Premium 1
-http://38.226.49.253:8000/play/a07t
+http://38.226.49.253:8000/play/a07t/index.m3u8
 
 #EXTINF:-1 tvg-name="148 ESPN 1" tvg-logo="https://docdog.top/logo/countries//argentina/espn-ar.png" group-title="Deportes" audio-track="spa,eng",148 ESPN 1
-http://190.60.40.165:1010/play/0kpe
+http://190.60.40.165:1010/play/0kpe/index.m3u8
 
 #EXTINF:-1 tvg-name="149 ESPN 2" tvg-logo="https://docdog.top/logo/countries//argentina/espn-ar.png" group-title="Deportes" audio-track="spa,eng",149 ESPN 2
-http://190.60.40.165:1010/play/a0nt
+http://190.60.40.165:1010/play/a0nt/index.m3u8
 
 #EXTINF:-1 tvg-name="150 ESPN 3" tvg-logo="https://docdog.top/logo/countries//argentina/espn-ar.png" group-title="Deportes" audio-track="spa,eng",150 ESPN 3
-http://190.60.40.165:1010/play/a0jx
+http://190.60.40.165:1010/play/a0jx/index.m3u8
 
 #EXTINF:-1 tvg-name="151 ESPN 2 1" tvg-logo="https://docdog.top/logo/countries//argentina/espn-2-ar.png" group-title="Deportes" audio-track="spa,eng",151 ESPN 2 1
-http://190.60.40.165:1010/play/db56
+http://190.60.40.165:1010/play/db56/index.m3u8
 
 #EXTINF:-1 tvg-name="152 ESPN 2 2" tvg-logo="https://docdog.top/logo/countries//argentina/espn-2-ar.png" group-title="Deportes" audio-track="spa,eng",152 ESPN 2 2
-http://190.60.40.165:1010/play/a0mo
+http://190.60.40.165:1010/play/a0mo/index.m3u8
 
 #EXTINF:-1 tvg-name="153 ESPN 3 1" tvg-logo="https://docdog.top/logo/countries/latino/espn3.png" group-title="Deportes" audio-track="spa,eng",153 ESPN 3 1
-http://190.60.40.165:1010/play/4gph
+http://190.60.40.165:1010/play/4gph/index.m3u8
 
 #EXTINF:-1 tvg-name="154 ESPN 3 2" tvg-logo="https://docdog.top/logo/countries/latino/espn3.png" group-title="Deportes" audio-track="spa,eng",154 ESPN 3 2
-http://190.60.40.165:1010/play/a0jm
+http://190.60.40.165:1010/play/a0jm/index.m3u8
 
 #EXTINF:-1 tvg-name="155 ESPN 4 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/250px-ESPN_4_logo.svg.png" group-title="Deportes" audio-track="spa,eng",155 ESPN 4 1
 http://187.102.211.240:9001/play/a01x/index.m3u8
 
 #EXTINF:-1 tvg-name="156 ESPN 4 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/250px-ESPN_4_logo.svg.png" group-title="Deportes" audio-track="spa,eng",156 ESPN 4 2
-http://190.60.40.165:1010/play/uemr
+http://190.60.40.165:1010/play/uemr/index.m3u8
 
 #EXTINF:-1 tvg-name="157 ESPN 4 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/250px-ESPN_4_logo.svg.png" group-title="Deportes" audio-track="spa,eng",157 ESPN 4 3
-http://190.60.40.165:1010/play/a0mp
+http://190.60.40.165:1010/play/a0mp/index.m3u8
 
 #EXTINF:-1 tvg-name="158 ESPN 5 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" audio-track="spa,eng",158 ESPN 5 1
-http://190.60.40.165:1010/play/ueu4
+http://190.60.40.165:1010/play/ueu4/index.m3u8
 
 #EXTINF:-1 tvg-name="159 ESPN 5 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" audio-track="spa,eng",159 ESPN 5 2
-http://190.60.40.165:1010/play/a0jg
+http://190.60.40.165:1010/play/a0jg/index.m3u8
 
 #EXTINF:-1 tvg-name="160 ESPN 5 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1280px-ESPN_5_logo.svg.png" group-title="Deportes" audio-track="spa,eng",160 ESPN 5 3
 http://170.247.204.9:8000/play/a0cc/index.m3u8
 
 #EXTINF:-1 tvg-name="161 ESPN 6 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ESPN_6_logo.svg/1280px-ESPN_6_logo.svg.png" group-title="Deportes" audio-track="spa,eng",161 ESPN 6 1
-http://190.60.40.165:1010/play/a0ja
+http://190.60.40.165:1010/play/a0ja/index.m3u8
 
 #EXTINF:-1 tvg-name="162 ESPN 6 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ESPN_6_logo.svg/1280px-ESPN_6_logo.svg.png" group-title="Deportes" audio-track="spa,eng",162 ESPN 6 2
 http://170.247.204.9:8000/play/a0ac/index.m3u8
@@ -511,19 +511,19 @@ http://170.247.204.9:8000/play/a0ac/index.m3u8
 http://187.102.211.240:9001/play/a01h/index.m3u8
 
 #EXTINF:-1 tvg-name="164 ESPN 7 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/ESPN_7_logo.svg/1280px-ESPN_7_logo.svg.png" group-title="Deportes" audio-track="spa,eng",164 ESPN 7 1
-http://190.60.40.165:1010/play/569m
+http://190.60.40.165:1010/play/569m/index.m3u8
 
 #EXTINF:-1 tvg-name="165 ESPN 7 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/ESPN_7_logo.svg/1280px-ESPN_7_logo.svg.png" group-title="Deportes" audio-track="spa,eng",165 ESPN 7 2
-http://190.60.40.165:1010/play/a0lr
+http://190.60.40.165:1010/play/a0lr/index.m3u8
 
 #EXTINF:-1 tvg-name="166 UFC 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/92/UFC_Logo.svg" group-title="Deportes",166 UFC 1
 https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1 tvg-name="167 TyC Sports 1" group-title="Deportes" audio-track="spa,eng",167 TyC Sports 1
-http://45.186.254.75:8000/play/a08n
+http://45.186.254.75:8000/play/a08n/index.m3u8
 
 #EXTINF:-1 tvg-name="168 DirecTV Sports 1" group-title="Deportes" audio-track="spa,eng",168 DirecTV Sports 1
-http://45.186.254.75:8000/play/a0en
+http://45.186.254.75:8000/play/a0en/index.m3u8
 
 
 # ===== Musica =====
@@ -547,7 +547,7 @@ https://cdn.40mediagroup.com/live/c7eds/Totalmusic_80s/SA_LIVE_hls_enc/master.m3
 https://cdn.40mediagroup.com/live/c7eds/Totalmusic_00s/SA_LIVE_hls_enc/master.m3u8
 
 #EXTINF:-1 tvg-name="175 Telehit Musica 1" group-title="Musica" audio-track="spa,eng",175 Telehit Musica 1
-http://181.78.8.199:8000/play/a0g7
+http://181.78.8.199:8000/play/a0g7/index.m3u8
 
 #EXTINF:-1 tvg-name="176 Stingray Today's Latin Pop 1" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/stingray-today-s-latin-pop-1080p-4cd367dd93.png" group-title="Musica",176 Stingray Today's Latin Pop 1
 https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
@@ -580,7 +580,7 @@ https://dvnftgdlbnemm.cloudfront.net/XITE_Just_Chill.m3u8
 https://d33m2dcwuwzaia.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4g0r3vai0va2v/XITE_Celebrates.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=%7BAFSDK_VALUE%7D&ads.service_id=CABD17000043J
 
 #EXTINF:-1 tvg-name="186 Stingray Concerts 1" group-title="Musica" audio-track="spa,eng",186 Stingray Concerts 1
-http://190.60.40.165:1010/play/a0ou
+http://190.60.40.165:1010/play/a0ou/index.m3u8
 
 
 # ===== Documentales =====
@@ -652,13 +652,13 @@ http://72.1.184.5:8089/play/a05d
 # ===== Mexico =====
 
 #EXTINF:-1 tvg-name="207 Distrito Comedia 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png" group-title="Mexico" audio-track="spa,eng",207 Distrito Comedia 1
-http://205.235.6.29:8000/play/a0z5
+http://205.235.6.29:8000/play/a0z5/index.m3u8
 
 #EXTINF:-1 tvg-name="208 TLNovelas 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tlnovelas_logo.svg/320px-Tlnovelas_logo.svg.png" group-title="Mexico" audio-track="spa,eng",208 TLNovelas 1
 http://187.102.211.240:9001/play/a03q/index.m3u8
 
 #EXTINF:-1 tvg-name="209 Las Estrellas 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Las_Estrellas_logo.svg/320px-Las_Estrellas_logo.svg.png" group-title="Mexico" audio-track="spa,eng",209 Las Estrellas 1
-http://190.61.42.218:9000/play/a09t
+http://190.61.42.218:9000/play/a09t/index.m3u8
 
 
 # ===== Espana =====
@@ -667,13 +667,13 @@ http://190.61.42.218:9000/play/a09t
 http://187.102.211.240:9001/play/a04y/index.m3u8
 
 #EXTINF:-1 tvg-name="211 ATRES Series 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png" group-title="Espana" audio-track="spa,eng",211 ATRES Series 1
-http://181.224.255.210:8001/play/a0rm
+http://181.224.255.210:8001/play/a0rm/index.m3u8
 
 
 # ===== Italia =====
 
 #EXTINF:-1 tvg-name="212 RAI 1" tvg-logo="https://cdn.mitvstatic.com/channels/ar_rai_m.png" group-title="Italia" audio-track="spa,eng",212 RAI 1
-http://38.226.49.253:8000/play/a04s
+http://38.226.49.253:8000/play/a04s/index.m3u8
 
 
 # ===== Turquia =====

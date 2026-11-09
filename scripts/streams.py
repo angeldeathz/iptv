@@ -66,6 +66,10 @@ def astra_mpegts_url(url: str) -> str:
     return f"{match.group(1)}/play/{match.group(2)}"
 
 
+def astra_hls_url(url: str) -> str:
+    return f"{astra_mpegts_url(url)}/index.m3u8"
+
+
 def canonical_url(url: str) -> str:
     """Identity used to detect duplicates: HLS and MPEG-TS forms of one Astra id are the same stream."""
     if is_astra_play_url(url):
@@ -73,17 +77,35 @@ def canonical_url(url: str) -> str:
     return url.strip().split("?", 1)[0]
 
 
+def serves_hls(url: str) -> bool:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+    try:
+        with urllib.request.urlopen(
+            request, timeout=PROBE_TIMEOUT_SECONDS, context=ssl.create_default_context()
+        ) as response:
+            chunk = response.read(512)
+            content_type = (response.headers.get("Content-Type") or "").lower()
+    except (OSError, http.client.HTTPException):
+        return False
+    if not chunk:
+        return False
+    return chunk.startswith(b"#EXTM3U") or "mpegurl" in content_type
+
+
 def resolve_stream_url(url: str) -> str:
-    """SS IPTV only shows the audio language menu for MPEG-TS, so prefer it and fall back to HLS."""
+    """Resolve Astra /play/<id> URLs to HLS when available (faster tune-in); MPEG-TS only as fallback."""
     stripped = url.strip()
     if not is_astra_play_url(stripped):
         return stripped
     mpegts = astra_mpegts_url(stripped)
+    hls = astra_hls_url(stripped)
     if "/index.m3u8" in stripped.lower():
-        return f"{mpegts}/index.m3u8"
+        return hls
+    if serves_hls(hls):
+        return hls
     if serves_mpegts(mpegts):
         return mpegts
-    return f"{mpegts}/index.m3u8"
+    return hls
 
 
 def search_sources(matches_query, hosts: tuple[str, ...] = SOURCE_PLAYLISTS) -> dict:
