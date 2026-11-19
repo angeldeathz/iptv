@@ -7,10 +7,10 @@ http://170.247.204.9:8000/play/a01o/index.m3u8
 http://170.247.204.9:8000/play/a04b/index.m3u8
 
 #EXTINF:-1,Discovery Turbo
-http://187.102.211.240:9001/play/a01a/index.m3u8
+http://190.60.40.165:1010/play/acuk/index.m3u8
 
 #EXTINF:-1,Discovery world
-http://187.102.211.240:9001/play/a05y/index.m3u8
+http://45.173.231.22:8000/play/a08l/index.m3u8
 
 #EXTINF:-1,Discovery Science
 http://190.61.42.218:9000/play/a00h
@@ -25,7 +25,7 @@ http://181.224.200.5:2277/play/a036
 http://190.211.172.154:8965/play/a01x/index.m3u8
 
 #EXTINF:-1,National Geographic
-http://187.102.211.240:9001/play/a01p/index.m3u8
+http://45.173.231.22:8000/play/a05z
 
 #EXTINF:-1,ID
 http://181.224.200.5:2277/play/a00m
@@ -37,7 +37,7 @@ http://170.247.204.9:8000/play/a01p/index.m3u8
 http://181.78.8.199:8000/play/a0ag
 
 #EXTINF:-1,Discovery Home and Health
-http://187.102.211.240:9001/play/a00s/index.m3u8
+http://45.173.231.22:8000/play/a04f
 
 #EXTINF:-1,Home and Health
 http://181.224.200.5:2277/play/a00p
@@ -46,4 +46,4 @@ http://181.224.200.5:2277/play/a00p
 http://190.61.42.218:9000/play/a05p
 
 #EXTINF:-1,TLC
-http://187.102.211.240:9001/play/a03g/index.m3u8
+http://186.33.1.71:8000/play/a0hh/index.m3u8

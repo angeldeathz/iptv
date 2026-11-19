@@ -34,7 +34,7 @@ http://190.60.40.165:1010/play/4gph/index.m3u8
 http://190.60.40.165:1010/play/a0jm/index.m3u8
 
 #EXTINF:-1,ESPN 4
-http://187.102.211.240:9001/play/a01x/index.m3u8
+http://45.173.231.22:8000/play/a06a/index.m3u8
 
 #EXTINF:-1,ESPN 4
 http://190.60.40.165:1010/play/uemr/index.m3u8
@@ -58,7 +58,7 @@ http://190.60.40.165:1010/play/a0ja/index.m3u8
 http://170.247.204.9:8000/play/a0ac/index.m3u8
 
 #EXTINF:-1,ESPN 6
-http://187.102.211.240:9001/play/a01h/index.m3u8
+http://45.173.231.22:8000/play/a028/index.m3u8
 
 #EXTINF:-1,ESPN 7
 http://190.60.40.165:1010/play/569m/index.m3u8

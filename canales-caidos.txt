@@ -1,0 +1,199 @@
+Evidencia: orígenes caídos en official.m3u
+==========================================================
+Fecha del sondeo: 2026-11-18 (UTC-3)
+Repositorio: iptv — playlist generada official.m3u (230 entradas, 78 hosts distintos)
+Método: probe HTTP al playlist.m3u (orígenes Astra), y prueba HLS/MPEG-TS por URL (scripts/streams.py, timeout ~12s). Orígenes no-Astra: muestra de streams por host.
+
+Resumen
+-------
+  Hosts totalmente caídos ........... 5
+  Entradas en parrilla afectadas ... 47
+  Hosts operativos ................... 73
+  Caso parcial (HLS roto, TS vivo) . CNN Chile en 38.226.49.253:8000
+
+==========================================================
+1. 187.102.211.240:9001 — CAÍDO (timeout, sin playlist)
+==========================================================
+Entradas en official.m3u: 36
+
+Canales afectados:
+  - AMC
+  - AXN
+  - Baby Tv
+  - BBC News
+  - Canal 13
+  - Cartoonito
+  - CGTN
+  - Cinecanal
+  - Cinemax
+  - CNN Internacional
+  - Comedy central
+  - Discovery Home and Health
+  - Discovery Turbo
+  - Discovery world
+  - El Gourmet
+  - ESPN 4
+  - ESPN 6
+  - ETC TV
+  - Film and Arts
+  - France 24
+  - HBO
+  - HBO Mundi
+  - HBO+
+  - Hei
+  - Hola Tv
+  - HTV
+  - Lifetime
+  - National Geographic
+  - Nick Jr
+  - Telemundo
+  - TLC
+  - TLNovelas
+  - TNT
+  - TVE
+  - Universal channel
+  - Via X Esports
+
+URLs de referencia (variante 1 en datasource):
+  Canal 13 .............. http://187.102.211.240:9001/play/a05u/index.m3u8
+  CNN Internacional ..... http://187.102.211.240:9001/play/a00j/index.m3u8
+  BBC News .............. http://187.102.211.240:9001/play/a04k/index.m3u8
+  France 24 ............. http://187.102.211.240:9001/play/a04t/index.m3u8
+  CGTN .................. http://187.102.211.240:9001/play/a03m/index.m3u8
+  Via X Esports ......... http://187.102.211.240:9001/play/a03z/index.m3u8
+
+==========================================================
+2. 45.232.210.1:18000 — CAÍDO (sin ruta / timeout)
+==========================================================
+Entradas en official.m3u: 3
+
+Canales afectados:
+  - La Red
+  - Via X
+  - Zona Latina
+
+URLs en datasource:
+  La Red ................ http://45.232.210.1:18000/play/a07e/index.m3u8
+  Zona Latina ........... http://45.232.210.1:18000/play/a09h/index.m3u8
+  Via X ................. http://45.232.210.1:18000/play/a092/index.m3u8
+
+==========================================================
+3. 72.1.184.5:8089 — CAÍDO (connection refused)
+==========================================================
+Entradas en official.m3u: 1
+
+Canales afectados:
+  - E!
+
+==========================================================
+4. giatv.bozztv.com — CAÍDO (stream sin respuesta)
+==========================================================
+Entradas en official.m3u: 1
+
+Canales afectados:
+  - Kpop TV
+
+==========================================================
+5. live20.bozztv.com — CAÍDO (streams sin respuesta)
+==========================================================
+Entradas en official.m3u: 6
+
+Canales afectados:
+  - Goku TV 24/7
+  - MAX2
+  - MAXCINE Comedy
+  - MALVINAS TV
+  - Pelis Variedad 24/7
+  - Telemix
+
+==========================================================
+Caso aparte: host vivo, canal falla en HLS
+==========================================================
+Host: 38.226.49.253:8000 — servidor OK (playlist HTTP 200)
+
+Otros canales en ese host que respondieron HLS en el sondeo:
+  TVN, HBO Signature, SPACE, AMC Series, A&E, ESPN Premium, RAI
+
+Canal con problema:
+  - CNN Chile — http://38.226.49.253:8000/play/a04y/index.m3u8 → HTTP 404 en HLS
+    MPEG-TS bare (/play/a04y) sí entrega datos; la parrilla usa HLS por catálogo stream_audio.
+
+==========================================================
+Lista rápida (canales del usuario del 2026-11-18)
+==========================================================
+Pedido original: La Red, 13, Via X, Zona Latina, CNN Chile, CNN Internacional,
+BBC News, France 24, CGTN.
+
+  La Red ................ CAÍDO (host 45.232.210.1:18000)
+  Canal 13 .............. CAÍDO (host 187.102.211.240:9001)
+  Via X ................. CAÍDO (host 45.232.210.1:18000)
+  Zona Latina ........... CAÍDO (host 45.232.210.1:18000)
+  CNN Chile ............. HLS roto en host vivo 38.226.49.253:8000
+  CNN Internacional ..... CAÍDO (host 187.102.211.240:9001)
+  BBC News .............. CAÍDO (host 187.102.211.240:9001)
+  France 24 ............. CAÍDO (host 187.102.211.240:9001)
+  CGTN .................. CAÍDO (host 187.102.211.240:9001)
+
+==========================================================
+Notas
+==========================================================
+- Este archivo es evidencia puntual; no se actualiza solo. Volver a sondear cuando
+  se reparen URLs o se cambien orígenes (iptv.py set-url / add).
+- Alternativas vivas encontradas el mismo día (no aplicadas a official.m3u):
+  varios en 45.173.231.22:8000 (La Red, 13, Via X, Zona Latina, France 24, CNN Chile);
+  CNN Internacional en 181.78.8.199:8000; BBC en 157.100.9.51 / 45.167.1.137 (MPEG-TS);
+  CGTN en 157.100.9.51 / 45.186.254.75.
+
+==========================================================
+Migración 2026-11-18 — host 187.102.211.240:9001 (36 canales)
+==========================================================
+Se aplicó iptv.py set-url a las variantes 1 que aún apuntaban al 187.
+Las URLs viejas del 187 quedan documentadas arriba en este archivo por si el host vuelve.
+official.m3u ya no referencia 187.102.211.240.
+
+ID  Canal                      Nuevo origen (probe OK)
+---  -------------------------  --------------------------------------------------
+  1  Canal 13                   45.173.231.22:8000/play/a083
+ 49  CNN Internacional          181.78.8.199:8000/play/a0jg
+ 52  BBC News                   45.5.116.228:8000/play/a06s HLS (antes 157.100 TS, no VLC)
+ 53  France 24                  45.173.231.22:8000/play/a04b
+ 54  CGTN                       157.100.9.51:8000/play/a1yb
+ 56  ETC TV                     157.100.9.51:8000/play/a24f
+ 57  Via X Esports              45.173.231.22:8000/play/a0cw
+ 63  Cartoonito                 38.44.109.41:8003/play/a0cn
+ 74  Nick Jr                    45.173.231.22:8000/play/a056
+ 75  Baby Tv                    190.60.40.165:1010/play/kr4d
+ 89  HBO                        186.33.1.71:8000/play/a0l2
+ 92  HBO Mundi                  45.173.231.22:8000/play/a0a1
+ 94  HBO+                       45.173.231.22:8000/play/a0ag
+ 98  Cinecanal                  45.173.231.22:8000/play/a061
+100  Cinemax                    45.173.231.22:8000/play/a04u
+101  TNT                        45.173.231.22:8000/play/a060
+108  AMC                        45.173.231.22:8000/play/a02f
+115  Film and Arts              190.60.40.165:1010/play/yhhq
+135  Universal channel          45.173.231.22:8000/play/a02d
+139  AXN                        45.173.231.22:8000/play/a065
+140  Lifetime                   45.173.231.22:8000/play/a01m
+141  Comedy central             45.173.231.22:8000/play/a02b
+154  ESPN 4                     45.173.231.22:8000/play/a06a
+162  ESPN 6                     45.173.231.22:8000/play/a028
+168  HTV                        190.60.40.165:1010/play/c2nb
+169  Hei                        45.173.231.22:8000/play/a089
+188  Discovery Turbo            190.60.40.165:1010/play/acuk
+189  Discovery world            45.173.231.22:8000/play/a08l
+194  National Geographic        45.173.231.22:8000/play/a05z
+198  Discovery Home and Health  45.173.231.22:8000/play/a04f
+201  TLC                        186.33.1.71:8000/play/a0hh
+202  El Gourmet                 45.173.231.22:8000/play/a02c
+204  Hola Tv                    190.60.40.165:1010/play/a0om
+207  TLNovelas                  186.33.1.71:8000/play/a044
+209  TVE                        186.33.1.71:8000/play/a0h0
+214  Telemundo                  190.60.40.165:1010/play/8ryw
+
+Migración 2026-11-18 — host 45.232.210.1:18000
+ 14  La Red       → 45.173.231.22:8000/play/a0a8  (viejo: …/a07e)
+ 23  Zona Latina  → 45.173.231.22:8000/play/a0ax  (viejo: …/a09h)
+ 24  Via X        → 45.173.231.22:8000/play/a0cj  (viejo: …/a092)
+
+Corrección BBC News (MPEG-TS no reproducía en VLC):
+ 52  BBC News     → 45.5.116.228:8000/play/a06s HLS (viejo: 157.100.9.51/play/a22j TS)

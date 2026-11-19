@@ -19,7 +19,7 @@ http://38.226.49.253:8000/play/a04y/index.m3u8
 http://190.61.42.218:9000/play/a00t/index.m3u8
 
 #EXTINF:-1,CNN Internacional
-http://187.102.211.240:9001/play/a00j/index.m3u8
+http://181.78.8.199:8000/play/a0jg/index.m3u8
 
 #EXTINF:-1,Estrella News
 https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg00567-estrellamedia-estrellanews-distrotv/playlist.m3u8
@@ -28,10 +28,10 @@ https://amg00567-estrellamedia-estrellanews-distrotv-ddste.amagi.tv/playlist/amg
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/streamPlaylist.m3u8
 
 #EXTINF:-1,BBC News
-http://187.102.211.240:9001/play/a04k/index.m3u8
+http://45.5.116.228:8000/play/a06s/index.m3u8
 
 #EXTINF:-1,France 24
-http://187.102.211.240:9001/play/a04t/index.m3u8
+http://45.173.231.22:8000/play/a04b/index.m3u8
 
 #EXTINF:-1,CGTN
-http://187.102.211.240:9001/play/a03m/index.m3u8
+http://157.100.9.51:8000/play/a1yb/index.m3u8

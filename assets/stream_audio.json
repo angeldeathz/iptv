@@ -1,4 +1,24 @@
 {
+  "http://157.100.9.51:8000/play/a1yb": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://157.100.9.51:8000/play/a24f": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://170.247.204.9:8000/play/a01o": {
     "audio": "dual",
     "languages": [
@@ -224,6 +244,46 @@
     "checked": "2026-11-09",
     "channel": "Telehit Musica"
   },
+  "http://181.78.8.199:8000/play/a0jg": {
+    "audio": "eng",
+    "languages": [
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://186.33.1.71:8000/play/a044": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://186.33.1.71:8000/play/a0h0": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://186.33.1.71:8000/play/a0hh": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://186.33.1.71:8000/play/a0i1": {
     "audio": "spa",
     "languages": [
@@ -234,6 +294,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "Universal Premiere"
+  },
+  "http://186.33.1.71:8000/play/a0l2": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
   },
   "http://187.102.211.240:9001/play/a00j": {
     "audio": "eng",
@@ -902,6 +972,16 @@
     "checked": "2026-11-09",
     "channel": "ESPN 7"
   },
+  "http://190.60.40.165:1010/play/8ryw": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://190.60.40.165:1010/play/a0e5": {
     "audio": "spa",
     "languages": [
@@ -1038,6 +1118,16 @@
     "checked": "2026-11-09",
     "channel": "ESPN"
   },
+  "http://190.60.40.165:1010/play/a0om": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://190.60.40.165:1010/play/a0ou": {
     "audio": "spa",
     "languages": [
@@ -1061,6 +1151,26 @@
     "checked": "2026-11-09",
     "channel": "HBO Family"
   },
+  "http://190.60.40.165:1010/play/acuk": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://190.60.40.165:1010/play/c2nb": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://190.60.40.165:1010/play/db56": {
     "audio": "spa",
     "languages": [
@@ -1071,6 +1181,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "ESPN 2"
+  },
+  "http://190.60.40.165:1010/play/kr4d": {
+    "audio": "unknown",
+    "languages": [
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
   },
   "http://190.60.40.165:1010/play/uemr": {
     "audio": "spa",
@@ -1093,6 +1213,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "ESPN 5"
+  },
+  "http://190.60.40.165:1010/play/yhhq": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
   },
   "http://190.61.42.218:9000/play/a00h": {
     "audio": "spa",
@@ -1316,6 +1446,258 @@
     "checked": "2026-11-09",
     "channel": "ESPN Premium"
   },
+  "http://45.173.231.22:8000/play/a01m": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a028": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a02b": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a02c": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a02d": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng",
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a02f": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a04b": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a04f": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a04u": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a056": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a05z": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a060": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a061": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a065": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng",
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a06a": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a083": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a089": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "hls-only",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a08l": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0a1": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0a8": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0ag": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng",
+      "?"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0ax": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0cj": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
+  "http://45.173.231.22:8000/play/a0cw": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
+  },
   "http://45.186.254.75:8000/play/a04v": {
     "audio": "spa",
     "languages": [
@@ -1424,6 +1806,16 @@
     "fix": "use-mpegts",
     "checked": "2026-11-09",
     "channel": "TCM"
+  },
+  "http://45.5.116.228:8000/play/a06s": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-18"
   },
   "http://45.5.116.228:8000/play/a0kl": {
     "audio": "spa",

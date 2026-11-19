@@ -4,10 +4,10 @@
 http://190.211.172.154:8965/play/DOSKIDS/index.m3u8
 
 #EXTINF:-1,ETC TV
-http://187.102.211.240:9001/play/a04u/index.m3u8
+http://157.100.9.51:8000/play/a24f/index.m3u8
 
 #EXTINF:-1,Via X Esports
-http://187.102.211.240:9001/play/a03z/index.m3u8
+http://45.173.231.22:8000/play/a0cw/index.m3u8
 
 #EXTINF:-1,Cartoon Network
 http://190.211.172.154:8965/play/a078/index.m3u8
@@ -25,7 +25,7 @@ http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
 http://181.224.200.5:2277/play/a00o/index.m3u8
 
 #EXTINF:-1,Cartoonito
-http://187.102.211.240:9001/play/a03d/index.m3u8
+http://38.44.109.41:8003/play/a0cn
 
 #EXTINF:-1,SuperToons TV
 https://jmp2.uk/stvp-ESBD5100001G0
@@ -58,10 +58,10 @@ https://cl-2.backend.energeek.cl/bkp/egfanweb/index.m3u8?token=D3m0M3UCLWeb&Play
 https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=D3m0M3UCLWeb&PlaylistM3UCL
 
 #EXTINF:-1,Nick Jr
-http://187.102.211.240:9001/play/a03e/index.m3u8
+http://45.173.231.22:8000/play/a056
 
 #EXTINF:-1,Baby Tv
-http://187.102.211.240:9001/play/a00n/index.m3u8
+http://190.60.40.165:1010/play/kr4d
 
 #EXTINF:-1,Extrema Cartoons
 https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8

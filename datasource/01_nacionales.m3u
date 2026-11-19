@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1,Canal 13
-http://187.102.211.240:9001/play/a05u/index.m3u8
+http://45.173.231.22:8000/play/a083/index.m3u8
 
 #EXTINF:-1,13 Cultura
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
@@ -40,7 +40,7 @@ https://pantera1-100gb-cl-movistar.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8
 
 #EXTINF:-1,La Red
-http://45.232.210.1:18000/play/a07e/index.m3u8
+http://45.173.231.22:8000/play/a0a8/index.m3u8
 
 #EXTINF:-1,Telecanal Santa Cruz
 https://origin-us.streaminghd.cl/telecanal/telecanal/playlist.m3u8?PlaylistM3UCL
@@ -67,7 +67,7 @@ https://origin.dpsgo.com/ssai/event/g7_JOM0ORki9SR5RKHe-Kw/master.m3u8
 http://45.186.254.75:8000/play/a0ha/index.m3u8
 
 #EXTINF:-1,Zona Latina
-http://45.232.210.1:18000/play/a09h/index.m3u8
+http://45.173.231.22:8000/play/a0ax/index.m3u8
 
 #EXTINF:-1,Via X
-http://45.232.210.1:18000/play/a092/index.m3u8
+http://45.173.231.22:8000/play/a0cj/index.m3u8
