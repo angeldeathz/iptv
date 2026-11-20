@@ -197,3 +197,34 @@ Migración 2026-11-18 — host 45.232.210.1:18000
 
 Corrección BBC News (MPEG-TS no reproducía en VLC):
  52  BBC News     → 45.5.116.228:8000/play/a06s HLS (viejo: 157.100.9.51/play/a22j TS)
+
+==========================================================
+Sondeo de seguimiento: 2026-11-19 (UTC-3)
+==========================================================
+Método: mismo que el 2026-11-18 (scripts/streams.py, timeout ~12 s).
+
+Restablecido
+------------
+  Host 45.232.210.1:18000 — operativo de nuevo (playlist.m3u HTTP 200, 66 entradas).
+  Streams del informe anterior (HLS y MPEG-TS OK):
+    La Red ..... http://45.232.210.1:18000/play/a07e
+    Via X ...... http://45.232.210.1:18000/play/a092
+    Zona Latina  http://45.232.210.1:18000/play/a09h
+
+  La parrilla (official.m3u) sigue en los orígenes migrados del 2026-11-18
+  (45.173.231.22); ese host también respondió OK en el sondeo de hoy.
+
+Sigue caído o igual que el 18/11
+--------------------------------
+  187.102.211.240:9001 ........ timeout / sin playlist
+  72.1.184.5:8089 ............. connection refused (E! en official.m3u)
+  giatv.bozztv.com ............ HLS sin respuesta (Kpop TV)
+  live20.bozztv.com ........... HLS sin respuesta (Goku, MAX2, MAXCINE, MALVINAS,
+                                Pelis Variedad, Telemix)
+  CNN Chile ................... HLS roto en 38.226.49.253:8000/play/a04y/index.m3u8;
+                                MPEG-TS bare sigue vivo (sin cambio)
+
+Lista rápida — estado en official.m3u tras migración
+  La Red, Canal 13, Via X, Zona Latina, CNN Internacional, BBC News,
+  France 24, CGTN ........... OK en orígenes actuales (sondeo 2026-11-19)
+  CNN Chile ................... sigue con HLS caído en la variante de parrilla
