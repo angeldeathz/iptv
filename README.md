@@ -57,9 +57,9 @@ Not every host behaves the same. Most of the lineup uses **restream IPs** (`187.
 | `redirector.rudo.video` | Rudo.video CDN | T13, TV+, UCL. |
 | `redirector.dps.live` | DPS CDN | 13 Teleseries, 13 Pop. |
 | `unlimited*.dps.live`, `jireh-*.dps.live` | DPS CDN (regional edges) | UChile TV, UCV TV, Cooperativa, Bio Bio TV. |
-| `cdn.40mediagroup.com` | 40media Group CDN | ENT Family, ENT Channel + 5 Totalmusic. See the pattern below. |
+| `cdn.40mediagroup.com` | 40media Group CDN | Same c7eds pack as Elekta (Musica Totalmusic, etc.). See the pattern below. |
 | `mdstrm.com` | Mediastream | NTV, TVN3, TV Chile, Canal 24 Horas. |
-| `cdn.global.elektamedia.com` | Elekta CDN (same pack as 40media) | ENT Channel variant. |
+| `cdn.global.elektamedia.com` | Elekta CDN (mirror of 40media c7eds) | Preferred for ENT in Peliculas; same `{NAME}` paths. |
 
 **Why they work well:** HTTPS, CDN edge servers, optimized HLS and no intermediate restream. It shows in channel start-up time and fewer drops.
 
@@ -69,7 +69,10 @@ They do not publish `/playlist.m3u`, but the URL pattern is predictable:
 
 ```text
 https://cdn.40mediagroup.com/live/c7eds/{NAME}/SA_LIVE_hls_enc/master.m3u8
+https://cdn.global.elektamedia.com/live/c7eds/{NAME}/SA_LIVE_hls_enc/master.m3u8
 ```
+
+For heavy buffering on a TV player, `tracks-v1a1/mono.m3u8` (Elekta) or `tracks-v1a1/mono.ts.m3u8` (40media) is the same 1080p stream without the master playlist step.
 
 | `{NAME}` | Channel |
 |----------|---------|
