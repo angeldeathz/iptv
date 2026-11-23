@@ -1,0 +1,28 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-name="CNN Chile 1" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",CNN Chile 1
+http://45.232.210.1:18000/play/a09j/index.m3u8
+
+#EXTINF:-1 tvg-name="CNN Chile 2" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",CNN Chile 2
+http://45.173.231.22:8000/play/a0ay/index.m3u8
+
+#EXTINF:-1 tvg-name="CNN Chile 3" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",CNN Chile 3
+http://157.100.9.51:8000/play/a1za
+
+#EXTINF:-1 tvg-name="Cartoonito 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",Cartoonito 1
+http://190.61.42.218:9000/play/a05r/index.m3u8
+
+#EXTINF:-1 tvg-name="Cartoonito 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",Cartoonito 2
+http://157.100.9.51:8000/play/a252/index.m3u8
+
+#EXTINF:-1 tvg-name="Cartoonito 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",Cartoonito 3
+http://45.5.116.228:8000/play/a06i
+
+#EXTINF:-1 tvg-name="E! 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Variedades" audio-track="spa,eng",E! 1
+http://45.173.231.22:8000/play/a01g/index.m3u8
+
+#EXTINF:-1 tvg-name="E! 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Variedades" audio-track="spa,eng",E! 2
+http://190.61.42.218:9000/play/a019/index.m3u8
+
+#EXTINF:-1 tvg-name="E! 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Variedades" audio-track="spa,eng",E! 3
+http://190.61.43.117:45000/play/a08d/index.m3u8

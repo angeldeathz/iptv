@@ -1266,6 +1266,16 @@
     "checked": "2026-11-09",
     "channel": "CNN en Español"
   },
+  "http://190.61.42.218:9000/play/a019": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://190.61.42.218:9000/play/a05p": {
     "audio": "spa",
     "languages": [
@@ -1357,6 +1367,16 @@
     "channel": "HBO 2"
   },
   "http://190.61.43.117:45000/play/a07z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
+  "http://190.61.43.117:45000/play/a08d": {
     "audio": "spa",
     "languages": [
       "spa"
@@ -1485,6 +1505,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "ESPN Premium"
+  },
+  "http://45.173.231.22:8000/play/a01g": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
   },
   "http://45.173.231.22:8000/play/a01m": {
     "audio": "spa",

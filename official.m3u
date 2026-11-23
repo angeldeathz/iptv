@@ -142,7 +142,7 @@ https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea
 https://pnt.janusmedia.tv/hls/pnt.m3u8
 
 #EXTINF:-1 tvg-name="45 CNN Chile 1" tvg-logo="https://i.ibb.co/YWf6xcv/cnn-chile.png" group-title="Noticias" audio-track="spa,eng",45 CNN Chile 1
-http://38.226.49.253:8000/play/a04y/index.m3u8
+http://45.173.231.22:8000/play/a0ay/index.m3u8
 
 #EXTINF:-1 tvg-name="46 CNN en Español 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="Noticias" audio-track="spa,eng",46 CNN en Español 1
 http://190.61.42.218:9000/play/a00t/index.m3u8
@@ -193,7 +193,7 @@ http://190.211.172.154:8965/play/Nickelodeon/index.m3u8
 http://181.224.200.5:2277/play/a00o/index.m3u8
 
 #EXTINF:-1 tvg-name="61 Cartoonito 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cartoonito-us.png" group-title="Infantiles" audio-track="spa,eng",61 Cartoonito 1
-http://38.44.109.41:8003/play/a0cn
+http://190.61.42.218:9000/play/a05r/index.m3u8
 
 #EXTINF:-1 tvg-name="62 SuperToons TV 1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD5100001G0_20250729T045047SQUARE.png" group-title="Infantiles",62 SuperToons TV 1
 https://jmp2.uk/stvp-ESBD5100001G0
@@ -619,7 +619,7 @@ http://190.61.43.117:45000/play/a08e
 http://190.60.40.165:1010/play/a0om/index.m3u8
 
 #EXTINF:-1 tvg-name="197 E! 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="Variedades" audio-track="spa,eng",197 E! 1
-http://72.1.184.5:8089/play/a05d
+http://45.173.231.22:8000/play/a01g/index.m3u8
 
 
 # ===== Mexico =====
