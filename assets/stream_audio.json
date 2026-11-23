@@ -19,6 +19,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-18"
   },
+  "http://157.100.9.51:8000/play/a252": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://170.247.204.9:8000/play/a01o": {
     "audio": "dual",
     "languages": [
@@ -1139,6 +1149,16 @@
     "checked": "2026-11-09",
     "channel": "Stingray Concerts"
   },
+  "http://190.60.40.165:1010/play/a0ow": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://190.60.40.165:1010/play/a0p7": {
     "audio": "dual",
     "languages": [
@@ -1256,6 +1276,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "HGTV Discovery"
+  },
+  "http://190.61.42.218:9000/play/a05r": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
   },
   "http://190.61.42.218:9000/play/a06r": {
     "audio": "spa",
@@ -1688,6 +1718,16 @@
     "fix": "keep-hls",
     "checked": "2026-11-18"
   },
+  "http://45.173.231.22:8000/play/a0ay": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://45.173.231.22:8000/play/a0cj": {
     "audio": "spa",
     "languages": [
@@ -1805,6 +1845,16 @@
     "checked": "2026-11-09",
     "channel": "Zona Latina"
   },
+  "http://45.232.210.1:18000/play/a09j": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://45.5.116.228:8000/play/a04z": {
     "audio": "dual",
     "languages": [
@@ -1816,6 +1866,17 @@
     "fix": "use-mpegts",
     "checked": "2026-11-09",
     "channel": "TCM"
+  },
+  "http://45.5.116.228:8000/play/a06i": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
   },
   "http://45.5.116.228:8000/play/a06s": {
     "audio": "spa",
