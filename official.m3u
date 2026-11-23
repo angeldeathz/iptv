@@ -273,10 +273,10 @@ https://cdn.global.elektamedia.com/live/c7eds/ENT_Movies/SA_LIVE_hls_enc/master.
 #EXTINF:-1 tvg-name="86 ENT Drama 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-drama.png" group-title="Peliculas",86 ENT Drama 1
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Drama/SA_LIVE_hls_enc/master.m3u8
 
-#EXTINF:-1 tvg-name="87 ENT Classic 1 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-classic.png" group-title="Peliculas",87 ENT Classic 1 1
+#EXTINF:-1 tvg-name="87 ENT Classic 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-classic.png" group-title="Peliculas",87 ENT Classic 1
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Classics/SA_LIVE_hls_enc/master.m3u8
 
-#EXTINF:-1 tvg-name="88 ENT Life 1 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-life.png" group-title="Peliculas",88 ENT Life 1 1
+#EXTINF:-1 tvg-name="88 ENT Life 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-life.png" group-title="Peliculas",88 ENT Life 1
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Life/SA_LIVE_hls_enc/master.m3u8
 
 #EXTINF:-1 tvg-name="89 HBO 1" tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" audio-track="spa,eng",89 HBO 1
