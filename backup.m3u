@@ -559,3 +559,30 @@ http://45.186.254.75:8000/play/a0cm
 
 #EXTINF:-1 tvg-name="HBO Pop 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png" group-title="Peliculas" audio-track="spa,eng",HBO Pop 3
 http://190.61.42.218:9000/play/a01n
+
+#EXTINF:-1 group-title="Infantiles" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disney_Junior.svg/320px-Disney_Junior.svg.png" tvg-name="41 Disney Jr. 4" group-title="Infantiles" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disney_Junior.svg/320px-Disney_Junior.svg.png" tvg-name="Disney Jr. 4",Disney Jr. 4
+http://38.226.49.253:8000/play/a034/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="4 CHV 2" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 2",CHV 2
+http://38.226.49.253:8000/play/a0c9/index.m3u8
+
+#EXTINF:-1 group-title="Peliculas" tvg-name="85 Star Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="Star Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg",Star Channel 4
+http://38.226.49.253:8000/play/a06q/index.m3u8
+
+#EXTINF:-1,FX
+http://190.108.83.69:8000/play/a04i/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="113 TCM 6" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="TCM 6",TCM 6
+http://38.226.49.253:8000/play/a047/index.m3u8
+
+#EXTINF:-1,HBO Mundi
+http://45.173.231.22:8000/play/a0a1
+
+#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="SONY 1" audio-track="spa,eng",SONY 1
+http://38.226.49.253:8000/play/a060
+
+#EXTINF:-1,HBO Family
+http://190.60.40.165:1010/play/a0p7
+
+#EXTINF:-1,Animal Planet
+http://181.224.200.5:2277/play/a00r

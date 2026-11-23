@@ -1,53 +1,5 @@
 #EXTM3U
-# Host Space (Astra): 38.226.49.253:8000
 
-#EXTINF:-1 tvg-name="8 TVN 1" tvg-logo="http://xplatinmedia.com:8080/images/2e919b7e465da0c85b58943f21294e26.png" group-title="Nacionales" audio-track="spa,eng",8 TVN 1
-http://38.226.49.253:8000/play/a06c/index.m3u8
-
-#EXTINF:-1 tvg-name="89 HBO Signature 1" tvg-logo="https://docdog.top/logo/countries/latino/hbosignature.png" group-title="Peliculas" audio-track="spa,eng",89 HBO Signature 1
-http://38.226.49.253:8000/play/a04j/index.m3u8
-
-#EXTINF:-1 tvg-name="95 SPACE 1" tvg-logo="https://docdog.top/logo/countries//argentina/space-ar.png" group-title="Peliculas" audio-track="spa,eng",95 SPACE 1
-http://38.226.49.253:8000/play/a064/index.m3u8
-
-#EXTINF:-1 tvg-name="105 AMC Series 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDR02bhnjx7hyphenhyphen9sy4ErJx8PUT-WM5hP9axbkLjVFrxyJ1Qz9qxG0cIzbcBWazT6CxgQSrvMRKAOiNvlCY7kSEeG_tTpGNaBHTkHTzv6CdkOYRkCKrSgx3ULAHwijhlnl9vDK3FBpG6wJsvucp0-tif9g7_bbDYu4XQW3MN-Sxtg68OD5u1pWZVzng4xxg/s159/amc-series.png" group-title="Peliculas" audio-track="spa,eng",105 AMC Series 1
-http://38.226.49.253:8000/play/a03y/index.m3u8
-
-#EXTINF:-1 tvg-name="126 A&E 1" tvg-logo="https://download.logo.wine/logo/A%26E_(Australian_TV_channel)/A%26E_(Australian_TV_channel)-Logo.wine.png" group-title="Series" audio-track="spa,eng",126 A&E 1
-http://38.226.49.253:8000/play/a05u/index.m3u8
-
-#EXTINF:-1 tvg-name="139 ESPN Premium 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/1920px-ESPN_Premium_logo.svg.png" group-title="Deportes" audio-track="spa,eng",139 ESPN Premium 1
-http://38.226.49.253:8000/play/a07t/index.m3u8
-
-#EXTINF:-1 tvg-name="203 RAI 1" tvg-logo="https://cdn.mitvstatic.com/channels/ar_rai_m.png" group-title="Italia" audio-track="spa,eng",203 RAI 1
-http://38.226.49.253:8000/play/a04s/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="4 CHV 2" tvg-logo="https://i.imgur.com/LmU7wOm.png" group-title="Nacionales" tvg-name="CHV 2",CHV 2
-http://38.226.49.253:8000/play/a0c9/index.m3u8
-
-#EXTINF:-1 group-title="Infantiles" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disney_Junior.svg/320px-Disney_Junior.svg.png" tvg-name="41 Disney Jr. 4" group-title="Infantiles" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Disney_Junior.svg/320px-Disney_Junior.svg.png" tvg-name="Disney Jr. 4",Disney Jr. 4
-http://38.226.49.253:8000/play/a034/index.m3u8
-
-#EXTINF:-1 group-title="Peliculas" tvg-name="85 Star Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg" group-title="Peliculas" tvg-name="Star Channel 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cd/Star_Channel_2023.svg",Star Channel 4
-http://38.226.49.253:8000/play/a06q/index.m3u8
-
-#EXTINF:-1 group-title="Peliculas" tvg-name="89 FX 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" group-title="Peliculas" tvg-name="FX 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png",FX 4
-http://38.226.49.253:8000/play/a07c/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="113 TCM 6" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcHu-bEOdw-_7i8FfgTpbvdf7J65_QfTlKV-1JNW547FI_gYAb79RSVANucglyOUwuIjudATzy-m3TuZ17H6WpKbvnsC7GgQO9kYxVrsSqdLlrIkr6vx7xl30LrP5b5heMT2H_KEMxOwU/s1600/TCM.jpg" group-title="Peliculas" tvg-name="TCM 6",TCM 6
-http://38.226.49.253:8000/play/a047/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwW06hJWmRtoAPThSha_H5O-pqWQyZeOJd5qTTWBngloXimEqZPy4ze8zaUt1VAHHjrJkF003hHOw1g8UV_I8d-o-ZByuW5NIyz_8L9jfqk4WWSthingqiUQbw6EOnkFCpa5BAJyZlNo/s0/HBO-Mundi.png" group-title="Peliculas" tvg-name="82 HBO Mundi 4" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFwW06hJWmRtoAPThSha_H5O-pqWQyZeOJd5qTTWBngloXimEqZPy4ze8zaUt1VAHHjrJkF003hHOw1g8UV_I8d-o-ZByuW5NIyz_8L9jfqk4WWSthingqiUQbw6EOnkFCpa5BAJyZlNo/s0/HBO-Mundi.png" group-title="Peliculas" tvg-name="HBO Mundi 4",HBO Mundi 4
-http://38.226.49.253:8000/play/a04k/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries//argentina/sony-channel-ar.png" group-title="Peliculas" tvg-name="SONY 1" audio-track="spa,eng",SONY 1
-http://38.226.49.253:8000/play/a060
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="75 Cinecanal 5" tvg-logo="https://docdog.top/logo/countries/latino/cinecanal.png" group-title="Peliculas" tvg-name="Cinecanal 5",Cinecanal 5
-http://38.226.49.253:8000/play/a05z/index.m3u8?hls
-
-#EXTINF:-1 tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="72 HBO 2 6" tvg-logo="https://docdog.top/logo/countries/latino/hbo.png" group-title="Peliculas" tvg-name="HBO 2 6",HBO 2 6
-http://38.226.49.253:8000/play/a030/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="73 HBO Family 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="HBO Family 2",HBO Family 2
 http://38.226.49.253:8000/play/a07v/index.m3u8
