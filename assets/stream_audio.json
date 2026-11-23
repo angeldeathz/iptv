@@ -1326,6 +1326,16 @@
     "checked": "2026-11-09",
     "channel": "HBO 2"
   },
+  "http://190.61.43.117:45000/play/a07z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://190.61.43.117:45000/play/a08e": {
     "audio": "spa",
     "languages": [

@@ -12,9 +12,6 @@ https://origin-us.streaminghd.cl/rtv/rtv/playlist.m3u8?PlaylistM3UCL
 #EXTINF:-1,Supersonika TV
 https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8?PlaylistM3UCL
 
-#EXTINF:-1,VClassicTV
-https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8?PlaylistM3UCL
-
 #EXTINF:-1,Grupo Libra TV
 https://v2.tustreaming.cl/libratv/index.m3u8?PlaylistM3UCL
 
@@ -38,9 +35,6 @@ https://v4.tustreaming.cl/limachemovil/index.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,RialTv
 https://5eaccbab48461.streamlock.net:1936/8124/8124/playlist.m3u8?PlaylistM3UCL
-
-#EXTINF:-1,Milodon TV
-https://video3.servidordevideo.net:3585/live/upbsfzhdlive.m3u8?PlaylistM3UCL
 
 #EXTINF:-1,TV Valdivia
 https://5eaccbab48461.streamlock.net:1936/8206/8206/playlist.m3u8?PlaylistM3UCL

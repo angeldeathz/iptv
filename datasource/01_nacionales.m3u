@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1,Canal 13
-http://45.173.231.22:8000/play/a083/index.m3u8
+http://190.61.43.117:45000/play/a07z/index.m3u8
 
 #EXTINF:-1,13 Cultura
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8

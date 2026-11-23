@@ -129,15 +129,6 @@ http://45.5.118.152:8000/play/a03e/index.m3u8
 #EXTINF:-1,FMH Movies
 http://45.186.254.75:8000/play/a07j/index.m3u8
 
-#EXTINF:-1,MAX2
-https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8
-
-#EXTINF:-1,MAXCINE Comedy
-https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8
-
-#EXTINF:-1,MALVINAS TV
-https://live20.bozztv.com/giatvplayout7/giatv-208744/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1,Grjngo
 https://amogonetworx-grjngo-2-eu.plex.wurl.tv/2000.m3u8
 
