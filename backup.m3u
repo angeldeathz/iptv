@@ -586,3 +586,9 @@ http://190.60.40.165:1010/play/a0p7
 
 #EXTINF:-1,Animal Planet
 http://181.224.200.5:2277/play/a00r
+
+#EXTINF:-1,HBO 2
+http://190.61.43.117:45000/play/a07x
+
+#EXTINF:-1,Cinecanal
+http://45.173.231.22:8000/play/a061/index.m3u8

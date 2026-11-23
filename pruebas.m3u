@@ -1,11 +1,37 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-name="ENT Movies 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-movies.png" group-title="Pruebas",ENT Movies 1
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Movies/SA_LIVE_hls_enc/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="73 HBO Family 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png" group-title="Peliculas" tvg-name="HBO Family 2",HBO Family 2
-http://38.226.49.253:8000/play/a07v/index.m3u8
+#EXTINF:-1 tvg-name="ENT Movies 2" tvg-logo="https://www.40mediagroup.com/images/channels/ent-movies.png" group-title="Pruebas",ENT Movies 2
+https://cdn.40mediagroup.com/live/c7eds/ENT_Movies/SA_LIVE_hls_enc/master.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="192 ANIMAL PLANET 10" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 10" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 10
-http://38.226.49.253:8000/play/a05r/index.m3u8
+#EXTINF:-1 tvg-name="ENT Movies 3" tvg-logo="https://www.40mediagroup.com/images/channels/ent-movies.png" group-title="Pruebas",ENT Movies 3
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Movies/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="Documentales" tvg-name="201 ANIMAL PLANET 19" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png" group-title="Documentales" tvg-name="ANIMAL PLANET 19" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/320px-2018_Animal_Planet_logo.svg.png",ANIMAL PLANET 19
-http://38.226.49.253:8000/play/a054/index.m3u8
+#EXTINF:-1 tvg-name="ENT Drama 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-drama.png" group-title="Pruebas",ENT Drama 1
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Drama/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Drama 2" tvg-logo="https://www.40mediagroup.com/images/channels/ent-drama.png" group-title="Pruebas",ENT Drama 2
+https://cdn.40mediagroup.com/live/c7eds/ENT_Drama/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Drama 3" tvg-logo="https://www.40mediagroup.com/images/channels/ent-drama.png" group-title="Pruebas",ENT Drama 3
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Drama/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="ENT Classic 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-classic.png" group-title="Pruebas",ENT Classic 1
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Classics/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Classic 2" tvg-logo="https://www.40mediagroup.com/images/channels/ent-classic.png" group-title="Pruebas",ENT Classic 2
+https://cdn.40mediagroup.com/live/c7eds/ENT_Classics/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Classic 3" tvg-logo="https://www.40mediagroup.com/images/channels/ent-classic.png" group-title="Pruebas",ENT Classic 3
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Classics/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="ENT Life 1" tvg-logo="https://www.40mediagroup.com/images/channels/ent-life.png" group-title="Pruebas",ENT Life 1
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Life/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Life 2" tvg-logo="https://www.40mediagroup.com/images/channels/ent-life.png" group-title="Pruebas",ENT Life 2
+https://cdn.40mediagroup.com/live/c7eds/ENT_Life/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-name="ENT Life 3" tvg-logo="https://www.40mediagroup.com/images/channels/ent-life.png" group-title="Pruebas",ENT Life 3
+https://cdn.global.elektamedia.com/live/c7eds/ENT_Life/SA_LIVE_hls_enc/tracks-v1a1/mono.m3u8
