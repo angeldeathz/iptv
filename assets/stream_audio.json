@@ -1419,6 +1419,26 @@
     "checked": "2026-11-09",
     "channel": "TNT Sports Premium"
   },
+  "http://38.226.49.253:8000/play/a030": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
+  "http://38.226.49.253:8000/play/a034": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://38.226.49.253:8000/play/a03y": {
     "audio": "spa",
     "languages": [
@@ -1430,6 +1450,17 @@
     "checked": "2026-11-09",
     "channel": "AMC Series"
   },
+  "http://38.226.49.253:8000/play/a047": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
+  },
   "http://38.226.49.253:8000/play/a04j": {
     "audio": "spa",
     "languages": [
@@ -1439,6 +1470,16 @@
     "form": "hls",
     "fix": "keep-hls",
     "checked": "2026-11-09"
+  },
+  "http://38.226.49.253:8000/play/a04k": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
   },
   "http://38.226.49.253:8000/play/a04s": {
     "audio": "other",
@@ -1462,6 +1503,28 @@
     "checked": "2026-11-09",
     "channel": "CNN Chile"
   },
+  "http://38.226.49.253:8000/play/a054": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
+  },
+  "http://38.226.49.253:8000/play/a05r": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
+  },
   "http://38.226.49.253:8000/play/a05u": {
     "audio": "spa",
     "languages": [
@@ -1472,6 +1535,27 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "A&E"
+  },
+  "http://38.226.49.253:8000/play/a05z": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
+  "http://38.226.49.253:8000/play/a060": {
+    "audio": "dual",
+    "languages": [
+      "spa",
+      "eng"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
   },
   "http://38.226.49.253:8000/play/a064": {
     "audio": "spa",
@@ -1495,6 +1579,27 @@
     "checked": "2026-11-09",
     "channel": "TVN"
   },
+  "http://38.226.49.253:8000/play/a06q": {
+    "audio": "dual",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "mpegts",
+    "fix": "use-mpegts",
+    "checked": "2026-11-23"
+  },
+  "http://38.226.49.253:8000/play/a07c": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
   "http://38.226.49.253:8000/play/a07t": {
     "audio": "spa",
     "languages": [
@@ -1505,6 +1610,26 @@
     "fix": "keep-hls",
     "checked": "2026-11-09",
     "channel": "ESPN Premium"
+  },
+  "http://38.226.49.253:8000/play/a07v": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
+  },
+  "http://38.226.49.253:8000/play/a0c9": {
+    "audio": "spa",
+    "languages": [
+      "spa"
+    ],
+    "delivery": "mpegts",
+    "form": "hls",
+    "fix": "keep-hls",
+    "checked": "2026-11-23"
   },
   "http://45.173.231.22:8000/play/a01g": {
     "audio": "spa",
