@@ -10,6 +10,7 @@ import re
 import ssl
 import sys
 import threading
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -26,7 +27,12 @@ from streams import (  # noqa: E402
 )
 
 EXTINF_ATTR_RE = re.compile(r'([\w\-]+)\s*=\s*"([^"]*)"')
-DEFAULT_WORKERS = 24
+# High parallelism starves home/Astra hosts and yields false timeouts on back-to-back runs.
+DEFAULT_WORKERS = 8
+VERIFY_ATTEMPTS = 3
+# Reasons that often mean congestion, not a dead stream — must pass a slow sequential recheck.
+AMBIGUOUS_REASONS = frozenset({"timeout", "connection_error", "no_stream"})
+CLEAR_EOL = "\033[K"
 
 
 class Progress:
@@ -36,6 +42,14 @@ class Progress:
         self.done = 0
         self.in_flight: list[tuple[str, str]] = []
         self._lock = threading.Lock()
+        self._phase = "sondeo"
+
+    def set_phase(self, phase: str, total: int | None = None) -> None:
+        with self._lock:
+            self._phase = phase
+            if total is not None:
+                self.total = total
+                self.done = 0
 
     def start(self, key: str, label: str) -> None:
         with self._lock:
@@ -45,6 +59,11 @@ class Progress:
     def finish(self, key: str, reason: str | None, label: str) -> None:
         with self._lock:
             self.in_flight = [(k, name) for k, name in self.in_flight if k != key]
+            self.done += 1
+            self._render_locked(reason, label)
+
+    def tick(self, reason: str | None, label: str) -> None:
+        with self._lock:
             self.done += 1
             self._render_locked(reason, label)
 
@@ -64,17 +83,16 @@ class Progress:
             mark = "MUERTO" if last_reason else "OK"
             status = f" · {last_label}: {mark}"
         line = (
-            f"\r[{pct:3d}%] {self.done}/{self.total} URLs "
-            f"({self.entry_count} canales) · {canal}{status}   "
+            f"\r{CLEAR_EOL}[{pct:3d}%] {self.done}/{self.total} "
+            f"({self._phase}) · {canal}{status}"
         )
         sys.stderr.write(line)
         sys.stderr.flush()
 
     def close(self) -> None:
-        if self.total:
-            with self._lock:
-                sys.stderr.write("\n")
-                sys.stderr.flush()
+        with self._lock:
+            sys.stderr.write(f"\r{CLEAR_EOL}\n")
+            sys.stderr.flush()
 
 
 def parse_official(path: Path) -> list[dict]:
@@ -142,6 +160,44 @@ def probe_one(
     return key, reason
 
 
+def confirm_ambiguous(
+    unique_urls: dict[str, str],
+    reasons: dict[str, str | None],
+    labels: dict[str, str],
+    timeout: float,
+    progress: Progress | None,
+) -> None:
+    suspects = [key for key, reason in reasons.items() if reason in AMBIGUOUS_REASONS]
+    if not suspects:
+        return
+
+    verify_timeout = min(timeout * 1.5, 18.0)
+    if progress:
+        progress.set_phase("verificación", len(suspects))
+        sys.stderr.write(
+            f"\nRevisando {len(suspects)} URL con timeout/sospecha, una a una…\n"
+        )
+        sys.stderr.flush()
+
+    for key in suspects:
+        url = unique_urls[key]
+        label = labels[key]
+        final: str | None = reasons[key]
+        for _ in range(VERIFY_ATTEMPTS):
+            reason = probe_url(url, verify_timeout)
+            if reason is None:
+                final = None
+                break
+            if reason not in AMBIGUOUS_REASONS:
+                final = reason
+                break
+            final = reason
+            time.sleep(0.35)
+        reasons[key] = final
+        if progress:
+            progress.tick(final, label)
+
+
 def probe_dead(
     entries: list[dict], workers: int, timeout: float, progress: Progress | None
 ) -> list[dict]:
@@ -154,6 +210,9 @@ def probe_dead(
 
     reasons: dict[str, str | None] = {}
 
+    if progress:
+        progress.set_phase("sondeo", len(unique_urls))
+
     try:
         with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
             futures = [
@@ -163,6 +222,8 @@ def probe_dead(
             for future in concurrent.futures.as_completed(futures):
                 key, reason = future.result()
                 reasons[key] = reason
+
+        confirm_ambiguous(unique_urls, reasons, labels, timeout, progress)
     finally:
         if progress:
             progress.close()
